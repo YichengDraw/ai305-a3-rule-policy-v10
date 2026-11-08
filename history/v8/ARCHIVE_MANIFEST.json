@@ -1,0 +1,23 @@
+{
+  "version": "V8",
+  "status": "frozen_release",
+  "path": "history/v8",
+  "factory": "policy:make_policy_b",
+  "python_files": 12,
+  "sha256": {
+    "policy.py": "ff8cc12954c05dd4e75901528d5dd251b785b45b1c4e7a26453d43f45d09b67a",
+    "task_route_parents_ac88e32538bd/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "task_route_parents_ac88e32538bd/candidate20/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "task_route_parents_ac88e32538bd/candidate20/perception.py": "4b6c5a10ce64bb7c0a6ae43c6a486748d9c1838163592e192a365477b324ec55",
+    "task_route_parents_ac88e32538bd/candidate20/placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+    "task_route_parents_ac88e32538bd/candidate20/policy.py": "526915f0722e52c2426c7ca9c395c1b981074170521e1f50e82a2727a74a4e20",
+    "task_route_parents_ac88e32538bd/candidate20/rule_controller.py": "86be5f804abf9422ec4c80450f6778fe30bbee984aba21800d6cc095280bae6d",
+    "task_route_parents_ac88e32538bd/v7/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "task_route_parents_ac88e32538bd/v7/perception.py": "2f2d05ee7ca2b3d4f3476e0dfd74bef4c7c2d4efc588a9eb50affde3cec7475a",
+    "task_route_parents_ac88e32538bd/v7/placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+    "task_route_parents_ac88e32538bd/v7/policy.py": "526915f0722e52c2426c7ca9c395c1b981074170521e1f50e82a2727a74a4e20",
+    "task_route_parents_ac88e32538bd/v7/rule_controller.py": "b1811949de213600d6ab2011f832d0f40c08f9cfce512f65e17754abf06cb9e9"
+  },
+  "source_directory_label": "frozen_policy_v8",
+  "private_prompts_included": false
+}

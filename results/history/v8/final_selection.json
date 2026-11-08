@@ -1,0 +1,28 @@
+{
+  "frozen_utc": "2026-11-02T13:28:49.506333+00:00",
+  "selected": "frozen_policy_v8",
+  "factory": "policy:make_policy_b",
+  "rule": "task only: V7 for 2x5, G3+SO2 for 2x10",
+  "test_seeds_previously_unrun": [
+    17000,
+    18000
+  ],
+  "development_evidence": "coverage_g3_so2_native45_comparison.json",
+  "core_gates": "all passed; 2x5 V7 preserved via exact task routing and prior actual C0 smoke",
+  "task_mean_final_count": {
+    "2x5": {
+      "v7": 9.0,
+      "full_candidate": 8.933333333333334
+    },
+    "2x10": {
+      "v6": 12.566666666666666,
+      "candidate": 13.3
+    }
+  },
+  "selected_equal_six_cell_mean": 11.15,
+  "reference_equal_six_cell_mean": 10.783333333333333,
+  "selected_pooled_count": 534,
+  "reference_pooled_count": 512,
+  "episodes": 45,
+  "selection_result_type": "development task-only recombination, not a new simulation"
+}

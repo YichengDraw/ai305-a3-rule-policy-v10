@@ -1,0 +1,13 @@
+{
+  "stage": "V12",
+  "scope": "post-V10 experimental; not part of reported frozen V10",
+  "archive": "history/candidate_archives/v12_retained_code.tar.gz",
+  "archive_sha256": "448f9eeb8b2e4225b36f5bd8249e32cc84e2f2ced3c217f666787933d750441a",
+  "files": {
+    "analyze_w1b_expand127.py": "ff4f7eac5e57c4c694bdf63e4d64007c26bb36396926de6acae40db49a949c45",
+    "classify_failures.py": "a79c29279b79a1fa49210fbcb23b8828b6d955b2359d0e296fd177e473860fe9",
+    "trace_probe.py": "ea0709ab7ec55216050620b99867184f291e977fae37293bc751bb691a49de3e"
+  },
+  "snapshots": [],
+  "note": "Code preserved verbatim; rejected variants are not recommended defaults. No prompt plans, chat exports, credentials, videos, or model weights are included."
+}

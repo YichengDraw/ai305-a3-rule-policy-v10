@@ -1,0 +1,46 @@
+{
+  "check": "original_CAD_geometry",
+  "samples": [
+    {
+      "opening": 0.0,
+      "cad_gap_m": 0.005361600000000077,
+      "analytic_gap_m": 0.0053616,
+      "pad_midpoint_local_to_eef_m": [
+        0.0,
+        -0.014676000000000022,
+        0.0
+      ]
+    },
+    {
+      "opening": 0.1,
+      "cad_gap_m": 0.01386160000000003,
+      "analytic_gap_m": 0.013861600000000002,
+      "pad_midpoint_local_to_eef_m": [
+        0.0,
+        -0.014676000000000022,
+        0.0
+      ]
+    },
+    {
+      "opening": 0.5,
+      "cad_gap_m": 0.04786160000000006,
+      "analytic_gap_m": 0.047861600000000004,
+      "pad_midpoint_local_to_eef_m": [
+        0.0,
+        -0.014676000000000022,
+        0.0
+      ]
+    },
+    {
+      "opening": 1.0,
+      "cad_gap_m": 0.09036160000000004,
+      "analytic_gap_m": 0.0903616,
+      "pad_midpoint_local_to_eef_m": [
+        0.0,
+        -0.014676000000000022,
+        0.0
+      ]
+    }
+  ],
+  "max_gap_error_m": 7.719519468096792e-17
+}

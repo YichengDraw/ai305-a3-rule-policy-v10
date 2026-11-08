@@ -1,0 +1,2315 @@
+{
+  "scope": "completed development same-initialization FOV revision comparison; H19000 excluded",
+  "old_raw": "source1_selected_99_covered_raw.json",
+  "new_raw": "source1_fov_pathcache_99_covered_raw.json",
+  "all99_initializations_equal": true,
+  "old_metrics": {
+    "episodes": 99,
+    "final_count_sum": 935,
+    "mean_final_count": 9.444444444444445,
+    "mean_final_count_fraction": "85/9",
+    "normalized_completion": 0.5176767676767676,
+    "normalized_completion_fraction": "205/396",
+    "quantity_weighted_completion": 0.4947089947089947,
+    "successes": 43,
+    "official_success_rate": 0.43434343434343436,
+    "mean_steps": 2038.6565656565656
+  },
+  "new_metrics": {
+    "episodes": 99,
+    "final_count_sum": 1377,
+    "mean_final_count": 13.909090909090908,
+    "mean_final_count_fraction": "153/11",
+    "normalized_completion": 0.740909090909091,
+    "normalized_completion_fraction": "163/220",
+    "quantity_weighted_completion": 0.7285714285714285,
+    "successes": 60,
+    "official_success_rate": 0.6060606060606061,
+    "mean_steps": 1564.4949494949494
+  },
+  "counts_improved": 31,
+  "counts_regressed": 4,
+  "counts_unchanged": 64,
+  "official_success_gained": 20,
+  "official_success_lost": 3,
+  "reuse_note": "unchanged E9 reuses original rows; two10 branch adds FOV; exact-cache performance equivalence certified; no H model selection",
+  "pairs": [
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 433
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 1,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 560,
+      "new_steps": 574
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 578,
+      "new_steps": 603
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 576,
+      "new_steps": 574
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 618,
+      "new_steps": 615
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 578,
+      "new_steps": 578
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 595,
+      "new_steps": 600
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 587
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 751
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 10,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 1,
+      "new_final_count": 1,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 2,
+      "new_final_count": 2,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 3,
+      "new_final_count": 3,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 4,
+      "new_final_count": 4,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 5,
+      "new_final_count": 5,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 6,
+      "new_final_count": 6,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 7,
+      "new_final_count": 7,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 8,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 9,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 477
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 1,
+      "new_final_count": 1,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 2,
+      "old_success": true,
+      "new_success": false,
+      "old_steps": 560,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 3,
+      "old_success": true,
+      "new_success": false,
+      "old_steps": 1145,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 14,
+      "new_final_count": 14,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 959,
+      "new_steps": 906
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 6,
+      "new_final_count": 6,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 7,
+      "new_final_count": 7,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 8,
+      "new_final_count": 8,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 18,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 718
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 431
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 1125,
+      "new_steps": 927
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 631,
+      "new_steps": 1007
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 787
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 709
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 657
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 602
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 628,
+      "new_steps": 738
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 1113
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 857
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 464
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 1790,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 12,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 1112
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 634,
+      "new_steps": 636
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 665,
+      "new_steps": 1017
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 556,
+      "new_steps": 546
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 587,
+      "new_steps": 587
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 669,
+      "new_steps": 677
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 1233,
+      "new_steps": 1233
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 468
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 649,
+      "new_steps": 649
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 12,
+      "old_success": true,
+      "new_success": false,
+      "old_steps": 791,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 882,
+      "new_steps": 601
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 657,
+      "new_steps": 559
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 560,
+      "new_steps": 577
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 605
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 631,
+      "new_steps": 625
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 761
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 9,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 416
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 715,
+      "new_steps": 715
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 12,
+      "new_final_count": 12,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 543,
+      "new_steps": 543
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 3,
+      "new_final_count": 3,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 752,
+      "new_steps": 752
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 11,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 611
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 540,
+      "new_steps": 540
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 8,
+      "new_final_count": 8,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 10,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 10,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 1,
+      "new_final_count": 1,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 2,
+      "new_final_count": 2,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 3,
+      "new_final_count": 3,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 4,
+      "new_final_count": 4,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 5,
+      "new_final_count": 5,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 6,
+      "new_final_count": 6,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 7,
+      "new_final_count": 7,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 8,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 9,
+      "old_success": false,
+      "new_success": false,
+      "old_steps": 3200,
+      "new_steps": 3200
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 0,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 0,
+          "replay": 0
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 624
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 1,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 1100
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 2,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 2,
+          "replay": 2
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 983,
+      "new_steps": 983
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 3,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 3,
+          "replay": 3
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 573,
+      "new_steps": 565
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 4,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 4,
+          "replay": 4
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 673,
+      "new_steps": 649
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 5,
+          "replay": 5
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 696,
+      "new_steps": 561
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 6,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 6,
+          "replay": 6
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 556,
+      "new_steps": 549
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 7,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 7,
+          "replay": 7
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 565,
+      "new_steps": 558
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 8,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 8,
+          "replay": 8
+        }
+      },
+      "old_final_count": 20,
+      "new_final_count": 20,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 634,
+      "new_steps": 637
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 9,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 9,
+          "replay": 9
+        }
+      },
+      "old_final_count": 0,
+      "new_final_count": 20,
+      "old_success": false,
+      "new_success": true,
+      "old_steps": 3200,
+      "new_steps": 581
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 20000,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 294,
+      "new_steps": 294
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 20001,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 325,
+      "new_steps": 325
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 20002,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 389,
+      "new_steps": 389
+    },
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 20000,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 318,
+      "new_steps": 318
+    },
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 20001,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 340,
+      "new_steps": 340
+    },
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 20002,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 365,
+      "new_steps": 365
+    },
+    {
+      "task": "2x5",
+      "profile": "medium",
+      "seed": 20000,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 304,
+      "new_steps": 304
+    },
+    {
+      "task": "2x5",
+      "profile": "medium",
+      "seed": 20001,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 314,
+      "new_steps": 314
+    },
+    {
+      "task": "2x5",
+      "profile": "medium",
+      "seed": 20002,
+      "n": 5,
+      "source_column": 1,
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": null,
+          "replay": null
+        }
+      },
+      "old_final_count": 10,
+      "new_final_count": 10,
+      "old_success": true,
+      "new_success": true,
+      "old_steps": 291,
+      "new_steps": 291
+    }
+  ]
+}

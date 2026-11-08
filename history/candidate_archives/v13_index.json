@@ -1,0 +1,18 @@
+{
+  "stage": "V13",
+  "scope": "post-V10 experimental; not part of reported frozen V10",
+  "archive": "history/candidate_archives/v13_retained_code.tar.gz",
+  "archive_sha256": "7ae006b76767bb300c9054021de6f2e022e07ce5e75e0242e5857ef32b191f41",
+  "files": {
+    "analyze_f0.py": "23d43a232018d50eea29d915fafd7ee805380c552f67853177fbc30c1b69b2bf",
+    "analyze_f1.py": "0b26abcf9cb050298ba25839b78b65bc3678a7f866dcb0196d7cdcd3d6e1e918",
+    "analyze_o1_pair.py": "9ee77402ee865db49d84880969cf4e2b0819996d4debfc8763bdf4162a368053",
+    "analyze_pair.py": "30e11eb3f35b7325cce81ad43d2db88a34d8d8e7bfd5684805c54f348b56e75f",
+    "check_m_contract.py": "d8892a0fec41d33ec3fd055ff5d5c8da8a5ed1a567d81ffa5d5e3ec35e069b3c",
+    "check_o1_contract.py": "69d05798d384be4e23775dd4f6bc56bfb85307c7caa510709f44088b95ef6d0a",
+    "check_t1_contract.py": "03233411c549d1857a5ca335862c8a79767a61554f58c52fe2012ed193351dd9",
+    "probe_outer_ik.py": "5631f3a367c4c0b3ef28096d73a368b0c3791fa29b2fcca07d2324754c0bc27b"
+  },
+  "snapshots": [],
+  "note": "Code preserved verbatim; rejected variants are not recommended defaults. No prompt plans, chat exports, credentials, videos, or model weights are included."
+}

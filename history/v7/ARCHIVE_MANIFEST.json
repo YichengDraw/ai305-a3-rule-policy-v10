@@ -1,0 +1,23 @@
+{
+  "version": "V7",
+  "status": "frozen_release",
+  "path": "history/v7",
+  "factory": "policy:make_policy_b",
+  "python_files": 12,
+  "sha256": {
+    "batch_metrics.py": "e5aa2b7940eb962b754b7004d2c175b36c322b30f28a69a93a082d0f206fdccc",
+    "diagnostic_support.py": "d514b6b8be15ec1fbf8f8951945d5e05c86590b07f19701e5c557b6c223770f2",
+    "evaluate_policy.py": "42cb325ae7c263b08b2bb07e20b7a0b689e38b030302868e56588c4c40e42722",
+    "launch_evaluation.py": "24922a837827317cc8777357fd62ccb7bb18b13a3e6ca7f6f9199c33c84a9842",
+    "launch_paired_formal.py": "e90d29af8fb08775ec90f1360c42ffd771e0ef7d2b97d72e4da0ded0be62a1ff",
+    "merge_results.py": "7c1aba2b7b711ebd44191a8fb5717be003593abfa3f418c67dad5d449561940a",
+    "paired_comparison.py": "c7bff55d41f4f7a8934893ac7b7ae6b8c5b61a5a63e2326afea4491b16978db6",
+    "perception.py": "7e1f7b9596414829f2d8758a234929d3950ef1e4a223ebabf1ce5832e70546aa",
+    "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+    "policy.py": "42018ae9cc6c37867b8d595a28cb8794054becea9ce086d9ebc6bb8a79ff703c",
+    "rule_controller.py": "b1811949de213600d6ab2011f832d0f40c08f9cfce512f65e17754abf06cb9e9",
+    "run_dev.py": "c8fa9f3df9e590b7039123215bd3ff5628b2d5a9278abddf95f0a166a1983ef9"
+  },
+  "source_directory_label": "frozen_policy_v7",
+  "private_prompts_included": false
+}

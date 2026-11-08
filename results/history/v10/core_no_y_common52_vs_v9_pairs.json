@@ -1,0 +1,1298 @@
+{
+  "scope": "paired_development_only_official_fields_unchanged",
+  "collected_utc": "2026-11-05T08:21:31.411750+00:00",
+  "baseline": {
+    "episodes": 52,
+    "count": 767,
+    "mean_count": 14.75,
+    "normalized_completion": 0.7375,
+    "successes": 27,
+    "official_success_rate": 0.5192307692307693
+  },
+  "candidate": {
+    "episodes": 52,
+    "count": 971,
+    "mean_count": 18.673076923076923,
+    "normalized_completion": 0.9336538461538461,
+    "successes": 45,
+    "official_success_rate": 0.8653846153846154
+  },
+  "pairs": [
+    {
+      "label": "target_held1_advanced19009",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 19,
+      "after_count": 20,
+      "delta_count": 1,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 705,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "TARGET_RETREAT",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "p0b_basic19019",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 10,
+      "after_count": 20,
+      "delta_count": 10,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 733,
+      "before_source": 70,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "guard_2x10_medium19003",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 695,
+      "after_steps": 694,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "target_held6_advanced19011",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 4,
+      "after_count": 20,
+      "delta_count": 16,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 1038,
+      "before_source": 70,
+      "after_source": 60,
+      "before_phase": "TRANSPORT",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "p0b_medium19013",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 1,
+      "after_count": 20,
+      "delta_count": 19,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 2431,
+      "before_source": 79,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "p0b_advanced19012",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 8,
+      "after_count": 10,
+      "delta_count": 2,
+      "before_success": false,
+      "after_success": false,
+      "before_steps": 3200,
+      "after_steps": 3200,
+      "before_source": 72,
+      "after_source": 62,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "TRANSPORT"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21000",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 530,
+      "after_steps": 572,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21009",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 553,
+      "after_steps": 574,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21000",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 539,
+      "after_steps": 580,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21007",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 661,
+      "after_steps": 604,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21007",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 611,
+      "after_steps": 592,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21000",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 577,
+      "after_steps": 614,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21005",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 648,
+      "after_steps": 594,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21002",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 558,
+      "after_steps": 604,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "guard_2x10_basic19000",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 598,
+      "after_steps": 657,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21002",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 557,
+      "after_steps": 612,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21005",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 544,
+      "after_steps": 596,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21003",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 593,
+      "after_steps": 569,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21008",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 543,
+      "after_steps": 593,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21009",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 581,
+      "after_steps": 598,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_medium_19007",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 10,
+      "after_count": 20,
+      "delta_count": 10,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 660,
+      "before_source": 70,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "guard_2x10_advanced19000",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 585,
+      "after_steps": 672,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21008",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 618,
+      "after_steps": 608,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21007",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 639,
+      "after_steps": 621,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_basic_19007",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 10,
+      "after_count": 20,
+      "delta_count": 10,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 712,
+      "before_source": 70,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21001",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 861,
+      "after_steps": 766,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21006",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 19,
+      "after_count": 20,
+      "delta_count": 1,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 842,
+      "after_steps": 702,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_basic_19013",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 11,
+      "after_count": 20,
+      "delta_count": 9,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 734,
+      "before_source": 69,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_basic_19003",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 11,
+      "after_count": 20,
+      "delta_count": 9,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 807,
+      "before_source": 69,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_basic_19010",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 10,
+      "after_count": 20,
+      "delta_count": 10,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 711,
+      "before_source": 70,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_medium_19010",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 8,
+      "after_count": 20,
+      "delta_count": 12,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 725,
+      "before_source": 72,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21004",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 934,
+      "after_steps": 729,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_basic_19009",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 10,
+      "after_count": 20,
+      "delta_count": 10,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 732,
+      "before_source": 70,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21003",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 8,
+      "after_count": 20,
+      "delta_count": 12,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3169,
+      "after_steps": 717,
+      "before_source": 72,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21004",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 1185,
+      "after_steps": 701,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_basic_randomn_s1_scene21006",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 802,
+      "after_steps": 751,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21009",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 558,
+      "after_steps": 561,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21008",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 570,
+      "after_steps": 585,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21004",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 959,
+      "after_steps": 928,
+      "before_source": 59,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21003",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 613,
+      "after_steps": 653,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21006",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 20,
+      "delta_count": 0,
+      "before_success": true,
+      "after_success": true,
+      "before_steps": 939,
+      "after_steps": 697,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_advanced_19003",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 1,
+      "after_count": 20,
+      "delta_count": 19,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 732,
+      "before_source": 79,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_advanced_19001",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 7,
+      "after_count": 20,
+      "delta_count": 13,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 776,
+      "before_source": 73,
+      "after_source": 60,
+      "before_phase": "RECOVER_PATH",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "target_held5_medium19002",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 10,
+      "after_count": 20,
+      "delta_count": 10,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 848,
+      "before_source": 65,
+      "after_source": 60,
+      "before_phase": "TRANSPORT",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_medium_randomn_s1_scene21001",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 20,
+      "after_count": 11,
+      "delta_count": -9,
+      "before_success": true,
+      "after_success": false,
+      "before_steps": 623,
+      "after_steps": 3200,
+      "before_source": 60,
+      "after_source": 67,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "TRANSPORT"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21001",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 2,
+      "after_count": 10,
+      "delta_count": 8,
+      "before_success": false,
+      "after_success": false,
+      "before_steps": 3200,
+      "after_steps": 3200,
+      "before_source": 78,
+      "after_source": 68,
+      "before_phase": "SELECT",
+      "after_phase": "TRANSPORT"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21005",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 16,
+      "after_count": 20,
+      "delta_count": 4,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 664,
+      "after_steps": 1746,
+      "before_source": 60,
+      "after_source": 60,
+      "before_phase": "UNVERIFIED",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_advanced_19013",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 1,
+      "after_count": 20,
+      "delta_count": 19,
+      "before_success": false,
+      "after_success": true,
+      "before_steps": 3200,
+      "after_steps": 1748,
+      "before_source": 79,
+      "after_source": 60,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "UNVERIFIED"
+    },
+    {
+      "label": "formal_fail_2x10_advanced_19019",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 8,
+      "after_count": 10,
+      "delta_count": 2,
+      "before_success": false,
+      "after_success": false,
+      "before_steps": 3200,
+      "after_steps": 3200,
+      "before_source": 72,
+      "after_source": 62,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "TRANSPORT"
+    },
+    {
+      "label": "formal_fail_2x10_advanced_19016",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 10,
+      "after_count": 10,
+      "delta_count": 0,
+      "before_success": false,
+      "after_success": false,
+      "before_steps": 3200,
+      "after_steps": 3200,
+      "before_source": 70,
+      "after_source": 62,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "TRANSPORT"
+    },
+    {
+      "label": "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21002",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 5,
+      "after_count": 10,
+      "delta_count": 5,
+      "before_success": false,
+      "after_success": false,
+      "before_steps": 3200,
+      "after_steps": 3200,
+      "before_source": 75,
+      "after_source": 65,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "TRANSPORT"
+    },
+    {
+      "label": "formal_fail_2x10_medium_19019",
+      "initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      },
+      "before_count": 8,
+      "after_count": 10,
+      "delta_count": 2,
+      "before_success": false,
+      "after_success": false,
+      "before_steps": 3200,
+      "after_steps": 3200,
+      "before_source": 72,
+      "after_source": 62,
+      "before_phase": "SOURCE_OBSERVE",
+      "after_phase": "TRANSPORT"
+    }
+  ],
+  "all_initializations_match": true,
+  "gained_successes": [
+    "target_held1_advanced19009",
+    "p0b_basic19019",
+    "target_held6_advanced19011",
+    "p0b_medium19013",
+    "formal_fail_2x10_medium_19007",
+    "formal_fail_2x10_basic_19007",
+    "dev_rowlifecycle_2x10_medium_randomn_s1_scene21006",
+    "formal_fail_2x10_basic_19013",
+    "formal_fail_2x10_basic_19003",
+    "formal_fail_2x10_basic_19010",
+    "formal_fail_2x10_medium_19010",
+    "formal_fail_2x10_basic_19009",
+    "dev_rowlifecycle_2x10_basic_randomn_s1_scene21003",
+    "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21004",
+    "formal_fail_2x10_advanced_19003",
+    "formal_fail_2x10_advanced_19001",
+    "target_held5_medium19002",
+    "dev_rowlifecycle_2x10_advanced_randomn_s1_scene21005",
+    "formal_fail_2x10_advanced_19013"
+  ],
+  "lost_successes": [
+    "dev_rowlifecycle_2x10_medium_randomn_s1_scene21001"
+  ],
+  "quantity_regressions": [
+    "dev_rowlifecycle_2x10_medium_randomn_s1_scene21001"
+  ]
+}

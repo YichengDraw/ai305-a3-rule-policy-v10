@@ -1,0 +1,40 @@
+{
+  "teacher_default_120": {
+    "episodes": 120,
+    "completion_rate_episode_mean": 0.46833333333333343,
+    "successes": 17,
+    "success_rate": 0.14166666666666666,
+    "total_final_count": 788,
+    "total_capacity": 1800,
+    "completion_rate_cookie_weighted": 0.43777777777777777
+  },
+  "uniform_500_120": {
+    "completed": 120,
+    "planned": 120,
+    "successes": 16,
+    "success_rate": 0.13333333333333333,
+    "total_score": 776,
+    "max_possible_score": 1800,
+    "micro_completion_rate": 0.4311111111111111,
+    "macro_completion_rate": 0.4633333333333334,
+    "mean_episode_completion_rate": 0.4633333333333333,
+    "cells_with_results": 6
+  },
+  "additional_2x10_3200_60": {
+    "completed": 60,
+    "planned": 60,
+    "successes": 4,
+    "success_rate": 0.06666666666666667,
+    "total_score": 452,
+    "max_possible_score": 1200,
+    "micro_completion_rate": 0.37666666666666665,
+    "macro_completion_rate": 0.37666666666666665,
+    "mean_episode_completion_rate": 0.3766666666666667,
+    "cells_with_results": 3
+  },
+  "evaluation_complete": {
+    "status": "completed",
+    "episodes": 180,
+    "wall_seconds": 1097.7151230229065
+  }
+}

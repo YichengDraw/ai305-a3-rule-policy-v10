@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "episodes": 180,
+  "unique_keys": 180,
+  "cells": 9,
+  "episodes_per_cell": 20,
+  "seed_range": [
+    13000,
+    13019
+  ],
+  "shards": 36,
+  "shard_errors": 0,
+  "raw_matches_merged": true,
+  "frozen_code_matches_manifest": true,
+  "official_success_preserved": true,
+  "independent_recalculation": true,
+  "teacher_default_successes": 17,
+  "teacher_default_episodes": 120
+}

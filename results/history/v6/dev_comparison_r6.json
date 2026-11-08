@@ -1,0 +1,2649 @@
+{
+  "development_only": true,
+  "cases_per_policy": 45,
+  "validation": {
+    "unique_cases_per_policy": 45,
+    "missing": 0,
+    "duplicates": 0,
+    "all_returncodes_zero": true,
+    "identical_initial_randomization": true,
+    "identical_evaluator": true,
+    "b_c_identical_runtime_snapshot": true,
+    "candidate_code_sha256": {
+      "policy.py": "20ffe6b79be167be3a4db53cc3cffe8a15e63a6b9c9c701d2a4ee37725addaa7",
+      "perception.py": "f58ef58662d6b0da3e5ef6bab959e2154ff689e3c476d541e87b127559b9efaf",
+      "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+      "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+    }
+  },
+  "budgets": {
+    "2x5": 500,
+    "2x10": 3200
+  },
+  "results": {
+    "v5": {
+      "factory": "policy:make_policy",
+      "source_directory": "/nvme-ssd2/zhaoyicheng/a3_rule_policy_v6_20261102/dev_v5_reference_45",
+      "raw_evidence": "/Users/yiche/26fall/Agent/project/rule_policy_v6_20261102/dev_reference_raw.json",
+      "wall_seconds": 480.28944453876466,
+      "overall": {
+        "episodes": 45,
+        "successes": 4,
+        "success_rate": 0.08888888888888889,
+        "completion_rate": 0.39888888888888885,
+        "cookie_weighted_completion_rate": 0.372,
+        "final_cookies": 279,
+        "capacity": 750,
+        "mean_final_count": 6.2,
+        "mean_steps": 438.8888888888889,
+        "phase_counts": {
+          "DONE": 8,
+          "OPEN": 1,
+          "FAILED": 33,
+          "PLACE": 2,
+          "RECOVER_LOWER": 1
+        },
+        "diagnostics": {
+          "audited_episodes": 45,
+          "attempted_batches": 105,
+          "valid_grasp": {
+            "passed": 41,
+            "observed": 105,
+            "unknown": 0,
+            "rate": 0.3904761904761905
+          },
+          "valid_placement": {
+            "passed": 40,
+            "observed": 105,
+            "unknown": 0,
+            "rate": 0.38095238095238093
+          },
+          "final_retention": {
+            "passed": 37,
+            "observed": 105,
+            "unknown": 0,
+            "rate": 0.3523809523809524
+          },
+          "subsequent_given_prior_valid": {
+            "passed": 10,
+            "observed": 34,
+            "unknown": 0,
+            "rate": 0.29411764705882354
+          },
+          "conditional_timing_unknown": 0,
+          "local_recovery": {
+            "passed": 0,
+            "observed": 0,
+            "unknown": 22,
+            "recorded_events": 22,
+            "rate": null,
+            "availability": "events_without_success_labels"
+          },
+          "done_episodes": 8,
+          "done_but_official_failure": 7
+        },
+        "cell_macro_completion_rate": 0.43250000000000005
+      },
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "episodes": 5,
+          "successes": 2,
+          "success_rate": 0.4,
+          "completion_rate": 0.7,
+          "cookie_weighted_completion_rate": 0.7,
+          "final_cookies": 35,
+          "capacity": 50,
+          "mean_final_count": 7.0,
+          "mean_steps": 296.4,
+          "phase_counts": {
+            "DONE": 2,
+            "OPEN": 1,
+            "FAILED": 1,
+            "PLACE": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 10,
+            "valid_grasp": {
+              "passed": 4,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.4
+            },
+            "valid_placement": {
+              "passed": 4,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.4
+            },
+            "final_retention": {
+              "passed": 4,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.4
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 4,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 1,
+              "recorded_events": 1,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 2,
+            "done_but_official_failure": 2
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "episodes": 5,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.4,
+          "cookie_weighted_completion_rate": 0.4,
+          "final_cookies": 20,
+          "capacity": 50,
+          "mean_final_count": 4.0,
+          "mean_steps": 366.8,
+          "phase_counts": {
+            "RECOVER_LOWER": 1,
+            "DONE": 3,
+            "FAILED": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 10,
+            "valid_grasp": {
+              "passed": 6,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.6
+            },
+            "valid_placement": {
+              "passed": 3,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.3
+            },
+            "final_retention": {
+              "passed": 3,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.3
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 3,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 4,
+              "recorded_events": 4,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 3,
+            "done_but_official_failure": 3
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "episodes": 5,
+          "successes": 1,
+          "success_rate": 0.2,
+          "completion_rate": 0.5,
+          "cookie_weighted_completion_rate": 0.5,
+          "final_cookies": 25,
+          "capacity": 50,
+          "mean_final_count": 5.0,
+          "mean_steps": 321.6,
+          "phase_counts": {
+            "PLACE": 1,
+            "FAILED": 4
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 9,
+            "valid_grasp": {
+              "passed": 2,
+              "observed": 9,
+              "unknown": 0,
+              "rate": 0.2222222222222222
+            },
+            "valid_placement": {
+              "passed": 2,
+              "observed": 9,
+              "unknown": 0,
+              "rate": 0.2222222222222222
+            },
+            "final_retention": {
+              "passed": 2,
+              "observed": 9,
+              "unknown": 0,
+              "rate": 0.2222222222222222
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 2,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 5,
+              "recorded_events": 5,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "episodes": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.425,
+          "cookie_weighted_completion_rate": 0.425,
+          "final_cookies": 85,
+          "capacity": 200,
+          "mean_final_count": 8.5,
+          "mean_steps": 541.4,
+          "phase_counts": {
+            "DONE": 1,
+            "FAILED": 9
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 27,
+            "valid_grasp": {
+              "passed": 11,
+              "observed": 27,
+              "unknown": 0,
+              "rate": 0.4074074074074074
+            },
+            "valid_placement": {
+              "passed": 13,
+              "observed": 27,
+              "unknown": 0,
+              "rate": 0.48148148148148145
+            },
+            "final_retention": {
+              "passed": 12,
+              "observed": 27,
+              "unknown": 0,
+              "rate": 0.4444444444444444
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 4,
+              "observed": 11,
+              "unknown": 0,
+              "rate": 0.36363636363636365
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 6,
+              "recorded_events": 6,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 1,
+            "done_but_official_failure": 1
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "episodes": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.325,
+          "cookie_weighted_completion_rate": 0.325,
+          "final_cookies": 65,
+          "capacity": 200,
+          "mean_final_count": 6.5,
+          "mean_steps": 490.9,
+          "phase_counts": {
+            "FAILED": 9,
+            "DONE": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 26,
+            "valid_grasp": {
+              "passed": 11,
+              "observed": 26,
+              "unknown": 0,
+              "rate": 0.4230769230769231
+            },
+            "valid_placement": {
+              "passed": 10,
+              "observed": 26,
+              "unknown": 0,
+              "rate": 0.38461538461538464
+            },
+            "final_retention": {
+              "passed": 10,
+              "observed": 26,
+              "unknown": 0,
+              "rate": 0.38461538461538464
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 4,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.4
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 3,
+              "recorded_events": 3,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 1,
+            "done_but_official_failure": 1
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "episodes": 10,
+          "successes": 1,
+          "success_rate": 0.1,
+          "completion_rate": 0.24499999999999997,
+          "cookie_weighted_completion_rate": 0.245,
+          "final_cookies": 49,
+          "capacity": 200,
+          "mean_final_count": 4.9,
+          "mean_steps": 450.3,
+          "phase_counts": {
+            "DONE": 1,
+            "FAILED": 9
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 23,
+            "valid_grasp": {
+              "passed": 7,
+              "observed": 23,
+              "unknown": 0,
+              "rate": 0.30434782608695654
+            },
+            "valid_placement": {
+              "passed": 8,
+              "observed": 23,
+              "unknown": 0,
+              "rate": 0.34782608695652173
+            },
+            "final_retention": {
+              "passed": 6,
+              "observed": 23,
+              "unknown": 0,
+              "rate": 0.2608695652173913
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 2,
+              "observed": 4,
+              "unknown": 0,
+              "rate": 0.5
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 3,
+              "recorded_events": 3,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 1,
+            "done_but_official_failure": 0
+          }
+        }
+      ],
+      "failure_reason_counts": {
+        "5/10 cookies in target box": 4,
+        "two-finger grip did not stabilize": 7,
+        "max_steps_exceeded": 1,
+        "0/10 cookies in target box; 69/70 cookies left in source (collateral disturbance)": 1,
+        "insertion blocked by sustained fingertip force": 13,
+        "grip force lost during lift": 1,
+        "10/20 cookies in target box; 69/60 cookies left in source (collateral disturbance)": 1,
+        "approach did not reach its target": 5,
+        "recover_up did not reach its target": 4,
+        "descend did not reach its target": 1,
+        "11/20 cookies in target box": 1,
+        "visual group unavailable": 2
+      }
+    },
+    "v6b": {
+      "factory": "policy:make_policy_b",
+      "source_directory": "/nvme-ssd2/zhaoyicheng/a3_rule_policy_v6_20261102/dev_b_grid_r6",
+      "raw_evidence": "/Users/yiche/26fall/Agent/project/rule_policy_v6_20261102/v6b_dev45_raw.json",
+      "wall_seconds": 2544.3652926976793,
+      "overall": {
+        "episodes": 45,
+        "successes": 19,
+        "success_rate": 0.4222222222222222,
+        "completion_rate": 0.7122222222222222,
+        "cookie_weighted_completion_rate": 0.6786666666666666,
+        "final_cookies": 509,
+        "capacity": 750,
+        "mean_final_count": 11.311111111111112,
+        "mean_steps": 1522.4666666666667,
+        "phase_counts": {
+          "UNVERIFIED": 19,
+          "APPROACH": 4,
+          "ALIGN_APPROACH": 2,
+          "RECOVER_PATH": 5,
+          "RECOVER_CLEAR": 1,
+          "ALIGN_RETURN": 2,
+          "LOCAL_ALIGN": 2,
+          "PLACE": 10
+        },
+        "diagnostics": {
+          "audited_episodes": 45,
+          "attempted_batches": 122,
+          "valid_grasp": {
+            "passed": 78,
+            "observed": 122,
+            "unknown": 0,
+            "rate": 0.639344262295082
+          },
+          "valid_placement": {
+            "passed": 73,
+            "observed": 122,
+            "unknown": 0,
+            "rate": 0.5983606557377049
+          },
+          "final_retention": {
+            "passed": 71,
+            "observed": 122,
+            "unknown": 0,
+            "rate": 0.5819672131147541
+          },
+          "subsequent_given_prior_valid": {
+            "passed": 31,
+            "observed": 52,
+            "unknown": 0,
+            "rate": 0.5961538461538461
+          },
+          "conditional_timing_unknown": 0,
+          "local_recovery": {
+            "passed": 162,
+            "observed": 563,
+            "unknown": 957,
+            "recorded_events": 1520,
+            "rate": 0.2877442273534636,
+            "availability": "explicit_event_labels"
+          },
+          "done_episodes": 0,
+          "done_but_official_failure": 0
+        },
+        "cell_macro_completion_rate": 0.7541666666666668
+      },
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "episodes": 5,
+          "successes": 4,
+          "success_rate": 0.8,
+          "completion_rate": 1.0,
+          "cookie_weighted_completion_rate": 1.0,
+          "final_cookies": 50,
+          "capacity": 50,
+          "mean_final_count": 10.0,
+          "mean_steps": 267.2,
+          "phase_counts": {
+            "PLACE": 4,
+            "UNVERIFIED": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 10,
+            "valid_grasp": {
+              "passed": 8,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.8
+            },
+            "valid_placement": {
+              "passed": 5,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.5
+            },
+            "final_retention": {
+              "passed": 5,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.5
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 4,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 6,
+              "observed": 6,
+              "unknown": 0,
+              "recorded_events": 6,
+              "rate": 1.0,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "episodes": 5,
+          "successes": 3,
+          "success_rate": 0.6,
+          "completion_rate": 1.0,
+          "cookie_weighted_completion_rate": 1.0,
+          "final_cookies": 50,
+          "capacity": 50,
+          "mean_final_count": 10.0,
+          "mean_steps": 261.8,
+          "phase_counts": {
+            "PLACE": 3,
+            "UNVERIFIED": 2
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 10,
+            "valid_grasp": {
+              "passed": 7,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.7
+            },
+            "valid_placement": {
+              "passed": 5,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.5
+            },
+            "final_retention": {
+              "passed": 5,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.5
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 4,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 2,
+              "observed": 2,
+              "unknown": 0,
+              "recorded_events": 2,
+              "rate": 1.0,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "episodes": 5,
+          "successes": 3,
+          "success_rate": 0.6,
+          "completion_rate": 0.64,
+          "cookie_weighted_completion_rate": 0.64,
+          "final_cookies": 32,
+          "capacity": 50,
+          "mean_final_count": 6.4,
+          "mean_steps": 380.8,
+          "phase_counts": {
+            "PLACE": 3,
+            "RECOVER_PATH": 1,
+            "UNVERIFIED": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 10,
+            "valid_grasp": {
+              "passed": 6,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.6
+            },
+            "valid_placement": {
+              "passed": 3,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.3
+            },
+            "final_retention": {
+              "passed": 3,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.3
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 3,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 11,
+              "observed": 20,
+              "unknown": 1,
+              "recorded_events": 21,
+              "rate": 0.55,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "episodes": 10,
+          "successes": 4,
+          "success_rate": 0.4,
+          "completion_rate": 0.705,
+          "cookie_weighted_completion_rate": 0.705,
+          "final_cookies": 141,
+          "capacity": 200,
+          "mean_final_count": 14.1,
+          "mean_steps": 2132.2,
+          "phase_counts": {
+            "UNVERIFIED": 5,
+            "APPROACH": 1,
+            "ALIGN_APPROACH": 1,
+            "RECOVER_CLEAR": 1,
+            "ALIGN_RETURN": 1,
+            "RECOVER_PATH": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 31,
+            "valid_grasp": {
+              "passed": 20,
+              "observed": 31,
+              "unknown": 0,
+              "rate": 0.6451612903225806
+            },
+            "valid_placement": {
+              "passed": 22,
+              "observed": 31,
+              "unknown": 0,
+              "rate": 0.7096774193548387
+            },
+            "final_retention": {
+              "passed": 21,
+              "observed": 31,
+              "unknown": 0,
+              "rate": 0.6774193548387096
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 13,
+              "observed": 15,
+              "unknown": 0,
+              "rate": 0.8666666666666667
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 36,
+              "observed": 145,
+              "unknown": 337,
+              "recorded_events": 482,
+              "rate": 0.2482758620689655,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "episodes": 10,
+          "successes": 4,
+          "success_rate": 0.4,
+          "completion_rate": 0.6849999999999999,
+          "cookie_weighted_completion_rate": 0.685,
+          "final_cookies": 137,
+          "capacity": 200,
+          "mean_final_count": 13.7,
+          "mean_steps": 1914.2,
+          "phase_counts": {
+            "ALIGN_RETURN": 1,
+            "APPROACH": 2,
+            "UNVERIFIED": 5,
+            "LOCAL_ALIGN": 2
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 33,
+            "valid_grasp": {
+              "passed": 22,
+              "observed": 33,
+              "unknown": 0,
+              "rate": 0.6666666666666666
+            },
+            "valid_placement": {
+              "passed": 24,
+              "observed": 33,
+              "unknown": 0,
+              "rate": 0.7272727272727273
+            },
+            "final_retention": {
+              "passed": 23,
+              "observed": 33,
+              "unknown": 0,
+              "rate": 0.696969696969697
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 13,
+              "observed": 16,
+              "unknown": 0,
+              "rate": 0.8125
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 31,
+              "observed": 31,
+              "unknown": 375,
+              "recorded_events": 406,
+              "rate": 1.0,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "episodes": 10,
+          "successes": 1,
+          "success_rate": 0.1,
+          "completion_rate": 0.495,
+          "cookie_weighted_completion_rate": 0.495,
+          "final_cookies": 99,
+          "capacity": 200,
+          "mean_final_count": 9.9,
+          "mean_steps": 2349.8,
+          "phase_counts": {
+            "UNVERIFIED": 5,
+            "APPROACH": 1,
+            "ALIGN_APPROACH": 1,
+            "RECOVER_PATH": 3
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 28,
+            "valid_grasp": {
+              "passed": 15,
+              "observed": 28,
+              "unknown": 0,
+              "rate": 0.5357142857142857
+            },
+            "valid_placement": {
+              "passed": 14,
+              "observed": 28,
+              "unknown": 0,
+              "rate": 0.5
+            },
+            "final_retention": {
+              "passed": 14,
+              "observed": 28,
+              "unknown": 0,
+              "rate": 0.5
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 5,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.5
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 76,
+              "observed": 359,
+              "unknown": 244,
+              "recorded_events": 603,
+              "rate": 0.2116991643454039,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        }
+      ],
+      "failure_reason_counts": {
+        "max_steps_exceeded": 16,
+        "source group unavailable with no useful reached observation pose": 4,
+        "16/20 cookies in target box": 1,
+        "previously reached recovery path made no observed progress": 1,
+        "12/20 cookies in target box": 1,
+        "target slots not one-to-one matched; valid fill held 0/5 control steps": 2,
+        "69/70 cookies left in source (collateral disturbance)": 1
+      }
+    },
+    "v6c": {
+      "factory": "policy:make_policy_c",
+      "source_directory": "/nvme-ssd2/zhaoyicheng/a3_rule_policy_v6_20261102/dev_c_grid_r6",
+      "raw_evidence": "/Users/yiche/26fall/Agent/project/rule_policy_v6_20261102/v6c_dev45_raw.json",
+      "wall_seconds": 1391.3376856460236,
+      "overall": {
+        "episodes": 45,
+        "successes": 3,
+        "success_rate": 0.06666666666666667,
+        "completion_rate": 0.3655555555555555,
+        "cookie_weighted_completion_rate": 0.336,
+        "final_cookies": 252,
+        "capacity": 750,
+        "mean_final_count": 5.6,
+        "mean_steps": 416.9111111111111,
+        "phase_counts": {
+          "UNVERIFIED": 42,
+          "LOCAL_ALIGN": 1,
+          "PLACE": 2
+        },
+        "diagnostics": {
+          "audited_episodes": 45,
+          "attempted_batches": 52,
+          "valid_grasp": {
+            "passed": 36,
+            "observed": 52,
+            "unknown": 0,
+            "rate": 0.6923076923076923
+          },
+          "valid_placement": {
+            "passed": 34,
+            "observed": 52,
+            "unknown": 0,
+            "rate": 0.6538461538461539
+          },
+          "final_retention": {
+            "passed": 34,
+            "observed": 52,
+            "unknown": 0,
+            "rate": 0.6538461538461539
+          },
+          "subsequent_given_prior_valid": {
+            "passed": 3,
+            "observed": 7,
+            "unknown": 0,
+            "rate": 0.42857142857142855
+          },
+          "conditional_timing_unknown": 0,
+          "local_recovery": {
+            "passed": 51,
+            "observed": 457,
+            "unknown": 129,
+            "recorded_events": 586,
+            "rate": 0.11159737417943107,
+            "availability": "explicit_event_labels"
+          },
+          "done_episodes": 0,
+          "done_but_official_failure": 0
+        },
+        "cell_macro_completion_rate": 0.4025
+      },
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "episodes": 5,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.48,
+          "cookie_weighted_completion_rate": 0.48,
+          "final_cookies": 24,
+          "capacity": 50,
+          "mean_final_count": 4.8,
+          "mean_steps": 219.2,
+          "phase_counts": {
+            "UNVERIFIED": 5
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 5,
+            "valid_grasp": {
+              "passed": 4,
+              "observed": 5,
+              "unknown": 0,
+              "rate": 0.8
+            },
+            "valid_placement": {
+              "passed": 4,
+              "observed": 5,
+              "unknown": 0,
+              "rate": 0.8
+            },
+            "final_retention": {
+              "passed": 4,
+              "observed": 5,
+              "unknown": 0,
+              "rate": 0.8
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 0,
+              "rate": null
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 2,
+              "observed": 23,
+              "unknown": 0,
+              "recorded_events": 23,
+              "rate": 0.08695652173913043,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "episodes": 5,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.45999999999999996,
+          "cookie_weighted_completion_rate": 0.46,
+          "final_cookies": 23,
+          "capacity": 50,
+          "mean_final_count": 4.6,
+          "mean_steps": 222.8,
+          "phase_counts": {
+            "UNVERIFIED": 5
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 5,
+            "valid_grasp": {
+              "passed": 3,
+              "observed": 5,
+              "unknown": 0,
+              "rate": 0.6
+            },
+            "valid_placement": {
+              "passed": 4,
+              "observed": 5,
+              "unknown": 0,
+              "rate": 0.8
+            },
+            "final_retention": {
+              "passed": 4,
+              "observed": 5,
+              "unknown": 0,
+              "rate": 0.8
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 0,
+              "rate": null
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 22,
+              "unknown": 0,
+              "recorded_events": 22,
+              "rate": 0.0,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "episodes": 5,
+          "successes": 2,
+          "success_rate": 0.4,
+          "completion_rate": 0.6,
+          "cookie_weighted_completion_rate": 0.6,
+          "final_cookies": 30,
+          "capacity": 50,
+          "mean_final_count": 6.0,
+          "mean_steps": 251.2,
+          "phase_counts": {
+            "PLACE": 2,
+            "UNVERIFIED": 3
+          },
+          "diagnostics": {
+            "audited_episodes": 5,
+            "attempted_batches": 7,
+            "valid_grasp": {
+              "passed": 5,
+              "observed": 7,
+              "unknown": 0,
+              "rate": 0.7142857142857143
+            },
+            "valid_placement": {
+              "passed": 3,
+              "observed": 7,
+              "unknown": 0,
+              "rate": 0.42857142857142855
+            },
+            "final_retention": {
+              "passed": 3,
+              "observed": 7,
+              "unknown": 0,
+              "rate": 0.42857142857142855
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 2,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 5,
+              "observed": 17,
+              "unknown": 0,
+              "recorded_events": 17,
+              "rate": 0.29411764705882354,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "episodes": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.275,
+          "cookie_weighted_completion_rate": 0.275,
+          "final_cookies": 55,
+          "capacity": 200,
+          "mean_final_count": 5.5,
+          "mean_steps": 297.9,
+          "phase_counts": {
+            "UNVERIFIED": 10
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 10,
+            "valid_grasp": {
+              "passed": 7,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.7
+            },
+            "valid_placement": {
+              "passed": 7,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.7
+            },
+            "final_retention": {
+              "passed": 7,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.7
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 0,
+              "rate": null
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 14,
+              "observed": 94,
+              "unknown": 0,
+              "recorded_events": 94,
+              "rate": 0.14893617021276595,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "episodes": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.275,
+          "cookie_weighted_completion_rate": 0.275,
+          "final_cookies": 55,
+          "capacity": 200,
+          "mean_final_count": 5.5,
+          "mean_steps": 290.0,
+          "phase_counts": {
+            "UNVERIFIED": 10
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 10,
+            "valid_grasp": {
+              "passed": 7,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.7
+            },
+            "valid_placement": {
+              "passed": 7,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.7
+            },
+            "final_retention": {
+              "passed": 7,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.7
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 0,
+              "rate": null
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 8,
+              "observed": 88,
+              "unknown": 0,
+              "recorded_events": 88,
+              "rate": 0.09090909090909091,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "episodes": 10,
+          "successes": 1,
+          "success_rate": 0.1,
+          "completion_rate": 0.32500000000000007,
+          "cookie_weighted_completion_rate": 0.325,
+          "final_cookies": 65,
+          "capacity": 200,
+          "mean_final_count": 6.5,
+          "mean_steps": 941.6,
+          "phase_counts": {
+            "UNVERIFIED": 9,
+            "LOCAL_ALIGN": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 10,
+            "attempted_batches": 15,
+            "valid_grasp": {
+              "passed": 10,
+              "observed": 15,
+              "unknown": 0,
+              "rate": 0.6666666666666666
+            },
+            "valid_placement": {
+              "passed": 9,
+              "observed": 15,
+              "unknown": 0,
+              "rate": 0.6
+            },
+            "final_retention": {
+              "passed": 9,
+              "observed": 15,
+              "unknown": 0,
+              "rate": 0.6
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 3,
+              "observed": 5,
+              "unknown": 0,
+              "rate": 0.6
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 22,
+              "observed": 213,
+              "unknown": 129,
+              "recorded_events": 342,
+              "rate": 0.10328638497652583,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        }
+      ],
+      "failure_reason_counts": {
+        "placement unknown after distinct reached views without sufficient audit evidence": 39,
+        "max_steps_exceeded": 1,
+        "previously reached recovery path made no observed progress": 1,
+        "source group unavailable with no useful reached observation pose": 1
+      }
+    }
+  },
+  "paired": {
+    "v5_to_v6b": {
+      "score_improved": 30,
+      "score_equal": 10,
+      "score_worsened": 5,
+      "success_gained": 16,
+      "success_lost": 1,
+      "cases": [
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 20,
+          "score_after": 20,
+          "success_before": true,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 3,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 4,
+          "score_after": 16,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 0,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 0,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 7,
+          "score_after": 14,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 10,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 10,
+          "score_after": 20,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 10,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 2,
+          "score_after": 11,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 10,
+          "score_after": 20,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 10,
+          "score_after": 20,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 14,
+          "score_after": 20,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 6,
+          "score_after": 6,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 5,
+          "score_after": 7,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 8,
+          "score_after": 18,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 11,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 2,
+          "score_after": 20,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 10,
+          "score_after": 20,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 4,
+          "score_after": 20,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 20,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 6,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 0,
+          "score_after": 7,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 2,
+          "score_after": 12,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 10,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": true,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 2,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": true,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 0,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        }
+      ]
+    },
+    "v5_to_v6c": {
+      "score_improved": 9,
+      "score_equal": 22,
+      "score_worsened": 14,
+      "success_gained": 1,
+      "success_lost": 2,
+      "cases": [
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 20,
+          "score_after": 20,
+          "success_before": true,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 3,
+          "score_after": 1,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 5,
+          "score_after": 3,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 4,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 0,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 0,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 7,
+          "score_after": 7,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 10,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 10,
+          "score_after": 1,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 2,
+          "score_after": 2,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 10,
+          "score_after": 3,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 10,
+          "score_after": 4,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 14,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 6,
+          "score_after": 6,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 5,
+          "score_after": 7,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 8,
+          "score_after": 8,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 10,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 11,
+          "score_after": 1,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 2,
+          "score_after": 2,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 10,
+          "score_after": 3,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 4,
+          "score_after": 4,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 6,
+          "score_after": 6,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 0,
+          "score_after": 7,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 2,
+          "score_after": 8,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 10,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": true,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 4,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 0,
+          "score_after": 2,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 5,
+          "score_after": 6,
+          "success_before": false,
+          "success_after": false
+        }
+      ]
+    },
+    "v6b_to_v6c": {
+      "score_improved": 1,
+      "score_equal": 13,
+      "score_worsened": 31,
+      "success_gained": 0,
+      "success_lost": 16,
+      "cases": [
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 20,
+          "score_after": 20,
+          "success_before": true,
+          "success_after": true
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 10,
+          "score_after": 1,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 10,
+          "score_after": 3,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 16,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 14,
+          "score_after": 7,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 9,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 20,
+          "score_after": 10,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 9,
+          "score_after": 1,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 11,
+          "score_after": 2,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 20,
+          "score_after": 3,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 20,
+          "score_after": 4,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 20,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 6,
+          "score_after": 6,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 7,
+          "score_after": 7,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 18,
+          "score_after": 8,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 10,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14000,
+          "n": 0,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14001,
+          "n": 1,
+          "score_before": 10,
+          "score_after": 1,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14002,
+          "n": 2,
+          "score_before": 20,
+          "score_after": 2,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14003,
+          "n": 3,
+          "score_before": 20,
+          "score_after": 3,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14004,
+          "n": 4,
+          "score_before": 20,
+          "score_after": 4,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14005,
+          "n": 5,
+          "score_before": 20,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14006,
+          "n": 6,
+          "score_before": 9,
+          "score_after": 6,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14007,
+          "n": 7,
+          "score_before": 7,
+          "score_after": 7,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14008,
+          "n": 8,
+          "score_before": 12,
+          "score_after": 8,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "seed": 14009,
+          "n": 9,
+          "score_before": 9,
+          "score_after": 9,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": true,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 2,
+          "score_after": 5,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 0,
+          "score_after": 0,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 10,
+          "success_before": true,
+          "success_after": true
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 4,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14000,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14001,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 2,
+          "success_before": false,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14002,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14003,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 5,
+          "success_before": true,
+          "success_after": false
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 14004,
+          "n": 5,
+          "score_before": 10,
+          "score_after": 6,
+          "success_before": false,
+          "success_after": false
+        }
+      ]
+    }
+  },
+  "diagnostic_scope": "Evaluator-owned truth sampled at transitions and every five controls. Recovery requires explicit event success labels. Official success and terminal count are unchanged."
+}

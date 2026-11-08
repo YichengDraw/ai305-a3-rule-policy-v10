@@ -1,0 +1,172 @@
+{
+  "time_utc": "2026-11-02T08:06:27.635445+00:00",
+  "scope": "Static AST composition and runtime input provenance; no simulation executed",
+  "all_checks_pass": true,
+  "checks": {
+    "minimal_policy_only_name_changed": true,
+    "minimal_perception_remaining_AST_equals_V6": true,
+    "minimal_controller_remaining_AST_equals_V6": true,
+    "minimal_placement_byte_equal_V6": true,
+    "minimal_target__v7_poly_distance_equals_R2": true,
+    "minimal_target__v7_target_instance_equals_R2": true,
+    "minimal_target__fit_boxes_equals_R2": true,
+    "minimal_source_fit_equals_R5": true,
+    "minimal_pick_geometry_equals_controller_R5": true,
+    "align_target__v7_poly_distance_equals_R2": true,
+    "align_target__v7_target_instance_equals_R2": true,
+    "align_target__fit_boxes_equals_R2": true,
+    "align_source_fit_equals_R5": true,
+    "align_pick_geometry_equals_controller_R5": true,
+    "align_controller_exact_reference": true,
+    "align_placement_exact_R2": true,
+    "align_vision_except_target_equals_full_R5": true,
+    "align_other_act_dispatch_blocks_equal_V6": true,
+    "minimal_explicit_factory_B_equals_V6": true,
+    "align_explicit_factory_B_equals_V6": true,
+    "minimal_no_actual_episode_truth_attribute_reads": true,
+    "align_no_actual_episode_truth_attribute_reads": true
+  },
+  "minimal": {
+    "policy.py": {
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "unchanged": 6
+    },
+    "perception.py": {
+      "added": [
+        "VisionEstimator._v7_poly_distance",
+        "VisionEstimator._v7_target_instance"
+      ],
+      "removed": [],
+      "changed": [
+        "VisionEstimator._fit_boxes",
+        "VisionEstimator._fit_selected_group",
+        "VisionEstimator.reset"
+      ],
+      "unchanged": 21
+    },
+    "rule_controller.py": {
+      "added": [],
+      "removed": [],
+      "changed": [
+        "RuleController._apply_group_geometry"
+      ],
+      "unchanged": 37
+    },
+    "placement_audit.py": {
+      "added": [],
+      "removed": [],
+      "changed": [],
+      "unchanged": 8
+    }
+  },
+  "align": {
+    "policy.py": {
+      "added": [],
+      "removed": [],
+      "changed": [
+        "VisualForcePolicy.act"
+      ],
+      "unchanged": 5
+    },
+    "perception.py": {
+      "added": [
+        "VisionEstimator._v7_localize_object",
+        "VisionEstimator._v7_measure_local_alignment",
+        "VisionEstimator._v7_measure_occupancy",
+        "VisionEstimator._v7_measure_source_presence",
+        "VisionEstimator._v7_poly_distance",
+        "VisionEstimator._v7_target_instance"
+      ],
+      "removed": [],
+      "changed": [
+        "VisionEstimator._count_visible_held",
+        "VisionEstimator._fit_boxes",
+        "VisionEstimator._fit_selected_group",
+        "VisionEstimator._v6_held_observation",
+        "VisionEstimator._v6_local_alignment",
+        "VisionEstimator.estimate",
+        "VisionEstimator.reset"
+      ],
+      "unchanged": 17
+    },
+    "rule_controller.py": {
+      "added": [
+        "RuleController._alignment_now",
+        "RuleController._capture_alignment"
+      ],
+      "removed": [],
+      "changed": [
+        "RuleController._apply_group_geometry",
+        "RuleController._local_align",
+        "RuleController._remember_source_path",
+        "RuleController._request_alignment_observation",
+        "RuleController._select",
+        "RuleController.act",
+        "RuleController.perception_request",
+        "RuleController.reset"
+      ],
+      "unchanged": 30
+    },
+    "placement_audit.py": {
+      "added": [],
+      "removed": [],
+      "changed": [
+        "PlacementAuditor.estimate"
+      ],
+      "unchanged": 7
+    }
+  },
+  "align_act_dispatch": {
+    "changed": [
+      "self.stage == 'ALIGN_OBSERVE'"
+    ],
+    "added": [
+      "self.stage == 'XY_COARSE'"
+    ],
+    "removed": []
+  },
+  "data_source_review": [
+    {
+      "candidate": "minimal",
+      "forbidden_episode_truth_attribute_hits": [],
+      "public_observation_literals": [
+        "observation.eef_pose",
+        "observation.force",
+        "observation.images.",
+        "observation.images.left_wrist",
+        "observation.state",
+        "observation.velocity"
+      ],
+      "nominal_model_geometry_reads": "robot_data cam_xpos/cam_xmat and gripper geom_xpos/geom_xmat only, after public joint FK",
+      "seed_use": "policy trace filename only; no seed-to-geometry reconstruction",
+      "object_hypothesis_basis": "public fixed CAD/layout plus RGB fitting and public robot/force data",
+      "outer_evaluator_truth": "separate diagnostic_support.py, absent from runtime module imports"
+    },
+    {
+      "candidate": "align",
+      "forbidden_episode_truth_attribute_hits": [],
+      "public_observation_literals": [
+        "observation.eef_pose",
+        "observation.force",
+        "observation.images.",
+        "observation.images.left_wrist",
+        "observation.state",
+        "observation.velocity"
+      ],
+      "nominal_model_geometry_reads": "robot_data cam_xpos/cam_xmat and gripper geom_xpos/geom_xmat only, after public joint FK",
+      "seed_use": "policy trace filename only; no seed-to-geometry reconstruction",
+      "object_hypothesis_basis": "public fixed CAD/layout plus RGB fitting and public robot/force data",
+      "outer_evaluator_truth": "separate diagnostic_support.py, absent from runtime module imports"
+    }
+  ],
+  "factory_note": "Formal/core uses explicit policy:make_policy_b. minimal make_policy default remains original V6 c; align default alias is b.",
+  "paths": {
+    "baseline": "/Users/yiche/26fall/Agent/project/rule_policy_v6_20261102/frozen_policy_v6",
+    "minimal": "/Users/yiche/26fall/Agent/project/rule_policy_v7_20261102/candidate_minimal_r5",
+    "align": "/Users/yiche/26fall/Agent/project/rule_policy_v7_20261102/candidate_align_r5",
+    "target_R2": "/Users/yiche/26fall/Agent/project/rule_policy_v7_20261102/candidate_target_only",
+    "source_R5": "/Users/yiche/26fall/Agent/project/rule_policy_v7_20261102/dev_perception_v7/perception_r5.py"
+  }
+}

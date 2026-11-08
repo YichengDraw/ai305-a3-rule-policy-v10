@@ -1,0 +1,76 @@
+{
+  "collected_utc": "2026-11-05T12:35:51.266952+00:00",
+  "cohorts": {
+    "all44": {
+      "baseline": {
+        "episodes": 44,
+        "count": 431,
+        "mean_count": 9.795454545454545,
+        "normalized_completion": 0.9795454545454546,
+        "successes": 40,
+        "official_success_rate": 0.9090909090909091
+      },
+      "candidate": {
+        "episodes": 44,
+        "count": 435,
+        "mean_count": 9.886363636363637,
+        "normalized_completion": 0.9886363636363636,
+        "successes": 40,
+        "official_success_rate": 0.9090909090909091
+      },
+      "all_initializations_match": true,
+      "gained_successes": [],
+      "lost_successes": [],
+      "quantity_regressions": []
+    },
+    "fixed14": {
+      "baseline": {
+        "episodes": 14,
+        "count": 136,
+        "mean_count": 9.714285714285714,
+        "normalized_completion": 0.9714285714285714,
+        "successes": 13,
+        "official_success_rate": 0.9285714285714286
+      },
+      "candidate": {
+        "episodes": 14,
+        "count": 140,
+        "mean_count": 10.0,
+        "normalized_completion": 1.0,
+        "successes": 13,
+        "official_success_rate": 0.9285714285714286
+      },
+      "all_initializations_match": true,
+      "gained_successes": [],
+      "lost_successes": [],
+      "quantity_regressions": []
+    },
+    "dev30": {
+      "baseline": {
+        "episodes": 30,
+        "count": 295,
+        "mean_count": 9.833333333333334,
+        "normalized_completion": 0.9833333333333333,
+        "successes": 27,
+        "official_success_rate": 0.9
+      },
+      "candidate": {
+        "episodes": 30,
+        "count": 295,
+        "mean_count": 9.833333333333334,
+        "normalized_completion": 0.9833333333333333,
+        "successes": 27,
+        "official_success_rate": 0.9
+      },
+      "all_initializations_match": true,
+      "gained_successes": [],
+      "lost_successes": [],
+      "quantity_regressions": []
+    }
+  },
+  "original4_reused": true,
+  "new40_only": true,
+  "official_fields_unchanged": true,
+  "same_PRO_CPU_backend": true,
+  "H_started": false
+}

@@ -1,0 +1,162 @@
+{
+  "collected_utc": "2026-11-06T00:02:31.676661+00:00",
+  "scope": "same_PRO_CPU_r3_related127_vs_exact_completed_NoY_parent",
+  "new123": 123,
+  "reused4": 4,
+  "total127": 127,
+  "H_started": false,
+  "cohorts": {
+    "related127": {
+      "baseline": {
+        "episodes": 127,
+        "count": 2425,
+        "mean_count": 19.094488188976378,
+        "normalized_completion": 0.9547244094488189,
+        "successes": 107,
+        "official_success_rate": 0.84251968503937
+      },
+      "candidate": {
+        "episodes": 127,
+        "count": 2420,
+        "mean_count": 19.055118110236222,
+        "normalized_completion": 0.952755905511811,
+        "successes": 108,
+        "official_success_rate": 0.8503937007874016
+      },
+      "all_initializations_match": true,
+      "gained_successes": [
+        "priority_2x10_advanced_fixedn8_s1_native_scene21007",
+        "priority_2x10_basic_fixedn1_s1_native_scene21005",
+        "priority_2x10_basic_fixedn1_s1_native_scene21000",
+        "priority_2x10_basic_fixedn2_s1_native_scene21008",
+        "priority_2x10_medium_fixedn1_s1_native_scene21007",
+        "priority_2x10_basic_fixedn1_s1_native_scene21003",
+        "priority_2x10_medium_fixedn8_s1_native_scene21007",
+        "priority_2x10_medium_fixedn9_s1_native_scene21005",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21007",
+        "priority_2x10_medium_fixedn1_s1_native_scene21004",
+        "priority_2x10_medium_fixedn1_s1_native_scene21005",
+        "priority_2x10_medium_fixedn2_s1_native_scene21009",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21001",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21005",
+        "priority_2x10_advanced_fixedn9_s1_native_scene21008"
+      ],
+      "lost_successes": [
+        "priority_2x10_medium_fixedn2_s1_native_scene21005",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21000",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21006",
+        "priority_2x10_basic_fixedn2_s1_native_scene21006",
+        "priority_2x10_basic_fixedn2_s1_native_scene21004",
+        "priority_2x10_medium_fixedn1_s1_native_scene21000",
+        "priority_2x10_basic_fixedn9_s1_native_scene21005",
+        "priority_2x10_basic_fixedn9_s1_native_scene21008",
+        "priority_2x10_medium_fixedn1_s1_native_scene21008",
+        "priority_2x10_medium_fixedn8_s1_native_scene21005",
+        "priority_2x10_medium_fixedn9_s1_native_scene21006",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21002",
+        "priority_2x10_advanced_fixedn2_s1_native_scene21006",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21004"
+      ],
+      "quantity_regressions": [
+        "priority_2x10_medium_fixedn2_s1_native_scene21005",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21000",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21006",
+        "priority_2x10_basic_fixedn2_s1_native_scene21006",
+        "priority_2x10_basic_fixedn9_s1_native_scene21005",
+        "priority_2x10_medium_fixedn1_s1_native_scene21008",
+        "priority_2x10_medium_fixedn9_s1_native_scene21006",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21002",
+        "priority_2x10_advanced_fixedn2_s1_native_scene21006",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21004",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21005"
+      ]
+    },
+    "priority_source120": {
+      "baseline": {
+        "episodes": 120,
+        "count": 2285,
+        "mean_count": 19.041666666666668,
+        "normalized_completion": 0.9520833333333333,
+        "successes": 100,
+        "official_success_rate": 0.8333333333333334
+      },
+      "candidate": {
+        "episodes": 120,
+        "count": 2280,
+        "mean_count": 19.0,
+        "normalized_completion": 0.95,
+        "successes": 101,
+        "official_success_rate": 0.8416666666666667
+      },
+      "all_initializations_match": true,
+      "gained_successes": [
+        "priority_2x10_advanced_fixedn8_s1_native_scene21007",
+        "priority_2x10_basic_fixedn1_s1_native_scene21005",
+        "priority_2x10_basic_fixedn1_s1_native_scene21000",
+        "priority_2x10_basic_fixedn2_s1_native_scene21008",
+        "priority_2x10_medium_fixedn1_s1_native_scene21007",
+        "priority_2x10_basic_fixedn1_s1_native_scene21003",
+        "priority_2x10_medium_fixedn8_s1_native_scene21007",
+        "priority_2x10_medium_fixedn9_s1_native_scene21005",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21007",
+        "priority_2x10_medium_fixedn1_s1_native_scene21004",
+        "priority_2x10_medium_fixedn1_s1_native_scene21005",
+        "priority_2x10_medium_fixedn2_s1_native_scene21009",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21001",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21005",
+        "priority_2x10_advanced_fixedn9_s1_native_scene21008"
+      ],
+      "lost_successes": [
+        "priority_2x10_medium_fixedn2_s1_native_scene21005",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21000",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21006",
+        "priority_2x10_basic_fixedn2_s1_native_scene21006",
+        "priority_2x10_basic_fixedn2_s1_native_scene21004",
+        "priority_2x10_medium_fixedn1_s1_native_scene21000",
+        "priority_2x10_basic_fixedn9_s1_native_scene21005",
+        "priority_2x10_basic_fixedn9_s1_native_scene21008",
+        "priority_2x10_medium_fixedn1_s1_native_scene21008",
+        "priority_2x10_medium_fixedn8_s1_native_scene21005",
+        "priority_2x10_medium_fixedn9_s1_native_scene21006",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21002",
+        "priority_2x10_advanced_fixedn2_s1_native_scene21006",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21004"
+      ],
+      "quantity_regressions": [
+        "priority_2x10_medium_fixedn2_s1_native_scene21005",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21000",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21006",
+        "priority_2x10_basic_fixedn2_s1_native_scene21006",
+        "priority_2x10_basic_fixedn9_s1_native_scene21005",
+        "priority_2x10_medium_fixedn1_s1_native_scene21008",
+        "priority_2x10_medium_fixedn9_s1_native_scene21006",
+        "priority_2x10_advanced_fixedn1_s1_native_scene21002",
+        "priority_2x10_advanced_fixedn2_s1_native_scene21006",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21004",
+        "priority_2x10_advanced_fixedn8_s1_native_scene21005"
+      ]
+    },
+    "random_protection7": {
+      "baseline": {
+        "episodes": 7,
+        "count": 140,
+        "mean_count": 20.0,
+        "normalized_completion": 1.0,
+        "successes": 7,
+        "official_success_rate": 1.0
+      },
+      "candidate": {
+        "episodes": 7,
+        "count": 140,
+        "mean_count": 20.0,
+        "normalized_completion": 1.0,
+        "successes": 7,
+        "official_success_rate": 1.0
+      },
+      "all_initializations_match": true,
+      "gained_successes": [],
+      "lost_successes": [],
+      "quantity_regressions": []
+    }
+  }
+}

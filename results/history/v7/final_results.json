@@ -1,0 +1,5076 @@
+{
+  "selected_policy": "policy:make_policy_b",
+  "tables": {
+    "official500": {
+      "protocol": {
+        "label": "教师统一500步",
+        "episodes_per_policy": 120,
+        "seeds": [
+          16000,
+          16019
+        ],
+        "steps": {
+          "2x5": 500,
+          "2x10": 500
+        },
+        "source_column": 1,
+        "success_hold_steps": 5,
+        "strict_policy_completion": false
+      },
+      "results": {
+        "v6": {
+          "factory": "policy:make_policy_b",
+          "source_directory": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/formal_pair_v7/v6",
+          "overall": {
+            "episodes": 120,
+            "successes": 38,
+            "success_rate": 0.31666666666666665,
+            "completion_rate": 0.6133333333333333,
+            "cookie_weighted_completion_rate": 0.5633333333333334,
+            "final_cookies": 1014,
+            "capacity": 1800,
+            "mean_final_count": 8.45,
+            "mean_steps": 404.625,
+            "phase_counts": {
+              "PLACE": 33,
+              "RECOVER_LOWER": 2,
+              "UNVERIFIED": 29,
+              "LOCAL_ALIGN": 6,
+              "RECOVER_SOURCE_OPEN": 1,
+              "ALIGN_APPROACH": 5,
+              "RECOVER_PATH": 16,
+              "APPROACH": 5,
+              "LIFT": 3,
+              "VERIFY": 1,
+              "RECOVER_SOURCE_UP": 1,
+              "RETRACT": 1,
+              "SELECT": 1,
+              "ALIGN_OBSERVE": 2,
+              "DESCEND": 4,
+              "TRIAL_LIFT": 3,
+              "ALIGN_RETURN": 3,
+              "CLOSE": 4
+            },
+            "diagnostics": {
+              "audited_episodes": 120,
+              "attempted_batches": 269,
+              "valid_grasp": {
+                "passed": 144,
+                "observed": 269,
+                "unknown": 0,
+                "rate": 0.5353159851301115
+              },
+              "valid_placement": {
+                "passed": 122,
+                "observed": 269,
+                "unknown": 0,
+                "rate": 0.45353159851301117
+              },
+              "final_retention": {
+                "passed": 116,
+                "observed": 269,
+                "unknown": 0,
+                "rate": 0.4312267657992565
+              },
+              "subsequent_given_prior_valid": {
+                "passed": 32,
+                "observed": 92,
+                "unknown": 0,
+                "rate": 0.34782608695652173
+              },
+              "conditional_timing_unknown": 0,
+              "local_recovery": {
+                "passed": 206,
+                "observed": 321,
+                "unknown": 270,
+                "recorded_events": 591,
+                "rate": 0.6417445482866043,
+                "availability": "explicit_event_labels"
+              },
+              "done_episodes": 0,
+              "done_but_official_failure": 0
+            }
+          },
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "episodes": 20,
+              "successes": 15,
+              "success_rate": 0.75,
+              "completion_rate": 0.9550000000000001,
+              "cookie_weighted_completion_rate": 0.955,
+              "final_cookies": 191,
+              "capacity": 200,
+              "mean_final_count": 9.55,
+              "mean_steps": 284.6,
+              "phase_counts": {
+                "PLACE": 15,
+                "UNVERIFIED": 3,
+                "RECOVER_PATH": 2
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 40,
+                "valid_grasp": {
+                  "passed": 29,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.725
+                },
+                "valid_placement": {
+                  "passed": 18,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.45
+                },
+                "final_retention": {
+                  "passed": 18,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.45
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 15,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 16,
+                  "observed": 16,
+                  "unknown": 10,
+                  "recorded_events": 26,
+                  "rate": 1.0,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "episodes": 20,
+              "successes": 13,
+              "success_rate": 0.65,
+              "completion_rate": 0.8699999999999999,
+              "cookie_weighted_completion_rate": 0.87,
+              "final_cookies": 174,
+              "capacity": 200,
+              "mean_final_count": 8.7,
+              "mean_steps": 275.75,
+              "phase_counts": {
+                "PLACE": 13,
+                "UNVERIFIED": 6,
+                "RECOVER_LOWER": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 40,
+                "valid_grasp": {
+                  "passed": 23,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.575
+                },
+                "valid_placement": {
+                  "passed": 15,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.375
+                },
+                "final_retention": {
+                  "passed": 15,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.375
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 11,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 8,
+                  "observed": 8,
+                  "unknown": 1,
+                  "recorded_events": 9,
+                  "rate": 1.0,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "episodes": 20,
+              "successes": 5,
+              "success_rate": 0.25,
+              "completion_rate": 0.465,
+              "cookie_weighted_completion_rate": 0.465,
+              "final_cookies": 93,
+              "capacity": 200,
+              "mean_final_count": 4.65,
+              "mean_steps": 425.4,
+              "phase_counts": {
+                "PLACE": 5,
+                "RECOVER_LOWER": 1,
+                "UNVERIFIED": 8,
+                "LOCAL_ALIGN": 1,
+                "RECOVER_SOURCE_OPEN": 1,
+                "ALIGN_APPROACH": 2,
+                "RECOVER_PATH": 2
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 35,
+                "valid_grasp": {
+                  "passed": 18,
+                  "observed": 35,
+                  "unknown": 0,
+                  "rate": 0.5142857142857142
+                },
+                "valid_placement": {
+                  "passed": 9,
+                  "observed": 35,
+                  "unknown": 0,
+                  "rate": 0.2571428571428571
+                },
+                "final_retention": {
+                  "passed": 9,
+                  "observed": 35,
+                  "unknown": 0,
+                  "rate": 0.2571428571428571
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 8,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 31,
+                  "observed": 105,
+                  "unknown": 50,
+                  "recorded_events": 155,
+                  "rate": 0.29523809523809524,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "episodes": 20,
+              "successes": 3,
+              "success_rate": 0.15,
+              "completion_rate": 0.58,
+              "cookie_weighted_completion_rate": 0.58,
+              "final_cookies": 232,
+              "capacity": 400,
+              "mean_final_count": 11.6,
+              "mean_steps": 485.1,
+              "phase_counts": {
+                "SELECT": 1,
+                "ALIGN_OBSERVE": 1,
+                "DESCEND": 2,
+                "UNVERIFIED": 4,
+                "LIFT": 2,
+                "LOCAL_ALIGN": 3,
+                "TRIAL_LIFT": 1,
+                "ALIGN_RETURN": 2,
+                "RECOVER_PATH": 2,
+                "CLOSE": 2
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 54,
+                "valid_grasp": {
+                  "passed": 32,
+                  "observed": 54,
+                  "unknown": 0,
+                  "rate": 0.5925925925925926
+                },
+                "valid_placement": {
+                  "passed": 32,
+                  "observed": 54,
+                  "unknown": 0,
+                  "rate": 0.5925925925925926
+                },
+                "final_retention": {
+                  "passed": 31,
+                  "observed": 54,
+                  "unknown": 0,
+                  "rate": 0.5740740740740741
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 14,
+                  "observed": 25,
+                  "unknown": 0,
+                  "rate": 0.56
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 54,
+                  "observed": 57,
+                  "unknown": 66,
+                  "recorded_events": 123,
+                  "rate": 0.9473684210526315,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "episodes": 20,
+              "successes": 2,
+              "success_rate": 0.1,
+              "completion_rate": 0.4925,
+              "cookie_weighted_completion_rate": 0.4925,
+              "final_cookies": 197,
+              "capacity": 400,
+              "mean_final_count": 9.85,
+              "mean_steps": 484.4,
+              "phase_counts": {
+                "CLOSE": 2,
+                "RECOVER_PATH": 5,
+                "DESCEND": 2,
+                "UNVERIFIED": 3,
+                "TRIAL_LIFT": 2,
+                "APPROACH": 2,
+                "LOCAL_ALIGN": 1,
+                "ALIGN_APPROACH": 1,
+                "ALIGN_RETURN": 1,
+                "ALIGN_OBSERVE": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 57,
+                "valid_grasp": {
+                  "passed": 26,
+                  "observed": 57,
+                  "unknown": 0,
+                  "rate": 0.45614035087719296
+                },
+                "valid_placement": {
+                  "passed": 30,
+                  "observed": 57,
+                  "unknown": 0,
+                  "rate": 0.5263157894736842
+                },
+                "final_retention": {
+                  "passed": 28,
+                  "observed": 57,
+                  "unknown": 0,
+                  "rate": 0.49122807017543857
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 13,
+                  "observed": 21,
+                  "unknown": 0,
+                  "rate": 0.6190476190476191
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 54,
+                  "observed": 54,
+                  "unknown": 52,
+                  "recorded_events": 106,
+                  "rate": 1.0,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "episodes": 20,
+              "successes": 0,
+              "success_rate": 0.0,
+              "completion_rate": 0.3175,
+              "cookie_weighted_completion_rate": 0.3175,
+              "final_cookies": 127,
+              "capacity": 400,
+              "mean_final_count": 6.35,
+              "mean_steps": 472.5,
+              "phase_counts": {
+                "RECOVER_PATH": 5,
+                "APPROACH": 3,
+                "UNVERIFIED": 5,
+                "ALIGN_APPROACH": 2,
+                "LIFT": 1,
+                "VERIFY": 1,
+                "RECOVER_SOURCE_UP": 1,
+                "RETRACT": 1,
+                "LOCAL_ALIGN": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 43,
+                "valid_grasp": {
+                  "passed": 16,
+                  "observed": 43,
+                  "unknown": 0,
+                  "rate": 0.37209302325581395
+                },
+                "valid_placement": {
+                  "passed": 18,
+                  "observed": 43,
+                  "unknown": 0,
+                  "rate": 0.4186046511627907
+                },
+                "final_retention": {
+                  "passed": 15,
+                  "observed": 43,
+                  "unknown": 0,
+                  "rate": 0.3488372093023256
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 5,
+                  "observed": 12,
+                  "unknown": 0,
+                  "rate": 0.4166666666666667
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 43,
+                  "observed": 81,
+                  "unknown": 91,
+                  "recorded_events": 172,
+                  "rate": 0.5308641975308642,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            }
+          ],
+          "failure_reason_counts": {
+            "max_steps_exceeded": 58,
+            "source group unavailable with no useful reached observation pose": 8,
+            "placement unknown after distinct reached views without sufficient audit evidence": 2,
+            "target slots not one-to-one matched; valid fill held 0/5 control steps": 8,
+            "0/10 cookies in target box": 1,
+            "0/10 cookies in target box; 63/70 cookies left in source (collateral disturbance)": 1,
+            "0/10 cookies in target box; 64/70 cookies left in source (collateral disturbance)": 1,
+            "previously reached recovery path made no observed progress": 1,
+            "source return release still lacks actual opening/contact clearance": 1,
+            "0/20 cookies in target box": 1
+          },
+          "full_count_but_official_failure": [
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16017,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16013,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16016,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            }
+          ],
+          "official_success_phase_counts": {
+            "PLACE": 33,
+            "UNVERIFIED": 5
+          },
+          "recovery_event_type_counts": {
+            "source_reobserve": 462,
+            "return_source": 13,
+            "insertion_retreat": 79,
+            "source_straighten": 25,
+            "release_disengage": 6,
+            "target_contact_retreat": 1,
+            "target_reobserve": 4,
+            "target_regrasp_reseat": 1
+          }
+        },
+        "v7": {
+          "factory": "policy:make_policy_b",
+          "source_directory": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/formal_pair_v7/v7",
+          "overall": {
+            "episodes": 120,
+            "successes": 35,
+            "success_rate": 0.2916666666666667,
+            "completion_rate": 0.6483333333333333,
+            "cookie_weighted_completion_rate": 0.5833333333333334,
+            "final_cookies": 1050,
+            "capacity": 1800,
+            "mean_final_count": 8.75,
+            "mean_steps": 390.94166666666666,
+            "phase_counts": {
+              "PLACE": 36,
+              "RECOVER_PATH": 12,
+              "UNVERIFIED": 38,
+              "RECOVER_SOURCE_UP": 1,
+              "SELECT": 1,
+              "OPEN": 1,
+              "TRANSPORT": 2,
+              "ALIGN_OBSERVE": 7,
+              "TRIAL_LIFT": 4,
+              "DESCEND": 5,
+              "ALIGN_APPROACH": 4,
+              "LOCAL_ALIGN": 5,
+              "LIFT": 2,
+              "CLOSE": 1,
+              "VERIFY": 1
+            },
+            "diagnostics": {
+              "audited_episodes": 120,
+              "attempted_batches": 272,
+              "valid_grasp": {
+                "passed": 149,
+                "observed": 272,
+                "unknown": 0,
+                "rate": 0.5477941176470589
+              },
+              "valid_placement": {
+                "passed": 129,
+                "observed": 272,
+                "unknown": 0,
+                "rate": 0.4742647058823529
+              },
+              "final_retention": {
+                "passed": 125,
+                "observed": 272,
+                "unknown": 0,
+                "rate": 0.45955882352941174
+              },
+              "subsequent_given_prior_valid": {
+                "passed": 30,
+                "observed": 92,
+                "unknown": 0,
+                "rate": 0.32608695652173914
+              },
+              "conditional_timing_unknown": 0,
+              "local_recovery": {
+                "passed": 104,
+                "observed": 242,
+                "unknown": 131,
+                "recorded_events": 373,
+                "rate": 0.4297520661157025,
+                "availability": "explicit_event_labels"
+              },
+              "done_episodes": 0,
+              "done_but_official_failure": 0
+            }
+          },
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "episodes": 20,
+              "successes": 17,
+              "success_rate": 0.85,
+              "completion_rate": 1.0,
+              "cookie_weighted_completion_rate": 1.0,
+              "final_cookies": 200,
+              "capacity": 200,
+              "mean_final_count": 10.0,
+              "mean_steps": 253.5,
+              "phase_counts": {
+                "PLACE": 17,
+                "UNVERIFIED": 3
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 40,
+                "valid_grasp": {
+                  "passed": 30,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.75
+                },
+                "valid_placement": {
+                  "passed": 18,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.45
+                },
+                "final_retention": {
+                  "passed": 18,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.45
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 15,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 2,
+                  "observed": 2,
+                  "unknown": 0,
+                  "recorded_events": 2,
+                  "rate": 1.0,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "episodes": 20,
+              "successes": 10,
+              "success_rate": 0.5,
+              "completion_rate": 0.845,
+              "cookie_weighted_completion_rate": 0.845,
+              "final_cookies": 169,
+              "capacity": 200,
+              "mean_final_count": 8.45,
+              "mean_steps": 259.45,
+              "phase_counts": {
+                "PLACE": 10,
+                "UNVERIFIED": 10
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 39,
+                "valid_grasp": {
+                  "passed": 25,
+                  "observed": 39,
+                  "unknown": 0,
+                  "rate": 0.6410256410256411
+                },
+                "valid_placement": {
+                  "passed": 17,
+                  "observed": 39,
+                  "unknown": 0,
+                  "rate": 0.4358974358974359
+                },
+                "final_retention": {
+                  "passed": 16,
+                  "observed": 39,
+                  "unknown": 0,
+                  "rate": 0.41025641025641024
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 1,
+                  "observed": 11,
+                  "unknown": 0,
+                  "rate": 0.09090909090909091
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 1,
+                  "observed": 3,
+                  "unknown": 0,
+                  "recorded_events": 3,
+                  "rate": 0.3333333333333333,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "episodes": 20,
+              "successes": 5,
+              "success_rate": 0.25,
+              "completion_rate": 0.6849999999999999,
+              "cookie_weighted_completion_rate": 0.685,
+              "final_cookies": 137,
+              "capacity": 200,
+              "mean_final_count": 6.85,
+              "mean_steps": 365.45,
+              "phase_counts": {
+                "PLACE": 5,
+                "RECOVER_PATH": 1,
+                "UNVERIFIED": 12,
+                "RECOVER_SOURCE_UP": 1,
+                "SELECT": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 38,
+                "valid_grasp": {
+                  "passed": 18,
+                  "observed": 38,
+                  "unknown": 0,
+                  "rate": 0.47368421052631576
+                },
+                "valid_placement": {
+                  "passed": 13,
+                  "observed": 38,
+                  "unknown": 0,
+                  "rate": 0.34210526315789475
+                },
+                "final_retention": {
+                  "passed": 13,
+                  "observed": 38,
+                  "unknown": 0,
+                  "rate": 0.34210526315789475
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 8,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 7,
+                  "observed": 64,
+                  "unknown": 5,
+                  "recorded_events": 69,
+                  "rate": 0.109375,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "episodes": 20,
+              "successes": 1,
+              "success_rate": 0.05,
+              "completion_rate": 0.51,
+              "cookie_weighted_completion_rate": 0.51,
+              "final_cookies": 204,
+              "capacity": 400,
+              "mean_final_count": 10.2,
+              "mean_steps": 491.5,
+              "phase_counts": {
+                "TRANSPORT": 1,
+                "UNVERIFIED": 3,
+                "LOCAL_ALIGN": 3,
+                "LIFT": 1,
+                "ALIGN_OBSERVE": 4,
+                "TRIAL_LIFT": 1,
+                "DESCEND": 2,
+                "RECOVER_PATH": 3,
+                "ALIGN_APPROACH": 1,
+                "PLACE": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 52,
+                "valid_grasp": {
+                  "passed": 33,
+                  "observed": 52,
+                  "unknown": 0,
+                  "rate": 0.6346153846153846
+                },
+                "valid_placement": {
+                  "passed": 30,
+                  "observed": 52,
+                  "unknown": 0,
+                  "rate": 0.5769230769230769
+                },
+                "final_retention": {
+                  "passed": 29,
+                  "observed": 52,
+                  "unknown": 0,
+                  "rate": 0.5576923076923077
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 12,
+                  "observed": 24,
+                  "unknown": 0,
+                  "rate": 0.5
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 45,
+                  "observed": 48,
+                  "unknown": 46,
+                  "recorded_events": 94,
+                  "rate": 0.9375,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "episodes": 20,
+              "successes": 2,
+              "success_rate": 0.1,
+              "completion_rate": 0.475,
+              "cookie_weighted_completion_rate": 0.475,
+              "final_cookies": 190,
+              "capacity": 400,
+              "mean_final_count": 9.5,
+              "mean_steps": 486.9,
+              "phase_counts": {
+                "DESCEND": 2,
+                "LOCAL_ALIGN": 1,
+                "CLOSE": 1,
+                "UNVERIFIED": 2,
+                "TRIAL_LIFT": 2,
+                "RECOVER_PATH": 5,
+                "PLACE": 2,
+                "ALIGN_OBSERVE": 2,
+                "ALIGN_APPROACH": 1,
+                "VERIFY": 1,
+                "LIFT": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 52,
+                "valid_grasp": {
+                  "passed": 25,
+                  "observed": 52,
+                  "unknown": 0,
+                  "rate": 0.4807692307692308
+                },
+                "valid_placement": {
+                  "passed": 28,
+                  "observed": 52,
+                  "unknown": 0,
+                  "rate": 0.5384615384615384
+                },
+                "final_retention": {
+                  "passed": 27,
+                  "observed": 52,
+                  "unknown": 0,
+                  "rate": 0.5192307692307693
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 10,
+                  "observed": 18,
+                  "unknown": 0,
+                  "rate": 0.5555555555555556
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 31,
+                  "observed": 31,
+                  "unknown": 41,
+                  "recorded_events": 72,
+                  "rate": 1.0,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "episodes": 20,
+              "successes": 0,
+              "success_rate": 0.0,
+              "completion_rate": 0.375,
+              "cookie_weighted_completion_rate": 0.375,
+              "final_cookies": 150,
+              "capacity": 400,
+              "mean_final_count": 7.5,
+              "mean_steps": 488.85,
+              "phase_counts": {
+                "OPEN": 1,
+                "TRANSPORT": 1,
+                "ALIGN_OBSERVE": 1,
+                "UNVERIFIED": 8,
+                "TRIAL_LIFT": 1,
+                "RECOVER_PATH": 3,
+                "DESCEND": 1,
+                "PLACE": 1,
+                "ALIGN_APPROACH": 2,
+                "LOCAL_ALIGN": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 51,
+                "valid_grasp": {
+                  "passed": 18,
+                  "observed": 51,
+                  "unknown": 0,
+                  "rate": 0.35294117647058826
+                },
+                "valid_placement": {
+                  "passed": 23,
+                  "observed": 51,
+                  "unknown": 0,
+                  "rate": 0.45098039215686275
+                },
+                "final_retention": {
+                  "passed": 22,
+                  "observed": 51,
+                  "unknown": 0,
+                  "rate": 0.43137254901960786
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 7,
+                  "observed": 16,
+                  "unknown": 0,
+                  "rate": 0.4375
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 18,
+                  "observed": 94,
+                  "unknown": 39,
+                  "recorded_events": 133,
+                  "rate": 0.19148936170212766,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            }
+          ],
+          "failure_reason_counts": {
+            "max_steps_exceeded": 50,
+            "target slots not one-to-one matched; valid fill held 0/5 control steps": 13,
+            "source group unavailable with no useful reached observation pose": 14,
+            "4/10 cookies in target box": 1,
+            "1/10 cookies in target box; 74/70 cookies left in source (collateral disturbance)": 1,
+            "6/10 cookies in target box": 1,
+            "3/10 cookies in target box": 1,
+            "previously reached recovery path made no observed progress": 2,
+            "6/10 cookies in target box; 60/70 cookies left in source (collateral disturbance)": 1,
+            "10/20 cookies in target box": 1
+          },
+          "full_count_but_official_failure": [
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16005,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16013,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16015,
+              "score": 10,
+              "failure_reason": "max_steps_exceeded"
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16017,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16017,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16003,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16013,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16015,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16017,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            }
+          ],
+          "official_success_phase_counts": {
+            "PLACE": 32,
+            "UNVERIFIED": 3
+          },
+          "recovery_event_type_counts": {
+            "source_reobserve": 291,
+            "return_source": 14,
+            "source_straighten": 24,
+            "release_disengage": 3,
+            "insertion_retreat": 40,
+            "target_reobserve": 1
+          }
+        }
+      },
+      "paired": {
+        "score_improved": 20,
+        "score_equal": 84,
+        "score_worsened": 16,
+        "success_gained": 5,
+        "success_lost": 8
+      },
+      "completion_delta_pp": 3.500000000000003,
+      "success_delta_pp": -2.4999999999999964
+    },
+    "extended": {
+      "protocol": {
+        "label": "方案扩展500/3200",
+        "episodes_per_policy": 120,
+        "seeds": [
+          16000,
+          16019
+        ],
+        "steps": {
+          "2x5": 500,
+          "2x10": 3200
+        },
+        "source_column": 1,
+        "success_hold_steps": 5,
+        "strict_policy_completion": false
+      },
+      "results": {
+        "v6": {
+          "factory": "policy:make_policy_b",
+          "source_directory": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/formal_pair_v7/v6",
+          "overall": {
+            "episodes": 120,
+            "successes": 44,
+            "success_rate": 0.36666666666666664,
+            "completion_rate": 0.65125,
+            "cookie_weighted_completion_rate": 0.6138888888888889,
+            "final_cookies": 1105,
+            "capacity": 1800,
+            "mean_final_count": 9.208333333333334,
+            "mean_steps": 1296.225,
+            "phase_counts": {
+              "LOCAL_ALIGN": 6,
+              "UNVERIFIED": 53,
+              "ALIGN_APPROACH": 9,
+              "RECOVER_PATH": 12,
+              "ALIGN_OBSERVE": 1,
+              "ALIGN_RETURN": 1,
+              "APPROACH": 1,
+              "RECOVER_CLEAR": 1,
+              "PLACE": 33,
+              "RECOVER_LOWER": 2,
+              "RECOVER_SOURCE_OPEN": 1
+            },
+            "diagnostics": {
+              "audited_episodes": 120,
+              "attempted_batches": 280,
+              "valid_grasp": {
+                "passed": 153,
+                "observed": 280,
+                "unknown": 0,
+                "rate": 0.5464285714285714
+              },
+              "valid_placement": {
+                "passed": 138,
+                "observed": 280,
+                "unknown": 0,
+                "rate": 0.4928571428571429
+              },
+              "final_retention": {
+                "passed": 130,
+                "observed": 280,
+                "unknown": 0,
+                "rate": 0.4642857142857143
+              },
+              "subsequent_given_prior_valid": {
+                "passed": 41,
+                "observed": 95,
+                "unknown": 0,
+                "rate": 0.43157894736842106
+              },
+              "conditional_timing_unknown": 0,
+              "local_recovery": {
+                "passed": 424,
+                "observed": 2372,
+                "unknown": 2071,
+                "recorded_events": 4443,
+                "rate": 0.178752107925801,
+                "availability": "explicit_event_labels"
+              },
+              "done_episodes": 0,
+              "done_but_official_failure": 0
+            }
+          },
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "episodes": 20,
+              "successes": 15,
+              "success_rate": 0.75,
+              "completion_rate": 0.9550000000000001,
+              "cookie_weighted_completion_rate": 0.955,
+              "final_cookies": 191,
+              "capacity": 200,
+              "mean_final_count": 9.55,
+              "mean_steps": 284.6,
+              "phase_counts": {
+                "PLACE": 15,
+                "UNVERIFIED": 3,
+                "RECOVER_PATH": 2
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 40,
+                "valid_grasp": {
+                  "passed": 29,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.725
+                },
+                "valid_placement": {
+                  "passed": 18,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.45
+                },
+                "final_retention": {
+                  "passed": 18,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.45
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 15,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 16,
+                  "observed": 16,
+                  "unknown": 10,
+                  "recorded_events": 26,
+                  "rate": 1.0,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "episodes": 20,
+              "successes": 13,
+              "success_rate": 0.65,
+              "completion_rate": 0.8699999999999999,
+              "cookie_weighted_completion_rate": 0.87,
+              "final_cookies": 174,
+              "capacity": 200,
+              "mean_final_count": 8.7,
+              "mean_steps": 275.75,
+              "phase_counts": {
+                "PLACE": 13,
+                "UNVERIFIED": 6,
+                "RECOVER_LOWER": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 40,
+                "valid_grasp": {
+                  "passed": 23,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.575
+                },
+                "valid_placement": {
+                  "passed": 15,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.375
+                },
+                "final_retention": {
+                  "passed": 15,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.375
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 11,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 8,
+                  "observed": 8,
+                  "unknown": 1,
+                  "recorded_events": 9,
+                  "rate": 1.0,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "episodes": 20,
+              "successes": 5,
+              "success_rate": 0.25,
+              "completion_rate": 0.465,
+              "cookie_weighted_completion_rate": 0.465,
+              "final_cookies": 93,
+              "capacity": 200,
+              "mean_final_count": 4.65,
+              "mean_steps": 425.4,
+              "phase_counts": {
+                "PLACE": 5,
+                "RECOVER_LOWER": 1,
+                "UNVERIFIED": 8,
+                "LOCAL_ALIGN": 1,
+                "RECOVER_SOURCE_OPEN": 1,
+                "ALIGN_APPROACH": 2,
+                "RECOVER_PATH": 2
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 35,
+                "valid_grasp": {
+                  "passed": 18,
+                  "observed": 35,
+                  "unknown": 0,
+                  "rate": 0.5142857142857142
+                },
+                "valid_placement": {
+                  "passed": 9,
+                  "observed": 35,
+                  "unknown": 0,
+                  "rate": 0.2571428571428571
+                },
+                "final_retention": {
+                  "passed": 9,
+                  "observed": 35,
+                  "unknown": 0,
+                  "rate": 0.2571428571428571
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 8,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 31,
+                  "observed": 105,
+                  "unknown": 50,
+                  "recorded_events": 155,
+                  "rate": 0.29523809523809524,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "episodes": 20,
+              "successes": 6,
+              "success_rate": 0.3,
+              "completion_rate": 0.715,
+              "cookie_weighted_completion_rate": 0.715,
+              "final_cookies": 286,
+              "capacity": 400,
+              "mean_final_count": 14.3,
+              "mean_steps": 2022.7,
+              "phase_counts": {
+                "UNVERIFIED": 12,
+                "ALIGN_OBSERVE": 1,
+                "LOCAL_ALIGN": 1,
+                "RECOVER_PATH": 2,
+                "ALIGN_APPROACH": 3,
+                "ALIGN_RETURN": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 60,
+                "valid_grasp": {
+                  "passed": 36,
+                  "observed": 60,
+                  "unknown": 0,
+                  "rate": 0.6
+                },
+                "valid_placement": {
+                  "passed": 42,
+                  "observed": 60,
+                  "unknown": 0,
+                  "rate": 0.7
+                },
+                "final_retention": {
+                  "passed": 39,
+                  "observed": 60,
+                  "unknown": 0,
+                  "rate": 0.65
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 19,
+                  "observed": 27,
+                  "unknown": 0,
+                  "rate": 0.7037037037037037
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 98,
+                  "observed": 443,
+                  "unknown": 612,
+                  "recorded_events": 1055,
+                  "rate": 0.22121896162528218,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "episodes": 20,
+              "successes": 4,
+              "success_rate": 0.2,
+              "completion_rate": 0.5549999999999999,
+              "cookie_weighted_completion_rate": 0.555,
+              "final_cookies": 222,
+              "capacity": 400,
+              "mean_final_count": 11.1,
+              "mean_steps": 2125.8,
+              "phase_counts": {
+                "LOCAL_ALIGN": 2,
+                "UNVERIFIED": 12,
+                "RECOVER_PATH": 3,
+                "ALIGN_APPROACH": 1,
+                "APPROACH": 1,
+                "RECOVER_CLEAR": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 57,
+                "valid_grasp": {
+                  "passed": 29,
+                  "observed": 57,
+                  "unknown": 0,
+                  "rate": 0.5087719298245614
+                },
+                "valid_placement": {
+                  "passed": 33,
+                  "observed": 57,
+                  "unknown": 0,
+                  "rate": 0.5789473684210527
+                },
+                "final_retention": {
+                  "passed": 31,
+                  "observed": 57,
+                  "unknown": 0,
+                  "rate": 0.543859649122807
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 15,
+                  "observed": 21,
+                  "unknown": 0,
+                  "rate": 0.7142857142857143
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 56,
+                  "observed": 527,
+                  "unknown": 777,
+                  "recorded_events": 1304,
+                  "rate": 0.1062618595825427,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "episodes": 20,
+              "successes": 1,
+              "success_rate": 0.05,
+              "completion_rate": 0.34750000000000003,
+              "cookie_weighted_completion_rate": 0.3475,
+              "final_cookies": 139,
+              "capacity": 400,
+              "mean_final_count": 6.95,
+              "mean_steps": 2643.1,
+              "phase_counts": {
+                "LOCAL_ALIGN": 2,
+                "UNVERIFIED": 12,
+                "ALIGN_APPROACH": 3,
+                "RECOVER_PATH": 3
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 48,
+                "valid_grasp": {
+                  "passed": 18,
+                  "observed": 48,
+                  "unknown": 0,
+                  "rate": 0.375
+                },
+                "valid_placement": {
+                  "passed": 21,
+                  "observed": 48,
+                  "unknown": 0,
+                  "rate": 0.4375
+                },
+                "final_retention": {
+                  "passed": 18,
+                  "observed": 48,
+                  "unknown": 0,
+                  "rate": 0.375
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 7,
+                  "observed": 13,
+                  "unknown": 0,
+                  "rate": 0.5384615384615384
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 215,
+                  "observed": 1273,
+                  "unknown": 621,
+                  "recorded_events": 1894,
+                  "rate": 0.16889238020424194,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            }
+          ],
+          "failure_reason_counts": {
+            "max_steps_exceeded": 34,
+            "previously reached recovery path made no observed progress": 3,
+            "source group unavailable with no useful reached observation pose": 19,
+            "placement unknown after distinct reached views without sufficient audit evidence": 2,
+            "15/20 cookies in target box": 2,
+            "source return release still lacks actual opening/contact clearance": 2,
+            "19/20 cookies in target box": 1,
+            "14/20 cookies in target box; 56/60 cookies left in source (collateral disturbance)": 1,
+            "0/20 cookies in target box": 1,
+            "target slots not one-to-one matched; valid fill held 0/5 control steps": 8,
+            "0/10 cookies in target box": 1,
+            "0/10 cookies in target box; 63/70 cookies left in source (collateral disturbance)": 1,
+            "0/10 cookies in target box; 64/70 cookies left in source (collateral disturbance)": 1
+          },
+          "full_count_but_official_failure": [
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16017,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16013,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16016,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            }
+          ],
+          "official_success_phase_counts": {
+            "UNVERIFIED": 11,
+            "PLACE": 33
+          },
+          "recovery_event_type_counts": {
+            "source_reobserve": 3442,
+            "return_source": 17,
+            "insertion_retreat": 926,
+            "source_straighten": 40,
+            "release_disengage": 6,
+            "target_regrasp_reseat": 1,
+            "target_reobserve": 10,
+            "target_contact_retreat": 1
+          }
+        },
+        "v7": {
+          "factory": "policy:make_policy_b",
+          "source_directory": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/formal_pair_v7/v7",
+          "overall": {
+            "episodes": 120,
+            "successes": 40,
+            "success_rate": 0.3333333333333333,
+            "completion_rate": 0.67375,
+            "cookie_weighted_completion_rate": 0.6172222222222222,
+            "final_cookies": 1111,
+            "capacity": 1800,
+            "mean_final_count": 9.258333333333333,
+            "mean_steps": 1350.9083333333333,
+            "phase_counts": {
+              "UNVERIFIED": 67,
+              "ALIGN_OBSERVE": 3,
+              "RECOVER_PATH": 11,
+              "CLOSE": 1,
+              "ALIGN_APPROACH": 3,
+              "SELECT": 2,
+              "PLACE": 32,
+              "RECOVER_SOURCE_UP": 1
+            },
+            "diagnostics": {
+              "audited_episodes": 120,
+              "attempted_batches": 282,
+              "valid_grasp": {
+                "passed": 160,
+                "observed": 282,
+                "unknown": 0,
+                "rate": 0.5673758865248227
+              },
+              "valid_placement": {
+                "passed": 144,
+                "observed": 282,
+                "unknown": 0,
+                "rate": 0.5106382978723404
+              },
+              "final_retention": {
+                "passed": 140,
+                "observed": 282,
+                "unknown": 0,
+                "rate": 0.49645390070921985
+              },
+              "subsequent_given_prior_valid": {
+                "passed": 41,
+                "observed": 97,
+                "unknown": 0,
+                "rate": 0.422680412371134
+              },
+              "conditional_timing_unknown": 0,
+              "local_recovery": {
+                "passed": 141,
+                "observed": 3392,
+                "unknown": 1216,
+                "recorded_events": 4608,
+                "rate": 0.041568396226415096,
+                "availability": "explicit_event_labels"
+              },
+              "done_episodes": 0,
+              "done_but_official_failure": 0
+            }
+          },
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "episodes": 20,
+              "successes": 17,
+              "success_rate": 0.85,
+              "completion_rate": 1.0,
+              "cookie_weighted_completion_rate": 1.0,
+              "final_cookies": 200,
+              "capacity": 200,
+              "mean_final_count": 10.0,
+              "mean_steps": 253.5,
+              "phase_counts": {
+                "PLACE": 17,
+                "UNVERIFIED": 3
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 40,
+                "valid_grasp": {
+                  "passed": 30,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.75
+                },
+                "valid_placement": {
+                  "passed": 18,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.45
+                },
+                "final_retention": {
+                  "passed": 18,
+                  "observed": 40,
+                  "unknown": 0,
+                  "rate": 0.45
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 15,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 2,
+                  "observed": 2,
+                  "unknown": 0,
+                  "recorded_events": 2,
+                  "rate": 1.0,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "episodes": 20,
+              "successes": 10,
+              "success_rate": 0.5,
+              "completion_rate": 0.845,
+              "cookie_weighted_completion_rate": 0.845,
+              "final_cookies": 169,
+              "capacity": 200,
+              "mean_final_count": 8.45,
+              "mean_steps": 259.45,
+              "phase_counts": {
+                "PLACE": 10,
+                "UNVERIFIED": 10
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 39,
+                "valid_grasp": {
+                  "passed": 25,
+                  "observed": 39,
+                  "unknown": 0,
+                  "rate": 0.6410256410256411
+                },
+                "valid_placement": {
+                  "passed": 17,
+                  "observed": 39,
+                  "unknown": 0,
+                  "rate": 0.4358974358974359
+                },
+                "final_retention": {
+                  "passed": 16,
+                  "observed": 39,
+                  "unknown": 0,
+                  "rate": 0.41025641025641024
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 1,
+                  "observed": 11,
+                  "unknown": 0,
+                  "rate": 0.09090909090909091
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 1,
+                  "observed": 3,
+                  "unknown": 0,
+                  "recorded_events": 3,
+                  "rate": 0.3333333333333333,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "episodes": 20,
+              "successes": 5,
+              "success_rate": 0.25,
+              "completion_rate": 0.6849999999999999,
+              "cookie_weighted_completion_rate": 0.685,
+              "final_cookies": 137,
+              "capacity": 200,
+              "mean_final_count": 6.85,
+              "mean_steps": 365.45,
+              "phase_counts": {
+                "PLACE": 5,
+                "RECOVER_PATH": 1,
+                "UNVERIFIED": 12,
+                "RECOVER_SOURCE_UP": 1,
+                "SELECT": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 38,
+                "valid_grasp": {
+                  "passed": 18,
+                  "observed": 38,
+                  "unknown": 0,
+                  "rate": 0.47368421052631576
+                },
+                "valid_placement": {
+                  "passed": 13,
+                  "observed": 38,
+                  "unknown": 0,
+                  "rate": 0.34210526315789475
+                },
+                "final_retention": {
+                  "passed": 13,
+                  "observed": 38,
+                  "unknown": 0,
+                  "rate": 0.34210526315789475
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 0,
+                  "observed": 8,
+                  "unknown": 0,
+                  "rate": 0.0
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 7,
+                  "observed": 64,
+                  "unknown": 5,
+                  "recorded_events": 69,
+                  "rate": 0.109375,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "episodes": 20,
+              "successes": 3,
+              "success_rate": 0.15,
+              "completion_rate": 0.61,
+              "cookie_weighted_completion_rate": 0.61,
+              "final_cookies": 244,
+              "capacity": 400,
+              "mean_final_count": 12.2,
+              "mean_steps": 2387.8,
+              "phase_counts": {
+                "UNVERIFIED": 13,
+                "RECOVER_PATH": 4,
+                "CLOSE": 1,
+                "ALIGN_OBSERVE": 1,
+                "ALIGN_APPROACH": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 54,
+                "valid_grasp": {
+                  "passed": 37,
+                  "observed": 54,
+                  "unknown": 0,
+                  "rate": 0.6851851851851852
+                },
+                "valid_placement": {
+                  "passed": 37,
+                  "observed": 54,
+                  "unknown": 0,
+                  "rate": 0.6851851851851852
+                },
+                "final_retention": {
+                  "passed": 36,
+                  "observed": 54,
+                  "unknown": 0,
+                  "rate": 0.6666666666666666
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 17,
+                  "observed": 26,
+                  "unknown": 0,
+                  "rate": 0.6538461538461539
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 60,
+                  "observed": 904,
+                  "unknown": 422,
+                  "recorded_events": 1326,
+                  "rate": 0.06637168141592921,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "episodes": 20,
+              "successes": 3,
+              "success_rate": 0.15,
+              "completion_rate": 0.5075000000000001,
+              "cookie_weighted_completion_rate": 0.5075,
+              "final_cookies": 203,
+              "capacity": 400,
+              "mean_final_count": 10.15,
+              "mean_steps": 2303.95,
+              "phase_counts": {
+                "UNVERIFIED": 13,
+                "RECOVER_PATH": 3,
+                "ALIGN_APPROACH": 2,
+                "ALIGN_OBSERVE": 1,
+                "SELECT": 1
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 56,
+                "valid_grasp": {
+                  "passed": 28,
+                  "observed": 56,
+                  "unknown": 0,
+                  "rate": 0.5
+                },
+                "valid_placement": {
+                  "passed": 33,
+                  "observed": 56,
+                  "unknown": 0,
+                  "rate": 0.5892857142857143
+                },
+                "final_retention": {
+                  "passed": 32,
+                  "observed": 56,
+                  "unknown": 0,
+                  "rate": 0.5714285714285714
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 13,
+                  "observed": 20,
+                  "unknown": 0,
+                  "rate": 0.65
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 49,
+                  "observed": 876,
+                  "unknown": 531,
+                  "recorded_events": 1407,
+                  "rate": 0.05593607305936073,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "episodes": 20,
+              "successes": 2,
+              "success_rate": 0.1,
+              "completion_rate": 0.395,
+              "cookie_weighted_completion_rate": 0.395,
+              "final_cookies": 158,
+              "capacity": 400,
+              "mean_final_count": 7.9,
+              "mean_steps": 2535.3,
+              "phase_counts": {
+                "UNVERIFIED": 16,
+                "ALIGN_OBSERVE": 1,
+                "RECOVER_PATH": 3
+              },
+              "diagnostics": {
+                "audited_episodes": 20,
+                "attempted_batches": 55,
+                "valid_grasp": {
+                  "passed": 22,
+                  "observed": 55,
+                  "unknown": 0,
+                  "rate": 0.4
+                },
+                "valid_placement": {
+                  "passed": 26,
+                  "observed": 55,
+                  "unknown": 0,
+                  "rate": 0.4727272727272727
+                },
+                "final_retention": {
+                  "passed": 25,
+                  "observed": 55,
+                  "unknown": 0,
+                  "rate": 0.45454545454545453
+                },
+                "subsequent_given_prior_valid": {
+                  "passed": 10,
+                  "observed": 17,
+                  "unknown": 0,
+                  "rate": 0.5882352941176471
+                },
+                "conditional_timing_unknown": 0,
+                "local_recovery": {
+                  "passed": 22,
+                  "observed": 1543,
+                  "unknown": 258,
+                  "recorded_events": 1801,
+                  "rate": 0.014257939079714841,
+                  "availability": "explicit_event_labels"
+                },
+                "done_episodes": 0,
+                "done_but_official_failure": 0
+              }
+            }
+          ],
+          "failure_reason_counts": {
+            "10/20 cookies in target box": 2,
+            "source return release still lacks actual opening/contact clearance": 4,
+            "source group unavailable with no useful reached observation pose": 27,
+            "max_steps_exceeded": 21,
+            "0/20 cookies in target box; 58/60 cookies left in source (collateral disturbance)": 1,
+            "15/20 cookies in target box": 2,
+            "14/20 cookies in target box": 1,
+            "previously reached recovery path made no observed progress": 4,
+            "target slots not one-to-one matched; valid fill held 0/5 control steps": 13,
+            "4/10 cookies in target box": 1,
+            "1/10 cookies in target box; 74/70 cookies left in source (collateral disturbance)": 1,
+            "6/10 cookies in target box": 1,
+            "3/10 cookies in target box": 1,
+            "6/10 cookies in target box; 60/70 cookies left in source (collateral disturbance)": 1
+          },
+          "full_count_but_official_failure": [
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16005,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16013,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16015,
+              "score": 10,
+              "failure_reason": "max_steps_exceeded"
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "seed": 16017,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "seed": 16017,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16002,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16003,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16012,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16013,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16015,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "seed": 16017,
+              "score": 10,
+              "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+            }
+          ],
+          "official_success_phase_counts": {
+            "UNVERIFIED": 8,
+            "PLACE": 32
+          },
+          "recovery_event_type_counts": {
+            "source_reobserve": 4092,
+            "source_straighten": 38,
+            "insertion_retreat": 453,
+            "return_source": 21,
+            "release_disengage": 3,
+            "target_reobserve": 1
+          }
+        }
+      },
+      "paired": {
+        "score_improved": 22,
+        "score_equal": 78,
+        "score_worsened": 20,
+        "success_gained": 7,
+        "success_lost": 11
+      },
+      "completion_delta_pp": 2.2499999999999964,
+      "success_delta_pp": -3.3333333333333326
+    }
+  },
+  "validation": {
+    "raw_shards": 360,
+    "simulated_episodes_per_policy": 180,
+    "table_episodes_per_policy": 120,
+    "reused_2x5_rows_per_policy": 60,
+    "cells_per_table": 6,
+    "seeds": [
+      16000,
+      16019
+    ],
+    "missing": 0,
+    "duplicates": 0,
+    "all_returncodes_zero": true,
+    "frozen_code_matches": true,
+    "raw_and_merged_identical": true,
+    "paired_initial_scenes_identical": true,
+    "cross_budget_initial_scenes_identical": true,
+    "two_tables_reuse_identical_2x5": true,
+    "diagnostics_match_saved_summary": true,
+    "recovery_labels_consistent": true
+  },
+  "code_manifest": {
+    "status": "frozen_for_formal",
+    "frozen_utc": "2026-11-02T08:22:16.952787+00:00",
+    "chosen_factory": "policy:make_policy_b",
+    "candidate_directory": "/Users/yiche/26fall/Agent/project/rule_policy_v7_20261102/candidate_align_r5",
+    "selection_evidence": "/Users/yiche/26fall/Agent/project/rule_policy_v7_20261102/selection_early.json",
+    "selection": {
+      "scope": "development_selection_only",
+      "protocol": {
+        "registered_utc": "2026-11-02T08:11:30.330118+00:00",
+        "formal_test_seeds_unrun": [
+          16000,
+          16019
+        ],
+        "candidates": [
+          "v6_reference",
+          "target_only",
+          "minimal_r5",
+          "align_r5"
+        ],
+        "development_extended": "45 shared scenes: 2x5 x3 profiles x5 seeds; 2x10 x3 profiles x n0..9",
+        "development_teacher500": "Reuse 15 x2x5 from45; add independent 12 x2x10 n0/1/4/9 x3 profiles in500 budget",
+        "primary_metric": "equal weight of six task/profile cells teacher500 final count fractions",
+        "secondary_metrics_in_order": [
+          "equal six-cell extended completion",
+          "equal six-cell teacher500 official success",
+          "equal six-cell extended official success"
+        ],
+        "report_all_budget_tradeoffs": true,
+        "selection_before_freeze_and_formal": true,
+        "freeze_candidate_can_be_decided_with_strict_bounds": true
+      },
+      "metrics_order": [
+        "teacher500_completion",
+        "extended_completion",
+        "teacher500_success",
+        "extended_success"
+      ],
+      "validation": {
+        "initial_scenes_and_instructions_match": true,
+        "runtime_matches_between_budgets": true,
+        "only_14000_series_development_cases": true,
+        "completed_subprocesses_validated": true
+      },
+      "candidates": {
+        "v6_reference": {
+          "grid": {
+            "source": "/nvme-ssd2/zhaoyicheng/a3_rule_policy_v6_20261102/dev_b_grid_r6",
+            "completed": 45,
+            "planned": 45,
+            "status": "completed",
+            "errors": [],
+            "runtime_sha256": {
+              "policy.py": "20ffe6b79be167be3a4db53cc3cffe8a15e63a6b9c9c701d2a4ee37725addaa7",
+              "perception.py": "f58ef58662d6b0da3e5ef6bab959e2154ff689e3c476d541e87b127559b9efaf",
+              "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+              "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+            }
+          },
+          "budget500": {
+            "source": "/nvme-ssd2/zhaoyicheng/a3_rule_policy_v7_20261102/budget500_v6",
+            "completed": 12,
+            "planned": 12,
+            "status": "completed",
+            "errors": [],
+            "runtime_sha256": {
+              "policy.py": "20ffe6b79be167be3a4db53cc3cffe8a15e63a6b9c9c701d2a4ee37725addaa7",
+              "perception.py": "f58ef58662d6b0da3e5ef6bab959e2154ff689e3c476d541e87b127559b9efaf",
+              "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+              "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+            }
+          },
+          "teacher500": {
+            "completed": 27,
+            "planned": 27,
+            "cells": [
+              {
+                "task": "2x5",
+                "profile": "basic",
+                "completed": 5,
+                "planned": 5,
+                "successes": 4,
+                "completion": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "lower_fraction": "1",
+                  "upper_fraction": "1",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.8,
+                  "upper": 0.8,
+                  "lower_fraction": "4/5",
+                  "upper_fraction": "4/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "medium",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "lower_fraction": "1",
+                  "upper_fraction": "1",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "advanced",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.64,
+                  "upper": 0.64,
+                  "lower_fraction": "16/25",
+                  "upper_fraction": "16/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "basic",
+                "completed": 4,
+                "planned": 4,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.6625,
+                  "upper": 0.6625,
+                  "lower_fraction": "53/80",
+                  "upper_fraction": "53/80",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.25,
+                  "upper": 0.25,
+                  "lower_fraction": "1/4",
+                  "upper_fraction": "1/4",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "medium",
+                "completed": 4,
+                "planned": 4,
+                "successes": 0,
+                "completion": {
+                  "lower": 0.5375,
+                  "upper": 0.5375,
+                  "lower_fraction": "43/80",
+                  "upper_fraction": "43/80",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "lower_fraction": "0",
+                  "upper_fraction": "0",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "advanced",
+                "completed": 4,
+                "planned": 4,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.5,
+                  "upper": 0.5,
+                  "lower_fraction": "1/2",
+                  "upper_fraction": "1/2",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.25,
+                  "upper": 0.25,
+                  "lower_fraction": "1/4",
+                  "upper_fraction": "1/4",
+                  "exact": true
+                }
+              }
+            ],
+            "completion": {
+              "lower": 0.7233333333333334,
+              "upper": 0.7233333333333334,
+              "lower_fraction": "217/300",
+              "upper_fraction": "217/300",
+              "exact": true
+            },
+            "success": {
+              "lower": 0.4166666666666667,
+              "upper": 0.4166666666666667,
+              "lower_fraction": "5/12",
+              "upper_fraction": "5/12",
+              "exact": true
+            }
+          },
+          "extended": {
+            "completed": 45,
+            "planned": 45,
+            "cells": [
+              {
+                "task": "2x5",
+                "profile": "basic",
+                "completed": 5,
+                "planned": 5,
+                "successes": 4,
+                "completion": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "lower_fraction": "1",
+                  "upper_fraction": "1",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.8,
+                  "upper": 0.8,
+                  "lower_fraction": "4/5",
+                  "upper_fraction": "4/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "medium",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "lower_fraction": "1",
+                  "upper_fraction": "1",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "advanced",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.64,
+                  "upper": 0.64,
+                  "lower_fraction": "16/25",
+                  "upper_fraction": "16/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "basic",
+                "completed": 10,
+                "planned": 10,
+                "successes": 4,
+                "completion": {
+                  "lower": 0.705,
+                  "upper": 0.705,
+                  "lower_fraction": "141/200",
+                  "upper_fraction": "141/200",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "medium",
+                "completed": 10,
+                "planned": 10,
+                "successes": 4,
+                "completion": {
+                  "lower": 0.685,
+                  "upper": 0.685,
+                  "lower_fraction": "137/200",
+                  "upper_fraction": "137/200",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "advanced",
+                "completed": 10,
+                "planned": 10,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.495,
+                  "upper": 0.495,
+                  "lower_fraction": "99/200",
+                  "upper_fraction": "99/200",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.1,
+                  "upper": 0.1,
+                  "lower_fraction": "1/10",
+                  "upper_fraction": "1/10",
+                  "exact": true
+                }
+              }
+            ],
+            "completion": {
+              "lower": 0.7541666666666667,
+              "upper": 0.7541666666666667,
+              "lower_fraction": "181/240",
+              "upper_fraction": "181/240",
+              "exact": true
+            },
+            "success": {
+              "lower": 0.48333333333333334,
+              "upper": 0.48333333333333334,
+              "lower_fraction": "29/60",
+              "upper_fraction": "29/60",
+              "exact": true
+            }
+          },
+          "vector_lower": [
+            "217/300",
+            "181/240",
+            "5/12",
+            "29/60"
+          ],
+          "vector_upper": [
+            "217/300",
+            "181/240",
+            "5/12",
+            "29/60"
+          ],
+          "primary_complete": true,
+          "eligible": true
+        },
+        "target_only": {
+          "grid": {
+            "source": "/nvme-ssd2/zhaoyicheng/a3_rule_policy_v7_20261102/grid_target_only",
+            "completed": 45,
+            "planned": 45,
+            "status": "completed",
+            "errors": [],
+            "runtime_sha256": {
+              "policy.py": "805869d5a27448d261876c5c714c704ae489a2f49606f865a0a3c332d9c90765",
+              "perception.py": "a62baa7c4359999fdf8c93bcbcf0ca17a84d1c6debfc24ba932a80f6138c4de0",
+              "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+              "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+            }
+          },
+          "budget500": {
+            "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/budget500_target_only",
+            "completed": 12,
+            "planned": 12,
+            "status": "completed",
+            "errors": [],
+            "runtime_sha256": {
+              "policy.py": "805869d5a27448d261876c5c714c704ae489a2f49606f865a0a3c332d9c90765",
+              "perception.py": "a62baa7c4359999fdf8c93bcbcf0ca17a84d1c6debfc24ba932a80f6138c4de0",
+              "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+              "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+            }
+          },
+          "teacher500": {
+            "completed": 27,
+            "planned": 27,
+            "cells": [
+              {
+                "task": "2x5",
+                "profile": "basic",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.84,
+                  "upper": 0.84,
+                  "lower_fraction": "21/25",
+                  "upper_fraction": "21/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "medium",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.98,
+                  "upper": 0.98,
+                  "lower_fraction": "49/50",
+                  "upper_fraction": "49/50",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "advanced",
+                "completed": 5,
+                "planned": 5,
+                "successes": 2,
+                "completion": {
+                  "lower": 0.68,
+                  "upper": 0.68,
+                  "lower_fraction": "17/25",
+                  "upper_fraction": "17/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "basic",
+                "completed": 4,
+                "planned": 4,
+                "successes": 0,
+                "completion": {
+                  "lower": 0.525,
+                  "upper": 0.525,
+                  "lower_fraction": "21/40",
+                  "upper_fraction": "21/40",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "lower_fraction": "0",
+                  "upper_fraction": "0",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "medium",
+                "completed": 4,
+                "planned": 4,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.6125,
+                  "upper": 0.6125,
+                  "lower_fraction": "49/80",
+                  "upper_fraction": "49/80",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.25,
+                  "upper": 0.25,
+                  "lower_fraction": "1/4",
+                  "upper_fraction": "1/4",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "advanced",
+                "completed": 4,
+                "planned": 4,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.5,
+                  "upper": 0.5,
+                  "lower_fraction": "1/2",
+                  "upper_fraction": "1/2",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.25,
+                  "upper": 0.25,
+                  "lower_fraction": "1/4",
+                  "upper_fraction": "1/4",
+                  "exact": true
+                }
+              }
+            ],
+            "completion": {
+              "lower": 0.6895833333333333,
+              "upper": 0.6895833333333333,
+              "lower_fraction": "331/480",
+              "upper_fraction": "331/480",
+              "exact": true
+            },
+            "success": {
+              "lower": 0.35,
+              "upper": 0.35,
+              "lower_fraction": "7/20",
+              "upper_fraction": "7/20",
+              "exact": true
+            }
+          },
+          "extended": {
+            "completed": 45,
+            "planned": 45,
+            "cells": [
+              {
+                "task": "2x5",
+                "profile": "basic",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.84,
+                  "upper": 0.84,
+                  "lower_fraction": "21/25",
+                  "upper_fraction": "21/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "medium",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.98,
+                  "upper": 0.98,
+                  "lower_fraction": "49/50",
+                  "upper_fraction": "49/50",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "advanced",
+                "completed": 5,
+                "planned": 5,
+                "successes": 2,
+                "completion": {
+                  "lower": 0.68,
+                  "upper": 0.68,
+                  "lower_fraction": "17/25",
+                  "upper_fraction": "17/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "basic",
+                "completed": 10,
+                "planned": 10,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.66,
+                  "upper": 0.66,
+                  "lower_fraction": "33/50",
+                  "upper_fraction": "33/50",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.3,
+                  "upper": 0.3,
+                  "lower_fraction": "3/10",
+                  "upper_fraction": "3/10",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "medium",
+                "completed": 10,
+                "planned": 10,
+                "successes": 4,
+                "completion": {
+                  "lower": 0.725,
+                  "upper": 0.725,
+                  "lower_fraction": "29/40",
+                  "upper_fraction": "29/40",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "advanced",
+                "completed": 10,
+                "planned": 10,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.43,
+                  "upper": 0.43,
+                  "lower_fraction": "43/100",
+                  "upper_fraction": "43/100",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.1,
+                  "upper": 0.1,
+                  "lower_fraction": "1/10",
+                  "upper_fraction": "1/10",
+                  "exact": true
+                }
+              }
+            ],
+            "completion": {
+              "lower": 0.7191666666666666,
+              "upper": 0.7191666666666666,
+              "lower_fraction": "863/1200",
+              "upper_fraction": "863/1200",
+              "exact": true
+            },
+            "success": {
+              "lower": 0.4,
+              "upper": 0.4,
+              "lower_fraction": "2/5",
+              "upper_fraction": "2/5",
+              "exact": true
+            }
+          },
+          "vector_lower": [
+            "331/480",
+            "863/1200",
+            "7/20",
+            "2/5"
+          ],
+          "vector_upper": [
+            "331/480",
+            "863/1200",
+            "7/20",
+            "2/5"
+          ],
+          "primary_complete": true,
+          "eligible": true
+        },
+        "minimal_r5": {
+          "grid": {
+            "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/grid_minimal_r5",
+            "completed": 29,
+            "planned": 45,
+            "status": "running",
+            "errors": [],
+            "runtime_sha256": {
+              "policy.py": "c9fcda5c073f295124be3ce39b932617fade8dc2f8fd7f21fd40555325bb8c55",
+              "perception.py": "88ffcdd6c9653f2cb3072892655f8237d62cabc3fce640a7eaf9f8210ffd611a",
+              "rule_controller.py": "ba94471086936664a7aac95506d6b3c3e86b9f5e2eebbc6e327f1a023eb3d041",
+              "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+            }
+          },
+          "budget500": {
+            "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/budget500_minimal_r5",
+            "completed": 12,
+            "planned": 12,
+            "status": "completed",
+            "errors": [],
+            "runtime_sha256": {
+              "policy.py": "c9fcda5c073f295124be3ce39b932617fade8dc2f8fd7f21fd40555325bb8c55",
+              "perception.py": "88ffcdd6c9653f2cb3072892655f8237d62cabc3fce640a7eaf9f8210ffd611a",
+              "rule_controller.py": "ba94471086936664a7aac95506d6b3c3e86b9f5e2eebbc6e327f1a023eb3d041",
+              "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+            }
+          },
+          "teacher500": {
+            "completed": 27,
+            "planned": 27,
+            "cells": [
+              {
+                "task": "2x5",
+                "profile": "basic",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.84,
+                  "upper": 0.84,
+                  "lower_fraction": "21/25",
+                  "upper_fraction": "21/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "medium",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.98,
+                  "upper": 0.98,
+                  "lower_fraction": "49/50",
+                  "upper_fraction": "49/50",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "advanced",
+                "completed": 5,
+                "planned": 5,
+                "successes": 2,
+                "completion": {
+                  "lower": 0.76,
+                  "upper": 0.76,
+                  "lower_fraction": "19/25",
+                  "upper_fraction": "19/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "basic",
+                "completed": 4,
+                "planned": 4,
+                "successes": 0,
+                "completion": {
+                  "lower": 0.525,
+                  "upper": 0.525,
+                  "lower_fraction": "21/40",
+                  "upper_fraction": "21/40",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "lower_fraction": "0",
+                  "upper_fraction": "0",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "medium",
+                "completed": 4,
+                "planned": 4,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.6125,
+                  "upper": 0.6125,
+                  "lower_fraction": "49/80",
+                  "upper_fraction": "49/80",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.25,
+                  "upper": 0.25,
+                  "lower_fraction": "1/4",
+                  "upper_fraction": "1/4",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "advanced",
+                "completed": 4,
+                "planned": 4,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.5625,
+                  "upper": 0.5625,
+                  "lower_fraction": "9/16",
+                  "upper_fraction": "9/16",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.25,
+                  "upper": 0.25,
+                  "lower_fraction": "1/4",
+                  "upper_fraction": "1/4",
+                  "exact": true
+                }
+              }
+            ],
+            "completion": {
+              "lower": 0.7133333333333334,
+              "upper": 0.7133333333333334,
+              "lower_fraction": "107/150",
+              "upper_fraction": "107/150",
+              "exact": true
+            },
+            "success": {
+              "lower": 0.35,
+              "upper": 0.35,
+              "lower_fraction": "7/20",
+              "upper_fraction": "7/20",
+              "exact": true
+            }
+          },
+          "extended": {
+            "completed": 29,
+            "planned": 45,
+            "cells": [
+              {
+                "task": "2x5",
+                "profile": "basic",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.84,
+                  "upper": 0.84,
+                  "lower_fraction": "21/25",
+                  "upper_fraction": "21/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "medium",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.98,
+                  "upper": 0.98,
+                  "lower_fraction": "49/50",
+                  "upper_fraction": "49/50",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "advanced",
+                "completed": 5,
+                "planned": 5,
+                "successes": 2,
+                "completion": {
+                  "lower": 0.76,
+                  "upper": 0.76,
+                  "lower_fraction": "19/25",
+                  "upper_fraction": "19/25",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "basic",
+                "completed": 3,
+                "planned": 10,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.3,
+                  "upper": 1.0,
+                  "lower_fraction": "3/10",
+                  "upper_fraction": "1",
+                  "exact": false
+                },
+                "success": {
+                  "lower": 0.3,
+                  "upper": 1.0,
+                  "lower_fraction": "3/10",
+                  "upper_fraction": "1",
+                  "exact": false
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "medium",
+                "completed": 7,
+                "planned": 10,
+                "successes": 4,
+                "completion": {
+                  "lower": 0.58,
+                  "upper": 0.88,
+                  "lower_fraction": "29/50",
+                  "upper_fraction": "22/25",
+                  "exact": false
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.7,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "7/10",
+                  "exact": false
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "advanced",
+                "completed": 4,
+                "planned": 10,
+                "successes": 2,
+                "completion": {
+                  "lower": 0.35,
+                  "upper": 0.95,
+                  "lower_fraction": "7/20",
+                  "upper_fraction": "19/20",
+                  "exact": false
+                },
+                "success": {
+                  "lower": 0.2,
+                  "upper": 0.8,
+                  "lower_fraction": "1/5",
+                  "upper_fraction": "4/5",
+                  "exact": false
+                }
+              }
+            ],
+            "completion": {
+              "lower": 0.635,
+              "upper": 0.9016666666666666,
+              "lower_fraction": "127/200",
+              "upper_fraction": "541/600",
+              "exact": false
+            },
+            "success": {
+              "lower": 0.4166666666666667,
+              "upper": 0.6833333333333333,
+              "lower_fraction": "5/12",
+              "upper_fraction": "41/60",
+              "exact": false
+            }
+          },
+          "vector_lower": [
+            "107/150",
+            "127/200",
+            "7/20",
+            "5/12"
+          ],
+          "vector_upper": [
+            "107/150",
+            "541/600",
+            "7/20",
+            "41/60"
+          ],
+          "primary_complete": true,
+          "eligible": true
+        },
+        "align_r5": {
+          "grid": {
+            "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/grid_align_r5",
+            "completed": 24,
+            "planned": 45,
+            "status": "running",
+            "errors": [],
+            "runtime_sha256": {
+              "policy.py": "42018ae9cc6c37867b8d595a28cb8794054becea9ce086d9ebc6bb8a79ff703c",
+              "perception.py": "7e1f7b9596414829f2d8758a234929d3950ef1e4a223ebabf1ce5832e70546aa",
+              "rule_controller.py": "b1811949de213600d6ab2011f832d0f40c08f9cfce512f65e17754abf06cb9e9",
+              "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce"
+            }
+          },
+          "budget500": {
+            "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/budget500_align_r5",
+            "completed": 12,
+            "planned": 12,
+            "status": "completed",
+            "errors": [],
+            "runtime_sha256": {
+              "policy.py": "42018ae9cc6c37867b8d595a28cb8794054becea9ce086d9ebc6bb8a79ff703c",
+              "perception.py": "7e1f7b9596414829f2d8758a234929d3950ef1e4a223ebabf1ce5832e70546aa",
+              "rule_controller.py": "b1811949de213600d6ab2011f832d0f40c08f9cfce512f65e17754abf06cb9e9",
+              "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce"
+            }
+          },
+          "teacher500": {
+            "completed": 27,
+            "planned": 27,
+            "cells": [
+              {
+                "task": "2x5",
+                "profile": "basic",
+                "completed": 5,
+                "planned": 5,
+                "successes": 4,
+                "completion": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "lower_fraction": "1",
+                  "upper_fraction": "1",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.8,
+                  "upper": 0.8,
+                  "lower_fraction": "4/5",
+                  "upper_fraction": "4/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "medium",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.9,
+                  "upper": 0.9,
+                  "lower_fraction": "9/10",
+                  "upper_fraction": "9/10",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "advanced",
+                "completed": 5,
+                "planned": 5,
+                "successes": 2,
+                "completion": {
+                  "lower": 0.8,
+                  "upper": 0.8,
+                  "lower_fraction": "4/5",
+                  "upper_fraction": "4/5",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "basic",
+                "completed": 4,
+                "planned": 4,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.6375,
+                  "upper": 0.6375,
+                  "lower_fraction": "51/80",
+                  "upper_fraction": "51/80",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.25,
+                  "upper": 0.25,
+                  "lower_fraction": "1/4",
+                  "upper_fraction": "1/4",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "medium",
+                "completed": 4,
+                "planned": 4,
+                "successes": 0,
+                "completion": {
+                  "lower": 0.45,
+                  "upper": 0.45,
+                  "lower_fraction": "9/20",
+                  "upper_fraction": "9/20",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "lower_fraction": "0",
+                  "upper_fraction": "0",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "advanced",
+                "completed": 4,
+                "planned": 4,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.625,
+                  "upper": 0.625,
+                  "lower_fraction": "5/8",
+                  "upper_fraction": "5/8",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.25,
+                  "upper": 0.25,
+                  "lower_fraction": "1/4",
+                  "upper_fraction": "1/4",
+                  "exact": true
+                }
+              }
+            ],
+            "completion": {
+              "lower": 0.7354166666666667,
+              "upper": 0.7354166666666667,
+              "lower_fraction": "353/480",
+              "upper_fraction": "353/480",
+              "exact": true
+            },
+            "success": {
+              "lower": 0.38333333333333336,
+              "upper": 0.38333333333333336,
+              "lower_fraction": "23/60",
+              "upper_fraction": "23/60",
+              "exact": true
+            }
+          },
+          "extended": {
+            "completed": 24,
+            "planned": 45,
+            "cells": [
+              {
+                "task": "2x5",
+                "profile": "basic",
+                "completed": 5,
+                "planned": 5,
+                "successes": 4,
+                "completion": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "lower_fraction": "1",
+                  "upper_fraction": "1",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.8,
+                  "upper": 0.8,
+                  "lower_fraction": "4/5",
+                  "upper_fraction": "4/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "medium",
+                "completed": 5,
+                "planned": 5,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.9,
+                  "upper": 0.9,
+                  "lower_fraction": "9/10",
+                  "upper_fraction": "9/10",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.6,
+                  "upper": 0.6,
+                  "lower_fraction": "3/5",
+                  "upper_fraction": "3/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x5",
+                "profile": "advanced",
+                "completed": 5,
+                "planned": 5,
+                "successes": 2,
+                "completion": {
+                  "lower": 0.8,
+                  "upper": 0.8,
+                  "lower_fraction": "4/5",
+                  "upper_fraction": "4/5",
+                  "exact": true
+                },
+                "success": {
+                  "lower": 0.4,
+                  "upper": 0.4,
+                  "lower_fraction": "2/5",
+                  "upper_fraction": "2/5",
+                  "exact": true
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "basic",
+                "completed": 4,
+                "planned": 10,
+                "successes": 3,
+                "completion": {
+                  "lower": 0.36,
+                  "upper": 0.96,
+                  "lower_fraction": "9/25",
+                  "upper_fraction": "24/25",
+                  "exact": false
+                },
+                "success": {
+                  "lower": 0.3,
+                  "upper": 0.9,
+                  "lower_fraction": "3/10",
+                  "upper_fraction": "9/10",
+                  "exact": false
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "medium",
+                "completed": 4,
+                "planned": 10,
+                "successes": 2,
+                "completion": {
+                  "lower": 0.28,
+                  "upper": 0.88,
+                  "lower_fraction": "7/25",
+                  "upper_fraction": "22/25",
+                  "exact": false
+                },
+                "success": {
+                  "lower": 0.2,
+                  "upper": 0.8,
+                  "lower_fraction": "1/5",
+                  "upper_fraction": "4/5",
+                  "exact": false
+                }
+              },
+              {
+                "task": "2x10",
+                "profile": "advanced",
+                "completed": 1,
+                "planned": 10,
+                "successes": 1,
+                "completion": {
+                  "lower": 0.1,
+                  "upper": 1.0,
+                  "lower_fraction": "1/10",
+                  "upper_fraction": "1",
+                  "exact": false
+                },
+                "success": {
+                  "lower": 0.1,
+                  "upper": 1.0,
+                  "lower_fraction": "1/10",
+                  "upper_fraction": "1",
+                  "exact": false
+                }
+              }
+            ],
+            "completion": {
+              "lower": 0.5733333333333334,
+              "upper": 0.9233333333333333,
+              "lower_fraction": "43/75",
+              "upper_fraction": "277/300",
+              "exact": false
+            },
+            "success": {
+              "lower": 0.4,
+              "upper": 0.75,
+              "lower_fraction": "2/5",
+              "upper_fraction": "3/4",
+              "exact": false
+            }
+          },
+          "vector_lower": [
+            "353/480",
+            "43/75",
+            "23/60",
+            "2/5"
+          ],
+          "vector_upper": [
+            "353/480",
+            "277/300",
+            "23/60",
+            "3/4"
+          ],
+          "primary_complete": true,
+          "eligible": true
+        }
+      },
+      "selected_candidate": "align_r5",
+      "selection_mathematically_determined": true,
+      "proof": [
+        {
+          "competitor": "v6_reference",
+          "decisive_metric": "teacher500_completion",
+          "winner_lower": "353/480",
+          "competitor_upper": "217/300"
+        },
+        {
+          "competitor": "target_only",
+          "decisive_metric": "teacher500_completion",
+          "winner_lower": "353/480",
+          "competitor_upper": "331/480"
+        },
+        {
+          "competitor": "minimal_r5",
+          "decisive_metric": "teacher500_completion",
+          "winner_lower": "353/480",
+          "competitor_upper": "107/150"
+        }
+      ],
+      "final_ranking": null,
+      "lower_bound_order": [
+        "align_r5",
+        "v6_reference",
+        "minimal_r5",
+        "target_only"
+      ],
+      "teacher_complete_for_all": true,
+      "source_commit": "0729068ee1e75a562cfbc4f2c83ab9539cf75081"
+    },
+    "formal_seeds": [
+      16000,
+      16019
+    ],
+    "source_column": 1,
+    "success_hold_steps": 5,
+    "strict_policy_completion": false,
+    "teacher_budgets": {
+      "2x5": 500,
+      "2x10": 500
+    },
+    "extended_budgets": {
+      "2x5": 500,
+      "2x10": 3200
+    },
+    "sha256": {
+      "policy.py": "42018ae9cc6c37867b8d595a28cb8794054becea9ce086d9ebc6bb8a79ff703c",
+      "perception.py": "7e1f7b9596414829f2d8758a234929d3950ef1e4a223ebabf1ce5832e70546aa",
+      "rule_controller.py": "b1811949de213600d6ab2011f832d0f40c08f9cfce512f65e17754abf06cb9e9",
+      "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+      "evaluate_policy.py": "42cb325ae7c263b08b2bb07e20b7a0b689e38b030302868e56588c4c40e42722",
+      "diagnostic_support.py": "d514b6b8be15ec1fbf8f8951945d5e05c86590b07f19701e5c557b6c223770f2",
+      "batch_metrics.py": "e5aa2b7940eb962b754b7004d2c175b36c322b30f28a69a93a082d0f206fdccc",
+      "launch_evaluation.py": "24922a837827317cc8777357fd62ccb7bb18b13a3e6ca7f6f9199c33c84a9842",
+      "launch_paired_formal.py": "e90d29af8fb08775ec90f1360c42ffd771e0ef7d2b97d72e4da0ded0be62a1ff",
+      "merge_results.py": "7c1aba2b7b711ebd44191a8fb5717be003593abfa3f418c67dad5d449561940a",
+      "paired_comparison.py": "c7bff55d41f4f7a8934893ac7b7ae6b8c5b61a5a63e2326afea4491b16978db6",
+      "run_dev.py": "c8fa9f3df9e590b7039123215bd3ff5628b2d5a9278abddf95f0a166a1983ef9"
+    }
+  },
+  "raw_evidence": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/formal_audit_raw.json",
+  "development": {
+    "scope": "development_selection_only",
+    "protocol": {
+      "registered_utc": "2026-11-02T08:11:30.330118+00:00",
+      "formal_test_seeds_unrun": [
+        16000,
+        16019
+      ],
+      "candidates": [
+        "v6_reference",
+        "target_only",
+        "minimal_r5",
+        "align_r5"
+      ],
+      "development_extended": "45 shared scenes: 2x5 x3 profiles x5 seeds; 2x10 x3 profiles x n0..9",
+      "development_teacher500": "Reuse 15 x2x5 from45; add independent 12 x2x10 n0/1/4/9 x3 profiles in500 budget",
+      "primary_metric": "equal weight of six task/profile cells teacher500 final count fractions",
+      "secondary_metrics_in_order": [
+        "equal six-cell extended completion",
+        "equal six-cell teacher500 official success",
+        "equal six-cell extended official success"
+      ],
+      "report_all_budget_tradeoffs": true,
+      "selection_before_freeze_and_formal": true,
+      "freeze_candidate_can_be_decided_with_strict_bounds": true
+    },
+    "metrics_order": [
+      "teacher500_completion",
+      "extended_completion",
+      "teacher500_success",
+      "extended_success"
+    ],
+    "validation": {
+      "initial_scenes_and_instructions_match": true,
+      "runtime_matches_between_budgets": true,
+      "only_14000_series_development_cases": true,
+      "completed_subprocesses_validated": true
+    },
+    "candidates": {
+      "v6_reference": {
+        "grid": {
+          "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/grid_v6_reference_raw.json",
+          "completed": 45,
+          "planned": 45,
+          "status": "completed",
+          "errors": [],
+          "runtime_sha256": {
+            "policy.py": "20ffe6b79be167be3a4db53cc3cffe8a15e63a6b9c9c701d2a4ee37725addaa7",
+            "perception.py": "f58ef58662d6b0da3e5ef6bab959e2154ff689e3c476d541e87b127559b9efaf",
+            "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+            "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+          }
+        },
+        "budget500": {
+          "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/budget500_v6_raw.json",
+          "completed": 12,
+          "planned": 12,
+          "status": "completed",
+          "errors": [],
+          "runtime_sha256": {
+            "policy.py": "20ffe6b79be167be3a4db53cc3cffe8a15e63a6b9c9c701d2a4ee37725addaa7",
+            "perception.py": "f58ef58662d6b0da3e5ef6bab959e2154ff689e3c476d541e87b127559b9efaf",
+            "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+            "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+          }
+        },
+        "teacher500": {
+          "completed": 27,
+          "planned": 27,
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "completed": 5,
+              "planned": 5,
+              "successes": 4,
+              "completion": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "lower_fraction": "1",
+                "upper_fraction": "1",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.8,
+                "upper": 0.8,
+                "lower_fraction": "4/5",
+                "upper_fraction": "4/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "lower_fraction": "1",
+                "upper_fraction": "1",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.64,
+                "upper": 0.64,
+                "lower_fraction": "16/25",
+                "upper_fraction": "16/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "completed": 4,
+              "planned": 4,
+              "successes": 1,
+              "completion": {
+                "lower": 0.6625,
+                "upper": 0.6625,
+                "lower_fraction": "53/80",
+                "upper_fraction": "53/80",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.25,
+                "upper": 0.25,
+                "lower_fraction": "1/4",
+                "upper_fraction": "1/4",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "completed": 4,
+              "planned": 4,
+              "successes": 0,
+              "completion": {
+                "lower": 0.5375,
+                "upper": 0.5375,
+                "lower_fraction": "43/80",
+                "upper_fraction": "43/80",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.0,
+                "upper": 0.0,
+                "lower_fraction": "0",
+                "upper_fraction": "0",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "completed": 4,
+              "planned": 4,
+              "successes": 1,
+              "completion": {
+                "lower": 0.5,
+                "upper": 0.5,
+                "lower_fraction": "1/2",
+                "upper_fraction": "1/2",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.25,
+                "upper": 0.25,
+                "lower_fraction": "1/4",
+                "upper_fraction": "1/4",
+                "exact": true
+              }
+            }
+          ],
+          "completion": {
+            "lower": 0.7233333333333334,
+            "upper": 0.7233333333333334,
+            "lower_fraction": "217/300",
+            "upper_fraction": "217/300",
+            "exact": true
+          },
+          "success": {
+            "lower": 0.4166666666666667,
+            "upper": 0.4166666666666667,
+            "lower_fraction": "5/12",
+            "upper_fraction": "5/12",
+            "exact": true
+          }
+        },
+        "extended": {
+          "completed": 45,
+          "planned": 45,
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "completed": 5,
+              "planned": 5,
+              "successes": 4,
+              "completion": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "lower_fraction": "1",
+                "upper_fraction": "1",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.8,
+                "upper": 0.8,
+                "lower_fraction": "4/5",
+                "upper_fraction": "4/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "lower_fraction": "1",
+                "upper_fraction": "1",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.64,
+                "upper": 0.64,
+                "lower_fraction": "16/25",
+                "upper_fraction": "16/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "completed": 10,
+              "planned": 10,
+              "successes": 4,
+              "completion": {
+                "lower": 0.705,
+                "upper": 0.705,
+                "lower_fraction": "141/200",
+                "upper_fraction": "141/200",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "completed": 10,
+              "planned": 10,
+              "successes": 4,
+              "completion": {
+                "lower": 0.685,
+                "upper": 0.685,
+                "lower_fraction": "137/200",
+                "upper_fraction": "137/200",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "completed": 10,
+              "planned": 10,
+              "successes": 1,
+              "completion": {
+                "lower": 0.495,
+                "upper": 0.495,
+                "lower_fraction": "99/200",
+                "upper_fraction": "99/200",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.1,
+                "upper": 0.1,
+                "lower_fraction": "1/10",
+                "upper_fraction": "1/10",
+                "exact": true
+              }
+            }
+          ],
+          "completion": {
+            "lower": 0.7541666666666667,
+            "upper": 0.7541666666666667,
+            "lower_fraction": "181/240",
+            "upper_fraction": "181/240",
+            "exact": true
+          },
+          "success": {
+            "lower": 0.48333333333333334,
+            "upper": 0.48333333333333334,
+            "lower_fraction": "29/60",
+            "upper_fraction": "29/60",
+            "exact": true
+          }
+        },
+        "vector_lower": [
+          "217/300",
+          "181/240",
+          "5/12",
+          "29/60"
+        ],
+        "vector_upper": [
+          "217/300",
+          "181/240",
+          "5/12",
+          "29/60"
+        ],
+        "primary_complete": true,
+        "eligible": true
+      },
+      "target_only": {
+        "grid": {
+          "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/grid_target_only_raw.json",
+          "completed": 45,
+          "planned": 45,
+          "status": "completed",
+          "errors": [],
+          "runtime_sha256": {
+            "policy.py": "805869d5a27448d261876c5c714c704ae489a2f49606f865a0a3c332d9c90765",
+            "perception.py": "a62baa7c4359999fdf8c93bcbcf0ca17a84d1c6debfc24ba932a80f6138c4de0",
+            "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+            "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+          }
+        },
+        "budget500": {
+          "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/budget500_target_only_raw.json",
+          "completed": 12,
+          "planned": 12,
+          "status": "completed",
+          "errors": [],
+          "runtime_sha256": {
+            "policy.py": "805869d5a27448d261876c5c714c704ae489a2f49606f865a0a3c332d9c90765",
+            "perception.py": "a62baa7c4359999fdf8c93bcbcf0ca17a84d1c6debfc24ba932a80f6138c4de0",
+            "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+            "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+          }
+        },
+        "teacher500": {
+          "completed": 27,
+          "planned": 27,
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.84,
+                "upper": 0.84,
+                "lower_fraction": "21/25",
+                "upper_fraction": "21/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.98,
+                "upper": 0.98,
+                "lower_fraction": "49/50",
+                "upper_fraction": "49/50",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "completed": 5,
+              "planned": 5,
+              "successes": 2,
+              "completion": {
+                "lower": 0.68,
+                "upper": 0.68,
+                "lower_fraction": "17/25",
+                "upper_fraction": "17/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "completed": 4,
+              "planned": 4,
+              "successes": 0,
+              "completion": {
+                "lower": 0.525,
+                "upper": 0.525,
+                "lower_fraction": "21/40",
+                "upper_fraction": "21/40",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.0,
+                "upper": 0.0,
+                "lower_fraction": "0",
+                "upper_fraction": "0",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "completed": 4,
+              "planned": 4,
+              "successes": 1,
+              "completion": {
+                "lower": 0.6125,
+                "upper": 0.6125,
+                "lower_fraction": "49/80",
+                "upper_fraction": "49/80",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.25,
+                "upper": 0.25,
+                "lower_fraction": "1/4",
+                "upper_fraction": "1/4",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "completed": 4,
+              "planned": 4,
+              "successes": 1,
+              "completion": {
+                "lower": 0.5,
+                "upper": 0.5,
+                "lower_fraction": "1/2",
+                "upper_fraction": "1/2",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.25,
+                "upper": 0.25,
+                "lower_fraction": "1/4",
+                "upper_fraction": "1/4",
+                "exact": true
+              }
+            }
+          ],
+          "completion": {
+            "lower": 0.6895833333333333,
+            "upper": 0.6895833333333333,
+            "lower_fraction": "331/480",
+            "upper_fraction": "331/480",
+            "exact": true
+          },
+          "success": {
+            "lower": 0.35,
+            "upper": 0.35,
+            "lower_fraction": "7/20",
+            "upper_fraction": "7/20",
+            "exact": true
+          }
+        },
+        "extended": {
+          "completed": 45,
+          "planned": 45,
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.84,
+                "upper": 0.84,
+                "lower_fraction": "21/25",
+                "upper_fraction": "21/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.98,
+                "upper": 0.98,
+                "lower_fraction": "49/50",
+                "upper_fraction": "49/50",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "completed": 5,
+              "planned": 5,
+              "successes": 2,
+              "completion": {
+                "lower": 0.68,
+                "upper": 0.68,
+                "lower_fraction": "17/25",
+                "upper_fraction": "17/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "completed": 10,
+              "planned": 10,
+              "successes": 3,
+              "completion": {
+                "lower": 0.66,
+                "upper": 0.66,
+                "lower_fraction": "33/50",
+                "upper_fraction": "33/50",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.3,
+                "upper": 0.3,
+                "lower_fraction": "3/10",
+                "upper_fraction": "3/10",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "completed": 10,
+              "planned": 10,
+              "successes": 4,
+              "completion": {
+                "lower": 0.725,
+                "upper": 0.725,
+                "lower_fraction": "29/40",
+                "upper_fraction": "29/40",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "completed": 10,
+              "planned": 10,
+              "successes": 1,
+              "completion": {
+                "lower": 0.43,
+                "upper": 0.43,
+                "lower_fraction": "43/100",
+                "upper_fraction": "43/100",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.1,
+                "upper": 0.1,
+                "lower_fraction": "1/10",
+                "upper_fraction": "1/10",
+                "exact": true
+              }
+            }
+          ],
+          "completion": {
+            "lower": 0.7191666666666666,
+            "upper": 0.7191666666666666,
+            "lower_fraction": "863/1200",
+            "upper_fraction": "863/1200",
+            "exact": true
+          },
+          "success": {
+            "lower": 0.4,
+            "upper": 0.4,
+            "lower_fraction": "2/5",
+            "upper_fraction": "2/5",
+            "exact": true
+          }
+        },
+        "vector_lower": [
+          "331/480",
+          "863/1200",
+          "7/20",
+          "2/5"
+        ],
+        "vector_upper": [
+          "331/480",
+          "863/1200",
+          "7/20",
+          "2/5"
+        ],
+        "primary_complete": true,
+        "eligible": true
+      },
+      "minimal_r5": {
+        "grid": {
+          "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/grid_minimal_r5_raw.json",
+          "completed": 45,
+          "planned": 45,
+          "status": "completed",
+          "errors": [],
+          "runtime_sha256": {
+            "policy.py": "c9fcda5c073f295124be3ce39b932617fade8dc2f8fd7f21fd40555325bb8c55",
+            "perception.py": "88ffcdd6c9653f2cb3072892655f8237d62cabc3fce640a7eaf9f8210ffd611a",
+            "rule_controller.py": "ba94471086936664a7aac95506d6b3c3e86b9f5e2eebbc6e327f1a023eb3d041",
+            "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+          }
+        },
+        "budget500": {
+          "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/budget500_minimal_r5_raw.json",
+          "completed": 12,
+          "planned": 12,
+          "status": "completed",
+          "errors": [],
+          "runtime_sha256": {
+            "policy.py": "c9fcda5c073f295124be3ce39b932617fade8dc2f8fd7f21fd40555325bb8c55",
+            "perception.py": "88ffcdd6c9653f2cb3072892655f8237d62cabc3fce640a7eaf9f8210ffd611a",
+            "rule_controller.py": "ba94471086936664a7aac95506d6b3c3e86b9f5e2eebbc6e327f1a023eb3d041",
+            "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85"
+          }
+        },
+        "teacher500": {
+          "completed": 27,
+          "planned": 27,
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.84,
+                "upper": 0.84,
+                "lower_fraction": "21/25",
+                "upper_fraction": "21/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.98,
+                "upper": 0.98,
+                "lower_fraction": "49/50",
+                "upper_fraction": "49/50",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "completed": 5,
+              "planned": 5,
+              "successes": 2,
+              "completion": {
+                "lower": 0.76,
+                "upper": 0.76,
+                "lower_fraction": "19/25",
+                "upper_fraction": "19/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "completed": 4,
+              "planned": 4,
+              "successes": 0,
+              "completion": {
+                "lower": 0.525,
+                "upper": 0.525,
+                "lower_fraction": "21/40",
+                "upper_fraction": "21/40",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.0,
+                "upper": 0.0,
+                "lower_fraction": "0",
+                "upper_fraction": "0",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "completed": 4,
+              "planned": 4,
+              "successes": 1,
+              "completion": {
+                "lower": 0.6125,
+                "upper": 0.6125,
+                "lower_fraction": "49/80",
+                "upper_fraction": "49/80",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.25,
+                "upper": 0.25,
+                "lower_fraction": "1/4",
+                "upper_fraction": "1/4",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "completed": 4,
+              "planned": 4,
+              "successes": 1,
+              "completion": {
+                "lower": 0.5625,
+                "upper": 0.5625,
+                "lower_fraction": "9/16",
+                "upper_fraction": "9/16",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.25,
+                "upper": 0.25,
+                "lower_fraction": "1/4",
+                "upper_fraction": "1/4",
+                "exact": true
+              }
+            }
+          ],
+          "completion": {
+            "lower": 0.7133333333333334,
+            "upper": 0.7133333333333334,
+            "lower_fraction": "107/150",
+            "upper_fraction": "107/150",
+            "exact": true
+          },
+          "success": {
+            "lower": 0.35,
+            "upper": 0.35,
+            "lower_fraction": "7/20",
+            "upper_fraction": "7/20",
+            "exact": true
+          }
+        },
+        "extended": {
+          "completed": 45,
+          "planned": 45,
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.84,
+                "upper": 0.84,
+                "lower_fraction": "21/25",
+                "upper_fraction": "21/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.98,
+                "upper": 0.98,
+                "lower_fraction": "49/50",
+                "upper_fraction": "49/50",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "completed": 5,
+              "planned": 5,
+              "successes": 2,
+              "completion": {
+                "lower": 0.76,
+                "upper": 0.76,
+                "lower_fraction": "19/25",
+                "upper_fraction": "19/25",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "completed": 10,
+              "planned": 10,
+              "successes": 3,
+              "completion": {
+                "lower": 0.66,
+                "upper": 0.66,
+                "lower_fraction": "33/50",
+                "upper_fraction": "33/50",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.3,
+                "upper": 0.3,
+                "lower_fraction": "3/10",
+                "upper_fraction": "3/10",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "completed": 10,
+              "planned": 10,
+              "successes": 4,
+              "completion": {
+                "lower": 0.725,
+                "upper": 0.725,
+                "lower_fraction": "29/40",
+                "upper_fraction": "29/40",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "completed": 10,
+              "planned": 10,
+              "successes": 2,
+              "completion": {
+                "lower": 0.51,
+                "upper": 0.51,
+                "lower_fraction": "51/100",
+                "upper_fraction": "51/100",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.2,
+                "upper": 0.2,
+                "lower_fraction": "1/5",
+                "upper_fraction": "1/5",
+                "exact": true
+              }
+            }
+          ],
+          "completion": {
+            "lower": 0.7458333333333333,
+            "upper": 0.7458333333333333,
+            "lower_fraction": "179/240",
+            "upper_fraction": "179/240",
+            "exact": true
+          },
+          "success": {
+            "lower": 0.4166666666666667,
+            "upper": 0.4166666666666667,
+            "lower_fraction": "5/12",
+            "upper_fraction": "5/12",
+            "exact": true
+          }
+        },
+        "vector_lower": [
+          "107/150",
+          "179/240",
+          "7/20",
+          "5/12"
+        ],
+        "vector_upper": [
+          "107/150",
+          "179/240",
+          "7/20",
+          "5/12"
+        ],
+        "primary_complete": true,
+        "eligible": true
+      },
+      "align_r5": {
+        "grid": {
+          "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/grid_align_r5_raw.json",
+          "completed": 45,
+          "planned": 45,
+          "status": "completed",
+          "errors": [],
+          "runtime_sha256": {
+            "policy.py": "42018ae9cc6c37867b8d595a28cb8794054becea9ce086d9ebc6bb8a79ff703c",
+            "perception.py": "7e1f7b9596414829f2d8758a234929d3950ef1e4a223ebabf1ce5832e70546aa",
+            "rule_controller.py": "b1811949de213600d6ab2011f832d0f40c08f9cfce512f65e17754abf06cb9e9",
+            "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce"
+          }
+        },
+        "budget500": {
+          "source": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v7_20261102/budget500_align_r5_raw.json",
+          "completed": 12,
+          "planned": 12,
+          "status": "completed",
+          "errors": [],
+          "runtime_sha256": {
+            "policy.py": "42018ae9cc6c37867b8d595a28cb8794054becea9ce086d9ebc6bb8a79ff703c",
+            "perception.py": "7e1f7b9596414829f2d8758a234929d3950ef1e4a223ebabf1ce5832e70546aa",
+            "rule_controller.py": "b1811949de213600d6ab2011f832d0f40c08f9cfce512f65e17754abf06cb9e9",
+            "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce"
+          }
+        },
+        "teacher500": {
+          "completed": 27,
+          "planned": 27,
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "completed": 5,
+              "planned": 5,
+              "successes": 4,
+              "completion": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "lower_fraction": "1",
+                "upper_fraction": "1",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.8,
+                "upper": 0.8,
+                "lower_fraction": "4/5",
+                "upper_fraction": "4/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.9,
+                "upper": 0.9,
+                "lower_fraction": "9/10",
+                "upper_fraction": "9/10",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "completed": 5,
+              "planned": 5,
+              "successes": 2,
+              "completion": {
+                "lower": 0.8,
+                "upper": 0.8,
+                "lower_fraction": "4/5",
+                "upper_fraction": "4/5",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "completed": 4,
+              "planned": 4,
+              "successes": 1,
+              "completion": {
+                "lower": 0.6375,
+                "upper": 0.6375,
+                "lower_fraction": "51/80",
+                "upper_fraction": "51/80",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.25,
+                "upper": 0.25,
+                "lower_fraction": "1/4",
+                "upper_fraction": "1/4",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "completed": 4,
+              "planned": 4,
+              "successes": 0,
+              "completion": {
+                "lower": 0.45,
+                "upper": 0.45,
+                "lower_fraction": "9/20",
+                "upper_fraction": "9/20",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.0,
+                "upper": 0.0,
+                "lower_fraction": "0",
+                "upper_fraction": "0",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "completed": 4,
+              "planned": 4,
+              "successes": 1,
+              "completion": {
+                "lower": 0.625,
+                "upper": 0.625,
+                "lower_fraction": "5/8",
+                "upper_fraction": "5/8",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.25,
+                "upper": 0.25,
+                "lower_fraction": "1/4",
+                "upper_fraction": "1/4",
+                "exact": true
+              }
+            }
+          ],
+          "completion": {
+            "lower": 0.7354166666666667,
+            "upper": 0.7354166666666667,
+            "lower_fraction": "353/480",
+            "upper_fraction": "353/480",
+            "exact": true
+          },
+          "success": {
+            "lower": 0.38333333333333336,
+            "upper": 0.38333333333333336,
+            "lower_fraction": "23/60",
+            "upper_fraction": "23/60",
+            "exact": true
+          }
+        },
+        "extended": {
+          "completed": 45,
+          "planned": 45,
+          "cells": [
+            {
+              "task": "2x5",
+              "profile": "basic",
+              "completed": 5,
+              "planned": 5,
+              "successes": 4,
+              "completion": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "lower_fraction": "1",
+                "upper_fraction": "1",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.8,
+                "upper": 0.8,
+                "lower_fraction": "4/5",
+                "upper_fraction": "4/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "medium",
+              "completed": 5,
+              "planned": 5,
+              "successes": 3,
+              "completion": {
+                "lower": 0.9,
+                "upper": 0.9,
+                "lower_fraction": "9/10",
+                "upper_fraction": "9/10",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.6,
+                "upper": 0.6,
+                "lower_fraction": "3/5",
+                "upper_fraction": "3/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x5",
+              "profile": "advanced",
+              "completed": 5,
+              "planned": 5,
+              "successes": 2,
+              "completion": {
+                "lower": 0.8,
+                "upper": 0.8,
+                "lower_fraction": "4/5",
+                "upper_fraction": "4/5",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.4,
+                "upper": 0.4,
+                "lower_fraction": "2/5",
+                "upper_fraction": "2/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "basic",
+              "completed": 10,
+              "planned": 10,
+              "successes": 3,
+              "completion": {
+                "lower": 0.645,
+                "upper": 0.645,
+                "lower_fraction": "129/200",
+                "upper_fraction": "129/200",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.3,
+                "upper": 0.3,
+                "lower_fraction": "3/10",
+                "upper_fraction": "3/10",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "medium",
+              "completed": 10,
+              "planned": 10,
+              "successes": 2,
+              "completion": {
+                "lower": 0.585,
+                "upper": 0.585,
+                "lower_fraction": "117/200",
+                "upper_fraction": "117/200",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.2,
+                "upper": 0.2,
+                "lower_fraction": "1/5",
+                "upper_fraction": "1/5",
+                "exact": true
+              }
+            },
+            {
+              "task": "2x10",
+              "profile": "advanced",
+              "completed": 10,
+              "planned": 10,
+              "successes": 1,
+              "completion": {
+                "lower": 0.53,
+                "upper": 0.53,
+                "lower_fraction": "53/100",
+                "upper_fraction": "53/100",
+                "exact": true
+              },
+              "success": {
+                "lower": 0.1,
+                "upper": 0.1,
+                "lower_fraction": "1/10",
+                "upper_fraction": "1/10",
+                "exact": true
+              }
+            }
+          ],
+          "completion": {
+            "lower": 0.7433333333333333,
+            "upper": 0.7433333333333333,
+            "lower_fraction": "223/300",
+            "upper_fraction": "223/300",
+            "exact": true
+          },
+          "success": {
+            "lower": 0.4,
+            "upper": 0.4,
+            "lower_fraction": "2/5",
+            "upper_fraction": "2/5",
+            "exact": true
+          }
+        },
+        "vector_lower": [
+          "353/480",
+          "223/300",
+          "23/60",
+          "2/5"
+        ],
+        "vector_upper": [
+          "353/480",
+          "223/300",
+          "23/60",
+          "2/5"
+        ],
+        "primary_complete": true,
+        "eligible": true
+      }
+    },
+    "selected_candidate": "align_r5",
+    "selection_mathematically_determined": true,
+    "proof": [
+      {
+        "competitor": "v6_reference",
+        "decisive_metric": "teacher500_completion",
+        "winner_lower": "353/480",
+        "competitor_upper": "217/300"
+      },
+      {
+        "competitor": "target_only",
+        "decisive_metric": "teacher500_completion",
+        "winner_lower": "353/480",
+        "competitor_upper": "331/480"
+      },
+      {
+        "competitor": "minimal_r5",
+        "decisive_metric": "teacher500_completion",
+        "winner_lower": "353/480",
+        "competitor_upper": "107/150"
+      }
+    ],
+    "final_ranking": [
+      "align_r5",
+      "v6_reference",
+      "minimal_r5",
+      "target_only"
+    ],
+    "lower_bound_order": [
+      "align_r5",
+      "v6_reference",
+      "minimal_r5",
+      "target_only"
+    ],
+    "teacher_complete_for_all": true,
+    "source_commit": "0729068ee1e75a562cfbc4f2c83ab9539cf75081"
+  }
+}

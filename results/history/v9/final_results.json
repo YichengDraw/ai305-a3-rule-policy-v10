@@ -1,0 +1,1546 @@
+{
+  "scope": "v9_final_completed_evaluation",
+  "formal": {
+    "scope": "official_natural_sampling_only",
+    "phase": "full",
+    "results": {
+      "v8": {
+        "overall": {
+          "episodes": 120,
+          "final_count_sum": 1319,
+          "mean_final_count": 10.991666666666667,
+          "mean_final_count_fraction": "1319/120",
+          "normalized_completion": 0.7645833333333333,
+          "normalized_completion_fraction": "367/480",
+          "quantity_weighted_completion": 0.7327777777777778,
+          "successes": 57,
+          "official_success_rate": 0.475,
+          "mean_steps": 1252.0
+        },
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "episodes": 20,
+            "final_count_sum": 199,
+            "mean_final_count": 9.95,
+            "mean_final_count_fraction": "199/20",
+            "normalized_completion": 0.995,
+            "normalized_completion_fraction": "199/200",
+            "quantity_weighted_completion": 0.995,
+            "successes": 15,
+            "official_success_rate": 0.75,
+            "mean_steps": 253.5
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "episodes": 20,
+            "final_count_sum": 180,
+            "mean_final_count": 9.0,
+            "mean_final_count_fraction": "9",
+            "normalized_completion": 0.9,
+            "normalized_completion_fraction": "9/10",
+            "quantity_weighted_completion": 0.9,
+            "successes": 14,
+            "official_success_rate": 0.7,
+            "mean_steps": 279.8
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "episodes": 20,
+            "final_count_sum": 137,
+            "mean_final_count": 6.85,
+            "mean_final_count_fraction": "137/20",
+            "normalized_completion": 0.685,
+            "normalized_completion_fraction": "137/200",
+            "quantity_weighted_completion": 0.685,
+            "successes": 5,
+            "official_success_rate": 0.25,
+            "mean_steps": 368.45
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "episodes": 20,
+            "final_count_sum": 303,
+            "mean_final_count": 15.15,
+            "mean_final_count_fraction": "303/20",
+            "normalized_completion": 0.7575,
+            "normalized_completion_fraction": "303/400",
+            "quantity_weighted_completion": 0.7575,
+            "successes": 9,
+            "official_success_rate": 0.45,
+            "mean_steps": 1789.15
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "episodes": 20,
+            "final_count_sum": 254,
+            "mean_final_count": 12.7,
+            "mean_final_count_fraction": "127/10",
+            "normalized_completion": 0.635,
+            "normalized_completion_fraction": "127/200",
+            "quantity_weighted_completion": 0.635,
+            "successes": 7,
+            "official_success_rate": 0.35,
+            "mean_steps": 2397.2
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "episodes": 20,
+            "final_count_sum": 246,
+            "mean_final_count": 12.3,
+            "mean_final_count_fraction": "123/10",
+            "normalized_completion": 0.615,
+            "normalized_completion_fraction": "123/200",
+            "quantity_weighted_completion": 0.615,
+            "successes": 7,
+            "official_success_rate": 0.35,
+            "mean_steps": 2423.9
+          }
+        ],
+        "failure_reasons": {
+          "max_steps_exceeded": 27,
+          "12/20 cookies in target box; 68/60 cookies left in source (collateral disturbance)": 1,
+          "5/10 cookies in target box; 75/70 cookies left in source (collateral disturbance)": 5,
+          "target slots not one-to-one matched; valid fill held 0/5 control steps": 6,
+          "2/10 cookies in target box": 1,
+          "69/70 cookies left in source (collateral disturbance)": 3,
+          "6/20 cookies in target box; 62/60 cookies left in source (collateral disturbance)": 1,
+          "10/20 cookies in target box; 70/60 cookies left in source (collateral disturbance)": 2,
+          "6/20 cookies in target box; 74/60 cookies left in source (collateral disturbance)": 1,
+          "10/20 cookies in target box; 63/60 cookies left in source (collateral disturbance)": 1,
+          "8/20 cookies in target box; 70/60 cookies left in source (collateral disturbance)": 1,
+          "19/20 cookies in target box": 2,
+          "8/20 cookies in target box; 72/60 cookies left in source (collateral disturbance)": 2,
+          "12/20 cookies in target box; 59/60 cookies left in source (collateral disturbance)": 1,
+          "8/20 cookies in target box; 66/60 cookies left in source (collateral disturbance)": 1,
+          "18/20 cookies in target box": 1,
+          "12/20 cookies in target box": 1,
+          "14/20 cookies in target box; 63/60 cookies left in source (collateral disturbance)": 1,
+          "5/10 cookies in target box": 3,
+          "9/10 cookies in target box": 1,
+          "5/10 cookies in target box; 67/70 cookies left in source (collateral disturbance)": 1
+        }
+      },
+      "v9": {
+        "overall": {
+          "episodes": 120,
+          "final_count_sum": 1546,
+          "mean_final_count": 12.883333333333333,
+          "mean_final_count_fraction": "773/60",
+          "normalized_completion": 0.88125,
+          "normalized_completion_fraction": "141/160",
+          "quantity_weighted_completion": 0.8588888888888889,
+          "successes": 90,
+          "official_success_rate": 0.75,
+          "mean_steps": 899.1166666666667
+        },
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "episodes": 20,
+            "final_count_sum": 199,
+            "mean_final_count": 9.95,
+            "mean_final_count_fraction": "199/20",
+            "normalized_completion": 0.995,
+            "normalized_completion_fraction": "199/200",
+            "quantity_weighted_completion": 0.995,
+            "successes": 16,
+            "official_success_rate": 0.8,
+            "mean_steps": 335.55
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "episodes": 20,
+            "final_count_sum": 195,
+            "mean_final_count": 9.75,
+            "mean_final_count_fraction": "39/4",
+            "normalized_completion": 0.975,
+            "normalized_completion_fraction": "39/40",
+            "quantity_weighted_completion": 0.975,
+            "successes": 18,
+            "official_success_rate": 0.9,
+            "mean_steps": 320.7
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "episodes": 20,
+            "final_count_sum": 175,
+            "mean_final_count": 8.75,
+            "mean_final_count_fraction": "35/4",
+            "normalized_completion": 0.875,
+            "normalized_completion_fraction": "7/8",
+            "quantity_weighted_completion": 0.875,
+            "successes": 15,
+            "official_success_rate": 0.75,
+            "mean_steps": 343.8
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "episodes": 20,
+            "final_count_sum": 342,
+            "mean_final_count": 17.1,
+            "mean_final_count_fraction": "171/10",
+            "normalized_completion": 0.855,
+            "normalized_completion_fraction": "171/200",
+            "quantity_weighted_completion": 0.855,
+            "successes": 14,
+            "official_success_rate": 0.7,
+            "mean_steps": 1445.95
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "episodes": 20,
+            "final_count_sum": 337,
+            "mean_final_count": 16.85,
+            "mean_final_count_fraction": "337/20",
+            "normalized_completion": 0.8425,
+            "normalized_completion_fraction": "337/400",
+            "quantity_weighted_completion": 0.8425,
+            "successes": 15,
+            "official_success_rate": 0.75,
+            "mean_steps": 1286.2
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "episodes": 20,
+            "final_count_sum": 298,
+            "mean_final_count": 14.9,
+            "mean_final_count_fraction": "149/10",
+            "normalized_completion": 0.745,
+            "normalized_completion_fraction": "149/200",
+            "quantity_weighted_completion": 0.745,
+            "successes": 12,
+            "official_success_rate": 0.6,
+            "mean_steps": 1662.5
+          }
+        ],
+        "failure_reasons": {
+          "max_steps_exceeded": 26,
+          "5/10 cookies in target box; 75/70 cookies left in source (collateral disturbance)": 4
+        }
+      }
+    },
+    "mean_count_delta": 1.8916666666666657,
+    "normalized_delta_pp": 11.66666666666667,
+    "success_delta_pp": 27.500000000000004,
+    "validation": {
+      "raw_shards": 240,
+      "episodes_per_policy": 120,
+      "unique": true,
+      "all_returncodes_zero": true,
+      "budgets_500_3200": true,
+      "non_strict_hold5": true,
+      "nested_runtime_sha_match": true,
+      "initial_scenes_match": true,
+      "raw_and_merged_identical": true,
+      "v8_task_only_parent_verified": true
+    },
+    "source_commit": "0729068ee1e75a562cfbc4f2c83ab9539cf75081",
+    "raw_evidence": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/formal_v9_19000/audits/natural_full_raw.json"
+  },
+  "by_task": {
+    "v8": {
+      "2x5": {
+        "episodes": 60,
+        "final_count_sum": 516,
+        "mean_final_count": 8.6,
+        "mean_final_count_fraction": "43/5",
+        "normalized_completion": 0.86,
+        "normalized_completion_fraction": "43/50",
+        "quantity_weighted_completion": 0.86,
+        "successes": 34,
+        "official_success_rate": 0.5666666666666667,
+        "mean_steps": 300.5833333333333
+      },
+      "2x10": {
+        "episodes": 60,
+        "final_count_sum": 803,
+        "mean_final_count": 13.383333333333333,
+        "mean_final_count_fraction": "803/60",
+        "normalized_completion": 0.6691666666666667,
+        "normalized_completion_fraction": "803/1200",
+        "quantity_weighted_completion": 0.6691666666666667,
+        "successes": 23,
+        "official_success_rate": 0.38333333333333336,
+        "mean_steps": 2203.4166666666665
+      }
+    },
+    "v9": {
+      "2x5": {
+        "episodes": 60,
+        "final_count_sum": 569,
+        "mean_final_count": 9.483333333333333,
+        "mean_final_count_fraction": "569/60",
+        "normalized_completion": 0.9483333333333334,
+        "normalized_completion_fraction": "569/600",
+        "quantity_weighted_completion": 0.9483333333333334,
+        "successes": 49,
+        "official_success_rate": 0.8166666666666667,
+        "mean_steps": 333.35
+      },
+      "2x10": {
+        "episodes": 60,
+        "final_count_sum": 977,
+        "mean_final_count": 16.283333333333335,
+        "mean_final_count_fraction": "977/60",
+        "normalized_completion": 0.8141666666666667,
+        "normalized_completion_fraction": "977/1200",
+        "quantity_weighted_completion": 0.8141666666666667,
+        "successes": 41,
+        "official_success_rate": 0.6833333333333333,
+        "mean_steps": 1464.8833333333334
+      }
+    }
+  },
+  "paired": {
+    "protocol": {
+      "episodes_per_policy": 120,
+      "seeds": [
+        19000,
+        19019
+      ],
+      "source_column": 1,
+      "steps": {
+        "2x5": 500,
+        "2x10": 3200
+      },
+      "label": "官方500/3200自然抽样",
+      "official_non_strict": true
+    },
+    "old": {
+      "episodes": 120,
+      "mean_final_count": 10.991666666666667,
+      "successes": 57,
+      "success_rate": 0.475,
+      "completion_rate": 0.7645833333333333,
+      "cookie_weighted_completion_rate": 0.7327777777777778,
+      "target_total": 1319,
+      "mean_steps": 1252.0,
+      "done_but_failed": 0,
+      "phase_counts": {
+        "UNVERIFIED": 59,
+        "PLACE": 36,
+        "RECOVER_PATH": 13,
+        "OPEN": 1,
+        "ALIGN_OBSERVE": 2,
+        "LOCAL_ALIGN": 4,
+        "SELECT": 1,
+        "ALIGN_RETURN": 2,
+        "APPROACH": 1,
+        "RECOVER_CLEAR": 1
+      },
+      "failure_reasons": {
+        "no controller failure reason": 44,
+        "source group unavailable with no useful reached observation pose": 18,
+        "previously reached recovery path made no observed progress": 1
+      }
+    },
+    "new": {
+      "episodes": 120,
+      "mean_final_count": 12.883333333333333,
+      "successes": 90,
+      "success_rate": 0.75,
+      "completion_rate": 0.88125,
+      "cookie_weighted_completion_rate": 0.8588888888888889,
+      "target_total": 1546,
+      "mean_steps": 899.1166666666667,
+      "done_but_failed": 0,
+      "phase_counts": {
+        "TERMINAL_OBSERVE": 5,
+        "PLACE": 49,
+        "ALIGN_OBSERVE": 2,
+        "UNVERIFIED": 45,
+        "SOURCE_OBSERVE": 15,
+        "TRANSPORT": 2,
+        "RECOVER_PATH": 1,
+        "TARGET_RETREAT": 1
+      },
+      "failure_reasons": {
+        "no controller failure reason": 26,
+        "source group unavailable with no useful reached observation pose": 4
+      }
+    },
+    "cells": [
+      {
+        "task": "2x5",
+        "profile": "basic",
+        "old": {
+          "episodes": 20,
+          "mean_final_count": 9.95,
+          "successes": 15,
+          "success_rate": 0.75,
+          "completion_rate": 0.9949999999999999,
+          "cookie_weighted_completion_rate": 0.995,
+          "target_total": 199,
+          "mean_steps": 253.5,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "UNVERIFIED": 5,
+            "PLACE": 15
+          },
+          "failure_reasons": {
+            "no controller failure reason": 5
+          }
+        },
+        "new": {
+          "episodes": 20,
+          "mean_final_count": 9.95,
+          "successes": 16,
+          "success_rate": 0.8,
+          "completion_rate": 0.9949999999999999,
+          "cookie_weighted_completion_rate": 0.995,
+          "target_total": 199,
+          "mean_steps": 335.55,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "TERMINAL_OBSERVE": 4,
+            "PLACE": 16
+          },
+          "failure_reasons": {
+            "no controller failure reason": 4
+          }
+        },
+        "completion_delta_pp": 0.0,
+        "success_delta_pp": 5.000000000000004
+      },
+      {
+        "task": "2x5",
+        "profile": "medium",
+        "old": {
+          "episodes": 20,
+          "mean_final_count": 9.0,
+          "successes": 14,
+          "success_rate": 0.7,
+          "completion_rate": 0.9,
+          "cookie_weighted_completion_rate": 0.9,
+          "target_total": 180,
+          "mean_steps": 279.8,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "PLACE": 14,
+            "RECOVER_PATH": 1,
+            "UNVERIFIED": 4,
+            "OPEN": 1
+          },
+          "failure_reasons": {
+            "no controller failure reason": 6
+          }
+        },
+        "new": {
+          "episodes": 20,
+          "mean_final_count": 9.75,
+          "successes": 18,
+          "success_rate": 0.9,
+          "completion_rate": 0.975,
+          "cookie_weighted_completion_rate": 0.975,
+          "target_total": 195,
+          "mean_steps": 320.7,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "PLACE": 18,
+            "ALIGN_OBSERVE": 1,
+            "TERMINAL_OBSERVE": 1
+          },
+          "failure_reasons": {
+            "no controller failure reason": 2
+          }
+        },
+        "completion_delta_pp": 7.499999999999996,
+        "success_delta_pp": 20.000000000000007
+      },
+      {
+        "task": "2x5",
+        "profile": "advanced",
+        "old": {
+          "episodes": 20,
+          "mean_final_count": 6.85,
+          "successes": 5,
+          "success_rate": 0.25,
+          "completion_rate": 0.6849999999999999,
+          "cookie_weighted_completion_rate": 0.685,
+          "target_total": 137,
+          "mean_steps": 368.45,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "PLACE": 7,
+            "UNVERIFIED": 11,
+            "RECOVER_PATH": 1,
+            "ALIGN_OBSERVE": 1
+          },
+          "failure_reasons": {
+            "source group unavailable with no useful reached observation pose": 6,
+            "no controller failure reason": 8,
+            "previously reached recovery path made no observed progress": 1
+          }
+        },
+        "new": {
+          "episodes": 20,
+          "mean_final_count": 8.75,
+          "successes": 15,
+          "success_rate": 0.75,
+          "completion_rate": 0.875,
+          "cookie_weighted_completion_rate": 0.875,
+          "target_total": 175,
+          "mean_steps": 343.8,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "PLACE": 15,
+            "UNVERIFIED": 4,
+            "ALIGN_OBSERVE": 1
+          },
+          "failure_reasons": {
+            "source group unavailable with no useful reached observation pose": 4,
+            "no controller failure reason": 1
+          }
+        },
+        "completion_delta_pp": 19.000000000000007,
+        "success_delta_pp": 50.0
+      },
+      {
+        "task": "2x10",
+        "profile": "basic",
+        "old": {
+          "episodes": 20,
+          "mean_final_count": 15.15,
+          "successes": 9,
+          "success_rate": 0.45,
+          "completion_rate": 0.7575000000000001,
+          "cookie_weighted_completion_rate": 0.7575,
+          "target_total": 303,
+          "mean_steps": 1789.15,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "UNVERIFIED": 16,
+            "LOCAL_ALIGN": 1,
+            "SELECT": 1,
+            "RECOVER_PATH": 2
+          },
+          "failure_reasons": {
+            "source group unavailable with no useful reached observation pose": 4,
+            "no controller failure reason": 7
+          }
+        },
+        "new": {
+          "episodes": 20,
+          "mean_final_count": 17.1,
+          "successes": 14,
+          "success_rate": 0.7,
+          "completion_rate": 0.8550000000000001,
+          "cookie_weighted_completion_rate": 0.855,
+          "target_total": 342,
+          "mean_steps": 1445.95,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "UNVERIFIED": 14,
+            "SOURCE_OBSERVE": 6
+          },
+          "failure_reasons": {
+            "no controller failure reason": 6
+          }
+        },
+        "completion_delta_pp": 9.750000000000004,
+        "success_delta_pp": 24.999999999999993
+      },
+      {
+        "task": "2x10",
+        "profile": "medium",
+        "old": {
+          "episodes": 20,
+          "mean_final_count": 12.7,
+          "successes": 7,
+          "success_rate": 0.35,
+          "completion_rate": 0.635,
+          "cookie_weighted_completion_rate": 0.635,
+          "target_total": 254,
+          "mean_steps": 2397.2,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "LOCAL_ALIGN": 2,
+            "UNVERIFIED": 11,
+            "RECOVER_PATH": 5,
+            "ALIGN_RETURN": 1,
+            "APPROACH": 1
+          },
+          "failure_reasons": {
+            "no controller failure reason": 10,
+            "source group unavailable with no useful reached observation pose": 3
+          }
+        },
+        "new": {
+          "episodes": 20,
+          "mean_final_count": 16.85,
+          "successes": 15,
+          "success_rate": 0.75,
+          "completion_rate": 0.8425,
+          "cookie_weighted_completion_rate": 0.8425,
+          "target_total": 337,
+          "mean_steps": 1286.2,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "UNVERIFIED": 15,
+            "TRANSPORT": 1,
+            "SOURCE_OBSERVE": 4
+          },
+          "failure_reasons": {
+            "no controller failure reason": 5
+          }
+        },
+        "completion_delta_pp": 20.75,
+        "success_delta_pp": 40.0
+      },
+      {
+        "task": "2x10",
+        "profile": "advanced",
+        "old": {
+          "episodes": 20,
+          "mean_final_count": 12.3,
+          "successes": 7,
+          "success_rate": 0.35,
+          "completion_rate": 0.615,
+          "cookie_weighted_completion_rate": 0.615,
+          "target_total": 246,
+          "mean_steps": 2423.9,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "RECOVER_PATH": 4,
+            "UNVERIFIED": 12,
+            "ALIGN_OBSERVE": 1,
+            "ALIGN_RETURN": 1,
+            "LOCAL_ALIGN": 1,
+            "RECOVER_CLEAR": 1
+          },
+          "failure_reasons": {
+            "no controller failure reason": 8,
+            "source group unavailable with no useful reached observation pose": 5
+          }
+        },
+        "new": {
+          "episodes": 20,
+          "mean_final_count": 14.9,
+          "successes": 12,
+          "success_rate": 0.6,
+          "completion_rate": 0.745,
+          "cookie_weighted_completion_rate": 0.745,
+          "target_total": 298,
+          "mean_steps": 1662.5,
+          "done_but_failed": 0,
+          "phase_counts": {
+            "UNVERIFIED": 12,
+            "RECOVER_PATH": 1,
+            "SOURCE_OBSERVE": 5,
+            "TARGET_RETREAT": 1,
+            "TRANSPORT": 1
+          },
+          "failure_reasons": {
+            "no controller failure reason": 8
+          }
+        },
+        "completion_delta_pp": 13.0,
+        "success_delta_pp": 25.0
+      }
+    ],
+    "mean_count_delta": 1.8916666666666657,
+    "completion_delta_pp": 11.66666666666667,
+    "success_delta_pp": 27.500000000000004,
+    "paired_success": {
+      "new_only": 39,
+      "old_only": 6
+    },
+    "paired_completion": {
+      "improved": 38,
+      "unchanged": 74,
+      "worsened": 8
+    }
+  },
+  "structural": [
+    {
+      "name": "source1原生覆盖",
+      "evidence": "source1_fov_pathcache_99_summary.json",
+      "overall": {
+        "episodes": 99,
+        "final_count_sum": 1377,
+        "mean_final_count": 13.909090909090908,
+        "mean_final_count_fraction": "153/11",
+        "normalized_completion": 0.740909090909091,
+        "normalized_completion_fraction": "163/220",
+        "quantity_weighted_completion": 0.7285714285714285,
+        "successes": 60,
+        "official_success_rate": 0.6060606060606061,
+        "mean_steps": 1564.4949494949494
+      },
+      "cells": 33,
+      "all_full_success_cells": 10,
+      "by_task": {
+        "2x5": {
+          "episodes": 9,
+          "final_count_sum": 90,
+          "mean_final_count": 10.0,
+          "mean_final_count_fraction": "10",
+          "normalized_completion": 1.0,
+          "normalized_completion_fraction": "1",
+          "quantity_weighted_completion": 1.0,
+          "successes": 9,
+          "official_success_rate": 1.0,
+          "mean_steps": 326.6666666666667
+        },
+        "2x10": {
+          "episodes": 90,
+          "final_count_sum": 1287,
+          "mean_final_count": 14.3,
+          "mean_final_count_fraction": "143/10",
+          "normalized_completion": 0.715,
+          "normalized_completion_fraction": "143/200",
+          "quantity_weighted_completion": 0.715,
+          "successes": 51,
+          "official_success_rate": 0.5666666666666667,
+          "mean_steps": 1688.2777777777778
+        }
+      },
+      "by_source": {
+        "1": {
+          "2x5": {
+            "episodes": 9,
+            "final_count_sum": 90,
+            "mean_final_count": 10.0,
+            "mean_final_count_fraction": "10",
+            "normalized_completion": 1.0,
+            "normalized_completion_fraction": "1",
+            "quantity_weighted_completion": 1.0,
+            "successes": 9,
+            "official_success_rate": 1.0,
+            "mean_steps": 326.6666666666667
+          },
+          "2x10": {
+            "episodes": 90,
+            "final_count_sum": 1287,
+            "mean_final_count": 14.3,
+            "mean_final_count_fraction": "143/10",
+            "normalized_completion": 0.715,
+            "normalized_completion_fraction": "143/200",
+            "quantity_weighted_completion": 0.715,
+            "successes": 51,
+            "official_success_rate": 0.5666666666666667,
+            "mean_steps": 1688.2777777777778
+          }
+        }
+      }
+    },
+    {
+      "name": "四来源列原生覆盖",
+      "evidence": "coverage_final_v9/four_columns_summary.json",
+      "overall": {
+        "episodes": 396,
+        "final_count_sum": 2683,
+        "mean_final_count": 6.775252525252525,
+        "mean_final_count_fraction": "2683/396",
+        "normalized_completion": 0.3619949494949495,
+        "normalized_completion_fraction": "2867/7920",
+        "quantity_weighted_completion": 0.3548941798941799,
+        "successes": 68,
+        "official_success_rate": 0.1717171717171717,
+        "mean_steps": 2019.9848484848485
+      },
+      "cells": 132,
+      "all_full_success_cells": 10,
+      "by_task": {
+        "2x5": {
+          "episodes": 36,
+          "final_count_sum": 184,
+          "mean_final_count": 5.111111111111111,
+          "mean_final_count_fraction": "46/9",
+          "normalized_completion": 0.5111111111111111,
+          "normalized_completion_fraction": "23/45",
+          "quantity_weighted_completion": 0.5111111111111111,
+          "successes": 11,
+          "official_success_rate": 0.3055555555555556,
+          "mean_steps": 359.47222222222223
+        },
+        "2x10": {
+          "episodes": 360,
+          "final_count_sum": 2499,
+          "mean_final_count": 6.941666666666666,
+          "mean_final_count_fraction": "833/120",
+          "normalized_completion": 0.34708333333333335,
+          "normalized_completion_fraction": "833/2400",
+          "quantity_weighted_completion": 0.34708333333333335,
+          "successes": 57,
+          "official_success_rate": 0.15833333333333333,
+          "mean_steps": 2186.036111111111
+        }
+      },
+      "by_source": {
+        "1": {
+          "2x5": {
+            "episodes": 9,
+            "final_count_sum": 90,
+            "mean_final_count": 10.0,
+            "mean_final_count_fraction": "10",
+            "normalized_completion": 1.0,
+            "normalized_completion_fraction": "1",
+            "quantity_weighted_completion": 1.0,
+            "successes": 9,
+            "official_success_rate": 1.0,
+            "mean_steps": 326.6666666666667
+          },
+          "2x10": {
+            "episodes": 90,
+            "final_count_sum": 1287,
+            "mean_final_count": 14.3,
+            "mean_final_count_fraction": "143/10",
+            "normalized_completion": 0.715,
+            "normalized_completion_fraction": "143/200",
+            "quantity_weighted_completion": 0.715,
+            "successes": 51,
+            "official_success_rate": 0.5666666666666667,
+            "mean_steps": 1688.2777777777778
+          }
+        },
+        "2": {
+          "2x5": {
+            "episodes": 9,
+            "final_count_sum": 10,
+            "mean_final_count": 1.1111111111111112,
+            "mean_final_count_fraction": "10/9",
+            "normalized_completion": 0.1111111111111111,
+            "normalized_completion_fraction": "1/9",
+            "quantity_weighted_completion": 0.1111111111111111,
+            "successes": 1,
+            "official_success_rate": 0.1111111111111111,
+            "mean_steps": 127.88888888888889
+          },
+          "2x10": {
+            "episodes": 90,
+            "final_count_sum": 490,
+            "mean_final_count": 5.444444444444445,
+            "mean_final_count_fraction": "49/9",
+            "normalized_completion": 0.2722222222222222,
+            "normalized_completion_fraction": "49/180",
+            "quantity_weighted_completion": 0.2722222222222222,
+            "successes": 6,
+            "official_success_rate": 0.06666666666666667,
+            "mean_steps": 1943.2444444444445
+          }
+        },
+        "3": {
+          "2x5": {
+            "episodes": 9,
+            "final_count_sum": 39,
+            "mean_final_count": 4.333333333333333,
+            "mean_final_count_fraction": "13/3",
+            "normalized_completion": 0.43333333333333335,
+            "normalized_completion_fraction": "13/30",
+            "quantity_weighted_completion": 0.43333333333333335,
+            "successes": 1,
+            "official_success_rate": 0.1111111111111111,
+            "mean_steps": 483.3333333333333
+          },
+          "2x10": {
+            "episodes": 90,
+            "final_count_sum": 323,
+            "mean_final_count": 3.588888888888889,
+            "mean_final_count_fraction": "323/90",
+            "normalized_completion": 0.17944444444444443,
+            "normalized_completion_fraction": "323/1800",
+            "quantity_weighted_completion": 0.17944444444444443,
+            "successes": 0,
+            "official_success_rate": 0.0,
+            "mean_steps": 2243.677777777778
+          }
+        },
+        "4": {
+          "2x5": {
+            "episodes": 9,
+            "final_count_sum": 45,
+            "mean_final_count": 5.0,
+            "mean_final_count_fraction": "5",
+            "normalized_completion": 0.5,
+            "normalized_completion_fraction": "1/2",
+            "quantity_weighted_completion": 0.5,
+            "successes": 0,
+            "official_success_rate": 0.0,
+            "mean_steps": 500.0
+          },
+          "2x10": {
+            "episodes": 90,
+            "final_count_sum": 399,
+            "mean_final_count": 4.433333333333334,
+            "mean_final_count_fraction": "133/30",
+            "normalized_completion": 0.22166666666666668,
+            "normalized_completion_fraction": "133/600",
+            "quantity_weighted_completion": 0.22166666666666668,
+            "successes": 0,
+            "official_success_rate": 0.0,
+            "mean_steps": 2868.9444444444443
+          }
+        }
+      }
+    },
+    {
+      "name": "含advanced四色的完整覆盖",
+      "evidence": "coverage_final_v9/expanded_summary.json",
+      "overall": {
+        "episodes": 792,
+        "final_count_sum": 4912,
+        "mean_final_count": 6.202020202020202,
+        "mean_final_count_fraction": "614/99",
+        "normalized_completion": 0.33080808080808083,
+        "normalized_completion_fraction": "131/396",
+        "quantity_weighted_completion": 0.32486772486772486,
+        "successes": 116,
+        "official_success_rate": 0.14646464646464646,
+        "mean_steps": 2077.3800505050503
+      },
+      "cells": 264,
+      "all_full_success_cells": 13,
+      "by_task": {
+        "2x5": {
+          "episodes": 72,
+          "final_count_sum": 328,
+          "mean_final_count": 4.555555555555555,
+          "mean_final_count_fraction": "41/9",
+          "normalized_completion": 0.45555555555555555,
+          "normalized_completion_fraction": "41/90",
+          "quantity_weighted_completion": 0.45555555555555555,
+          "successes": 20,
+          "official_success_rate": 0.2777777777777778,
+          "mean_steps": 329.93055555555554
+        },
+        "2x10": {
+          "episodes": 720,
+          "final_count_sum": 4584,
+          "mean_final_count": 6.366666666666666,
+          "mean_final_count_fraction": "191/30",
+          "normalized_completion": 0.31833333333333336,
+          "normalized_completion_fraction": "191/600",
+          "quantity_weighted_completion": 0.31833333333333336,
+          "successes": 96,
+          "official_success_rate": 0.13333333333333333,
+          "mean_steps": 2252.125
+        }
+      },
+      "by_source": {
+        "1": {
+          "2x5": {
+            "episodes": 18,
+            "final_count_sum": 180,
+            "mean_final_count": 10.0,
+            "mean_final_count_fraction": "10",
+            "normalized_completion": 1.0,
+            "normalized_completion_fraction": "1",
+            "quantity_weighted_completion": 1.0,
+            "successes": 18,
+            "official_success_rate": 1.0,
+            "mean_steps": 337.8888888888889
+          },
+          "2x10": {
+            "episodes": 180,
+            "final_count_sum": 2377,
+            "mean_final_count": 13.205555555555556,
+            "mean_final_count_fraction": "2377/180",
+            "normalized_completion": 0.6602777777777777,
+            "normalized_completion_fraction": "2377/3600",
+            "quantity_weighted_completion": 0.6602777777777777,
+            "successes": 89,
+            "official_success_rate": 0.49444444444444446,
+            "mean_steps": 1890.8222222222223
+          }
+        },
+        "2": {
+          "2x5": {
+            "episodes": 18,
+            "final_count_sum": 10,
+            "mean_final_count": 0.5555555555555556,
+            "mean_final_count_fraction": "5/9",
+            "normalized_completion": 0.05555555555555555,
+            "normalized_completion_fraction": "1/18",
+            "quantity_weighted_completion": 0.05555555555555555,
+            "successes": 1,
+            "official_success_rate": 0.05555555555555555,
+            "mean_steps": 96.05555555555556
+          },
+          "2x10": {
+            "episodes": 180,
+            "final_count_sum": 736,
+            "mean_final_count": 4.088888888888889,
+            "mean_final_count_fraction": "184/45",
+            "normalized_completion": 0.20444444444444446,
+            "normalized_completion_fraction": "46/225",
+            "quantity_weighted_completion": 0.20444444444444446,
+            "successes": 6,
+            "official_success_rate": 0.03333333333333333,
+            "mean_steps": 2077.1277777777777
+          }
+        },
+        "3": {
+          "2x5": {
+            "episodes": 18,
+            "final_count_sum": 48,
+            "mean_final_count": 2.6666666666666665,
+            "mean_final_count_fraction": "8/3",
+            "normalized_completion": 0.26666666666666666,
+            "normalized_completion_fraction": "4/15",
+            "quantity_weighted_completion": 0.26666666666666666,
+            "successes": 1,
+            "official_success_rate": 0.05555555555555555,
+            "mean_steps": 385.77777777777777
+          },
+          "2x10": {
+            "episodes": 180,
+            "final_count_sum": 644,
+            "mean_final_count": 3.577777777777778,
+            "mean_final_count_fraction": "161/45",
+            "normalized_completion": 0.17888888888888888,
+            "normalized_completion_fraction": "161/900",
+            "quantity_weighted_completion": 0.17888888888888888,
+            "successes": 1,
+            "official_success_rate": 0.005555555555555556,
+            "mean_steps": 2115.261111111111
+          }
+        },
+        "4": {
+          "2x5": {
+            "episodes": 18,
+            "final_count_sum": 90,
+            "mean_final_count": 5.0,
+            "mean_final_count_fraction": "5",
+            "normalized_completion": 0.5,
+            "normalized_completion_fraction": "1/2",
+            "quantity_weighted_completion": 0.5,
+            "successes": 0,
+            "official_success_rate": 0.0,
+            "mean_steps": 500.0
+          },
+          "2x10": {
+            "episodes": 180,
+            "final_count_sum": 827,
+            "mean_final_count": 4.594444444444444,
+            "mean_final_count_fraction": "827/180",
+            "normalized_completion": 0.22972222222222222,
+            "normalized_completion_fraction": "827/3600",
+            "quantity_weighted_completion": 0.22972222222222222,
+            "successes": 0,
+            "official_success_rate": 0.0,
+            "mean_steps": 2925.288888888889
+          }
+        }
+      }
+    }
+  ],
+  "boundary_stress": {
+    "episodes": 14,
+    "final_count_sum": 64,
+    "mean_final_count": 4.571428571428571,
+    "mean_final_count_fraction": "32/7",
+    "normalized_completion": 0.22857142857142856,
+    "normalized_completion_fraction": "8/35",
+    "quantity_weighted_completion": 0.22857142857142856,
+    "successes": 0,
+    "official_success_rate": 0.0,
+    "mean_steps": 2812.5
+  },
+  "pressure_branch_proofs": [
+    {
+      "source_directory": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/replay_selected_pressure14",
+      "branches": [
+        {
+          "task": "2x10",
+          "source_column": 4,
+          "admission": {
+            "kind": "verified_namespace_task_branch_equivalence",
+            "prior": {
+              "signature": {
+                "b2_supervisor.py": "b9401e55b3a3b32ab5befe9c8adb19580edc71f7594b506e796b65bea3e3887e",
+                "f_hybrid_policy.py": "08b1a7ac6ecb0ce9c7976887a342fd424e9e43ace8425dece0d8ccc716cece4f",
+                "f_parent_perception.py": "17eb2c82cfe201d2ae40467398f1228aeea1d389a894f531609bca636d854b1c",
+                "f_parent_policy.py": "76807f5a3a81fe4ad6eefe360ba85f4239b99ce1595975fb4877f6f4f4b54f19",
+                "f_parent_rule_controller.py": "c7825290505a7af370cbfa35406bd1ca9bc54cb65efb6b1fda20dabdfef99ed4",
+                "f_source_controller.py": "8a81a8de825cf3408208f999c38dde57d89cba5f35cf1abe9b37aef1113fd96c",
+                "f_source_perception.py": "4e29232adbc960fe6c24e805c1060a70250ceaa5d475b5d252cdc13be0f128c2",
+                "path_feasibility.py": "03b7ab4652e227dad26805062c52a215fd6f19512b0296fa407999c4bb3abf94",
+                "perception.py": "7fe2c217dea73e994b962dd3ec569eeccd42a53ee54a419c20c0b275c106d901",
+                "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+                "policy.py": "275268f5772a58f07f8d13a6ef78716bcdd0cd0643e709db09f86b907987907d",
+                "rule_controller.py": "7408dbec720d89218b1cb6c5e2ec47519a47cb372406f5a918b1f1f689ef3231",
+                "source_geometry.py": "3714435fae43f0cd159795f85f130b5295ff6e8f5c34b5e59b91b4bc1829334f"
+              },
+              "proof": "verified_task_only_router_and_inverse_namespace_AST",
+              "assembly": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/candidate_full_selected/assembly.json",
+              "parent": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/column_router_2x10_selected",
+              "namespace_prefix": "v9_tasks_885588ec2865.two10",
+              "source_column": 4,
+              "branch": "two10",
+              "nested": {
+                "signature": {
+                  "b2_supervisor.py": "b9401e55b3a3b32ab5befe9c8adb19580edc71f7594b506e796b65bea3e3887e",
+                  "f_hybrid_policy.py": "08b1a7ac6ecb0ce9c7976887a342fd424e9e43ace8425dece0d8ccc716cece4f",
+                  "f_parent_perception.py": "17eb2c82cfe201d2ae40467398f1228aeea1d389a894f531609bca636d854b1c",
+                  "f_parent_policy.py": "76807f5a3a81fe4ad6eefe360ba85f4239b99ce1595975fb4877f6f4f4b54f19",
+                  "f_parent_rule_controller.py": "c7825290505a7af370cbfa35406bd1ca9bc54cb65efb6b1fda20dabdfef99ed4",
+                  "f_source_controller.py": "8a81a8de825cf3408208f999c38dde57d89cba5f35cf1abe9b37aef1113fd96c",
+                  "f_source_perception.py": "4e29232adbc960fe6c24e805c1060a70250ceaa5d475b5d252cdc13be0f128c2",
+                  "path_feasibility.py": "03b7ab4652e227dad26805062c52a215fd6f19512b0296fa407999c4bb3abf94",
+                  "perception.py": "7fe2c217dea73e994b962dd3ec569eeccd42a53ee54a419c20c0b275c106d901",
+                  "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+                  "policy.py": "275268f5772a58f07f8d13a6ef78716bcdd0cd0643e709db09f86b907987907d",
+                  "rule_controller.py": "7408dbec720d89218b1cb6c5e2ec47519a47cb372406f5a918b1f1f689ef3231",
+                  "source_geometry.py": "3714435fae43f0cd159795f85f130b5295ff6e8f5c34b5e59b91b4bc1829334f"
+                },
+                "proof": "verified_public_source_router_and_inverse_namespace_AST",
+                "assembly": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/column_router_2x10_selected/column_router_assembly.json",
+                "parent": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/candidate_f_abc_views_prepared",
+                "namespace_prefix": "v9_columns_62850188e2ed.outer",
+                "source_column": 4,
+                "branch": "outer",
+                "nested": null
+              }
+            },
+            "current": {
+              "signature": {
+                "b2_supervisor.py": "b9401e55b3a3b32ab5befe9c8adb19580edc71f7594b506e796b65bea3e3887e",
+                "f_hybrid_policy.py": "08b1a7ac6ecb0ce9c7976887a342fd424e9e43ace8425dece0d8ccc716cece4f",
+                "f_parent_perception.py": "17eb2c82cfe201d2ae40467398f1228aeea1d389a894f531609bca636d854b1c",
+                "f_parent_policy.py": "76807f5a3a81fe4ad6eefe360ba85f4239b99ce1595975fb4877f6f4f4b54f19",
+                "f_parent_rule_controller.py": "c7825290505a7af370cbfa35406bd1ca9bc54cb65efb6b1fda20dabdfef99ed4",
+                "f_source_controller.py": "8a81a8de825cf3408208f999c38dde57d89cba5f35cf1abe9b37aef1113fd96c",
+                "f_source_perception.py": "4e29232adbc960fe6c24e805c1060a70250ceaa5d475b5d252cdc13be0f128c2",
+                "path_feasibility.py": "03b7ab4652e227dad26805062c52a215fd6f19512b0296fa407999c4bb3abf94",
+                "perception.py": "7fe2c217dea73e994b962dd3ec569eeccd42a53ee54a419c20c0b275c106d901",
+                "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+                "policy.py": "275268f5772a58f07f8d13a6ef78716bcdd0cd0643e709db09f86b907987907d",
+                "rule_controller.py": "7408dbec720d89218b1cb6c5e2ec47519a47cb372406f5a918b1f1f689ef3231",
+                "source_geometry.py": "3714435fae43f0cd159795f85f130b5295ff6e8f5c34b5e59b91b4bc1829334f"
+              },
+              "proof": "verified_task_only_router_and_inverse_namespace_AST",
+              "assembly": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/frozen_policy_v9/assembly.json",
+              "parent": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/column_router_2x10_pathcache_prepared",
+              "namespace_prefix": "v9_tasks_aff216cf6ffc.two10",
+              "source_column": 4,
+              "branch": "two10",
+              "nested": {
+                "signature": {
+                  "b2_supervisor.py": "b9401e55b3a3b32ab5befe9c8adb19580edc71f7594b506e796b65bea3e3887e",
+                  "f_hybrid_policy.py": "08b1a7ac6ecb0ce9c7976887a342fd424e9e43ace8425dece0d8ccc716cece4f",
+                  "f_parent_perception.py": "17eb2c82cfe201d2ae40467398f1228aeea1d389a894f531609bca636d854b1c",
+                  "f_parent_policy.py": "76807f5a3a81fe4ad6eefe360ba85f4239b99ce1595975fb4877f6f4f4b54f19",
+                  "f_parent_rule_controller.py": "c7825290505a7af370cbfa35406bd1ca9bc54cb65efb6b1fda20dabdfef99ed4",
+                  "f_source_controller.py": "8a81a8de825cf3408208f999c38dde57d89cba5f35cf1abe9b37aef1113fd96c",
+                  "f_source_perception.py": "4e29232adbc960fe6c24e805c1060a70250ceaa5d475b5d252cdc13be0f128c2",
+                  "path_feasibility.py": "03b7ab4652e227dad26805062c52a215fd6f19512b0296fa407999c4bb3abf94",
+                  "perception.py": "7fe2c217dea73e994b962dd3ec569eeccd42a53ee54a419c20c0b275c106d901",
+                  "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+                  "policy.py": "275268f5772a58f07f8d13a6ef78716bcdd0cd0643e709db09f86b907987907d",
+                  "rule_controller.py": "7408dbec720d89218b1cb6c5e2ec47519a47cb372406f5a918b1f1f689ef3231",
+                  "source_geometry.py": "3714435fae43f0cd159795f85f130b5295ff6e8f5c34b5e59b91b4bc1829334f"
+                },
+                "proof": "verified_public_source_router_and_inverse_namespace_AST",
+                "assembly": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/column_router_2x10_pathcache_prepared/column_router_assembly.json",
+                "parent": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/candidate_f_abc_views_prepared",
+                "namespace_prefix": "v9_columns_42f49cdb8875.outer",
+                "source_column": 4,
+                "branch": "outer",
+                "nested": null
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "frozen_runtime_sha256": {
+    "policy.py": "9b4b3fd7838827725a197fa266f318410ef7cddca5c74b7e0605a7a1a7f0ecf7",
+    "v9_tasks_aff216cf6ffc/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v9_tasks_aff216cf6ffc/two10/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v9_tasks_aff216cf6ffc/two10/policy.py": "0729e8818b4b6a65713a6047563d9ab7ca91bdb476813afe5a10c8243e719089",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/inner/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/inner/perception.py": "530533c40fc51d7d98131891c7f5f90e7be59ee39753a1f0bca29e9aeda1631c",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/inner/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/inner/policy.py": "53d826f13517c57a1f9b5e6987df1435291c69b9ba463b31fc9ad9e85fca3c68",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/inner/rule_controller.py": "c9ea45726f80a74608d7a5b6826293d9a98c34882f15cf6e00e1bcfba05c59b0",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/f_hybrid_policy.py": "0b2b6d7c0f9267b44a10426c54568f9d3b089c672692681aa96f3cba8e1a9950",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/f_parent_perception.py": "6a1dff73efb6874f42529cba6abf89d39c4c92f36ca02e11514e2bb876ea25fc",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/f_parent_policy.py": "e6ba8e7d942334a0f814caa1e5a4dfd6137c037e473d2426a21ab8a7efd81ad9",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/f_parent_rule_controller.py": "c7c65839f125007bdc85a8ae2420c5d71298e245f4b102dc803bf75b2072f9d8",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/f_source_controller.py": "c296275f4bb2eb88a00f1eeae3c4935988ce2abee7eef50b676bf0ec38a88e78",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/f_source_perception.py": "01475532f41a24909a7c33c7f91d9c0f9f376ac8d04b69bfe4618ccfe751b9ae",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/path_feasibility.py": "ff751b1f9e279601e1b35e55fe649df4a91f505ce38a0597c12f12bc755dea14",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/perception.py": "5626cbc5207ebf3c310a6a43952766f0c34dd56466027db022559ee0825c46f8",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/policy.py": "6bf80f47c2dec599141407866202db8c5df68203d5041da76955be7ef4f941a9",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/rule_controller.py": "72a8cb5617e1a4bcd089d1e50b1fcc16c1457031e27a317d3a9f4300c485037a",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/outer/source_geometry.py": "10a2aaa50643cddad4769ce24bbfcff0e18ed4c1a5dca79c67dfbb8f0ad3ab72",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/source1/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/source1/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/source1/d_supervisor.py": "296965f562472af129f5ef7422b5eeb30a00f35070efc3b5ae5998b8d6f3d016",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/source1/path_feasibility.py": "6ba094a4965de464e504526191dd982fc4eb1c577d5c7b0212331e462dd5e5d2",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/source1/perception.py": "dc5a2ae98bc9d20404984189694716813bc1e56dd8e4da91640019c53a22f90a",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/source1/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/source1/policy.py": "7feac60e20f524f1fac48f441f1cd127d3dd62be1765b40700ceaa4fc7565015",
+    "v9_tasks_aff216cf6ffc/two10/v9_columns_42f49cdb8875/source1/rule_controller.py": "b2ae2d9da611e7dceea0f7767c6fe9a33162cda570247a014a66e79f516f103c",
+    "v9_tasks_aff216cf6ffc/two5/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v9_tasks_aff216cf6ffc/two5/policy.py": "7e5b652bbcdaa2c03a1f24807cef2b3d70b629efe6f8dd391b5d34220538560c",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/inner/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/inner/perception.py": "0233d47b5b6d3cf4eb0160ca963c393f75aa500cf9ebe1ed7d243f3b9fbf02b2",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/inner/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/inner/policy.py": "fb00ce524ec8027b362b7d2c7a524d151ca09080eb22baf6c14558a824b7e951",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/inner/rule_controller.py": "b103cdd0b27cc7e522e7445e6139a77aff2c2c3c125c8de596dd782747318f19",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/f_hybrid_policy.py": "ec2c6a81c46d36e51f14cb85f5f2acf28ce960a05eb0d4418835de6bd1fe9f45",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/f_parent_perception.py": "bcbb8c9838b7c8690812bbd7fc11746bc657125a675832f2176d2352ec28c0b8",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/f_parent_policy.py": "4d41849376957b9987b24330910c9f83d82809312fdca77f4d63c9db64474ffb",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/f_parent_rule_controller.py": "a66daeee2bc63ebe1ab8a88e2eb06c97e10819f630ab1b9a49c2c9029c25edb1",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/f_source_controller.py": "f7b403b7b1c9a48909bb2097b7ebdc0d881275047a886ec479c795f8eea05629",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/f_source_perception.py": "492d4b68660e8e41b3610b0b1c16d59605e8f088f2dd6f4e2b12b5fec8f3f6cc",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/path_feasibility.py": "ff751b1f9e279601e1b35e55fe649df4a91f505ce38a0597c12f12bc755dea14",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/perception.py": "3710de6d65731f8dfa26745da7ce671607fe12984c297e97ab4105f8832227d5",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/policy.py": "02e569f83fd62d73832e660e3e5328cdf295c1b53c4c9c6bcf55a6a351b3a0fa",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/rule_controller.py": "f9b1711d57c7921ba8080aefc7e8113ff698c5d0e46d97ba9fb84df615514036",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/outer/source_geometry.py": "10a2aaa50643cddad4769ce24bbfcff0e18ed4c1a5dca79c67dfbb8f0ad3ab72",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/legacy/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/legacy/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/legacy/d_supervisor.py": "4d8b091413bee12f0b281c22a5c5250818784b83b5f950e544d14699a12bc60f",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/legacy/path_feasibility.py": "8d5c75a8ddd41ac8f8c971c9fe18ecd0f216412980911a4990805cc7d3828742",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/legacy/perception.py": "3a4ddbbfbd2557f920e4a7b7215f4b9466e6cbbc59c2f6572906349d0f09268c",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/legacy/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/legacy/policy.py": "0419cbbed4c2d9ca999e247e79cbf042d09e090ba716e0e9d9ac2471ae049ff6",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/legacy/rule_controller.py": "4af3c51a3b53c902c32711541d4754c5d7aa9a586a2bef8c59b6da60ab9aad36",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/path_feasibility.py": "2ef835b94e7081bafcfab78d8f840adfcda6dedab4175729e7742515f04fae50",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/policy.py": "264b8201d2c9263f442958fe605eae320206e04dda4368b43f4bb4cc9948073b",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/public_ik.py": "27769f6447c311d705102c9871712c7811f77a060a88b80fd5eba3da188c0601",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/repair_costs.py": "ed911e7803a600adbe3ad013be2b80de61bb03e03309837cacd90697a822dc61",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/slot_audit.py": "b8b10c1a9b0e199e939cca7f6b783a31833c9b8622e5030339bfddff63362445",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/target_vision.py": "1174ebc6ca1b11001dc4695b4abf35bcc539da51a7565d6805c93c02cc29cfc6",
+    "v9_tasks_aff216cf6ffc/two5/v9_columns_cb7a65aa1101/source1/terminal_controller.py": "dbc358846a8ebfca337a3bbf84eb01d1ff55464cb5ef817ca3c4d3bb7e980ed4"
+  },
+  "formal_failures": [
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19001,
+      "final_count": 7,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "RECOVER_PATH",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19003,
+      "final_count": 1,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 19003,
+      "final_count": 11,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 19002,
+      "final_count": 10,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 19001,
+      "final_count": 5,
+      "capacity": 10,
+      "steps": 474,
+      "phase": "UNVERIFIED",
+      "reason": "source group unavailable with no useful reached observation pose"
+    },
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 19000,
+      "final_count": 9,
+      "capacity": 10,
+      "steps": 500,
+      "phase": "TERMINAL_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x5",
+      "profile": "medium",
+      "seed": 19002,
+      "final_count": 5,
+      "capacity": 10,
+      "steps": 500,
+      "phase": "ALIGN_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19009,
+      "final_count": 19,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "TARGET_RETREAT",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19011,
+      "final_count": 4,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19012,
+      "final_count": 8,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19013,
+      "final_count": 1,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19016,
+      "final_count": 10,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19019,
+      "final_count": 8,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 19007,
+      "final_count": 10,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 19009,
+      "final_count": 10,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 19010,
+      "final_count": 10,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 19013,
+      "final_count": 11,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 19019,
+      "final_count": 10,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 19007,
+      "final_count": 10,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 19010,
+      "final_count": 8,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 19013,
+      "final_count": 1,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 19019,
+      "final_count": 8,
+      "capacity": 20,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 19005,
+      "final_count": 5,
+      "capacity": 10,
+      "steps": 473,
+      "phase": "UNVERIFIED",
+      "reason": "source group unavailable with no useful reached observation pose"
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 19009,
+      "final_count": 5,
+      "capacity": 10,
+      "steps": 472,
+      "phase": "UNVERIFIED",
+      "reason": "source group unavailable with no useful reached observation pose"
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 19014,
+      "final_count": 5,
+      "capacity": 10,
+      "steps": 475,
+      "phase": "UNVERIFIED",
+      "reason": "source group unavailable with no useful reached observation pose"
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 19017,
+      "final_count": 5,
+      "capacity": 10,
+      "steps": 500,
+      "phase": "ALIGN_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 19008,
+      "final_count": 10,
+      "capacity": 10,
+      "steps": 500,
+      "phase": "TERMINAL_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 19010,
+      "final_count": 10,
+      "capacity": 10,
+      "steps": 500,
+      "phase": "TERMINAL_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 19017,
+      "final_count": 10,
+      "capacity": 10,
+      "steps": 500,
+      "phase": "TERMINAL_OBSERVE",
+      "reason": "max_steps_exceeded"
+    },
+    {
+      "task": "2x5",
+      "profile": "medium",
+      "seed": 19013,
+      "final_count": 10,
+      "capacity": 10,
+      "steps": 500,
+      "phase": "TERMINAL_OBSERVE",
+      "reason": "max_steps_exceeded"
+    }
+  ],
+  "frozen_policy": "/nvme-ssd1/zhaoyicheng/a3_rule_policy_v9_20261103/frozen_policy_v9",
+  "protocol": {
+    "source_column": 1,
+    "max_steps": {
+      "2x5": 500,
+      "2x10": 3200
+    },
+    "strict_policy_completion": false,
+    "success_hold_steps": 5,
+    "completion": "mean per-episode official final_count/max_score"
+  }
+}

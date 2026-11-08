@@ -1,0 +1,384 @@
+{
+  "collected_utc": "2026-11-05T17:41:48.461565+00:00",
+  "scope": "complete_priority_source1_fixed_n_CPU120_development",
+  "backend": "PRO CPU OSMesa",
+  "same_11RT_as_original_fixed10": true,
+  "reused_completed_fixed10": 10,
+  "new_completed_source110": 110,
+  "overall": {
+    "episodes": 120,
+    "native_completed": 120,
+    "unknown": 0,
+    "count_sum_unclipped": 2285,
+    "capacity": 2400,
+    "normalized_completion": 0.9520833333333333,
+    "official_successes": 100
+  },
+  "profiles": {
+    "basic": {
+      "episodes": 40,
+      "native_completed": 40,
+      "unknown": 0,
+      "count_sum_unclipped": 772,
+      "capacity": 800,
+      "normalized_completion": 0.9650000000000001,
+      "official_successes": 36
+    },
+    "medium": {
+      "episodes": 40,
+      "native_completed": 40,
+      "unknown": 0,
+      "count_sum_unclipped": 771,
+      "capacity": 800,
+      "normalized_completion": 0.9637499999999999,
+      "official_successes": 34
+    },
+    "advanced": {
+      "episodes": 40,
+      "native_completed": 40,
+      "unknown": 0,
+      "count_sum_unclipped": 742,
+      "capacity": 800,
+      "normalized_completion": 0.9275,
+      "official_successes": 30
+    }
+  },
+  "fixed_n": {
+    "1": {
+      "episodes": 30,
+      "native_completed": 30,
+      "unknown": 0,
+      "count_sum_unclipped": 517,
+      "capacity": 600,
+      "normalized_completion": 0.8616666666666667,
+      "official_successes": 19
+    },
+    "2": {
+      "episodes": 30,
+      "native_completed": 30,
+      "unknown": 0,
+      "count_sum_unclipped": 574,
+      "capacity": 600,
+      "normalized_completion": 0.9566666666666667,
+      "official_successes": 27
+    },
+    "8": {
+      "episodes": 30,
+      "native_completed": 30,
+      "unknown": 0,
+      "count_sum_unclipped": 598,
+      "capacity": 600,
+      "normalized_completion": 0.9966666666666666,
+      "official_successes": 27
+    },
+    "9": {
+      "episodes": 30,
+      "native_completed": 30,
+      "unknown": 0,
+      "count_sum_unclipped": 596,
+      "capacity": 600,
+      "normalized_completion": 0.9933333333333334,
+      "official_successes": 27
+    }
+  },
+  "cells": {
+    "2x10_basic_fixedn1_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 182,
+      "capacity": 200,
+      "normalized_completion": 0.9099999999999999,
+      "official_successes": 7
+    },
+    "2x10_basic_fixedn2_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 190,
+      "capacity": 200,
+      "normalized_completion": 0.95,
+      "official_successes": 9
+    },
+    "2x10_basic_fixedn8_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 200,
+      "capacity": 200,
+      "normalized_completion": 1.0,
+      "official_successes": 10
+    },
+    "2x10_basic_fixedn9_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 200,
+      "capacity": 200,
+      "normalized_completion": 1.0,
+      "official_successes": 10
+    },
+    "2x10_medium_fixedn1_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 182,
+      "capacity": 200,
+      "normalized_completion": 0.9099999999999999,
+      "official_successes": 7
+    },
+    "2x10_medium_fixedn2_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 191,
+      "capacity": 200,
+      "normalized_completion": 0.9550000000000001,
+      "official_successes": 9
+    },
+    "2x10_medium_fixedn8_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 200,
+      "capacity": 200,
+      "normalized_completion": 1.0,
+      "official_successes": 9
+    },
+    "2x10_medium_fixedn9_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 198,
+      "capacity": 200,
+      "normalized_completion": 0.99,
+      "official_successes": 9
+    },
+    "2x10_advanced_fixedn1_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 153,
+      "capacity": 200,
+      "normalized_completion": 0.765,
+      "official_successes": 5
+    },
+    "2x10_advanced_fixedn2_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 193,
+      "capacity": 200,
+      "normalized_completion": 0.9650000000000001,
+      "official_successes": 9
+    },
+    "2x10_advanced_fixedn8_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 198,
+      "capacity": 200,
+      "normalized_completion": 0.99,
+      "official_successes": 8
+    },
+    "2x10_advanced_fixedn9_s1_native": {
+      "episodes": 10,
+      "native_completed": 10,
+      "unknown": 0,
+      "count_sum_unclipped": 198,
+      "capacity": 200,
+      "normalized_completion": 0.99,
+      "official_successes": 8
+    }
+  },
+  "unsuccessful_cases": [
+    {
+      "label": "priority_2x10_advanced_fixedn8_s1_native_scene21007",
+      "count": 20,
+      "source": 59,
+      "steps": 632,
+      "phase": "UNVERIFIED",
+      "policy_failure_reason": null,
+      "failure_reason": "59/60 cookies left in source (collateral disturbance)"
+    },
+    {
+      "label": "priority_2x10_basic_fixedn1_s1_native_scene21005",
+      "count": 11,
+      "source": 67,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn1_s1_native_scene21006",
+      "count": 10,
+      "source": 69,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_basic_fixedn1_s1_native_scene21000",
+      "count": 20,
+      "source": 59,
+      "steps": 711,
+      "phase": "UNVERIFIED",
+      "policy_failure_reason": null,
+      "failure_reason": "59/60 cookies left in source (collateral disturbance)"
+    },
+    {
+      "label": "priority_2x10_basic_fixedn2_s1_native_scene21008",
+      "count": 10,
+      "source": 60,
+      "steps": 813,
+      "phase": "UNVERIFIED",
+      "policy_failure_reason": "placement unknown after distinct reached views without sufficient audit evidence",
+      "failure_reason": "10/20 cookies in target box"
+    },
+    {
+      "label": "priority_2x10_medium_fixedn1_s1_native_scene21007",
+      "count": 20,
+      "source": 59,
+      "steps": 676,
+      "phase": "UNVERIFIED",
+      "policy_failure_reason": null,
+      "failure_reason": "59/60 cookies left in source (collateral disturbance)"
+    },
+    {
+      "label": "priority_2x10_basic_fixedn1_s1_native_scene21003",
+      "count": 11,
+      "source": 68,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_medium_fixedn8_s1_native_scene21007",
+      "count": 20,
+      "source": 59,
+      "steps": 665,
+      "phase": "UNVERIFIED",
+      "policy_failure_reason": null,
+      "failure_reason": "59/60 cookies left in source (collateral disturbance)"
+    },
+    {
+      "label": "priority_2x10_medium_fixedn9_s1_native_scene21005",
+      "count": 18,
+      "source": 60,
+      "steps": 925,
+      "phase": "UNVERIFIED",
+      "policy_failure_reason": null,
+      "failure_reason": "18/20 cookies in target box"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn1_s1_native_scene21007",
+      "count": 19,
+      "source": 60,
+      "steps": 682,
+      "phase": "UNVERIFIED",
+      "policy_failure_reason": null,
+      "failure_reason": "19/20 cookies in target box"
+    },
+    {
+      "label": "priority_2x10_medium_fixedn1_s1_native_scene21004",
+      "count": 11,
+      "source": 68,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_medium_fixedn1_s1_native_scene21005",
+      "count": 11,
+      "source": 68,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_medium_fixedn2_s1_native_scene21009",
+      "count": 11,
+      "source": 67,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn1_s1_native_scene21001",
+      "count": 10,
+      "source": 69,
+      "steps": 3200,
+      "phase": "PLACE",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn8_s1_native_scene21005",
+      "count": 18,
+      "source": 60,
+      "steps": 1878,
+      "phase": "UNVERIFIED",
+      "policy_failure_reason": null,
+      "failure_reason": "18/20 cookies in target box"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn2_s1_native_scene21005",
+      "count": 13,
+      "source": 65,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn1_s1_native_scene21005",
+      "count": 14,
+      "source": 57,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn9_s1_native_scene21008",
+      "count": 19,
+      "source": 61,
+      "steps": 3200,
+      "phase": "RECOVER_PATH",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn9_s1_native_scene21005",
+      "count": 19,
+      "source": 61,
+      "steps": 3200,
+      "phase": "SOURCE_OBSERVE",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn1_s1_native_scene21004",
+      "count": 0,
+      "source": 79,
+      "steps": 3200,
+      "phase": "TRANSPORT",
+      "policy_failure_reason": null,
+      "failure_reason": "max_steps_exceeded"
+    }
+  ],
+  "H_started": false,
+  "full_V9_CPU120_pair_available": false,
+  "historical_GPU_rows_used": 0,
+  "initialization_references": {
+    "comparisons_present": 30,
+    "references_not_registered": 90,
+    "available_comparisons_match": true
+  }
+}

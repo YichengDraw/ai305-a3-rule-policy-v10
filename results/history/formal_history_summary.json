@@ -1,0 +1,1570 @@
+{
+  "scope": "Source1, official non-strict, hold5, budgets500/3200. Only within-round comparisons are paired. Different rounds differ in seeds and sometimes backend.",
+  "rows": 1320,
+  "versions": [
+    {
+      "round": "13000",
+      "version": "v5",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.4683333333333333,
+      "successes": 17,
+      "success_rate": 0.14166666666666666,
+      "count": 788,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 132,
+          "capacity": 200,
+          "completion": 0.6599999999999999,
+          "successes": 6,
+          "success_rate": 0.3
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 111,
+          "capacity": 200,
+          "completion": 0.5549999999999999,
+          "successes": 4,
+          "success_rate": 0.2
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 93,
+          "capacity": 200,
+          "completion": 0.46499999999999997,
+          "successes": 3,
+          "success_rate": 0.15
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 198,
+          "capacity": 400,
+          "completion": 0.495,
+          "successes": 1,
+          "success_rate": 0.05
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 157,
+          "capacity": 400,
+          "completion": 0.3925,
+          "successes": 2,
+          "success_rate": 0.1
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 97,
+          "capacity": 400,
+          "completion": 0.24250000000000002,
+          "successes": 1,
+          "success_rate": 0.05
+        }
+      ]
+    },
+    {
+      "round": "15000",
+      "version": "v5",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.42874999999999996,
+      "successes": 7,
+      "success_rate": 0.058333333333333334,
+      "count": 715,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 130,
+          "capacity": 200,
+          "completion": 0.65,
+          "successes": 6,
+          "success_rate": 0.3
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 94,
+          "capacity": 200,
+          "completion": 0.47000000000000003,
+          "successes": 0,
+          "success_rate": 0.0
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 90,
+          "capacity": 200,
+          "completion": 0.45,
+          "successes": 1,
+          "success_rate": 0.05
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 180,
+          "capacity": 400,
+          "completion": 0.45,
+          "successes": 0,
+          "success_rate": 0.0
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 128,
+          "capacity": 400,
+          "completion": 0.32000000000000006,
+          "successes": 0,
+          "success_rate": 0.0
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 93,
+          "capacity": 400,
+          "completion": 0.2325,
+          "successes": 0,
+          "success_rate": 0.0
+        }
+      ]
+    },
+    {
+      "round": "15000",
+      "version": "v6",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.7458333333333332,
+      "successes": 58,
+      "success_rate": 0.48333333333333334,
+      "count": 1287,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 198,
+          "capacity": 200,
+          "completion": 0.99,
+          "successes": 17,
+          "success_rate": 0.85
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 163,
+          "capacity": 200,
+          "completion": 0.8150000000000001,
+          "successes": 12,
+          "success_rate": 0.6
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 142,
+          "capacity": 200,
+          "completion": 0.71,
+          "successes": 8,
+          "success_rate": 0.4
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 317,
+          "capacity": 400,
+          "completion": 0.7925,
+          "successes": 10,
+          "success_rate": 0.5
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 284,
+          "capacity": 400,
+          "completion": 0.7100000000000001,
+          "successes": 9,
+          "success_rate": 0.45
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 183,
+          "capacity": 400,
+          "completion": 0.4574999999999999,
+          "successes": 2,
+          "success_rate": 0.1
+        }
+      ]
+    },
+    {
+      "round": "16000",
+      "version": "v6",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.65125,
+      "successes": 44,
+      "success_rate": 0.36666666666666664,
+      "count": 1105,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 191,
+          "capacity": 200,
+          "completion": 0.9550000000000001,
+          "successes": 15,
+          "success_rate": 0.75
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 174,
+          "capacity": 200,
+          "completion": 0.8699999999999999,
+          "successes": 13,
+          "success_rate": 0.65
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 93,
+          "capacity": 200,
+          "completion": 0.465,
+          "successes": 5,
+          "success_rate": 0.25
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 286,
+          "capacity": 400,
+          "completion": 0.7149999999999999,
+          "successes": 6,
+          "success_rate": 0.3
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 222,
+          "capacity": 400,
+          "completion": 0.5549999999999999,
+          "successes": 4,
+          "success_rate": 0.2
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 139,
+          "capacity": 400,
+          "completion": 0.34750000000000003,
+          "successes": 1,
+          "success_rate": 0.05
+        }
+      ]
+    },
+    {
+      "round": "16000",
+      "version": "v7",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.67375,
+      "successes": 40,
+      "success_rate": 0.3333333333333333,
+      "count": 1111,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 200,
+          "capacity": 200,
+          "completion": 1.0,
+          "successes": 17,
+          "success_rate": 0.85
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 169,
+          "capacity": 200,
+          "completion": 0.845,
+          "successes": 10,
+          "success_rate": 0.5
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 137,
+          "capacity": 200,
+          "completion": 0.6849999999999999,
+          "successes": 5,
+          "success_rate": 0.25
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 244,
+          "capacity": 400,
+          "completion": 0.61,
+          "successes": 3,
+          "success_rate": 0.15
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 203,
+          "capacity": 400,
+          "completion": 0.5075,
+          "successes": 3,
+          "success_rate": 0.15
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 158,
+          "capacity": 400,
+          "completion": 0.395,
+          "successes": 2,
+          "success_rate": 0.1
+        }
+      ]
+    },
+    {
+      "round": "17000",
+      "version": "c0",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.7433333333333334,
+      "successes": 54,
+      "success_rate": 0.45,
+      "count": 1251,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 195,
+          "capacity": 200,
+          "completion": 0.975,
+          "successes": 16,
+          "success_rate": 0.8
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 187,
+          "capacity": 200,
+          "completion": 0.9349999999999999,
+          "successes": 12,
+          "success_rate": 0.6
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 151,
+          "capacity": 200,
+          "completion": 0.755,
+          "successes": 7,
+          "success_rate": 0.35
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 315,
+          "capacity": 400,
+          "completion": 0.7875,
+          "successes": 12,
+          "success_rate": 0.6
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 269,
+          "capacity": 400,
+          "completion": 0.6725,
+          "successes": 6,
+          "success_rate": 0.3
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 134,
+          "capacity": 400,
+          "completion": 0.33499999999999996,
+          "successes": 1,
+          "success_rate": 0.05
+        }
+      ]
+    },
+    {
+      "round": "17000",
+      "version": "v8",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.8120833333333334,
+      "successes": 61,
+      "success_rate": 0.5083333333333333,
+      "count": 1416,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 195,
+          "capacity": 200,
+          "completion": 0.975,
+          "successes": 16,
+          "success_rate": 0.8
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 187,
+          "capacity": 200,
+          "completion": 0.9349999999999999,
+          "successes": 12,
+          "success_rate": 0.6
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 151,
+          "capacity": 200,
+          "completion": 0.755,
+          "successes": 7,
+          "success_rate": 0.35
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 337,
+          "capacity": 400,
+          "completion": 0.8425,
+          "successes": 11,
+          "success_rate": 0.55
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 293,
+          "capacity": 400,
+          "completion": 0.7325,
+          "successes": 8,
+          "success_rate": 0.4
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 253,
+          "capacity": 400,
+          "completion": 0.6325,
+          "successes": 7,
+          "success_rate": 0.35
+        }
+      ]
+    },
+    {
+      "round": "19000",
+      "version": "v8",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.7645833333333333,
+      "successes": 57,
+      "success_rate": 0.475,
+      "count": 1319,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 199,
+          "capacity": 200,
+          "completion": 0.9949999999999999,
+          "successes": 15,
+          "success_rate": 0.75
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 180,
+          "capacity": 200,
+          "completion": 0.9,
+          "successes": 14,
+          "success_rate": 0.7
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 137,
+          "capacity": 200,
+          "completion": 0.6849999999999999,
+          "successes": 5,
+          "success_rate": 0.25
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 303,
+          "capacity": 400,
+          "completion": 0.7575000000000001,
+          "successes": 9,
+          "success_rate": 0.45
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 254,
+          "capacity": 400,
+          "completion": 0.635,
+          "successes": 7,
+          "success_rate": 0.35
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 246,
+          "capacity": 400,
+          "completion": 0.615,
+          "successes": 7,
+          "success_rate": 0.35
+        }
+      ]
+    },
+    {
+      "round": "19000",
+      "version": "v9",
+      "episodes": 120,
+      "backend": "L40S/EGL",
+      "completion": 0.88125,
+      "successes": 90,
+      "success_rate": 0.75,
+      "count": 1546,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 199,
+          "capacity": 200,
+          "completion": 0.9949999999999999,
+          "successes": 16,
+          "success_rate": 0.8
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 195,
+          "capacity": 200,
+          "completion": 0.975,
+          "successes": 18,
+          "success_rate": 0.9
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 175,
+          "capacity": 200,
+          "completion": 0.875,
+          "successes": 15,
+          "success_rate": 0.75
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 342,
+          "capacity": 400,
+          "completion": 0.8550000000000001,
+          "successes": 14,
+          "success_rate": 0.7
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 337,
+          "capacity": 400,
+          "completion": 0.8425,
+          "successes": 15,
+          "success_rate": 0.75
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 298,
+          "capacity": 400,
+          "completion": 0.745,
+          "successes": 12,
+          "success_rate": 0.6
+        }
+      ]
+    },
+    {
+      "round": "24000",
+      "version": "v10",
+      "episodes": 120,
+      "backend": "PRO CPU/OSMesa",
+      "completion": 0.9841666666666666,
+      "successes": 115,
+      "success_rate": 0.9583333333333334,
+      "count": 1762,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 200,
+          "capacity": 200,
+          "completion": 1.0,
+          "successes": 20,
+          "success_rate": 1.0
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 200,
+          "capacity": 200,
+          "completion": 1.0,
+          "successes": 20,
+          "success_rate": 1.0
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 200,
+          "capacity": 200,
+          "completion": 1.0,
+          "successes": 20,
+          "success_rate": 1.0
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 380,
+          "capacity": 400,
+          "completion": 0.95,
+          "successes": 18,
+          "success_rate": 0.9
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 400,
+          "capacity": 400,
+          "completion": 1.0,
+          "successes": 19,
+          "success_rate": 0.95
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 382,
+          "capacity": 400,
+          "completion": 0.9550000000000001,
+          "successes": 18,
+          "success_rate": 0.9
+        }
+      ]
+    },
+    {
+      "round": "24000",
+      "version": "v9",
+      "episodes": 120,
+      "backend": "PRO CPU/OSMesa",
+      "completion": 0.9495833333333332,
+      "successes": 107,
+      "success_rate": 0.8916666666666667,
+      "count": 1718,
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "n": 20,
+          "count": 200,
+          "capacity": 200,
+          "completion": 1.0,
+          "successes": 20,
+          "success_rate": 1.0
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "n": 20,
+          "count": 195,
+          "capacity": 200,
+          "completion": 0.975,
+          "successes": 19,
+          "success_rate": 0.95
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "n": 20,
+          "count": 166,
+          "capacity": 200,
+          "completion": 0.8300000000000001,
+          "successes": 12,
+          "success_rate": 0.6
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "n": 20,
+          "count": 383,
+          "capacity": 400,
+          "completion": 0.9574999999999999,
+          "successes": 18,
+          "success_rate": 0.9
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "n": 20,
+          "count": 388,
+          "capacity": 400,
+          "completion": 0.97,
+          "successes": 19,
+          "success_rate": 0.95
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "n": 20,
+          "count": 386,
+          "capacity": 400,
+          "completion": 0.9650000000000001,
+          "successes": 19,
+          "success_rate": 0.95
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "round": "15000",
+      "parent": "v5",
+      "candidate": "v6",
+      "baseline": {
+        "round": "15000",
+        "version": "v5",
+        "episodes": 120,
+        "backend": "L40S/EGL",
+        "completion": 0.42874999999999996,
+        "successes": 7,
+        "success_rate": 0.058333333333333334,
+        "count": 715,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 130,
+            "capacity": 200,
+            "completion": 0.65,
+            "successes": 6,
+            "success_rate": 0.3
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 94,
+            "capacity": 200,
+            "completion": 0.47000000000000003,
+            "successes": 0,
+            "success_rate": 0.0
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 90,
+            "capacity": 200,
+            "completion": 0.45,
+            "successes": 1,
+            "success_rate": 0.05
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 180,
+            "capacity": 400,
+            "completion": 0.45,
+            "successes": 0,
+            "success_rate": 0.0
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 128,
+            "capacity": 400,
+            "completion": 0.32000000000000006,
+            "successes": 0,
+            "success_rate": 0.0
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 93,
+            "capacity": 400,
+            "completion": 0.2325,
+            "successes": 0,
+            "success_rate": 0.0
+          }
+        ]
+      },
+      "candidate_summary": {
+        "round": "15000",
+        "version": "v6",
+        "episodes": 120,
+        "backend": "L40S/EGL",
+        "completion": 0.7458333333333332,
+        "successes": 58,
+        "success_rate": 0.48333333333333334,
+        "count": 1287,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 198,
+            "capacity": 200,
+            "completion": 0.99,
+            "successes": 17,
+            "success_rate": 0.85
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 163,
+            "capacity": 200,
+            "completion": 0.8150000000000001,
+            "successes": 12,
+            "success_rate": 0.6
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 142,
+            "capacity": 200,
+            "completion": 0.71,
+            "successes": 8,
+            "success_rate": 0.4
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 317,
+            "capacity": 400,
+            "completion": 0.7925,
+            "successes": 10,
+            "success_rate": 0.5
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 284,
+            "capacity": 400,
+            "completion": 0.7100000000000001,
+            "successes": 9,
+            "success_rate": 0.45
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 183,
+            "capacity": 400,
+            "completion": 0.4574999999999999,
+            "successes": 2,
+            "success_rate": 0.1
+          }
+        ]
+      },
+      "completion_delta_pp": 31.70833333333333,
+      "success_delta_pp": 42.5,
+      "gained_successes": 52,
+      "lost_successes": 1,
+      "quantity_regressions": 12
+    },
+    {
+      "round": "16000",
+      "parent": "v6",
+      "candidate": "v7",
+      "baseline": {
+        "round": "16000",
+        "version": "v6",
+        "episodes": 120,
+        "backend": "L40S/EGL",
+        "completion": 0.65125,
+        "successes": 44,
+        "success_rate": 0.36666666666666664,
+        "count": 1105,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 191,
+            "capacity": 200,
+            "completion": 0.9550000000000001,
+            "successes": 15,
+            "success_rate": 0.75
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 174,
+            "capacity": 200,
+            "completion": 0.8699999999999999,
+            "successes": 13,
+            "success_rate": 0.65
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 93,
+            "capacity": 200,
+            "completion": 0.465,
+            "successes": 5,
+            "success_rate": 0.25
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 286,
+            "capacity": 400,
+            "completion": 0.7149999999999999,
+            "successes": 6,
+            "success_rate": 0.3
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 222,
+            "capacity": 400,
+            "completion": 0.5549999999999999,
+            "successes": 4,
+            "success_rate": 0.2
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 139,
+            "capacity": 400,
+            "completion": 0.34750000000000003,
+            "successes": 1,
+            "success_rate": 0.05
+          }
+        ]
+      },
+      "candidate_summary": {
+        "round": "16000",
+        "version": "v7",
+        "episodes": 120,
+        "backend": "L40S/EGL",
+        "completion": 0.67375,
+        "successes": 40,
+        "success_rate": 0.3333333333333333,
+        "count": 1111,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 200,
+            "capacity": 200,
+            "completion": 1.0,
+            "successes": 17,
+            "success_rate": 0.85
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 169,
+            "capacity": 200,
+            "completion": 0.845,
+            "successes": 10,
+            "success_rate": 0.5
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 137,
+            "capacity": 200,
+            "completion": 0.6849999999999999,
+            "successes": 5,
+            "success_rate": 0.25
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 244,
+            "capacity": 400,
+            "completion": 0.61,
+            "successes": 3,
+            "success_rate": 0.15
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 203,
+            "capacity": 400,
+            "completion": 0.5075,
+            "successes": 3,
+            "success_rate": 0.15
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 158,
+            "capacity": 400,
+            "completion": 0.395,
+            "successes": 2,
+            "success_rate": 0.1
+          }
+        ]
+      },
+      "completion_delta_pp": 2.2499999999999964,
+      "success_delta_pp": -3.3333333333333326,
+      "gained_successes": 7,
+      "lost_successes": 11,
+      "quantity_regressions": 20
+    },
+    {
+      "round": "17000",
+      "parent": "c0",
+      "candidate": "v8",
+      "baseline": {
+        "round": "17000",
+        "version": "c0",
+        "episodes": 120,
+        "backend": "L40S/EGL",
+        "completion": 0.7433333333333334,
+        "successes": 54,
+        "success_rate": 0.45,
+        "count": 1251,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 195,
+            "capacity": 200,
+            "completion": 0.975,
+            "successes": 16,
+            "success_rate": 0.8
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 187,
+            "capacity": 200,
+            "completion": 0.9349999999999999,
+            "successes": 12,
+            "success_rate": 0.6
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 151,
+            "capacity": 200,
+            "completion": 0.755,
+            "successes": 7,
+            "success_rate": 0.35
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 315,
+            "capacity": 400,
+            "completion": 0.7875,
+            "successes": 12,
+            "success_rate": 0.6
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 269,
+            "capacity": 400,
+            "completion": 0.6725,
+            "successes": 6,
+            "success_rate": 0.3
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 134,
+            "capacity": 400,
+            "completion": 0.33499999999999996,
+            "successes": 1,
+            "success_rate": 0.05
+          }
+        ]
+      },
+      "candidate_summary": {
+        "round": "17000",
+        "version": "v8",
+        "episodes": 120,
+        "backend": "L40S/EGL",
+        "completion": 0.8120833333333334,
+        "successes": 61,
+        "success_rate": 0.5083333333333333,
+        "count": 1416,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 195,
+            "capacity": 200,
+            "completion": 0.975,
+            "successes": 16,
+            "success_rate": 0.8
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 187,
+            "capacity": 200,
+            "completion": 0.9349999999999999,
+            "successes": 12,
+            "success_rate": 0.6
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 151,
+            "capacity": 200,
+            "completion": 0.755,
+            "successes": 7,
+            "success_rate": 0.35
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 337,
+            "capacity": 400,
+            "completion": 0.8425,
+            "successes": 11,
+            "success_rate": 0.55
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 293,
+            "capacity": 400,
+            "completion": 0.7325,
+            "successes": 8,
+            "success_rate": 0.4
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 253,
+            "capacity": 400,
+            "completion": 0.6325,
+            "successes": 7,
+            "success_rate": 0.35
+          }
+        ]
+      },
+      "completion_delta_pp": 6.874999999999998,
+      "success_delta_pp": 5.8333333333333295,
+      "gained_successes": 11,
+      "lost_successes": 4,
+      "quantity_regressions": 11
+    },
+    {
+      "round": "19000",
+      "parent": "v8",
+      "candidate": "v9",
+      "baseline": {
+        "round": "19000",
+        "version": "v8",
+        "episodes": 120,
+        "backend": "L40S/EGL",
+        "completion": 0.7645833333333333,
+        "successes": 57,
+        "success_rate": 0.475,
+        "count": 1319,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 199,
+            "capacity": 200,
+            "completion": 0.9949999999999999,
+            "successes": 15,
+            "success_rate": 0.75
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 180,
+            "capacity": 200,
+            "completion": 0.9,
+            "successes": 14,
+            "success_rate": 0.7
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 137,
+            "capacity": 200,
+            "completion": 0.6849999999999999,
+            "successes": 5,
+            "success_rate": 0.25
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 303,
+            "capacity": 400,
+            "completion": 0.7575000000000001,
+            "successes": 9,
+            "success_rate": 0.45
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 254,
+            "capacity": 400,
+            "completion": 0.635,
+            "successes": 7,
+            "success_rate": 0.35
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 246,
+            "capacity": 400,
+            "completion": 0.615,
+            "successes": 7,
+            "success_rate": 0.35
+          }
+        ]
+      },
+      "candidate_summary": {
+        "round": "19000",
+        "version": "v9",
+        "episodes": 120,
+        "backend": "L40S/EGL",
+        "completion": 0.88125,
+        "successes": 90,
+        "success_rate": 0.75,
+        "count": 1546,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 199,
+            "capacity": 200,
+            "completion": 0.9949999999999999,
+            "successes": 16,
+            "success_rate": 0.8
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 195,
+            "capacity": 200,
+            "completion": 0.975,
+            "successes": 18,
+            "success_rate": 0.9
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 175,
+            "capacity": 200,
+            "completion": 0.875,
+            "successes": 15,
+            "success_rate": 0.75
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 342,
+            "capacity": 400,
+            "completion": 0.8550000000000001,
+            "successes": 14,
+            "success_rate": 0.7
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 337,
+            "capacity": 400,
+            "completion": 0.8425,
+            "successes": 15,
+            "success_rate": 0.75
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 298,
+            "capacity": 400,
+            "completion": 0.745,
+            "successes": 12,
+            "success_rate": 0.6
+          }
+        ]
+      },
+      "completion_delta_pp": 11.66666666666667,
+      "success_delta_pp": 27.500000000000004,
+      "gained_successes": 39,
+      "lost_successes": 6,
+      "quantity_regressions": 8
+    },
+    {
+      "round": "24000",
+      "parent": "v9",
+      "candidate": "v10",
+      "baseline": {
+        "round": "24000",
+        "version": "v9",
+        "episodes": 120,
+        "backend": "PRO CPU/OSMesa",
+        "completion": 0.9495833333333332,
+        "successes": 107,
+        "success_rate": 0.8916666666666667,
+        "count": 1718,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 200,
+            "capacity": 200,
+            "completion": 1.0,
+            "successes": 20,
+            "success_rate": 1.0
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 195,
+            "capacity": 200,
+            "completion": 0.975,
+            "successes": 19,
+            "success_rate": 0.95
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 166,
+            "capacity": 200,
+            "completion": 0.8300000000000001,
+            "successes": 12,
+            "success_rate": 0.6
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 383,
+            "capacity": 400,
+            "completion": 0.9574999999999999,
+            "successes": 18,
+            "success_rate": 0.9
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 388,
+            "capacity": 400,
+            "completion": 0.97,
+            "successes": 19,
+            "success_rate": 0.95
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 386,
+            "capacity": 400,
+            "completion": 0.9650000000000001,
+            "successes": 19,
+            "success_rate": 0.95
+          }
+        ]
+      },
+      "candidate_summary": {
+        "round": "24000",
+        "version": "v10",
+        "episodes": 120,
+        "backend": "PRO CPU/OSMesa",
+        "completion": 0.9841666666666666,
+        "successes": 115,
+        "success_rate": 0.9583333333333334,
+        "count": 1762,
+        "cells": [
+          {
+            "task": "2x5",
+            "profile": "basic",
+            "n": 20,
+            "count": 200,
+            "capacity": 200,
+            "completion": 1.0,
+            "successes": 20,
+            "success_rate": 1.0
+          },
+          {
+            "task": "2x5",
+            "profile": "medium",
+            "n": 20,
+            "count": 200,
+            "capacity": 200,
+            "completion": 1.0,
+            "successes": 20,
+            "success_rate": 1.0
+          },
+          {
+            "task": "2x5",
+            "profile": "advanced",
+            "n": 20,
+            "count": 200,
+            "capacity": 200,
+            "completion": 1.0,
+            "successes": 20,
+            "success_rate": 1.0
+          },
+          {
+            "task": "2x10",
+            "profile": "basic",
+            "n": 20,
+            "count": 380,
+            "capacity": 400,
+            "completion": 0.95,
+            "successes": 18,
+            "success_rate": 0.9
+          },
+          {
+            "task": "2x10",
+            "profile": "medium",
+            "n": 20,
+            "count": 400,
+            "capacity": 400,
+            "completion": 1.0,
+            "successes": 19,
+            "success_rate": 0.95
+          },
+          {
+            "task": "2x10",
+            "profile": "advanced",
+            "n": 20,
+            "count": 382,
+            "capacity": 400,
+            "completion": 0.9550000000000001,
+            "successes": 18,
+            "success_rate": 0.9
+          }
+        ]
+      },
+      "completion_delta_pp": 3.458333333333341,
+      "success_delta_pp": 6.666666666666665,
+      "gained_successes": 12,
+      "lost_successes": 4,
+      "quantity_regressions": 3
+    }
+  ]
+}

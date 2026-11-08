@@ -1,0 +1,969 @@
+{
+  "validation": {
+    "raw_shards": 240,
+    "episodes_per_policy": 120,
+    "cells_per_policy": 6,
+    "seeds": [
+      15000,
+      15019
+    ],
+    "missing": 0,
+    "duplicates": 0,
+    "all_returncodes_zero": true,
+    "frozen_code_matches": true,
+    "raw_and_merged_identical": true,
+    "paired_initial_scenes_identical": true,
+    "diagnostics_match_saved_summary": true,
+    "recovery_labels_consistent": true
+  },
+  "raw_evidence": "/Users/yiche/26fall/Agent/project/rule_policy_v6_20261102/formal_audit_raw.json",
+  "results": {
+    "v5": {
+      "factory": "policy:make_policy",
+      "source_directory": "/nvme-ssd2/zhaoyicheng/a3_rule_policy_v6_20261102/formal_pair_v6/v5",
+      "overall": {
+        "episodes": 120,
+        "successes": 7,
+        "success_rate": 0.058333333333333334,
+        "completion_rate": 0.42874999999999996,
+        "cookie_weighted_completion_rate": 0.3972222222222222,
+        "final_cookies": 715,
+        "capacity": 1800,
+        "mean_final_count": 5.958333333333333,
+        "mean_steps": 398.44166666666666,
+        "phase_counts": {
+          "FAILED": 87,
+          "DONE": 26,
+          "PLACE": 7
+        },
+        "diagnostics": {
+          "audited_episodes": 120,
+          "attempted_batches": 260,
+          "valid_grasp": {
+            "passed": 111,
+            "observed": 260,
+            "unknown": 0,
+            "rate": 0.4269230769230769
+          },
+          "valid_placement": {
+            "passed": 107,
+            "observed": 260,
+            "unknown": 0,
+            "rate": 0.4115384615384615
+          },
+          "final_retention": {
+            "passed": 103,
+            "observed": 260,
+            "unknown": 0,
+            "rate": 0.39615384615384613
+          },
+          "subsequent_given_prior_valid": {
+            "passed": 16,
+            "observed": 99,
+            "unknown": 0,
+            "rate": 0.16161616161616163
+          },
+          "conditional_timing_unknown": 0,
+          "local_recovery": {
+            "passed": 0,
+            "observed": 0,
+            "unknown": 50,
+            "recorded_events": 50,
+            "rate": null,
+            "availability": "events_without_success_labels"
+          },
+          "done_episodes": 26,
+          "done_but_official_failure": 26
+        }
+      },
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "episodes": 20,
+          "successes": 6,
+          "success_rate": 0.3,
+          "completion_rate": 0.65,
+          "cookie_weighted_completion_rate": 0.65,
+          "final_cookies": 130,
+          "capacity": 200,
+          "mean_final_count": 6.5,
+          "mean_steps": 288.75,
+          "phase_counts": {
+            "DONE": 8,
+            "PLACE": 6,
+            "FAILED": 6
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 40,
+            "valid_grasp": {
+              "passed": 23,
+              "observed": 40,
+              "unknown": 0,
+              "rate": 0.575
+            },
+            "valid_placement": {
+              "passed": 19,
+              "observed": 40,
+              "unknown": 0,
+              "rate": 0.475
+            },
+            "final_retention": {
+              "passed": 19,
+              "observed": 40,
+              "unknown": 0,
+              "rate": 0.475
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 19,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 5,
+              "recorded_events": 5,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 8,
+            "done_but_official_failure": 8
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "episodes": 20,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.47000000000000003,
+          "cookie_weighted_completion_rate": 0.47,
+          "final_cookies": 94,
+          "capacity": 200,
+          "mean_final_count": 4.7,
+          "mean_steps": 319.55,
+          "phase_counts": {
+            "DONE": 10,
+            "FAILED": 10
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 39,
+            "valid_grasp": {
+              "passed": 15,
+              "observed": 39,
+              "unknown": 0,
+              "rate": 0.38461538461538464
+            },
+            "valid_placement": {
+              "passed": 14,
+              "observed": 39,
+              "unknown": 0,
+              "rate": 0.358974358974359
+            },
+            "final_retention": {
+              "passed": 14,
+              "observed": 39,
+              "unknown": 0,
+              "rate": 0.358974358974359
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 14,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 7,
+              "recorded_events": 7,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 10,
+            "done_but_official_failure": 10
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "episodes": 20,
+          "successes": 1,
+          "success_rate": 0.05,
+          "completion_rate": 0.45,
+          "cookie_weighted_completion_rate": 0.45,
+          "final_cookies": 90,
+          "capacity": 200,
+          "mean_final_count": 4.5,
+          "mean_steps": 300.95,
+          "phase_counts": {
+            "FAILED": 12,
+            "DONE": 7,
+            "PLACE": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 36,
+            "valid_grasp": {
+              "passed": 13,
+              "observed": 36,
+              "unknown": 0,
+              "rate": 0.3611111111111111
+            },
+            "valid_placement": {
+              "passed": 12,
+              "observed": 36,
+              "unknown": 0,
+              "rate": 0.3333333333333333
+            },
+            "final_retention": {
+              "passed": 11,
+              "observed": 36,
+              "unknown": 0,
+              "rate": 0.3055555555555556
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 1,
+              "observed": 10,
+              "unknown": 0,
+              "rate": 0.1
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 3,
+              "recorded_events": 3,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 7,
+            "done_but_official_failure": 7
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "episodes": 20,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.45,
+          "cookie_weighted_completion_rate": 0.45,
+          "final_cookies": 180,
+          "capacity": 400,
+          "mean_final_count": 9.0,
+          "mean_steps": 534.45,
+          "phase_counts": {
+            "DONE": 1,
+            "FAILED": 19
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 56,
+            "valid_grasp": {
+              "passed": 31,
+              "observed": 56,
+              "unknown": 0,
+              "rate": 0.5535714285714286
+            },
+            "valid_placement": {
+              "passed": 32,
+              "observed": 56,
+              "unknown": 0,
+              "rate": 0.5714285714285714
+            },
+            "final_retention": {
+              "passed": 32,
+              "observed": 56,
+              "unknown": 0,
+              "rate": 0.5714285714285714
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 12,
+              "observed": 31,
+              "unknown": 0,
+              "rate": 0.3870967741935484
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 12,
+              "recorded_events": 12,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 1,
+            "done_but_official_failure": 1
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "episodes": 20,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.32000000000000006,
+          "cookie_weighted_completion_rate": 0.32,
+          "final_cookies": 128,
+          "capacity": 400,
+          "mean_final_count": 6.4,
+          "mean_steps": 524.3,
+          "phase_counts": {
+            "FAILED": 20
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 47,
+            "valid_grasp": {
+              "passed": 19,
+              "observed": 47,
+              "unknown": 0,
+              "rate": 0.40425531914893614
+            },
+            "valid_placement": {
+              "passed": 19,
+              "observed": 47,
+              "unknown": 0,
+              "rate": 0.40425531914893614
+            },
+            "final_retention": {
+              "passed": 17,
+              "observed": 47,
+              "unknown": 0,
+              "rate": 0.3617021276595745
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 2,
+              "observed": 16,
+              "unknown": 0,
+              "rate": 0.125
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 15,
+              "recorded_events": 15,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "episodes": 20,
+          "successes": 0,
+          "success_rate": 0.0,
+          "completion_rate": 0.2325,
+          "cookie_weighted_completion_rate": 0.2325,
+          "final_cookies": 93,
+          "capacity": 400,
+          "mean_final_count": 4.65,
+          "mean_steps": 422.65,
+          "phase_counts": {
+            "FAILED": 20
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 42,
+            "valid_grasp": {
+              "passed": 10,
+              "observed": 42,
+              "unknown": 0,
+              "rate": 0.23809523809523808
+            },
+            "valid_placement": {
+              "passed": 11,
+              "observed": 42,
+              "unknown": 0,
+              "rate": 0.2619047619047619
+            },
+            "final_retention": {
+              "passed": 10,
+              "observed": 42,
+              "unknown": 0,
+              "rate": 0.23809523809523808
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 1,
+              "observed": 9,
+              "unknown": 0,
+              "rate": 0.1111111111111111
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 0,
+              "observed": 0,
+              "unknown": 8,
+              "recorded_events": 8,
+              "rate": null,
+              "availability": "events_without_success_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        }
+      ],
+      "failure_reason_counts": {
+        "visual group unavailable": 9,
+        "insertion blocked by sustained fingertip force": 36,
+        "two-finger grip did not stabilize": 18,
+        "grip force lost during lift": 5,
+        "approach did not reach its target": 3,
+        "recover_lower did not reach its target": 1,
+        "recover_up did not reach its target": 9,
+        "descend did not reach its target": 3,
+        "10/20 cookies in target box; 70/60 cookies left in source (collateral disturbance)": 1,
+        "visual trial-lift count differs from requested count": 3,
+        "5/10 cookies in target box": 21,
+        "target slots not one-to-one matched; valid fill held 0/5 control steps": 1,
+        "5/10 cookies in target box; 69/70 cookies left in source (collateral disturbance)": 1,
+        "3/10 cookies in target box": 1,
+        "6/10 cookies in target box": 1
+      },
+      "full_count_but_official_failure": [
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 15018,
+          "score": 10,
+          "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+        }
+      ],
+      "official_success_phase_counts": {
+        "PLACE": 7
+      },
+      "recovery_event_type_counts": {
+        "legacy_without_type": 50
+      }
+    },
+    "v6": {
+      "factory": "policy:make_policy_b",
+      "source_directory": "/nvme-ssd2/zhaoyicheng/a3_rule_policy_v6_20261102/formal_pair_v6/v6",
+      "overall": {
+        "episodes": 120,
+        "successes": 58,
+        "success_rate": 0.48333333333333334,
+        "completion_rate": 0.7458333333333332,
+        "cookie_weighted_completion_rate": 0.715,
+        "final_cookies": 1287,
+        "capacity": 1800,
+        "mean_final_count": 10.725,
+        "mean_steps": 1052.9916666666666,
+        "phase_counts": {
+          "UNVERIFIED": 53,
+          "APPROACH": 4,
+          "RECOVER_PATH": 8,
+          "ALIGN_RETURN": 2,
+          "LOCAL_ALIGN": 4,
+          "DESCEND": 3,
+          "ALIGN_OBSERVE": 2,
+          "SELECT": 2,
+          "CLOSE": 1,
+          "PLACE": 37,
+          "OPEN": 1,
+          "ALIGN_APPROACH": 2,
+          "RECOVER_LOWER": 1
+        },
+        "diagnostics": {
+          "audited_episodes": 120,
+          "attempted_batches": 309,
+          "valid_grasp": {
+            "passed": 229,
+            "observed": 309,
+            "unknown": 0,
+            "rate": 0.7411003236245954
+          },
+          "valid_placement": {
+            "passed": 186,
+            "observed": 309,
+            "unknown": 0,
+            "rate": 0.6019417475728155
+          },
+          "final_retention": {
+            "passed": 184,
+            "observed": 309,
+            "unknown": 0,
+            "rate": 0.5954692556634305
+          },
+          "subsequent_given_prior_valid": {
+            "passed": 81,
+            "observed": 142,
+            "unknown": 0,
+            "rate": 0.5704225352112676
+          },
+          "conditional_timing_unknown": 0,
+          "local_recovery": {
+            "passed": 167,
+            "observed": 637,
+            "unknown": 2192,
+            "recorded_events": 2829,
+            "rate": 0.2621664050235479,
+            "availability": "explicit_event_labels"
+          },
+          "done_episodes": 0,
+          "done_but_official_failure": 0
+        }
+      },
+      "cells": [
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "episodes": 20,
+          "successes": 17,
+          "success_rate": 0.85,
+          "completion_rate": 0.99,
+          "cookie_weighted_completion_rate": 0.99,
+          "final_cookies": 198,
+          "capacity": 200,
+          "mean_final_count": 9.9,
+          "mean_steps": 252.3,
+          "phase_counts": {
+            "PLACE": 17,
+            "UNVERIFIED": 3
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 40,
+            "valid_grasp": {
+              "passed": 38,
+              "observed": 40,
+              "unknown": 0,
+              "rate": 0.95
+            },
+            "valid_placement": {
+              "passed": 21,
+              "observed": 40,
+              "unknown": 0,
+              "rate": 0.525
+            },
+            "final_retention": {
+              "passed": 21,
+              "observed": 40,
+              "unknown": 0,
+              "rate": 0.525
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 1,
+              "observed": 19,
+              "unknown": 0,
+              "rate": 0.05263157894736842
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 4,
+              "observed": 4,
+              "unknown": 0,
+              "recorded_events": 4,
+              "rate": 1.0,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "episodes": 20,
+          "successes": 12,
+          "success_rate": 0.6,
+          "completion_rate": 0.8150000000000001,
+          "cookie_weighted_completion_rate": 0.815,
+          "final_cookies": 163,
+          "capacity": 200,
+          "mean_final_count": 8.15,
+          "mean_steps": 266.35,
+          "phase_counts": {
+            "PLACE": 12,
+            "UNVERIFIED": 7,
+            "RECOVER_LOWER": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 38,
+            "valid_grasp": {
+              "passed": 30,
+              "observed": 38,
+              "unknown": 0,
+              "rate": 0.7894736842105263
+            },
+            "valid_placement": {
+              "passed": 16,
+              "observed": 38,
+              "unknown": 0,
+              "rate": 0.42105263157894735
+            },
+            "final_retention": {
+              "passed": 15,
+              "observed": 38,
+              "unknown": 0,
+              "rate": 0.39473684210526316
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 0,
+              "observed": 13,
+              "unknown": 0,
+              "rate": 0.0
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 4,
+              "observed": 6,
+              "unknown": 1,
+              "recorded_events": 7,
+              "rate": 0.6666666666666666,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "episodes": 20,
+          "successes": 8,
+          "success_rate": 0.4,
+          "completion_rate": 0.71,
+          "cookie_weighted_completion_rate": 0.71,
+          "final_cookies": 142,
+          "capacity": 200,
+          "mean_final_count": 7.1,
+          "mean_steps": 346.9,
+          "phase_counts": {
+            "UNVERIFIED": 8,
+            "PLACE": 8,
+            "OPEN": 1,
+            "ALIGN_APPROACH": 2,
+            "RECOVER_PATH": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 39,
+            "valid_grasp": {
+              "passed": 25,
+              "observed": 39,
+              "unknown": 0,
+              "rate": 0.6410256410256411
+            },
+            "valid_placement": {
+              "passed": 15,
+              "observed": 39,
+              "unknown": 0,
+              "rate": 0.38461538461538464
+            },
+            "final_retention": {
+              "passed": 15,
+              "observed": 39,
+              "unknown": 0,
+              "rate": 0.38461538461538464
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 1,
+              "observed": 12,
+              "unknown": 0,
+              "rate": 0.08333333333333333
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 26,
+              "observed": 55,
+              "unknown": 29,
+              "recorded_events": 84,
+              "rate": 0.4727272727272727,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "episodes": 20,
+          "successes": 10,
+          "success_rate": 0.5,
+          "completion_rate": 0.7925,
+          "cookie_weighted_completion_rate": 0.7925,
+          "final_cookies": 317,
+          "capacity": 400,
+          "mean_final_count": 15.85,
+          "mean_steps": 1372.55,
+          "phase_counts": {
+            "UNVERIFIED": 15,
+            "DESCEND": 1,
+            "ALIGN_OBSERVE": 1,
+            "SELECT": 2,
+            "RECOVER_PATH": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 66,
+            "valid_grasp": {
+              "passed": 57,
+              "observed": 66,
+              "unknown": 0,
+              "rate": 0.8636363636363636
+            },
+            "valid_placement": {
+              "passed": 55,
+              "observed": 66,
+              "unknown": 0,
+              "rate": 0.8333333333333334
+            },
+            "final_retention": {
+              "passed": 55,
+              "observed": 66,
+              "unknown": 0,
+              "rate": 0.8333333333333334
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 35,
+              "observed": 41,
+              "unknown": 0,
+              "rate": 0.8536585365853658
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 51,
+              "observed": 164,
+              "unknown": 519,
+              "recorded_events": 683,
+              "rate": 0.31097560975609756,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "medium",
+          "episodes": 20,
+          "successes": 9,
+          "success_rate": 0.45,
+          "completion_rate": 0.7100000000000001,
+          "cookie_weighted_completion_rate": 0.71,
+          "final_cookies": 284,
+          "capacity": 400,
+          "mean_final_count": 14.2,
+          "mean_steps": 1760.85,
+          "phase_counts": {
+            "UNVERIFIED": 11,
+            "APPROACH": 2,
+            "DESCEND": 2,
+            "RECOVER_PATH": 3,
+            "ALIGN_OBSERVE": 1,
+            "CLOSE": 1
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 66,
+            "valid_grasp": {
+              "passed": 47,
+              "observed": 66,
+              "unknown": 0,
+              "rate": 0.7121212121212122
+            },
+            "valid_placement": {
+              "passed": 50,
+              "observed": 66,
+              "unknown": 0,
+              "rate": 0.7575757575757576
+            },
+            "final_retention": {
+              "passed": 50,
+              "observed": 66,
+              "unknown": 0,
+              "rate": 0.7575757575757576
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 30,
+              "observed": 34,
+              "unknown": 0,
+              "rate": 0.8823529411764706
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 51,
+              "observed": 52,
+              "unknown": 521,
+              "recorded_events": 573,
+              "rate": 0.9807692307692307,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        },
+        {
+          "task": "2x10",
+          "profile": "advanced",
+          "episodes": 20,
+          "successes": 2,
+          "success_rate": 0.1,
+          "completion_rate": 0.4574999999999999,
+          "cookie_weighted_completion_rate": 0.4575,
+          "final_cookies": 183,
+          "capacity": 400,
+          "mean_final_count": 9.15,
+          "mean_steps": 2319.0,
+          "phase_counts": {
+            "UNVERIFIED": 9,
+            "APPROACH": 2,
+            "RECOVER_PATH": 3,
+            "ALIGN_RETURN": 2,
+            "LOCAL_ALIGN": 4
+          },
+          "diagnostics": {
+            "audited_episodes": 20,
+            "attempted_batches": 60,
+            "valid_grasp": {
+              "passed": 32,
+              "observed": 60,
+              "unknown": 0,
+              "rate": 0.5333333333333333
+            },
+            "valid_placement": {
+              "passed": 29,
+              "observed": 60,
+              "unknown": 0,
+              "rate": 0.48333333333333334
+            },
+            "final_retention": {
+              "passed": 28,
+              "observed": 60,
+              "unknown": 0,
+              "rate": 0.4666666666666667
+            },
+            "subsequent_given_prior_valid": {
+              "passed": 14,
+              "observed": 23,
+              "unknown": 0,
+              "rate": 0.6086956521739131
+            },
+            "conditional_timing_unknown": 0,
+            "local_recovery": {
+              "passed": 31,
+              "observed": 356,
+              "unknown": 1122,
+              "recorded_events": 1478,
+              "rate": 0.08707865168539326,
+              "availability": "explicit_event_labels"
+            },
+            "done_episodes": 0,
+            "done_but_official_failure": 0
+          }
+        }
+      ],
+      "failure_reason_counts": {
+        "source group unavailable with no useful reached observation pose": 5,
+        "max_steps_exceeded": 30,
+        "previously reached recovery path made no observed progress": 7,
+        "10/20 cookies in target box": 1,
+        "7/20 cookies in target box": 1,
+        "58/60 cookies left in source (collateral disturbance)": 1,
+        "17/20 cookies in target box": 1,
+        "15/20 cookies in target box": 2,
+        "8/10 cookies in target box": 1,
+        "4/10 cookies in target box; 65/70 cookies left in source (collateral disturbance)": 1,
+        "5/10 cookies in target box": 2,
+        "target slots not one-to-one matched; valid fill held 0/5 control steps": 6,
+        "8/10 cookies in target box; 69/70 cookies left in source (collateral disturbance)": 1,
+        "69/70 cookies left in source (collateral disturbance)": 1,
+        "3/10 cookies in target box": 1,
+        "0/10 cookies in target box; 60/70 cookies left in source (collateral disturbance)": 1
+      },
+      "full_count_but_official_failure": [
+        {
+          "task": "2x10",
+          "profile": "basic",
+          "seed": 15000,
+          "score": 20,
+          "failure_reason": "58/60 cookies left in source (collateral disturbance)"
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 15009,
+          "score": 10,
+          "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 15016,
+          "score": 10,
+          "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+        },
+        {
+          "task": "2x5",
+          "profile": "advanced",
+          "seed": 15018,
+          "score": 10,
+          "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 15009,
+          "score": 10,
+          "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+        },
+        {
+          "task": "2x5",
+          "profile": "basic",
+          "seed": 15017,
+          "score": 10,
+          "failure_reason": "69/70 cookies left in source (collateral disturbance)"
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 15001,
+          "score": 10,
+          "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+        },
+        {
+          "task": "2x5",
+          "profile": "medium",
+          "seed": 15009,
+          "score": 10,
+          "failure_reason": "target slots not one-to-one matched; valid fill held 0/5 control steps"
+        }
+      ],
+      "official_success_phase_counts": {
+        "UNVERIFIED": 21,
+        "PLACE": 37
+      },
+      "recovery_event_type_counts": {
+        "source_reobserve": 1947,
+        "return_source": 14,
+        "insertion_retreat": 838,
+        "source_straighten": 14,
+        "release_disengage": 16
+      }
+    }
+  },
+  "paired": {
+    "score_improved": 82,
+    "score_equal": 26,
+    "score_worsened": 12,
+    "success_gained": 52,
+    "success_lost": 1
+  },
+  "completion_delta_pp": 31.70833333333333,
+  "success_delta_pp": 42.5,
+  "scope": "240 raw single-episode shards. Official terminal count/success are preserved. Offline diagnostics sampled at transitions and every five controls; missing recovery labels remain unknown."
+}

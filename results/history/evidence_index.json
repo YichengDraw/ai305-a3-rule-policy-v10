@@ -1,0 +1,102 @@
+[
+  {
+    "version": 5,
+    "file": "results/history/v5/final_results.json",
+    "sha256": "e4b257a0765b13df8ede20a0644b83cd784854f33071b7ece9c9832511a49e6a"
+  },
+  {
+    "version": 5,
+    "file": "results/history/v5/verification.json",
+    "sha256": "7c633a0ec08552a168b8e1986e7a583c021bdb23d616d7721c935bff1bd9c596"
+  },
+  {
+    "version": 6,
+    "file": "results/history/v6/final_results.json",
+    "sha256": "988474c066a7d72071aa273653e6ee8643df9627a291774dc9693c66b726facc"
+  },
+  {
+    "version": 6,
+    "file": "results/history/v6/dev_comparison_r6.json",
+    "sha256": "517f8b1bd91862a77a03e2661ae0e994870a7ecfc1b3e0516d80d512f9fca715"
+  },
+  {
+    "version": 6,
+    "file": "results/history/v6/fixed_geometry_check.json",
+    "sha256": "ac5bf3eef6b3d1c9f0352d01fd0b529f45f4691e40ba7e7b5acc0d21e691efc1"
+  },
+  {
+    "version": 6,
+    "file": "results/history/v6/verification.json",
+    "sha256": "7782f72aec8ca0ebabc873154dac0a9d734cbd4a5177f8a39e17f50f74d65f96"
+  },
+  {
+    "version": 7,
+    "file": "results/history/v7/final_results.json",
+    "sha256": "c936219f8a8017e2f86be2bdd563fb0dcf56927b3237de88999509d1df97077c"
+  },
+  {
+    "version": 7,
+    "file": "results/history/v7/composition_verification.json",
+    "sha256": "3e0efe51d3d65ce73d6191c87fcfdc51ab3ab9b138ce4e84b904cc0824d95308"
+  },
+  {
+    "version": 8,
+    "file": "results/history/v8/final_results.json",
+    "sha256": "5907f574908ba2519e0cf5e1078c6809ecacf262bf83cb0d7f50c4ac0cf8dfde"
+  },
+  {
+    "version": 8,
+    "file": "results/history/v8/final_selection.json",
+    "sha256": "a3f833c8da40e9886fa11261915fb3c26f30bcac542f7821fc3f7e0c600a5582"
+  },
+  {
+    "version": 9,
+    "file": "results/history/v9/final_results.json",
+    "sha256": "c8fe77c30a1102e32b651ef5225f6c5884668331d645c70cfa85c200007b8fc3"
+  },
+  {
+    "version": 9,
+    "file": "results/history/v9/methods_and_ablation.json",
+    "sha256": "b86ad3e3a94ad7789090b6848559e49b3866902ee60bdcd783f81648c504bb40"
+  },
+  {
+    "version": 9,
+    "file": "results/history/v9/source1_native99_fov_pairs.json",
+    "sha256": "a83b4f1aef2d6fdb82436a3259ae2b42fcd9c3a664f304b0d2571f21b052db7e"
+  },
+  {
+    "version": 10,
+    "file": "results/history/v10/e_target_projection_cpu44_complete_summary.json",
+    "sha256": "d6dfc9904b00fcefb8a2ca30621482da851d2b1afef7a6f5329b6e8a067b7c19"
+  },
+  {
+    "version": 10,
+    "file": "results/history/v10/core_no_y_common52_vs_v9_pairs.json",
+    "sha256": "9d4a5d72d477cc078e174352a41d67ea514a4cf7e99fa28ad1ea413a473826bb"
+  },
+  {
+    "version": 10,
+    "file": "results/history/v10/source_broad_r3_related127_complete_summary.json",
+    "sha256": "c62c57b4daaec56bb72c0fc85f52a8bc4e9012162849b4be108c03fa96049ea9"
+  },
+  {
+    "version": 10,
+    "file": "results/history/v10/priority_source120_noy_common_cpu_complete_summary.json",
+    "sha256": "32c200f3d6c208f30c7e52bdeebc35b8cb651185dfefe915d3fcf45b3984b494"
+  },
+  {
+    "version": 10,
+    "file": "results/history/v10/v9_cpu_baseline78_complete_summary.json",
+    "sha256": "77d9d9795e7e478595a5efabcb82509d708754c8a2bbbbc70684e7c8f58019cc"
+  },
+  {
+    "version": 10,
+    "file": "results/history/v10/seed_preregistration.json",
+    "sha256": "175c64ffdfef6bd32ddf9df5aa6a84605d3822831c64ef7a1ea0e4d08ec77777"
+  },
+  {
+    "version": 10,
+    "file": "results/history/v10/seed_window_audit.json",
+    "sha256": "8f827c9ee212cdb57fabbd5ea6cd6bfac57b050a72e6fe78da614ac95fd7825c"
+  }
+]

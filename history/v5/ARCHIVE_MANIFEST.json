@@ -1,0 +1,18 @@
+{
+  "version": "V5",
+  "status": "frozen_release",
+  "path": "history/v5",
+  "factory": "policy:make_policy",
+  "python_files": 7,
+  "sha256": {
+    "evaluate_policy.py": "6b99e13c6ee53c1a6b1fe933552e3438581c5f903b8a116f072591aa2598f344",
+    "launch_evaluation.py": "104678fe91c422e127b62cccc4450072549a6678545f6b9b64aed9b1664d3e4e",
+    "merge_results.py": "3296cf7ba2814e7d62d3bfe11285149fdd0a5908a76665edd6ffeec7104bf6b8",
+    "perception.py": "d309aa7ceb474e46863a09113252a9b6f7960933a22766e4db197b827f42773a",
+    "policy.py": "cdd24f072e64f5600a3558b9852b61d449f386def1b65c34fdf0f7d29b70f694",
+    "rule_controller.py": "3b24432ffc332fcbeb056b3b8826905c72d9d833a0d8e741d383f837358d4f05",
+    "run_dev.py": "b5c0d5a4c91335ec504e08e339bc6d29bf8d289dcc9c6bed41cc5dbe8b5dc52f"
+  },
+  "source_directory_label": "frozen_policy_v5",
+  "private_prompts_included": false
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "V5",
+  "scope": "retained candidate and helper code",
+  "archive": "history/candidate_archives/v5_retained_code.tar.gz",
+  "archive_sha256": "c9d7194c2048eb5bbb46fb97855ffb117cdf4480f966fa1a75fad512d00148eb",
+  "files": {
+    "dev_perception/evaluate_saved.py": "426661aeefa1835376488f3076b160c2639286e9a33f54fc44e52cc83127a375",
+    "dev_perception/evaluate_target.py": "54ee696da8666a7f3bd53bd15f506ebfe6fbd508895bf4da37727e36decaec47",
+    "dev_perception/inspect_robot.py": "2d5bf68186b28e25f67e95742214b15217dad5adc325eeab62c19470058b481b",
+    "dev_perception/render_development.py": "2f9a87991afe44cc9374950fbddd2f2e15157ff67f259301a1b3f0dd8140644f",
+    "evaluate_policy.py": "6b99e13c6ee53c1a6b1fe933552e3438581c5f903b8a116f072591aa2598f344",
+    "launch_evaluation.py": "104678fe91c422e127b62cccc4450072549a6678545f6b9b64aed9b1664d3e4e",
+    "merge_results.py": "3296cf7ba2814e7d62d3bfe11285149fdd0a5908a76665edd6ffeec7104bf6b8",
+    "perception.py": "d309aa7ceb474e46863a09113252a9b6f7960933a22766e4db197b827f42773a",
+    "policy.py": "cdd24f072e64f5600a3558b9852b61d449f386def1b65c34fdf0f7d29b70f694",
+    "rule_controller.py": "3b24432ffc332fcbeb056b3b8826905c72d9d833a0d8e741d383f837358d4f05",
+    "run_dev.py": "b5c0d5a4c91335ec504e08e339bc6d29bf8d289dcc9c6bed41cc5dbe8b5dc52f",
+    "run_truth_reference.py": "5776dd095835a311991bb996123e94a99ae916a781d71777f09aa23180a5895b"
+  },
+  "snapshots": [
+    "dev_perception"
+  ],
+  "note": "Code preserved verbatim; rejected variants are not recommended defaults. No prompt plans, chat exports, credentials, videos, or model weights are included."
+}

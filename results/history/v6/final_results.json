@@ -1,0 +1,724 @@
+{
+  "protocol": {
+    "episodes_per_policy": 120,
+    "seeds": [
+      15000,
+      15019
+    ],
+    "source_column": 1,
+    "steps": {
+      "2x5": 500,
+      "2x10": 3200
+    },
+    "official_non_strict": true
+  },
+  "selected_policy": "policy:make_policy_b",
+  "old": {
+    "episodes": 120,
+    "successes": 7,
+    "success_rate": 0.058333333333333334,
+    "completion_rate": 0.42874999999999996,
+    "cookie_weighted_completion_rate": 0.3972222222222222,
+    "final_cookies": 715,
+    "capacity": 1800,
+    "mean_final_count": 5.958333333333333,
+    "mean_steps": 398.44166666666666,
+    "phase_counts": {
+      "FAILED": 87,
+      "DONE": 26,
+      "PLACE": 7
+    },
+    "diagnostics": {
+      "audited_episodes": 120,
+      "attempted_batches": 260,
+      "valid_grasp": {
+        "passed": 111,
+        "observed": 260,
+        "unknown": 0,
+        "rate": 0.4269230769230769
+      },
+      "valid_placement": {
+        "passed": 107,
+        "observed": 260,
+        "unknown": 0,
+        "rate": 0.4115384615384615
+      },
+      "final_retention": {
+        "passed": 103,
+        "observed": 260,
+        "unknown": 0,
+        "rate": 0.39615384615384613
+      },
+      "subsequent_given_prior_valid": {
+        "passed": 16,
+        "observed": 99,
+        "unknown": 0,
+        "rate": 0.16161616161616163
+      },
+      "conditional_timing_unknown": 0,
+      "local_recovery": {
+        "passed": 0,
+        "observed": 0,
+        "unknown": 50,
+        "recorded_events": 50,
+        "rate": null,
+        "availability": "events_without_success_labels"
+      },
+      "done_episodes": 26,
+      "done_but_official_failure": 26
+    }
+  },
+  "new": {
+    "episodes": 120,
+    "successes": 58,
+    "success_rate": 0.48333333333333334,
+    "completion_rate": 0.7458333333333332,
+    "cookie_weighted_completion_rate": 0.715,
+    "final_cookies": 1287,
+    "capacity": 1800,
+    "mean_final_count": 10.725,
+    "mean_steps": 1052.9916666666666,
+    "phase_counts": {
+      "UNVERIFIED": 53,
+      "APPROACH": 4,
+      "RECOVER_PATH": 8,
+      "ALIGN_RETURN": 2,
+      "LOCAL_ALIGN": 4,
+      "DESCEND": 3,
+      "ALIGN_OBSERVE": 2,
+      "SELECT": 2,
+      "CLOSE": 1,
+      "PLACE": 37,
+      "OPEN": 1,
+      "ALIGN_APPROACH": 2,
+      "RECOVER_LOWER": 1
+    },
+    "diagnostics": {
+      "audited_episodes": 120,
+      "attempted_batches": 309,
+      "valid_grasp": {
+        "passed": 229,
+        "observed": 309,
+        "unknown": 0,
+        "rate": 0.7411003236245954
+      },
+      "valid_placement": {
+        "passed": 186,
+        "observed": 309,
+        "unknown": 0,
+        "rate": 0.6019417475728155
+      },
+      "final_retention": {
+        "passed": 184,
+        "observed": 309,
+        "unknown": 0,
+        "rate": 0.5954692556634305
+      },
+      "subsequent_given_prior_valid": {
+        "passed": 81,
+        "observed": 142,
+        "unknown": 0,
+        "rate": 0.5704225352112676
+      },
+      "conditional_timing_unknown": 0,
+      "local_recovery": {
+        "passed": 167,
+        "observed": 637,
+        "unknown": 2192,
+        "recorded_events": 2829,
+        "rate": 0.2621664050235479,
+        "availability": "explicit_event_labels"
+      },
+      "done_episodes": 0,
+      "done_but_official_failure": 0
+    }
+  },
+  "completion_delta_pp": 31.70833333333333,
+  "success_delta_pp": 42.5,
+  "cells": [
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "episodes": 20,
+      "successes": 17,
+      "success_rate": 0.85,
+      "completion_rate": 0.99,
+      "cookie_weighted_completion_rate": 0.99,
+      "final_cookies": 198,
+      "capacity": 200,
+      "mean_final_count": 9.9,
+      "mean_steps": 252.3,
+      "phase_counts": {
+        "PLACE": 17,
+        "UNVERIFIED": 3
+      },
+      "diagnostics": {
+        "audited_episodes": 20,
+        "attempted_batches": 40,
+        "valid_grasp": {
+          "passed": 38,
+          "observed": 40,
+          "unknown": 0,
+          "rate": 0.95
+        },
+        "valid_placement": {
+          "passed": 21,
+          "observed": 40,
+          "unknown": 0,
+          "rate": 0.525
+        },
+        "final_retention": {
+          "passed": 21,
+          "observed": 40,
+          "unknown": 0,
+          "rate": 0.525
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 1,
+          "observed": 19,
+          "unknown": 0,
+          "rate": 0.05263157894736842
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 4,
+          "observed": 4,
+          "unknown": 0,
+          "recorded_events": 4,
+          "rate": 1.0,
+          "availability": "explicit_event_labels"
+        },
+        "done_episodes": 0,
+        "done_but_official_failure": 0
+      }
+    },
+    {
+      "task": "2x5",
+      "profile": "medium",
+      "episodes": 20,
+      "successes": 12,
+      "success_rate": 0.6,
+      "completion_rate": 0.8150000000000001,
+      "cookie_weighted_completion_rate": 0.815,
+      "final_cookies": 163,
+      "capacity": 200,
+      "mean_final_count": 8.15,
+      "mean_steps": 266.35,
+      "phase_counts": {
+        "PLACE": 12,
+        "UNVERIFIED": 7,
+        "RECOVER_LOWER": 1
+      },
+      "diagnostics": {
+        "audited_episodes": 20,
+        "attempted_batches": 38,
+        "valid_grasp": {
+          "passed": 30,
+          "observed": 38,
+          "unknown": 0,
+          "rate": 0.7894736842105263
+        },
+        "valid_placement": {
+          "passed": 16,
+          "observed": 38,
+          "unknown": 0,
+          "rate": 0.42105263157894735
+        },
+        "final_retention": {
+          "passed": 15,
+          "observed": 38,
+          "unknown": 0,
+          "rate": 0.39473684210526316
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 0,
+          "observed": 13,
+          "unknown": 0,
+          "rate": 0.0
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 4,
+          "observed": 6,
+          "unknown": 1,
+          "recorded_events": 7,
+          "rate": 0.6666666666666666,
+          "availability": "explicit_event_labels"
+        },
+        "done_episodes": 0,
+        "done_but_official_failure": 0
+      }
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "episodes": 20,
+      "successes": 8,
+      "success_rate": 0.4,
+      "completion_rate": 0.71,
+      "cookie_weighted_completion_rate": 0.71,
+      "final_cookies": 142,
+      "capacity": 200,
+      "mean_final_count": 7.1,
+      "mean_steps": 346.9,
+      "phase_counts": {
+        "UNVERIFIED": 8,
+        "PLACE": 8,
+        "OPEN": 1,
+        "ALIGN_APPROACH": 2,
+        "RECOVER_PATH": 1
+      },
+      "diagnostics": {
+        "audited_episodes": 20,
+        "attempted_batches": 39,
+        "valid_grasp": {
+          "passed": 25,
+          "observed": 39,
+          "unknown": 0,
+          "rate": 0.6410256410256411
+        },
+        "valid_placement": {
+          "passed": 15,
+          "observed": 39,
+          "unknown": 0,
+          "rate": 0.38461538461538464
+        },
+        "final_retention": {
+          "passed": 15,
+          "observed": 39,
+          "unknown": 0,
+          "rate": 0.38461538461538464
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 1,
+          "observed": 12,
+          "unknown": 0,
+          "rate": 0.08333333333333333
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 26,
+          "observed": 55,
+          "unknown": 29,
+          "recorded_events": 84,
+          "rate": 0.4727272727272727,
+          "availability": "explicit_event_labels"
+        },
+        "done_episodes": 0,
+        "done_but_official_failure": 0
+      }
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "episodes": 20,
+      "successes": 10,
+      "success_rate": 0.5,
+      "completion_rate": 0.7925,
+      "cookie_weighted_completion_rate": 0.7925,
+      "final_cookies": 317,
+      "capacity": 400,
+      "mean_final_count": 15.85,
+      "mean_steps": 1372.55,
+      "phase_counts": {
+        "UNVERIFIED": 15,
+        "DESCEND": 1,
+        "ALIGN_OBSERVE": 1,
+        "SELECT": 2,
+        "RECOVER_PATH": 1
+      },
+      "diagnostics": {
+        "audited_episodes": 20,
+        "attempted_batches": 66,
+        "valid_grasp": {
+          "passed": 57,
+          "observed": 66,
+          "unknown": 0,
+          "rate": 0.8636363636363636
+        },
+        "valid_placement": {
+          "passed": 55,
+          "observed": 66,
+          "unknown": 0,
+          "rate": 0.8333333333333334
+        },
+        "final_retention": {
+          "passed": 55,
+          "observed": 66,
+          "unknown": 0,
+          "rate": 0.8333333333333334
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 35,
+          "observed": 41,
+          "unknown": 0,
+          "rate": 0.8536585365853658
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 51,
+          "observed": 164,
+          "unknown": 519,
+          "recorded_events": 683,
+          "rate": 0.31097560975609756,
+          "availability": "explicit_event_labels"
+        },
+        "done_episodes": 0,
+        "done_but_official_failure": 0
+      }
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "episodes": 20,
+      "successes": 9,
+      "success_rate": 0.45,
+      "completion_rate": 0.7100000000000001,
+      "cookie_weighted_completion_rate": 0.71,
+      "final_cookies": 284,
+      "capacity": 400,
+      "mean_final_count": 14.2,
+      "mean_steps": 1760.85,
+      "phase_counts": {
+        "UNVERIFIED": 11,
+        "APPROACH": 2,
+        "DESCEND": 2,
+        "RECOVER_PATH": 3,
+        "ALIGN_OBSERVE": 1,
+        "CLOSE": 1
+      },
+      "diagnostics": {
+        "audited_episodes": 20,
+        "attempted_batches": 66,
+        "valid_grasp": {
+          "passed": 47,
+          "observed": 66,
+          "unknown": 0,
+          "rate": 0.7121212121212122
+        },
+        "valid_placement": {
+          "passed": 50,
+          "observed": 66,
+          "unknown": 0,
+          "rate": 0.7575757575757576
+        },
+        "final_retention": {
+          "passed": 50,
+          "observed": 66,
+          "unknown": 0,
+          "rate": 0.7575757575757576
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 30,
+          "observed": 34,
+          "unknown": 0,
+          "rate": 0.8823529411764706
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 51,
+          "observed": 52,
+          "unknown": 521,
+          "recorded_events": 573,
+          "rate": 0.9807692307692307,
+          "availability": "explicit_event_labels"
+        },
+        "done_episodes": 0,
+        "done_but_official_failure": 0
+      }
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "episodes": 20,
+      "successes": 2,
+      "success_rate": 0.1,
+      "completion_rate": 0.4574999999999999,
+      "cookie_weighted_completion_rate": 0.4575,
+      "final_cookies": 183,
+      "capacity": 400,
+      "mean_final_count": 9.15,
+      "mean_steps": 2319.0,
+      "phase_counts": {
+        "UNVERIFIED": 9,
+        "APPROACH": 2,
+        "RECOVER_PATH": 3,
+        "ALIGN_RETURN": 2,
+        "LOCAL_ALIGN": 4
+      },
+      "diagnostics": {
+        "audited_episodes": 20,
+        "attempted_batches": 60,
+        "valid_grasp": {
+          "passed": 32,
+          "observed": 60,
+          "unknown": 0,
+          "rate": 0.5333333333333333
+        },
+        "valid_placement": {
+          "passed": 29,
+          "observed": 60,
+          "unknown": 0,
+          "rate": 0.48333333333333334
+        },
+        "final_retention": {
+          "passed": 28,
+          "observed": 60,
+          "unknown": 0,
+          "rate": 0.4666666666666667
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 14,
+          "observed": 23,
+          "unknown": 0,
+          "rate": 0.6086956521739131
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 31,
+          "observed": 356,
+          "unknown": 1122,
+          "recorded_events": 1478,
+          "rate": 0.08707865168539326,
+          "availability": "explicit_event_labels"
+        },
+        "done_episodes": 0,
+        "done_but_official_failure": 0
+      }
+    }
+  ],
+  "paired": {
+    "score_improved": 82,
+    "score_equal": 26,
+    "score_worsened": 12,
+    "success_gained": 52,
+    "success_lost": 1
+  },
+  "full_target_but_official_failure": 8,
+  "failure_termination_counts": {
+    "budget_exhausted": 30,
+    "recovery_no_progress": 7,
+    "source_unobserved": 5,
+    "slot_or_hold": 6,
+    "count_or_source_contract": 14
+  },
+  "validation": {
+    "raw_shards": 240,
+    "episodes_per_policy": 120,
+    "cells_per_policy": 6,
+    "seeds": [
+      15000,
+      15019
+    ],
+    "missing": 0,
+    "duplicates": 0,
+    "all_returncodes_zero": true,
+    "frozen_code_matches": true,
+    "raw_and_merged_identical": true,
+    "paired_initial_scenes_identical": true,
+    "diagnostics_match_saved_summary": true,
+    "recovery_labels_consistent": true
+  },
+  "code_manifest": {
+    "status": "frozen_for_formal",
+    "prepared_utc": "2026-11-02T04:00:22.638925+00:00",
+    "runtime_source": "dev_candidate_r6_code",
+    "policy_factory": "policy:make_policy_b",
+    "sha256": {
+      "batch_metrics.py": "e5aa2b7940eb962b754b7004d2c175b36c322b30f28a69a93a082d0f206fdccc",
+      "check_fixed_geometry.py": "541157ee701a5f0f425c77750c6332ab0694602c4221fa1667ba81fafe64a81c",
+      "controller_contract_checks.py": "7f37755f38c9964dd9f1c8c293735644d3b49969eec6424c5e53489b1c0d89a7",
+      "diagnostic_support.py": "d514b6b8be15ec1fbf8f8951945d5e05c86590b07f19701e5c557b6c223770f2",
+      "evaluate_policy.py": "744821afb903a6f7b4d54775db3786cfc722c608e05723d3f1ac952dce10627f",
+      "launch_evaluation.py": "4ec1da6cdc32ca9595362dd64d4b8a1c4edea8fb2b873f84dc7873adda6897ab",
+      "launch_paired_formal.py": "abe95cfbbd7f6db91f51af22ab9f28b7e506852c4bc1b588ebde9fae207edac6",
+      "merge_results.py": "3713c3ab0519b5c779fdf9592c1b55c48c34cc753cc35030b0a60a258812b0c1",
+      "paired_comparison.py": "aba5d96f4640643609da1f9a65e032f06913c6f40e71302684c6bf399f6e860e",
+      "perception.py": "f58ef58662d6b0da3e5ef6bab959e2154ff689e3c476d541e87b127559b9efaf",
+      "placement_audit.py": "e2cffec310bdf2ba0c75f8c89a60d9cbba607417b2d9718ad4de77f401408b85",
+      "policy.py": "20ffe6b79be167be3a4db53cc3cffe8a15e63a6b9c9c701d2a4ee37725addaa7",
+      "rule_controller.py": "c62810c7002df98f415f83114a2caa952340d9a15217a19a90a1c04755a367f6",
+      "run_dev.py": "441601cecdb3510f48466cea2ab3cd5d2094f975444aa76d2d82a8882e592660"
+    },
+    "frozen_utc": "2026-11-02T04:11:17.502553+00:00",
+    "selection_evidence": "dev_candidate_bounds_1207.json",
+    "selection_basis": "45-case developer cohort: b lower completion/success bounds exceed c upper bounds and complete v5 reference; all unfinished cases retained"
+  },
+  "development_summary": {
+    "v5": {
+      "episodes": 45,
+      "successes": 4,
+      "success_rate": 0.08888888888888889,
+      "completion_rate": 0.39888888888888885,
+      "cookie_weighted_completion_rate": 0.372,
+      "final_cookies": 279,
+      "capacity": 750,
+      "mean_final_count": 6.2,
+      "mean_steps": 438.8888888888889,
+      "phase_counts": {
+        "DONE": 8,
+        "OPEN": 1,
+        "FAILED": 33,
+        "PLACE": 2,
+        "RECOVER_LOWER": 1
+      },
+      "diagnostics": {
+        "audited_episodes": 45,
+        "attempted_batches": 105,
+        "valid_grasp": {
+          "passed": 41,
+          "observed": 105,
+          "unknown": 0,
+          "rate": 0.3904761904761905
+        },
+        "valid_placement": {
+          "passed": 40,
+          "observed": 105,
+          "unknown": 0,
+          "rate": 0.38095238095238093
+        },
+        "final_retention": {
+          "passed": 37,
+          "observed": 105,
+          "unknown": 0,
+          "rate": 0.3523809523809524
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 10,
+          "observed": 34,
+          "unknown": 0,
+          "rate": 0.29411764705882354
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 0,
+          "observed": 0,
+          "unknown": 22,
+          "recorded_events": 22,
+          "rate": null,
+          "availability": "events_without_success_labels"
+        },
+        "done_episodes": 8,
+        "done_but_official_failure": 7
+      },
+      "cell_macro_completion_rate": 0.43250000000000005
+    },
+    "v6b": {
+      "episodes": 45,
+      "successes": 19,
+      "success_rate": 0.4222222222222222,
+      "completion_rate": 0.7122222222222222,
+      "cookie_weighted_completion_rate": 0.6786666666666666,
+      "final_cookies": 509,
+      "capacity": 750,
+      "mean_final_count": 11.311111111111112,
+      "mean_steps": 1522.4666666666667,
+      "phase_counts": {
+        "UNVERIFIED": 19,
+        "APPROACH": 4,
+        "ALIGN_APPROACH": 2,
+        "RECOVER_PATH": 5,
+        "RECOVER_CLEAR": 1,
+        "ALIGN_RETURN": 2,
+        "LOCAL_ALIGN": 2,
+        "PLACE": 10
+      },
+      "diagnostics": {
+        "audited_episodes": 45,
+        "attempted_batches": 122,
+        "valid_grasp": {
+          "passed": 78,
+          "observed": 122,
+          "unknown": 0,
+          "rate": 0.639344262295082
+        },
+        "valid_placement": {
+          "passed": 73,
+          "observed": 122,
+          "unknown": 0,
+          "rate": 0.5983606557377049
+        },
+        "final_retention": {
+          "passed": 71,
+          "observed": 122,
+          "unknown": 0,
+          "rate": 0.5819672131147541
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 31,
+          "observed": 52,
+          "unknown": 0,
+          "rate": 0.5961538461538461
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 162,
+          "observed": 563,
+          "unknown": 957,
+          "recorded_events": 1520,
+          "rate": 0.2877442273534636,
+          "availability": "explicit_event_labels"
+        },
+        "done_episodes": 0,
+        "done_but_official_failure": 0
+      },
+      "cell_macro_completion_rate": 0.7541666666666668
+    },
+    "v6c": {
+      "episodes": 45,
+      "successes": 3,
+      "success_rate": 0.06666666666666667,
+      "completion_rate": 0.3655555555555555,
+      "cookie_weighted_completion_rate": 0.336,
+      "final_cookies": 252,
+      "capacity": 750,
+      "mean_final_count": 5.6,
+      "mean_steps": 416.9111111111111,
+      "phase_counts": {
+        "UNVERIFIED": 42,
+        "LOCAL_ALIGN": 1,
+        "PLACE": 2
+      },
+      "diagnostics": {
+        "audited_episodes": 45,
+        "attempted_batches": 52,
+        "valid_grasp": {
+          "passed": 36,
+          "observed": 52,
+          "unknown": 0,
+          "rate": 0.6923076923076923
+        },
+        "valid_placement": {
+          "passed": 34,
+          "observed": 52,
+          "unknown": 0,
+          "rate": 0.6538461538461539
+        },
+        "final_retention": {
+          "passed": 34,
+          "observed": 52,
+          "unknown": 0,
+          "rate": 0.6538461538461539
+        },
+        "subsequent_given_prior_valid": {
+          "passed": 3,
+          "observed": 7,
+          "unknown": 0,
+          "rate": 0.42857142857142855
+        },
+        "conditional_timing_unknown": 0,
+        "local_recovery": {
+          "passed": 51,
+          "observed": 457,
+          "unknown": 129,
+          "recorded_events": 586,
+          "rate": 0.11159737417943107,
+          "availability": "explicit_event_labels"
+        },
+        "done_episodes": 0,
+        "done_but_official_failure": 0
+      },
+      "cell_macro_completion_rate": 0.4025
+    }
+  }
+}

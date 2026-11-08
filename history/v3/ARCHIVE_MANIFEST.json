@@ -1,0 +1,15 @@
+{
+  "version": "V3",
+  "status": "development_snapshot",
+  "path": "history/v3",
+  "factory": "policy:make_policy",
+  "python_files": 4,
+  "sha256": {
+    "perception.py": "23d89a36b02ad6a067cc6c053f02fd1f4b8cf8f48b9ef76f2f99e221dfa17928",
+    "policy.py": "cdd24f072e64f5600a3558b9852b61d449f386def1b65c34fdf0f7d29b70f694",
+    "rule_controller.py": "852e0ff7cf2cf4ac6f7b6656b863d6b0a6dab08f9f3817a6e1505af6469575f4",
+    "run_dev.py": "e60b207ad1b93361175e36046fbf7727127011534252285ad37dd90e5d83bd10"
+  },
+  "source_directory_label": "dev_v3",
+  "private_prompts_included": false
+}
