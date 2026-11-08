@@ -1,0 +1,188 @@
+{
+  "status": "frozen_before_first_formal_test",
+  "policy_factory": "policy:make_policy_b",
+  "source_code": "/home/ai305/ai305group3/a3_rule_policy_v10_20261104/frozen_policy_v10",
+  "public_task_route": {
+    "2x5": "two5_source1",
+    "2x10": "two10_source1"
+  },
+  "public_source_column_route": {
+    "1": "source1",
+    "2": "inner",
+    "3": "inner",
+    "4": "outer"
+  },
+  "runtime_count": 78,
+  "selection_inputs": [
+    "public task instruction",
+    "public source column"
+  ],
+  "per_seed_profile_color_or_result_routing": false,
+  "parent_namespace_inverse_AST": true,
+  "all_runtime_compile_passed": true,
+  "physics_steps": 0,
+  "H_scenes_created": 0,
+  "actual_public_routing_contract": "contracts/full_router_e18_no_y_cpu_public8.json",
+  "previous_eight_input_contract": "contracts/full_router_no_y_common_public_routing.json",
+  "previous_namespace_compile": "contracts/full_router_no_y_common_namespace_compile.json",
+  "official_protocol": {
+    "max_steps_by_task": {
+      "2x5": 500,
+      "2x10": 3200
+    },
+    "strict_policy_completion": false,
+    "success_hold_steps": 5
+  },
+  "provisional_roles": [],
+  "selection_limits": "Selected before H on complete PROCPU development data; subsequent H uses this fixed runtime.",
+  "leaf_bindings": {
+    "two5_source1": {
+      "parent": "/home/ai305/ai305group3/a3_rule_policy_v10_20261104/router_e18_no_y_build/parents/candidate_e_target_local_projection_v10",
+      "canonical_parent": "candidate_e_target_local_projection_v10",
+      "parent_runtime_count": 18,
+      "parent_runtime_sha256": {
+        "e_source_view.py": "a9a32b078a42d87e7babb75ade4f17dad462049c74b73c7d929d4d82bdfe0c9e",
+        "legacy/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "legacy/b2_supervisor.py": "b9401e55b3a3b32ab5befe9c8adb19580edc71f7594b506e796b65bea3e3887e",
+        "legacy/d_supervisor.py": "9bac4679ca92d34873a91c7fcfd671d08aa79a4e5a09bbde223001f7658e127b",
+        "legacy/path_feasibility.py": "f82862f522e687e2f9046939f96ffbcfa6d3c8e87c74f51a8a0518a633fca96e",
+        "legacy/perception.py": "1677b55381db09f345fe8e41d37b612b495d594b4b2822baa3d2dbce6ab0dcdf",
+        "legacy/placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+        "legacy/policy.py": "52c1ea546d6e1426c80b1db844328dce33aaa3855c3adc860c2d23ec79d38786",
+        "legacy/rule_controller.py": "6bfe7455e8fd02604ff99474ab557013922d88066c1b3c8a6dc55ef4826b2f31",
+        "path_feasibility.py": "870711a095247a8e8c42e1c7496ef8733e7de70c8acc2f2a39e33ec50ab911aa",
+        "policy.py": "217abd9ce78cf970b351049ebb8804089d7d2030959116955679410a4481bd97",
+        "public_ik.py": "a2118630900c2b226ec27e4cf3ad777cf2ec5ff9334121027e35804c19d579b1",
+        "repair_costs.py": "ed911e7803a600adbe3ad013be2b80de61bb03e03309837cacd90697a822dc61",
+        "slot_audit.py": "550b0b6bd61166b6520e857ec4ce5506ce43a5c7428131acf492fa0118d5738b",
+        "source_pretrial.py": "f843d16c0032c8083164ea0f2432f6d3a96b923312454bb3558b938ee8eb390c",
+        "target_local_projection.py": "28b402f9525807ad462e58aa73cb0b21c44e750c73180d6ba723d7d66208a269",
+        "target_vision.py": "cb597e77a25c82720e0e87b9740093045f61dc0aef07047115a60b087f49bace",
+        "terminal_controller.py": "ca30951b92a8e6328884030b49db009d9e705b5894fccd94f1249ce284591caa"
+      },
+      "namespaced_policy": "v10_leaves_17e0363838a9/two5_source1/policy.py",
+      "namespace_only_AST_equivalent": true
+    },
+    "two5_inner": {
+      "parent": "/home/ai305/ai305group3/a3_rule_policy_v10_20261104/router_e18_no_y_build/parents/candidate_inner_metric_target_v10",
+      "canonical_parent": "candidate_inner_metric_target_v10",
+      "parent_runtime_count": 11,
+      "parent_runtime_sha256": {
+        "inner_source_broad.py": "ce562f82446bc6b4235f7ddec6137794c173c7d0b99981c0a52f167ceb8eef74",
+        "inner_source_view.py": "aff97e89e4f9c01c970229e9e643676ede859fa4ac5ad7712385dc9c49449d75",
+        "inner_target_observation.py": "604d34b6260fc9e5b21bbad5b48fd8206e32203c2ec44832804559a6d5d43fa0",
+        "observation_path.py": "3ce2452886b5513d92669c77c6df9954791536c8d3eceaa8dc10e7ce22c9e1c6",
+        "perception.py": "24c05f23287b1b012f9e2d0f2724fbc283cd9d41d152b52eb4dab40b4162f8ab",
+        "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+        "policy.py": "bf63a450fba4a6e95576d6ad42684bd12dea038e2a8b01c339ca8ca12b89c6a5",
+        "public_visibility.py": "742347c7c20ab98633137af455e3d0e22e1fd1802410a1ab57c5f1ca57eab1d5",
+        "rule_controller.py": "f4c513d6afacc180b7fc42a728a5059ded91a1777782f63c1400ff69d7390e61",
+        "source_bootstrap.py": "e97f77ed9c055fdb6d444c62a0afe14e82f1f017c3de34153353d06fd6498e99",
+        "target_vision.py": "cb597e77a25c82720e0e87b9740093045f61dc0aef07047115a60b087f49bace"
+      },
+      "namespaced_policy": "v10_leaves_17e0363838a9/two5_inner/policy.py",
+      "namespace_only_AST_equivalent": true
+    },
+    "two5_outer": {
+      "parent": "/home/ai305/ai305group3/a3_rule_policy_v10_20261104/router_e18_no_y_build/parents/v9_reference_leaves/two5_outer",
+      "canonical_parent": "v9_reference_leaves/two5_outer",
+      "parent_runtime_count": 14,
+      "parent_runtime_sha256": {
+        "__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+        "f_hybrid_policy.py": "a465a0d0d700137ae24910d68f4a825936fa6826e898c7b0328ddf925b63194e",
+        "f_parent_perception.py": "5bed57c916058342d8560a4771d5619fd8bd565b234322257d41955417a7c3c1",
+        "f_parent_policy.py": "368623c28e4c4148f3e644794a7f1519639b8e3e20e2594f47f7a0f75dbc15c4",
+        "f_parent_rule_controller.py": "a205b6e0c5f0a8b95a51a5510f1818090b17337fd63fc2d15e4f229bab231523",
+        "f_source_controller.py": "1639716c48ec11bd715b37172e285451f9063b451c70c3934ae748eb3dce6974",
+        "f_source_perception.py": "57e083f7ee56f0c4868bc1c8f42a7d25663776e129f7127cfd090bf6f9b73156",
+        "path_feasibility.py": "ff751b1f9e279601e1b35e55fe649df4a91f505ce38a0597c12f12bc755dea14",
+        "perception.py": "89b2f321816dd1c325414d2ce09a9475f4e780ace8b109d7c392618b929ff99a",
+        "placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+        "policy.py": "00a17c96acbd51cdd43c384f5573dfe7104b5ed51866fa5db561dabfb50e554b",
+        "rule_controller.py": "5451fff6d18cddec31cd08e226e8457be96268c8a418ab7340c5d01e7a9ac65f",
+        "source_geometry.py": "10a2aaa50643cddad4769ce24bbfcff0e18ed4c1a5dca79c67dfbb8f0ad3ab72"
+      },
+      "namespaced_policy": "v10_leaves_17e0363838a9/two5_outer/policy.py",
+      "namespace_only_AST_equivalent": true
+    },
+    "two10_source1": {
+      "parent": "/home/ai305/ai305group3/a3_rule_policy_v10_20261104/router_e18_no_y_build/parents/candidate_core_no_y_common_lean_v10",
+      "canonical_parent": "candidate_core_no_y_common_lean_v10",
+      "parent_runtime_count": 11,
+      "parent_runtime_sha256": {
+        "b2_supervisor.py": "b9401e55b3a3b32ab5befe9c8adb19580edc71f7594b506e796b65bea3e3887e",
+        "d_supervisor.py": "dac659f16a58e8bc3987c5765b7f7ef16269ca85c6bc00e593df4dcae20759f7",
+        "path_feasibility.py": "5e198e43787c5b1a518864d1f492154aa2d78f6b2554463662adb9ccfb362470",
+        "perception.py": "b71afbc4c53a53bc92cf3c1acd56c750848a30faeea5d4ac0152cd337372e497",
+        "placement_audit.py": "f21204dc5d5586530bd9cec5ebcfdd1098728dc88a7fcc12e3ddc007f9f16bce",
+        "policy.py": "441cc79bf0c2dd235266ff1555799ff3392ce0bbc457763be1cbba3f32bda688",
+        "public_visibility.py": "1f8faded8e33197c3758dc13e759c19999cbf3fc2dfcdfe8cefd7fa69c1e2b4f",
+        "rule_controller.py": "10c725b7a4a99543e518aef8103800b3a002d0cadba1fa9647a42fe003138cf8",
+        "source_view.py": "2a4a0a3f23de5e24f97e1cc902b5e965be39d158bd2382bde30a878efc142184",
+        "target_occupancy.py": "c01f8c23645a28385cbf9d786ba85a57fe205d8edf2cfcdde1c7ae44a0ec8f74",
+        "target_registration.py": "8e455db360d00a280f24c8552d2c406ab14fdd2473a747b48a02f3eae15c9335"
+      },
+      "namespaced_policy": "v10_leaves_17e0363838a9/two10_source1/policy.py",
+      "namespace_only_AST_equivalent": true
+    },
+    "two10_inner": {
+      "parent": "/home/ai305/ai305group3/a3_rule_policy_v10_20261104/router_e18_no_y_build/parents/v9_reference_leaves/two10_inner",
+      "canonical_parent": "v9_reference_leaves/two10_inner",
+      "parent_runtime_count": 5,
+      "parent_runtime_sha256": {
+        "__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "perception.py": "8d7be3bac8cfed84892416ad9439097d1af00c1214ec228bf354adeb548a1e21",
+        "placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+        "policy.py": "e6cb7bd7da9af908f002bbcf60536afc04a130a12ae5ea80f4431110af259915",
+        "rule_controller.py": "c9ea45726f80a74608d7a5b6826293d9a98c34882f15cf6e00e1bcfba05c59b0"
+      },
+      "namespaced_policy": "v10_leaves_17e0363838a9/two10_inner/policy.py",
+      "namespace_only_AST_equivalent": true
+    },
+    "two10_outer": {
+      "parent": "/home/ai305/ai305group3/a3_rule_policy_v10_20261104/router_e18_no_y_build/parents/candidate_outer_empty_recovery_v10",
+      "canonical_parent": "candidate_outer_empty_recovery_v10",
+      "parent_runtime_count": 14,
+      "parent_runtime_sha256": {
+        "__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+        "f_hybrid_policy.py": "fcdc3807ef468021f292ade3bdb1afe9ff6046de295ca8440a60ac95be297557",
+        "f_parent_perception.py": "fe76208af6c590e2da7d6a8abe4386e07d9b1c7df6f86c79d7d5e57cbb833483",
+        "f_parent_policy.py": "a27d816cc4520cda71b10e2def2789dc7251b3675b696c128e494f054b013b8f",
+        "f_parent_rule_controller.py": "e893610d2c490e54910daa1d8e16a8b0b0fc291be5fef47e85148d566e938edb",
+        "f_source_controller.py": "1639716c48ec11bd715b37172e285451f9063b451c70c3934ae748eb3dce6974",
+        "f_source_perception.py": "dd2660b0e9b44df3a8e4dc55a918881cbb79d06366b4e1c0bc8f83d05fbf1ef6",
+        "path_feasibility.py": "ff751b1f9e279601e1b35e55fe649df4a91f505ce38a0597c12f12bc755dea14",
+        "perception.py": "89b2f321816dd1c325414d2ce09a9475f4e780ace8b109d7c392618b929ff99a",
+        "placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+        "policy.py": "00a17c96acbd51cdd43c384f5573dfe7104b5ed51866fa5db561dabfb50e554b",
+        "rule_controller.py": "5451fff6d18cddec31cd08e226e8457be96268c8a418ab7340c5d01e7a9ac65f",
+        "source_geometry.py": "10a2aaa50643cddad4769ce24bbfcff0e18ed4c1a5dca79c67dfbb8f0ad3ab72"
+      },
+      "namespaced_policy": "v10_leaves_17e0363838a9/two10_outer/policy.py",
+      "namespace_only_AST_equivalent": true
+    }
+  },
+  "runtime_namespace": "v10_leaves_17e0363838a9",
+  "actual_public_eight_input_contract_passed": true,
+  "changed_leaf_matches_selected_composition": true,
+  "selected_two5_source1_cpu44": {
+    "summary": "e_target_projection_cpu44_complete_summary.json",
+    "episodes": 44,
+    "capacity": 10,
+    "parent_count": 431,
+    "candidate_count": 435,
+    "parent_mean_count_capacity": 0.9795454545454546,
+    "candidate_mean_count_capacity": 0.9886363636363636,
+    "parent_official_successes": 40,
+    "candidate_official_successes": 40,
+    "all_initializations_match": true,
+    "quantity_regressions": 0,
+    "success_regressions": 0
+  },
+  "actual_public_fixture_manifest": "/home/ai305/ai305group3/a3_rule_policy_v10_20261104/full_router_cpu8_actual0_public/manifest_records.json",
+  "backend_evidence_scope": "PRO CPU / OSMesa actual0 inputs; eight first-action dispatch checks, not new episodes",
+  "official_results_of_this_assembled_package": null,
+  "frozen_utc": "2026-11-06T00:12:09.537982+00:00"
+}

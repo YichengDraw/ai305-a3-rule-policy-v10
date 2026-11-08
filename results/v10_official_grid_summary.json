@@ -1,0 +1,99 @@
+{
+  "label": "Frozen V10; source_column=1 only; test seeds 24000-24019; official terminal metrics",
+  "official_simulator_commit": "0729068ee1e75a562cfbc4f2c83ab9539cf75081",
+  "protocol": {
+    "source_column": 1,
+    "seed_start": 24000,
+    "seeds_per_cell": 20,
+    "task_step_budgets": {
+      "2x5": 500,
+      "2x10": 3200
+    },
+    "success_hold_steps": 5,
+    "strict_policy_completion": false,
+    "first_grasp_2x10": "random",
+    "render_cameras": true,
+    "backend": "PRO CPU OSMesa llvmpipe",
+    "tasks": [
+      "2x5",
+      "2x10"
+    ],
+    "profiles": [
+      "basic",
+      "medium",
+      "advanced"
+    ]
+  },
+  "cells": [
+    {
+      "task": "2x5",
+      "profile": "basic",
+      "episodes": 20,
+      "cookie_capacity": 200,
+      "cookies_in_target": 200,
+      "completion_rate": 1.0,
+      "successes": 20,
+      "official_success_rate": 1.0
+    },
+    {
+      "task": "2x5",
+      "profile": "medium",
+      "episodes": 20,
+      "cookie_capacity": 200,
+      "cookies_in_target": 200,
+      "completion_rate": 1.0,
+      "successes": 20,
+      "official_success_rate": 1.0
+    },
+    {
+      "task": "2x5",
+      "profile": "advanced",
+      "episodes": 20,
+      "cookie_capacity": 200,
+      "cookies_in_target": 200,
+      "completion_rate": 1.0,
+      "successes": 20,
+      "official_success_rate": 1.0
+    },
+    {
+      "task": "2x10",
+      "profile": "basic",
+      "episodes": 20,
+      "cookie_capacity": 400,
+      "cookies_in_target": 380,
+      "completion_rate": 0.95,
+      "successes": 18,
+      "official_success_rate": 0.9
+    },
+    {
+      "task": "2x10",
+      "profile": "medium",
+      "episodes": 20,
+      "cookie_capacity": 400,
+      "cookies_in_target": 400,
+      "completion_rate": 1.0,
+      "successes": 19,
+      "official_success_rate": 0.95
+    },
+    {
+      "task": "2x10",
+      "profile": "advanced",
+      "episodes": 20,
+      "cookie_capacity": 400,
+      "cookies_in_target": 382,
+      "completion_rate": 0.955,
+      "successes": 18,
+      "official_success_rate": 0.9
+    }
+  ],
+  "overall": {
+    "episodes": 120,
+    "cookies_in_target": 1762,
+    "cookie_capacity": 1800,
+    "cookie_weighted_completion_rate": 0.9788888888888889,
+    "equal_cell_mean_completion_rate": 0.9841666666666667,
+    "official_successes": 115,
+    "equal_cell_mean_official_success_rate": 0.9583333333333334
+  },
+  "provenance": "120 V10 native terminal records summarized from frozen CPU formal_v9_v10_cpu_attempt2; original JSONL SHA256 retained per row; no raw private logs included"
+}

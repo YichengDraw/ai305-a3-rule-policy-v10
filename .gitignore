@@ -1,0 +1,11 @@
+# No generated reports or local runtime state
+outputs/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+.cache/
