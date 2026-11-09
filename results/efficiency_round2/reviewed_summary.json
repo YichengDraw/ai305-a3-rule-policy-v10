@@ -1,0 +1,573 @@
+{
+  "scope": "R2 replay actions/phase/finished/batch equality; full state and closed-loop validation pending",
+  "tasks": {
+    "2x5": {
+      "distinct_observations": 316,
+      "repeated_calls_per_version": 948,
+      "parent": {
+        "n": 948,
+        "mean_ms": 163.91833389873418,
+        "median_ms": 35.3099325,
+        "p95_ms": 491.38557054999984,
+        "p99_ms": 757.3140425299996,
+        "max_ms": 5453.805985,
+        "fraction_under_50ms": 0.5727848101265823
+      },
+      "candidate": {
+        "n": 948,
+        "mean_ms": 149.77862690084388,
+        "median_ms": 35.1954205,
+        "p95_ms": 444.24387929999995,
+        "p99_ms": 631.1557026799999,
+        "max_ms": 5065.3724059999995,
+        "fraction_under_50ms": 0.5759493670886076
+      },
+      "latency_reduction_pct": 8.626068031307321,
+      "speedup_factor": 1.094404036747186,
+      "rounds": [
+        {
+          "round": 1,
+          "parent_mean_ms": 164.35623489556963,
+          "candidate_mean_ms": 149.33409566772153,
+          "latency_reduction_pct": 9.139987440934638
+        },
+        {
+          "round": 2,
+          "parent_mean_ms": 163.78711614556963,
+          "candidate_mean_ms": 149.06476152531644,
+          "latency_reduction_pct": 8.988713500009581
+        },
+        {
+          "round": 3,
+          "parent_mean_ms": 163.6116506550633,
+          "candidate_mean_ms": 150.93702350949366,
+          "latency_reduction_pct": 7.746775425113894
+        }
+      ],
+      "actions_float64_bytes_equal": true,
+      "phases_and_finished_equal": true,
+      "missing_full_state_fields": [
+        "decision_state_sha256",
+        "observation_sha256",
+        "state_schema_version"
+      ],
+      "actual_batch_index_values": {
+        "0": 567,
+        "1": 381
+      },
+      "stage_costs": {
+        "parent": {
+          "SELECT": {
+            "calls": 6,
+            "total_ms": 3610.080954,
+            "mean_ms": 601.680159,
+            "share": 0.02323170435897963
+          },
+          "APPROACH": {
+            "calls": 96,
+            "total_ms": 9573.761311,
+            "mean_ms": 99.72668032291666,
+            "share": 0.06160936422607138
+          },
+          "ALIGN_APPROACH": {
+            "calls": 72,
+            "total_ms": 19060.670837,
+            "mean_ms": 264.7315394027778,
+            "share": 0.12265981716514406
+          },
+          "LOCAL_ALIGN": {
+            "calls": 15,
+            "total_ms": 5192.12686,
+            "mean_ms": 346.1417906666667,
+            "share": 0.03341253499376159
+          },
+          "DESCEND": {
+            "calls": 90,
+            "total_ms": 3619.249807000001,
+            "mean_ms": 40.213886744444444,
+            "share": 0.02329070804474766
+          },
+          "CLOSE": {
+            "calls": 102,
+            "total_ms": 3391.6477909999985,
+            "mean_ms": 33.25144893137255,
+            "share": 0.021826036527794246
+          },
+          "PRETRIAL_SEPARATE": {
+            "calls": 18,
+            "total_ms": 1732.9132289999998,
+            "mean_ms": 96.27295716666667,
+            "share": 0.01115169668737926
+          },
+          "TRIAL_LIFT": {
+            "calls": 54,
+            "total_ms": 543.9188240000001,
+            "mean_ms": 10.072570814814815,
+            "share": 0.003500243201042598
+          },
+          "LIFT": {
+            "calls": 60,
+            "total_ms": 1168.9918470000002,
+            "mean_ms": 19.48319745,
+            "share": 0.007522732407834407
+          },
+          "TRANSPORT": {
+            "calls": 177,
+            "total_ms": 21090.432578,
+            "mean_ms": 119.15498631638418,
+            "share": 0.13572180255741947
+          },
+          "TARGET_RETREAT": {
+            "calls": 6,
+            "total_ms": 31222.559664999997,
+            "mean_ms": 5203.759944166666,
+            "share": 0.20092437945586358
+          },
+          "PREPLACE_OBSERVE": {
+            "calls": 108,
+            "total_ms": 38393.39443300001,
+            "mean_ms": 355.49439289814813,
+            "share": 0.24707035664030444
+          },
+          "PLACE": {
+            "calls": 75,
+            "total_ms": 5071.730096000001,
+            "mean_ms": 67.62306794666667,
+            "share": 0.032637754022734694
+          },
+          "OPEN": {
+            "calls": 21,
+            "total_ms": 1097.267186,
+            "mean_ms": 52.25081838095238,
+            "share": 0.00706116765600972
+          },
+          "RETRACT": {
+            "calls": 30,
+            "total_ms": 3109.271351,
+            "mean_ms": 103.64237836666666,
+            "share": 0.02000887894722739
+          },
+          "VERIFY": {
+            "calls": 18,
+            "total_ms": 7516.563767,
+            "mean_ms": 417.58687594444444,
+            "share": 0.04837082310768653
+          }
+        },
+        "candidate": {
+          "SELECT": {
+            "calls": 6,
+            "total_ms": 3269.958987,
+            "mean_ms": 544.9931645,
+            "share": 0.023029479554735683
+          },
+          "APPROACH": {
+            "calls": 96,
+            "total_ms": 9241.58826,
+            "mean_ms": 96.266544375,
+            "share": 0.06508612760376353
+          },
+          "ALIGN_APPROACH": {
+            "calls": 72,
+            "total_ms": 16996.319099000004,
+            "mean_ms": 236.0599874861111,
+            "share": 0.1197007010645373
+          },
+          "LOCAL_ALIGN": {
+            "calls": 15,
+            "total_ms": 4623.733932,
+            "mean_ms": 308.2489288,
+            "share": 0.0325637680707497
+          },
+          "DESCEND": {
+            "calls": 90,
+            "total_ms": 3621.8656880000003,
+            "mean_ms": 40.24295208888889,
+            "share": 0.0255078678795046
+          },
+          "CLOSE": {
+            "calls": 102,
+            "total_ms": 3373.3107099999997,
+            "mean_ms": 33.07167362745098,
+            "share": 0.02375735914014872
+          },
+          "PRETRIAL_SEPARATE": {
+            "calls": 18,
+            "total_ms": 1604.6674429999996,
+            "mean_ms": 89.14819127777777,
+            "share": 0.011301259807121392
+          },
+          "TRIAL_LIFT": {
+            "calls": 54,
+            "total_ms": 546.7411490000003,
+            "mean_ms": 10.124836092592593,
+            "share": 0.0038505571974099513
+          },
+          "LIFT": {
+            "calls": 60,
+            "total_ms": 1172.0768110000004,
+            "mean_ms": 19.534613516666667,
+            "share": 0.008254635321976383
+          },
+          "TRANSPORT": {
+            "calls": 177,
+            "total_ms": 18788.022264999996,
+            "mean_ms": 106.14701844632768,
+            "share": 0.13231920533128577
+          },
+          "TARGET_RETREAT": {
+            "calls": 6,
+            "total_ms": 29361.584056000003,
+            "mean_ms": 4893.597342666667,
+            "share": 0.20678607970330037
+          },
+          "PREPLACE_OBSERVE": {
+            "calls": 108,
+            "total_ms": 34067.33672900002,
+            "mean_ms": 315.4383030462963,
+            "share": 0.23992748465771566
+          },
+          "PLACE": {
+            "calls": 75,
+            "total_ms": 4745.871978,
+            "mean_ms": 63.27829304,
+            "share": 0.03342395489400797
+          },
+          "OPEN": {
+            "calls": 21,
+            "total_ms": 1215.300612,
+            "mean_ms": 57.87145771428572,
+            "share": 0.008559049427891728
+          },
+          "RETRACT": {
+            "calls": 30,
+            "total_ms": 2812.0134690000004,
+            "mean_ms": 93.7337823,
+            "share": 0.019804287133090234
+          },
+          "VERIFY": {
+            "calls": 18,
+            "total_ms": 6549.747114,
+            "mean_ms": 363.8748396666667,
+            "share": 0.04612818321276151
+          }
+        }
+      }
+    },
+    "2x10": {
+      "distinct_observations": 671,
+      "repeated_calls_per_version": 2013,
+      "parent": {
+        "n": 2013,
+        "mean_ms": 236.36374007799304,
+        "median_ms": 138.64415699999998,
+        "p95_ms": 596.8301273999995,
+        "p99_ms": 848.7859756799987,
+        "max_ms": 6291.56482,
+        "fraction_under_50ms": 0.30104321907600595
+      },
+      "candidate": {
+        "n": 2013,
+        "mean_ms": 212.95300598509687,
+        "median_ms": 134.342469,
+        "p95_ms": 532.383655,
+        "p99_ms": 788.4755583199999,
+        "max_ms": 5932.999526,
+        "fraction_under_50ms": 0.310481867858917
+      },
+      "latency_reduction_pct": 9.904537000967794,
+      "speedup_factor": 1.1099338043367866,
+      "rounds": [
+        {
+          "round": 1,
+          "parent_mean_ms": 234.31507630849478,
+          "candidate_mean_ms": 211.9509981609538,
+          "latency_reduction_pct": 9.54444694719382
+        },
+        {
+          "round": 2,
+          "parent_mean_ms": 237.24225317585692,
+          "candidate_mean_ms": 211.35387040685544,
+          "latency_reduction_pct": 10.912214170302793
+        },
+        {
+          "round": 3,
+          "parent_mean_ms": 237.53389074962743,
+          "candidate_mean_ms": 215.55414938748137,
+          "latency_reduction_pct": 9.253307514469078
+        }
+      ],
+      "actions_float64_bytes_equal": true,
+      "phases_and_finished_equal": true,
+      "missing_full_state_fields": [
+        "decision_state_sha256",
+        "observation_sha256",
+        "state_schema_version"
+      ],
+      "actual_batch_index_values": {
+        "0": 411,
+        "1": 543,
+        "2": 561,
+        "3": 498
+      },
+      "stage_costs": {
+        "parent": {
+          "SELECT": {
+            "calls": 21,
+            "total_ms": 15158.328545,
+            "mean_ms": 721.8251688095238,
+            "share": 0.03185860002870329
+          },
+          "APPROACH": {
+            "calls": 120,
+            "total_ms": 19392.687252000007,
+            "mean_ms": 161.6057271,
+            "share": 0.040758046958085735
+          },
+          "ALIGN_APPROACH": {
+            "calls": 96,
+            "total_ms": 28054.445727,
+            "mean_ms": 292.23380965625,
+            "share": 0.05896265955643707
+          },
+          "LOCAL_ALIGN": {
+            "calls": 66,
+            "total_ms": 26971.174852999997,
+            "mean_ms": 408.6541644393939,
+            "share": 0.0566859247967268
+          },
+          "DESCEND": {
+            "calls": 189,
+            "total_ms": 19814.30012099999,
+            "mean_ms": 104.83756677777778,
+            "share": 0.04164416020734995
+          },
+          "CLOSE": {
+            "calls": 183,
+            "total_ms": 19903.747702999997,
+            "mean_ms": 108.76364865027323,
+            "share": 0.04183215420220322
+          },
+          "TRIAL_LIFT": {
+            "calls": 60,
+            "total_ms": 3815.2578009999997,
+            "mean_ms": 63.587630016666665,
+            "share": 0.00801861312925178
+          },
+          "LIFT": {
+            "calls": 96,
+            "total_ms": 4837.415414999999,
+            "mean_ms": 50.38974390625,
+            "share": 0.010166904775922886
+          },
+          "TRANSPORT": {
+            "calls": 387,
+            "total_ms": 77944.60755299994,
+            "mean_ms": 201.40725465891472,
+            "share": 0.1638179347448146
+          },
+          "TARGET_RETREAT": {
+            "calls": 6,
+            "total_ms": 36671.270684,
+            "mean_ms": 6111.8784473333335,
+            "share": 0.07707283436940894
+          },
+          "PREPLACE_OBSERVE": {
+            "calls": 45,
+            "total_ms": 15643.326109999995,
+            "mean_ms": 347.6294691111111,
+            "share": 0.03287793031913472
+          },
+          "PLACE": {
+            "calls": 165,
+            "total_ms": 16165.653624000004,
+            "mean_ms": 97.97365832727273,
+            "share": 0.03397571780296665
+          },
+          "OPEN": {
+            "calls": 93,
+            "total_ms": 8614.992972,
+            "mean_ms": 92.63433303225807,
+            "share": 0.018106324488894224
+          },
+          "RETRACT": {
+            "calls": 117,
+            "total_ms": 13765.436319999999,
+            "mean_ms": 117.65330188034189,
+            "share": 0.028931127111908452
+          },
+          "SOURCE_OBSERVE": {
+            "calls": 285,
+            "total_ms": 138833.40691299993,
+            "mean_ms": 487.13476109824563,
+            "share": 0.291789293808546
+          },
+          "ALIGN_OBSERVE": {
+            "calls": 33,
+            "total_ms": 13568.490802000002,
+            "mean_ms": 411.1663879393939,
+            "share": 0.028517202287229988
+          },
+          "ALIGN_RETURN": {
+            "calls": 21,
+            "total_ms": 8932.127575999999,
+            "mean_ms": 425.33940838095236,
+            "share": 0.01877285341878932
+          },
+          "SLIP_RECHECK": {
+            "calls": 30,
+            "total_ms": 7713.538805999997,
+            "mean_ms": 257.11796019999997,
+            "share": 0.016211717993623646
+          }
+        },
+        "candidate": {
+          "SELECT": {
+            "calls": 21,
+            "total_ms": 13479.694966000001,
+            "mean_ms": 641.8902364761905,
+            "share": 0.03144506630917446
+          },
+          "APPROACH": {
+            "calls": 120,
+            "total_ms": 18349.838389,
+            "mean_ms": 152.91531990833334,
+            "share": 0.04280600461361656
+          },
+          "ALIGN_APPROACH": {
+            "calls": 96,
+            "total_ms": 25580.105097000003,
+            "mean_ms": 266.45942809375,
+            "share": 0.0596725744165342
+          },
+          "LOCAL_ALIGN": {
+            "calls": 66,
+            "total_ms": 23713.051842999997,
+            "mean_ms": 359.28866428787876,
+            "share": 0.05531716329463018
+          },
+          "DESCEND": {
+            "calls": 189,
+            "total_ms": 19119.17691,
+            "mean_ms": 101.15966619047619,
+            "share": 0.04460069662022848
+          },
+          "CLOSE": {
+            "calls": 183,
+            "total_ms": 18806.602178999983,
+            "mean_ms": 102.76831791803279,
+            "share": 0.043871530777258035
+          },
+          "TRIAL_LIFT": {
+            "calls": 60,
+            "total_ms": 3382.2009760000005,
+            "mean_ms": 56.37001626666667,
+            "share": 0.00788990657648644
+          },
+          "LIFT": {
+            "calls": 96,
+            "total_ms": 4427.0508709999995,
+            "mean_ms": 46.11511323958334,
+            "share": 0.010327304033497185
+          },
+          "TRANSPORT": {
+            "calls": 387,
+            "total_ms": 68076.76670799997,
+            "mean_ms": 175.90895790180878,
+            "share": 0.15880763241651374
+          },
+          "TARGET_RETREAT": {
+            "calls": 6,
+            "total_ms": 34839.624457,
+            "mean_ms": 5806.604076166666,
+            "share": 0.08127292969168669
+          },
+          "PREPLACE_OBSERVE": {
+            "calls": 45,
+            "total_ms": 13699.24166,
+            "mean_ms": 304.42759244444443,
+            "share": 0.03195721887406581
+          },
+          "PLACE": {
+            "calls": 165,
+            "total_ms": 15319.281015999999,
+            "mean_ms": 92.84412736969696,
+            "share": 0.03573640268359448
+          },
+          "OPEN": {
+            "calls": 93,
+            "total_ms": 7753.202746999998,
+            "mean_ms": 83.36777147311828,
+            "share": 0.018086460791793
+          },
+          "RETRACT": {
+            "calls": 117,
+            "total_ms": 12533.507758,
+            "mean_ms": 107.12399793162393,
+            "share": 0.029237826488726082
+          },
+          "SOURCE_OBSERVE": {
+            "calls": 285,
+            "total_ms": 122372.88692499996,
+            "mean_ms": 429.3785506140351,
+            "share": 0.2854681469801541
+          },
+          "ALIGN_OBSERVE": {
+            "calls": 33,
+            "total_ms": 12118.838817999998,
+            "mean_ms": 367.2375399393939,
+            "share": 0.028270498047871576
+          },
+          "ALIGN_RETURN": {
+            "calls": 21,
+            "total_ms": 8123.062661000001,
+            "mean_ms": 386.81250766666665,
+            "share": 0.018949259953804514
+          },
+          "SLIP_RECHECK": {
+            "calls": 30,
+            "total_ms": 6980.267066999999,
+            "mean_ms": 232.6755689,
+            "share": 0.016283377430364447
+          }
+        }
+      }
+    }
+  },
+  "raw_sha256": {
+    "cand/2x10_v10_cpu_r1.csv.gz": "a5ccd891bc2f23e591ca2e8b84aba7ba20b1f93c8fa5da0c9ae24e58b19d78b8",
+    "cand/2x10_v10_cpu_r2.csv.gz": "a5d765629faa328307710340d6b3e984b00c80b385502c3e293f8c7d4d9d4271",
+    "cand/2x10_v10_cpu_r3.csv.gz": "aa4486ef4e40932e4cc38dae1afdc877d3f76e478a875b41c4d03048beb5be35",
+    "cand/2x5_v10_cpu_r1.csv.gz": "6cb8e9a4045622fe4dece88f55c5829c0edfee451879c2d1a4a4eebcba284b4e",
+    "cand/2x5_v10_cpu_r2.csv.gz": "390e15fc38e7cd144f6c31229df0bdfceb1dae979960bca4678996ba3f2fdcf7",
+    "cand/2x5_v10_cpu_r3.csv.gz": "ca8ef20659b90908db2e0e02d7f9df1281f345dbeef145a91796095d5007e987",
+    "parent/2x10_v10_cpu_r1.csv.gz": "17dbe36d23b5f01ae7d807e5c47d81b8075f2c5a08a0b89a117a275ed7796134",
+    "parent/2x10_v10_cpu_r2.csv.gz": "28c2b88d5ece8d96f8c2899c7afd481e5b08f919c82d79bbc9afac4e383714dc",
+    "parent/2x10_v10_cpu_r3.csv.gz": "5d7edcda7b1ff624da89356cbe2b0b1078a50ec39554840eb2465776f3023bb2",
+    "parent/2x5_v10_cpu_r1.csv.gz": "27444e8200f5beaee425eaa2dc484fff1f790046ea0eb2ecf02d1539803b2682",
+    "parent/2x5_v10_cpu_r2.csv.gz": "1c6265b4c283fdea37b2140abd9b8e1b38499329d2a0a63c00187a92f07f3048",
+    "parent/2x5_v10_cpu_r3.csv.gz": "b1ce03b4f9676d93252a55239197db8aebe618771f0d773364f3a23a22e3393a"
+  },
+  "metadata_checks": {
+    "same_host": true,
+    "same_affinity": true,
+    "host": "lzhao-System-Product-Name",
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "tapes": {
+      "2x5": "ccf0d74e24564f39a2cdd195fea561296dd1101604da282b592139e6d82604c0",
+      "2x10": "e284e7045caeb0a8a0f17fe80954d3c10acbbfbcc3e39c1422678547a213e96f"
+    },
+    "versions": [
+      [
+        "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "2.10.0+cu128"
+      ]
+    ]
+  },
+  "status": "VALID_REPLAY_SPEED_GAIN; CLOSED_LOOP_QUALITY_NOT_TESTED; REPORTED_LRU_NOT_IMPLEMENTED"
+}

@@ -1,0 +1,196 @@
+{
+  "status": "EXPERIMENTAL_NOT_ADOPTED; action-equivalent on two recorded workloads; independent closed-loop quality not tested",
+  "parent_policy_root_sha256": "50101a31aaf34b29600bb5293a42edb93c01b6fd10047d6949dcc776bdfa7647",
+  "runtime_dependencies": 78,
+  "candidate_runtime_sha256": {
+    "policy.py": "50101a31aaf34b29600bb5293a42edb93c01b6fd10047d6949dcc776bdfa7647",
+    "v10_leaves_17e0363838a9/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v10_leaves_17e0363838a9/two10_inner/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v10_leaves_17e0363838a9/two10_inner/perception.py": "545b91867b7a1ca3423c59573ba5879eff292e4706ca95bad3543d34e9881068",
+    "v10_leaves_17e0363838a9/two10_inner/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v10_leaves_17e0363838a9/two10_inner/policy.py": "395c19764a09d5790c04714db28e8833778dff5dc239b1caf2a5f21c7b7bd52b",
+    "v10_leaves_17e0363838a9/two10_inner/rule_controller.py": "c9ea45726f80a74608d7a5b6826293d9a98c34882f15cf6e00e1bcfba05c59b0",
+    "v10_leaves_17e0363838a9/two10_outer/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v10_leaves_17e0363838a9/two10_outer/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v10_leaves_17e0363838a9/two10_outer/f_hybrid_policy.py": "09c0c33adfecc82185f9f559f939330ea82064f640b252e2a6fff02b5a03b142",
+    "v10_leaves_17e0363838a9/two10_outer/f_parent_perception.py": "c62c0ec521dca9076df7f4e7ea7be21df1e22f4d5c7e82d5550e06d144dd396a",
+    "v10_leaves_17e0363838a9/two10_outer/f_parent_policy.py": "2870507a3cab99ef950f997400edc1acb3ab57159ae40e44a1ddc2a687f90870",
+    "v10_leaves_17e0363838a9/two10_outer/f_parent_rule_controller.py": "a3ee979c389fe9216160b4dfc84707b6fd841f8f777e7c147efb724046087ff0",
+    "v10_leaves_17e0363838a9/two10_outer/f_source_controller.py": "332735e945f4642c50e080c744f6cfab8cacfb35f66eb078568c767bc0912f7e",
+    "v10_leaves_17e0363838a9/two10_outer/f_source_perception.py": "44a83e2531427051e16a8dea2130c3010632aa4ad069ab3ec59613b4e28acc16",
+    "v10_leaves_17e0363838a9/two10_outer/path_feasibility.py": "ff751b1f9e279601e1b35e55fe649df4a91f505ce38a0597c12f12bc755dea14",
+    "v10_leaves_17e0363838a9/two10_outer/perception.py": "59dfa2fb99b7c7b115f2494397e0ff8e41f003053434bf43895ccd12ad504b3e",
+    "v10_leaves_17e0363838a9/two10_outer/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v10_leaves_17e0363838a9/two10_outer/policy.py": "baa2e6efbc168b5ed5df9c921645285b046951f85b208b283b9a8b04534eef50",
+    "v10_leaves_17e0363838a9/two10_outer/rule_controller.py": "b8614a84a2ab46ae64ff1bd95740c6bc3722cd23d389691ae8b533620b7f9714",
+    "v10_leaves_17e0363838a9/two10_outer/source_geometry.py": "10a2aaa50643cddad4769ce24bbfcff0e18ed4c1a5dca79c67dfbb8f0ad3ab72",
+    "v10_leaves_17e0363838a9/two10_source1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v10_leaves_17e0363838a9/two10_source1/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v10_leaves_17e0363838a9/two10_source1/d_supervisor.py": "b07825ae64fe386a7cd1079fa5ba99c338ff11c1dfe6a8a4cc9b7168f39f429d",
+    "v10_leaves_17e0363838a9/two10_source1/path_feasibility.py": "553f5ea28fc9377aea90e092ee7e8561841ecf62a83b35e5543d389e04b3e887",
+    "v10_leaves_17e0363838a9/two10_source1/perception.py": "0520a4fd3cf3d6e608ffa88ce3ebe7cf1a83d6c1566960665f9bb11d8e7a2045",
+    "v10_leaves_17e0363838a9/two10_source1/placement_audit.py": "2e89d3d73ed11589050fc2fd043ad808a900912073a824e03fea1ac7d9fe34c2",
+    "v10_leaves_17e0363838a9/two10_source1/policy.py": "8f8344e8d33f7e10a13cd4a80df3edb8ce60a31e3a40ab74096433641937df23",
+    "v10_leaves_17e0363838a9/two10_source1/public_visibility.py": "af59780e15b50650217e46e95aa97da846ee9d26dffad1b3967cd2a863580d82",
+    "v10_leaves_17e0363838a9/two10_source1/rule_controller.py": "0842b718f7587ee344e23f813fca85506dab9c890e9baa68e26df0013fd124e0",
+    "v10_leaves_17e0363838a9/two10_source1/source_view.py": "3f3159b7a581009027b352db1cb7ef55da4efee609ce35a92602e30337fcb3af",
+    "v10_leaves_17e0363838a9/two10_source1/target_occupancy.py": "33c430eadfd1d5bfe3cb8877336ceea07d5e1a56d00606ed316587f84c4b450d",
+    "v10_leaves_17e0363838a9/two10_source1/target_registration.py": "eec09b90d1d9e1a53dd80d5c61ed0f8fad1068d92aa9829c374c1a426adc37ff",
+    "v10_leaves_17e0363838a9/two5_inner/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v10_leaves_17e0363838a9/two5_inner/inner_source_broad.py": "6557f86e8b415ee2650c3ebfab20b65882aea21988f2eb334ce0ff0fd2299cf9",
+    "v10_leaves_17e0363838a9/two5_inner/inner_source_view.py": "e03097d04831ecdf2676db6edb1cc388f403ed504f3a91ae76b89acc9349926d",
+    "v10_leaves_17e0363838a9/two5_inner/inner_target_observation.py": "f1ca9f8690aa9d32b33a357e733b735865b7f8593623765c0434b747ae249c43",
+    "v10_leaves_17e0363838a9/two5_inner/observation_path.py": "8d5c75a8ddd41ac8f8c971c9fe18ecd0f216412980911a4990805cc7d3828742",
+    "v10_leaves_17e0363838a9/two5_inner/perception.py": "8c427cce92e52c88006e8927cb66e376ae01ec1cf70350132ac480cf4077134b",
+    "v10_leaves_17e0363838a9/two5_inner/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v10_leaves_17e0363838a9/two5_inner/policy.py": "451eeda67390a6c13191896f927ecb8012c42bb59ca4caa916ecccc603f3f424",
+    "v10_leaves_17e0363838a9/two5_inner/public_visibility.py": "20bee1f6a3f63518e1950159313c59bed19dd799569087436b040a191b093474",
+    "v10_leaves_17e0363838a9/two5_inner/rule_controller.py": "00bde4493091e761d3c935b56e84ee80e16a7ff5240372eaed356bf341596c4f",
+    "v10_leaves_17e0363838a9/two5_inner/source_bootstrap.py": "a981c6c4c07f4641e31ca62d5ec225da02878bb48d8f8bdb43e88a4461af9450",
+    "v10_leaves_17e0363838a9/two5_inner/target_vision.py": "fd87419d90f0936dab303534452d1b8ac0218f7fbc6bb69f8656bd7902f13a39",
+    "v10_leaves_17e0363838a9/two5_outer/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v10_leaves_17e0363838a9/two5_outer/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v10_leaves_17e0363838a9/two5_outer/f_hybrid_policy.py": "c7d5e4d2fc1893500cb3ed8e3fbbd6fb39659d1456cf9c0ba4eab84c20f679f0",
+    "v10_leaves_17e0363838a9/two5_outer/f_parent_perception.py": "584cf028fb3a39bc549962bd22d941ec7e61c11509c3b4df9007bec8fce52c15",
+    "v10_leaves_17e0363838a9/two5_outer/f_parent_policy.py": "0548cf5a76ca49dcd5fdc0f052327dcc3b45884a64ebb693b799d23dbc77489c",
+    "v10_leaves_17e0363838a9/two5_outer/f_parent_rule_controller.py": "a5b5ccf72c871b6a7170120443c8773682fbe9211f899e6b1e6f60417acacdab",
+    "v10_leaves_17e0363838a9/two5_outer/f_source_controller.py": "fca62f5e74d8d4749e055103d508bab481c3c9b1829f184c9c72747717e7bcc8",
+    "v10_leaves_17e0363838a9/two5_outer/f_source_perception.py": "637ea81d4509bdf0d19f7ea172124ccf6e7d19b7b9db4e64b911ae014a93c3a0",
+    "v10_leaves_17e0363838a9/two5_outer/path_feasibility.py": "ff751b1f9e279601e1b35e55fe649df4a91f505ce38a0597c12f12bc755dea14",
+    "v10_leaves_17e0363838a9/two5_outer/perception.py": "ece593156fbc38b93ce19595120289bfe988abafd016182b84dde02074a094eb",
+    "v10_leaves_17e0363838a9/two5_outer/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v10_leaves_17e0363838a9/two5_outer/policy.py": "11894cd0a8ebaf4a556b08c82d9a84c4a14f1bcd32c9bcb176e7d3d5bbe54e4d",
+    "v10_leaves_17e0363838a9/two5_outer/rule_controller.py": "84f18e0c2bff8c50ae379167795469a6d3a8291848185f36d442079c6dd9f2ba",
+    "v10_leaves_17e0363838a9/two5_outer/source_geometry.py": "10a2aaa50643cddad4769ce24bbfcff0e18ed4c1a5dca79c67dfbb8f0ad3ab72",
+    "v10_leaves_17e0363838a9/two5_source1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v10_leaves_17e0363838a9/two5_source1/e_source_view.py": "db9191553908b4bc8e299d57f960773b7c54eac14497e069cd920629d952d71d",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/d_supervisor.py": "ae7d8d5795e06388af17dd7e351623f7e9a3eb50b6af7419513b08a144a16200",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py": "ff9b6083325c13e2d22546e58a8ce37d9da26df4022edd2eabd3ef25e4a66cd2",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/perception.py": "44bd9bc3997af34de57d6e8230c5d4e5687fa389e883964004a440aeb472059f",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/placement_audit.py": "2e89d3d73ed11589050fc2fd043ad808a900912073a824e03fea1ac7d9fe34c2",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/policy.py": "320de583a36157033e2cb0d12aa1f8bfe1ae82c80f726284c7ab75b1f9549f18",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/rule_controller.py": "ac033054bd239b10b836e207a81659e2fd7b16746a1608534d13342b3d804538",
+    "v10_leaves_17e0363838a9/two5_source1/path_feasibility.py": "decdcae476dbf67782d98074b6f033cfed17367c6ce3a2c1a0d6f4de7c2a5c2a",
+    "v10_leaves_17e0363838a9/two5_source1/policy.py": "749154edae5e50eee7b8fcf3a8badb38215d6502ac5bc3b2800b50f7e63f008b",
+    "v10_leaves_17e0363838a9/two5_source1/public_ik.py": "91ba9342906be3619cb763b0d85fb387ec8de41db92ff572b573452134152acd",
+    "v10_leaves_17e0363838a9/two5_source1/repair_costs.py": "ed911e7803a600adbe3ad013be2b80de61bb03e03309837cacd90697a822dc61",
+    "v10_leaves_17e0363838a9/two5_source1/slot_audit.py": "b8b10c1a9b0e199e939cca7f6b783a31833c9b8622e5030339bfddff63362445",
+    "v10_leaves_17e0363838a9/two5_source1/source_pretrial.py": "51f01593b3b4878a2e29eab9cb69c5da4a8c508c1c1a0fbe9d95a6efb55038b6",
+    "v10_leaves_17e0363838a9/two5_source1/target_local_projection.py": "3f06a790eeb5bc63b3a1806732d3b914efd2612648373b0fed010287c9fa8bf8",
+    "v10_leaves_17e0363838a9/two5_source1/target_vision.py": "42820be798ac4ee76052fe18ad8a150c106abbf51006d2893bf89d05a6e9036b",
+    "v10_leaves_17e0363838a9/two5_source1/terminal_controller.py": "be33b7e7b309afe84dcac00c86e722acf8659d7243bea9593e57fc6163a43a73"
+  },
+  "changed_runtime_files": {
+    "v10_leaves_17e0363838a9/two10_source1/path_feasibility.py": {
+      "parent": "6ba094a4965de464e504526191dd982fc4eb1c577d5c7b0212331e462dd5e5d2",
+      "candidate": "553f5ea28fc9377aea90e092ee7e8561841ecf62a83b35e5543d389e04b3e887"
+    },
+    "v10_leaves_17e0363838a9/two10_source1/perception.py": {
+      "parent": "594bced5dc488f98834601c6457508d5ba61690bcfd69f65c214a6188e0fa6ba",
+      "candidate": "0520a4fd3cf3d6e608ffa88ce3ebe7cf1a83d6c1566960665f9bb11d8e7a2045"
+    },
+    "v10_leaves_17e0363838a9/two10_source1/placement_audit.py": {
+      "parent": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+      "candidate": "2e89d3d73ed11589050fc2fd043ad808a900912073a824e03fea1ac7d9fe34c2"
+    },
+    "v10_leaves_17e0363838a9/two10_source1/source_view.py": {
+      "parent": "351de767718587e519e085c4edfa05a0eb082624b9d3ddc2383a2eb888f273e9",
+      "candidate": "3f3159b7a581009027b352db1cb7ef55da4efee609ce35a92602e30337fcb3af"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/e_source_view.py": {
+      "parent": "f8e743303d3e311a13a3fa8744f9d6c45df9a3a4a42bfdade2cf00e2c3f50eb5",
+      "candidate": "db9191553908b4bc8e299d57f960773b7c54eac14497e069cd920629d952d71d"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py": {
+      "parent": "ef2d89db5f4bd76830bdff4720a329afabb4afbfe89ade95ef8b8bfb7457fda8",
+      "candidate": "ff9b6083325c13e2d22546e58a8ce37d9da26df4022edd2eabd3ef25e4a66cd2"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/legacy/perception.py": {
+      "parent": "3b2c77f0749790898f18aacd4cdce5c78ccd5c5a95cd7851d8131935342db7f3",
+      "candidate": "44bd9bc3997af34de57d6e8230c5d4e5687fa389e883964004a440aeb472059f"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/legacy/placement_audit.py": {
+      "parent": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+      "candidate": "2e89d3d73ed11589050fc2fd043ad808a900912073a824e03fea1ac7d9fe34c2"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/path_feasibility.py": {
+      "parent": "2ef835b94e7081bafcfab78d8f840adfcda6dedab4175729e7742515f04fae50",
+      "candidate": "decdcae476dbf67782d98074b6f033cfed17367c6ce3a2c1a0d6f4de7c2a5c2a"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/target_vision.py": {
+      "parent": "2fde437acc96805faf0355c8c0d05a72e28562f0a9ad7aa829613c6efedd9a26",
+      "candidate": "42820be798ac4ee76052fe18ad8a150c106abbf51006d2893bf89d05a6e9036b"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/terminal_controller.py": {
+      "parent": "32127533ac1839a2cc1244a9046eabe1bab3af9af45fa8c9b0c6d353a2d528bc",
+      "candidate": "be33b7e7b309afe84dcac00c86e722acf8659d7243bea9593e57fc6163a43a73"
+    }
+  },
+  "raw_files": {
+    "cand/2x10_v10_cpu_r1.csv": {
+      "uncompressed_sha256": "d2a49b42b0a61c099c0b227b8352b7367af5f2602ba2dd75397cff27e5f2759b",
+      "gzip_sha256": "a5ccd891bc2f23e591ca2e8b84aba7ba20b1f93c8fa5da0c9ae24e58b19d78b8"
+    },
+    "cand/2x10_v10_cpu_r2.csv": {
+      "uncompressed_sha256": "9e0286794bb50fc1963c7a571c1a1391a110f1be3e870990b009ba55c6aef98a",
+      "gzip_sha256": "a5d765629faa328307710340d6b3e984b00c80b385502c3e293f8c7d4d9d4271"
+    },
+    "cand/2x10_v10_cpu_r3.csv": {
+      "uncompressed_sha256": "c54253c08335f1e8f06ab75b564b2d24a989bfb856a9aad824428564dec6ec1c",
+      "gzip_sha256": "aa4486ef4e40932e4cc38dae1afdc877d3f76e478a875b41c4d03048beb5be35"
+    },
+    "cand/2x5_v10_cpu_r1.csv": {
+      "uncompressed_sha256": "d59067746252e76fbf2407aacb9e50bdb3c6aaaf2ac2ad476f3a9c98e8e5f1d2",
+      "gzip_sha256": "6cb8e9a4045622fe4dece88f55c5829c0edfee451879c2d1a4a4eebcba284b4e"
+    },
+    "cand/2x5_v10_cpu_r2.csv": {
+      "uncompressed_sha256": "8f15b9d21fae05a83b115f05196c28c6ff14ef9ef1799435abf723c3a0f4134e",
+      "gzip_sha256": "390e15fc38e7cd144f6c31229df0bdfceb1dae979960bca4678996ba3f2fdcf7"
+    },
+    "cand/2x5_v10_cpu_r3.csv": {
+      "uncompressed_sha256": "82f9ccff88e2c7f3214e5cb7a038d0f179bd4c514e876a505af7758144c9cffb",
+      "gzip_sha256": "ca8ef20659b90908db2e0e02d7f9df1281f345dbeef145a91796095d5007e987"
+    },
+    "parent/2x10_v10_cpu_r1.csv": {
+      "uncompressed_sha256": "755326993e080f9ba9a7f04637b0e4fe961f27f817aae584effb7d13022d26bb",
+      "gzip_sha256": "17dbe36d23b5f01ae7d807e5c47d81b8075f2c5a08a0b89a117a275ed7796134"
+    },
+    "parent/2x10_v10_cpu_r2.csv": {
+      "uncompressed_sha256": "32b9bebf2c9092a853103531e4adfcbe0b4b531794dc81dae573d1784ac9cde6",
+      "gzip_sha256": "28c2b88d5ece8d96f8c2899c7afd481e5b08f919c82d79bbc9afac4e383714dc"
+    },
+    "parent/2x10_v10_cpu_r3.csv": {
+      "uncompressed_sha256": "ea26af32aca1b7d65650efb168ff3d50dc8d4a3866bb6a7dc5e46aa3e0f1f40c",
+      "gzip_sha256": "5d7edcda7b1ff624da89356cbe2b0b1078a50ec39554840eb2465776f3023bb2"
+    },
+    "parent/2x5_v10_cpu_r1.csv": {
+      "uncompressed_sha256": "3f1f14e4a727ca6cd6d1791be458f2ab547bad3ae0019ee9fbcf3c67a1887b9a",
+      "gzip_sha256": "27444e8200f5beaee425eaa2dc484fff1f790046ea0eb2ecf02d1539803b2682"
+    },
+    "parent/2x5_v10_cpu_r2.csv": {
+      "uncompressed_sha256": "5204ea1cdfd7cba07c57a336895fea23e252dff83056c99fa4e0c090776a4048",
+      "gzip_sha256": "1c6265b4c283fdea37b2140abd9b8e1b38499329d2a0a63c00187a92f07f3048"
+    },
+    "parent/2x5_v10_cpu_r3.csv": {
+      "uncompressed_sha256": "5c7c2a4ceab589ae5f5273e72a20b3a7876005fb069745eac9648548d5c5c21f",
+      "gzip_sha256": "b1ce03b4f9676d93252a55239197db8aebe618771f0d773364f3a23a22e3393a"
+    }
+  },
+  "observations_per_round": {
+    "2x5": 316,
+    "2x10": 671
+  },
+  "rounds": 3,
+  "measurement_script_sha256": "d704d9088f6614b287d31b531b9da92010bf02657d3ab88606e67948e86caacc",
+  "frozen_policy_modified": false,
+  "physical_rollouts_run_by_this_review": 0,
+  "correction": "Poly arrays are read-only; the tested Poly cache still clears beyond 8192 entries. A 64 MiB LRU was reported by the executor but is not implemented in the tested code.",
+  "validation_pending": [
+    "decision-relevant internal state comparison",
+    "8-episode quality protection",
+    "240-episode regression",
+    "new-seed quality checks"
+  ]
+}

@@ -39,6 +39,10 @@ These are computation costs on recorded observations, not new closed-loop succes
 
 A separate V10-to-V10 paired replay reduced average CPU call time from **166.44 to 150.98 ms (2×5)** and **238.10 to 213.19 ms (2×10)**, with identical recorded actions and phases across three repetitions. Review also reproduced a conditional error in an unexercised lazy-initialization branch. **The candidate is experimental: full quality validation is pending and the submitted frozen V10 is unchanged.** [Measurements, code changes, known issue and independent verifier](results/efficiency_round1/README.md).
 
+### Reviewed second efficiency round
+
+The second candidate repairs the previously found conditional error and retains a **163.92→149.78 ms (2×5)** / **236.36→212.95 ms (2×10)** paired CPU improvement, with identical recorded actions, phases, finished flags and actual batches. This is **8.63% / 9.90% relative to original V10**, not an additional gain over round 1. Review corrected an implementation claim: polygon arrays are read-only, but the reported 64 MiB LRU is not present in the tested code. Full-task quality regression is still pending; frozen V10 remains the official submission. [Round 2 raw evidence, corrections and next bottlenecks](results/efficiency_round2/README.md).
+
 ## Files
 
 - [`frozen_policy_v10/`](frozen_policy_v10/): complete original frozen routing policy and all **78 verified runtime dependencies**; `policy.py` exposes `make_policy_b()` and action mode `cartesian_delta`.
