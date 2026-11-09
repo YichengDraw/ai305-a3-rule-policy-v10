@@ -43,6 +43,10 @@ A separate V10-to-V10 paired replay reduced average CPU call time from **166.44 
 
 The second candidate repairs the previously found conditional error and retains a **163.92→149.78 ms (2×5)** / **236.36→212.95 ms (2×10)** paired CPU improvement, with identical recorded actions, phases, finished flags and actual batches. This is **8.63% / 9.90% relative to original V10**, not an additional gain over round 1. Review corrected an implementation claim: polygon arrays are read-only, but the reported 64 MiB LRU is not present in the tested code. Full-task quality regression is still pending; frozen V10 remains the official submission. [Round 2 raw evidence, corrections and next bottlenecks](results/efficiency_round2/README.md).
 
+### Reviewed third efficiency round
+
+The existing R2 speed candidate has now passed **eight complete protection cases**: target/source counts, official success, stop steps, initializations, and task instructions match frozen V10 in every case. The set deliberately contains four successes and four failures; **8/8 means protection checks passed, not 100% task success**. Two one-pass implementation probes showed no clear additional speed benefit and were not merged. The 240-episode and new-seed quality gates remain pending. [Round 3 native evidence and independent verifier](results/efficiency_round3/README.md).
+
 ## Files
 
 - [`frozen_policy_v10/`](frozen_policy_v10/): complete original frozen routing policy and all **78 verified runtime dependencies**; `policy.py` exposes `make_policy_b()` and action mode `cartesian_delta`.

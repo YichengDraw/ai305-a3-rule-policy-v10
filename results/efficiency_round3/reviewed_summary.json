@@ -1,0 +1,408 @@
+{
+  "review": "R3 independent saved-results audit",
+  "quality_cases": [
+    {
+      "case": "2x10_advanced_19000",
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 19000,
+      "parent": {
+        "success": true,
+        "cookies_in_target": 20,
+        "cookies_in_source": 60,
+        "steps": 671
+      },
+      "candidate": {
+        "success": true,
+        "cookies_in_target": 20,
+        "cookies_in_source": 60,
+        "steps": 671
+      },
+      "final_metrics_equal": {
+        "success": true,
+        "cookies_in_target": true,
+        "cookies_in_source": true,
+        "steps": true
+      },
+      "initialization_equal": true,
+      "task_instruction_equal": true,
+      "candidate_episode_sha256": "9dc9fbedeab1ff38358ccef7dfaa1e8d45865dffb7cd6e7189f33664067a4f55",
+      "candidate_protocol_sha256": "eff7d4b3d585d4afa79ac73b900edc676f8b89670197776e0e088b4822c4cb21",
+      "parent_source": "original full-observation capture",
+      "parent_source_sha256": "38e1e69838ba38dc3e6c77e3fef596988e1221da68742466eff418af66bccf51",
+      "comparison_scope": "native final metrics and public initialization, not full closed-loop state identity"
+    },
+    {
+      "case": "2x10_advanced_620780",
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 620780,
+      "parent": {
+        "success": false,
+        "cookies_in_target": 10,
+        "cookies_in_source": 70,
+        "steps": 3200
+      },
+      "candidate": {
+        "success": false,
+        "cookies_in_target": 10,
+        "cookies_in_source": 70,
+        "steps": 3200
+      },
+      "final_metrics_equal": {
+        "success": true,
+        "cookies_in_target": true,
+        "cookies_in_source": true,
+        "steps": true
+      },
+      "initialization_equal": true,
+      "task_instruction_equal": true,
+      "candidate_episode_sha256": "4cee18886302f19dff2c6a3495c17c1c957c85aadb770333a999de04dc0bd978",
+      "candidate_protocol_sha256": "bf30e13e70263955b54cac614a13b92864e06c2c3bf3145a58a3e431d981d98d",
+      "parent_source": "frozen V10 native Test B result",
+      "parent_source_sha256": "b64ee390a711093bd8773bfcc9cfc11b6a79912023336439fbd82173de1445bb",
+      "comparison_scope": "native final metrics and public initialization, not full closed-loop state identity"
+    },
+    {
+      "case": "2x10_basic_620000",
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 620000,
+      "parent": {
+        "success": true,
+        "cookies_in_target": 20,
+        "cookies_in_source": 60,
+        "steps": 730
+      },
+      "candidate": {
+        "success": true,
+        "cookies_in_target": 20,
+        "cookies_in_source": 60,
+        "steps": 730
+      },
+      "final_metrics_equal": {
+        "success": true,
+        "cookies_in_target": true,
+        "cookies_in_source": true,
+        "steps": true
+      },
+      "initialization_equal": true,
+      "task_instruction_equal": true,
+      "candidate_episode_sha256": "3d83f21d6d96e52b9183ffe62b3d29ea92e1d1ccd8434cdbc2d201872f6d37ed",
+      "candidate_protocol_sha256": "4d245d579dc2c708d60537257c0b23ad3321fe065b906ce870ae0d79b4dce46d",
+      "parent_source": "frozen V10 native Test B result",
+      "parent_source_sha256": "b64ee390a711093bd8773bfcc9cfc11b6a79912023336439fbd82173de1445bb",
+      "comparison_scope": "native final metrics and public initialization, not full closed-loop state identity"
+    },
+    {
+      "case": "2x10_medium_24014",
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 24014,
+      "parent": {
+        "success": false,
+        "cookies_in_target": 20,
+        "cookies_in_source": 58,
+        "steps": 708
+      },
+      "candidate": {
+        "success": false,
+        "cookies_in_target": 20,
+        "cookies_in_source": 58,
+        "steps": 708
+      },
+      "final_metrics_equal": {
+        "success": true,
+        "cookies_in_target": true,
+        "cookies_in_source": true,
+        "steps": true
+      },
+      "initialization_equal": true,
+      "task_instruction_equal": true,
+      "candidate_episode_sha256": "27de16337e6e69601d76f56fb0aafb3dcc94776f94c05069109b93daad7fe6dd",
+      "candidate_protocol_sha256": "762058a9b71f028adb9ed75c09c7dc8ce7527049417f3a8a70236ba83bd701ff",
+      "parent_source": "frozen V10 native Test A result",
+      "parent_source_sha256": "8eaff737e4af4d699fa4c6d809d978a2c9a923c0e9ac4da7f7643f07a126b857",
+      "comparison_scope": "native final metrics and public initialization, not full closed-loop state identity"
+    },
+    {
+      "case": "2x5_advanced_620335",
+      "task": "2x5",
+      "profile": "advanced",
+      "seed": 620335,
+      "parent": {
+        "success": false,
+        "cookies_in_target": 0,
+        "cookies_in_source": 75,
+        "steps": 500
+      },
+      "candidate": {
+        "success": false,
+        "cookies_in_target": 0,
+        "cookies_in_source": 75,
+        "steps": 500
+      },
+      "final_metrics_equal": {
+        "success": true,
+        "cookies_in_target": true,
+        "cookies_in_source": true,
+        "steps": true
+      },
+      "initialization_equal": true,
+      "task_instruction_equal": true,
+      "candidate_episode_sha256": "e05f815bbe68164e97c67663e0d755d2f5b013c5b3e04411286db853fbed51a0",
+      "candidate_protocol_sha256": "30ce7ec411c940f73ff30ac8dd667c16d0f543b7b0bcf353bfef91c7a4dffcc9",
+      "parent_source": "frozen V10 native Test B result",
+      "parent_source_sha256": "b64ee390a711093bd8773bfcc9cfc11b6a79912023336439fbd82173de1445bb",
+      "comparison_scope": "native final metrics and public initialization, not full closed-loop state identity"
+    },
+    {
+      "case": "2x5_basic_19000",
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 19000,
+      "parent": {
+        "success": true,
+        "cookies_in_target": 10,
+        "cookies_in_source": 70,
+        "steps": 316
+      },
+      "candidate": {
+        "success": true,
+        "cookies_in_target": 10,
+        "cookies_in_source": 70,
+        "steps": 316
+      },
+      "final_metrics_equal": {
+        "success": true,
+        "cookies_in_target": true,
+        "cookies_in_source": true,
+        "steps": true
+      },
+      "initialization_equal": true,
+      "task_instruction_equal": true,
+      "candidate_episode_sha256": "89281f0ad157fbc4511c10244039c9a5c882809bcc2b526fe025aeb055cd65ae",
+      "candidate_protocol_sha256": "08d9e2dfd248a80284f56d96f5f8de35b83a0562762ca8069ddb309f9cb0a90c",
+      "parent_source": "original full-observation capture",
+      "parent_source_sha256": "e05ce74eb304393d249a20a3f4bc93931b49c81e54a5f7dd3793541ac6f5228a",
+      "comparison_scope": "native final metrics and public initialization, not full closed-loop state identity"
+    },
+    {
+      "case": "2x5_basic_620335",
+      "task": "2x5",
+      "profile": "basic",
+      "seed": 620335,
+      "parent": {
+        "success": false,
+        "cookies_in_target": 5,
+        "cookies_in_source": 75,
+        "steps": 500
+      },
+      "candidate": {
+        "success": false,
+        "cookies_in_target": 5,
+        "cookies_in_source": 75,
+        "steps": 500
+      },
+      "final_metrics_equal": {
+        "success": true,
+        "cookies_in_target": true,
+        "cookies_in_source": true,
+        "steps": true
+      },
+      "initialization_equal": true,
+      "task_instruction_equal": true,
+      "candidate_episode_sha256": "54b06f6ccb7c683d5fa47e38f9bdc780aeafa720b63e04b75fafc3f5ae2bf5a3",
+      "candidate_protocol_sha256": "43a750b36b9b83997a4c99398259ec9752487846730b5bb6971e4c081d6792ff",
+      "parent_source": "frozen V10 native Test B result",
+      "parent_source_sha256": "b64ee390a711093bd8773bfcc9cfc11b6a79912023336439fbd82173de1445bb",
+      "comparison_scope": "native final metrics and public initialization, not full closed-loop state identity"
+    },
+    {
+      "case": "2x5_medium_620015",
+      "task": "2x5",
+      "profile": "medium",
+      "seed": 620015,
+      "parent": {
+        "success": true,
+        "cookies_in_target": 10,
+        "cookies_in_source": 70,
+        "steps": 312
+      },
+      "candidate": {
+        "success": true,
+        "cookies_in_target": 10,
+        "cookies_in_source": 70,
+        "steps": 312
+      },
+      "final_metrics_equal": {
+        "success": true,
+        "cookies_in_target": true,
+        "cookies_in_source": true,
+        "steps": true
+      },
+      "initialization_equal": true,
+      "task_instruction_equal": true,
+      "candidate_episode_sha256": "e99e99879f2c934fa745631c7e4de681d006298ec36da9dec690549864e6b0a8",
+      "candidate_protocol_sha256": "2317e7558a63ab3612d461bbd6a31bbb9fd302f8c72d23c76da35f36d21e9c1f",
+      "parent_source": "frozen V10 native Test B result",
+      "parent_source_sha256": "b64ee390a711093bd8773bfcc9cfc11b6a79912023336439fbd82173de1445bb",
+      "comparison_scope": "native final metrics and public initialization, not full closed-loop state identity"
+    }
+  ],
+  "quality_matched_cases": 8,
+  "candidate_actual_successes": 4,
+  "candidate_runtime_sha256": {
+    "policy.py": "50101a31aaf34b29600bb5293a42edb93c01b6fd10047d6949dcc776bdfa7647",
+    "v10_leaves_17e0363838a9/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v10_leaves_17e0363838a9/two10_inner/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v10_leaves_17e0363838a9/two10_inner/perception.py": "545b91867b7a1ca3423c59573ba5879eff292e4706ca95bad3543d34e9881068",
+    "v10_leaves_17e0363838a9/two10_inner/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v10_leaves_17e0363838a9/two10_inner/policy.py": "395c19764a09d5790c04714db28e8833778dff5dc239b1caf2a5f21c7b7bd52b",
+    "v10_leaves_17e0363838a9/two10_inner/rule_controller.py": "c9ea45726f80a74608d7a5b6826293d9a98c34882f15cf6e00e1bcfba05c59b0",
+    "v10_leaves_17e0363838a9/two10_outer/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v10_leaves_17e0363838a9/two10_outer/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v10_leaves_17e0363838a9/two10_outer/f_hybrid_policy.py": "09c0c33adfecc82185f9f559f939330ea82064f640b252e2a6fff02b5a03b142",
+    "v10_leaves_17e0363838a9/two10_outer/f_parent_perception.py": "c62c0ec521dca9076df7f4e7ea7be21df1e22f4d5c7e82d5550e06d144dd396a",
+    "v10_leaves_17e0363838a9/two10_outer/f_parent_policy.py": "2870507a3cab99ef950f997400edc1acb3ab57159ae40e44a1ddc2a687f90870",
+    "v10_leaves_17e0363838a9/two10_outer/f_parent_rule_controller.py": "a3ee979c389fe9216160b4dfc84707b6fd841f8f777e7c147efb724046087ff0",
+    "v10_leaves_17e0363838a9/two10_outer/f_source_controller.py": "332735e945f4642c50e080c744f6cfab8cacfb35f66eb078568c767bc0912f7e",
+    "v10_leaves_17e0363838a9/two10_outer/f_source_perception.py": "44a83e2531427051e16a8dea2130c3010632aa4ad069ab3ec59613b4e28acc16",
+    "v10_leaves_17e0363838a9/two10_outer/path_feasibility.py": "ff751b1f9e279601e1b35e55fe649df4a91f505ce38a0597c12f12bc755dea14",
+    "v10_leaves_17e0363838a9/two10_outer/perception.py": "59dfa2fb99b7c7b115f2494397e0ff8e41f003053434bf43895ccd12ad504b3e",
+    "v10_leaves_17e0363838a9/two10_outer/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v10_leaves_17e0363838a9/two10_outer/policy.py": "baa2e6efbc168b5ed5df9c921645285b046951f85b208b283b9a8b04534eef50",
+    "v10_leaves_17e0363838a9/two10_outer/rule_controller.py": "b8614a84a2ab46ae64ff1bd95740c6bc3722cd23d389691ae8b533620b7f9714",
+    "v10_leaves_17e0363838a9/two10_outer/source_geometry.py": "10a2aaa50643cddad4769ce24bbfcff0e18ed4c1a5dca79c67dfbb8f0ad3ab72",
+    "v10_leaves_17e0363838a9/two10_source1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v10_leaves_17e0363838a9/two10_source1/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v10_leaves_17e0363838a9/two10_source1/d_supervisor.py": "b07825ae64fe386a7cd1079fa5ba99c338ff11c1dfe6a8a4cc9b7168f39f429d",
+    "v10_leaves_17e0363838a9/two10_source1/path_feasibility.py": "553f5ea28fc9377aea90e092ee7e8561841ecf62a83b35e5543d389e04b3e887",
+    "v10_leaves_17e0363838a9/two10_source1/perception.py": "0520a4fd3cf3d6e608ffa88ce3ebe7cf1a83d6c1566960665f9bb11d8e7a2045",
+    "v10_leaves_17e0363838a9/two10_source1/placement_audit.py": "2e89d3d73ed11589050fc2fd043ad808a900912073a824e03fea1ac7d9fe34c2",
+    "v10_leaves_17e0363838a9/two10_source1/policy.py": "8f8344e8d33f7e10a13cd4a80df3edb8ce60a31e3a40ab74096433641937df23",
+    "v10_leaves_17e0363838a9/two10_source1/public_visibility.py": "af59780e15b50650217e46e95aa97da846ee9d26dffad1b3967cd2a863580d82",
+    "v10_leaves_17e0363838a9/two10_source1/rule_controller.py": "0842b718f7587ee344e23f813fca85506dab9c890e9baa68e26df0013fd124e0",
+    "v10_leaves_17e0363838a9/two10_source1/source_view.py": "3f3159b7a581009027b352db1cb7ef55da4efee609ce35a92602e30337fcb3af",
+    "v10_leaves_17e0363838a9/two10_source1/target_occupancy.py": "33c430eadfd1d5bfe3cb8877336ceea07d5e1a56d00606ed316587f84c4b450d",
+    "v10_leaves_17e0363838a9/two10_source1/target_registration.py": "eec09b90d1d9e1a53dd80d5c61ed0f8fad1068d92aa9829c374c1a426adc37ff",
+    "v10_leaves_17e0363838a9/two5_inner/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v10_leaves_17e0363838a9/two5_inner/inner_source_broad.py": "6557f86e8b415ee2650c3ebfab20b65882aea21988f2eb334ce0ff0fd2299cf9",
+    "v10_leaves_17e0363838a9/two5_inner/inner_source_view.py": "e03097d04831ecdf2676db6edb1cc388f403ed504f3a91ae76b89acc9349926d",
+    "v10_leaves_17e0363838a9/two5_inner/inner_target_observation.py": "f1ca9f8690aa9d32b33a357e733b735865b7f8593623765c0434b747ae249c43",
+    "v10_leaves_17e0363838a9/two5_inner/observation_path.py": "8d5c75a8ddd41ac8f8c971c9fe18ecd0f216412980911a4990805cc7d3828742",
+    "v10_leaves_17e0363838a9/two5_inner/perception.py": "8c427cce92e52c88006e8927cb66e376ae01ec1cf70350132ac480cf4077134b",
+    "v10_leaves_17e0363838a9/two5_inner/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v10_leaves_17e0363838a9/two5_inner/policy.py": "451eeda67390a6c13191896f927ecb8012c42bb59ca4caa916ecccc603f3f424",
+    "v10_leaves_17e0363838a9/two5_inner/public_visibility.py": "20bee1f6a3f63518e1950159313c59bed19dd799569087436b040a191b093474",
+    "v10_leaves_17e0363838a9/two5_inner/rule_controller.py": "00bde4493091e761d3c935b56e84ee80e16a7ff5240372eaed356bf341596c4f",
+    "v10_leaves_17e0363838a9/two5_inner/source_bootstrap.py": "a981c6c4c07f4641e31ca62d5ec225da02878bb48d8f8bdb43e88a4461af9450",
+    "v10_leaves_17e0363838a9/two5_inner/target_vision.py": "fd87419d90f0936dab303534452d1b8ac0218f7fbc6bb69f8656bd7902f13a39",
+    "v10_leaves_17e0363838a9/two5_outer/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v10_leaves_17e0363838a9/two5_outer/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v10_leaves_17e0363838a9/two5_outer/f_hybrid_policy.py": "c7d5e4d2fc1893500cb3ed8e3fbbd6fb39659d1456cf9c0ba4eab84c20f679f0",
+    "v10_leaves_17e0363838a9/two5_outer/f_parent_perception.py": "584cf028fb3a39bc549962bd22d941ec7e61c11509c3b4df9007bec8fce52c15",
+    "v10_leaves_17e0363838a9/two5_outer/f_parent_policy.py": "0548cf5a76ca49dcd5fdc0f052327dcc3b45884a64ebb693b799d23dbc77489c",
+    "v10_leaves_17e0363838a9/two5_outer/f_parent_rule_controller.py": "a5b5ccf72c871b6a7170120443c8773682fbe9211f899e6b1e6f60417acacdab",
+    "v10_leaves_17e0363838a9/two5_outer/f_source_controller.py": "fca62f5e74d8d4749e055103d508bab481c3c9b1829f184c9c72747717e7bcc8",
+    "v10_leaves_17e0363838a9/two5_outer/f_source_perception.py": "637ea81d4509bdf0d19f7ea172124ccf6e7d19b7b9db4e64b911ae014a93c3a0",
+    "v10_leaves_17e0363838a9/two5_outer/path_feasibility.py": "ff751b1f9e279601e1b35e55fe649df4a91f505ce38a0597c12f12bc755dea14",
+    "v10_leaves_17e0363838a9/two5_outer/perception.py": "ece593156fbc38b93ce19595120289bfe988abafd016182b84dde02074a094eb",
+    "v10_leaves_17e0363838a9/two5_outer/placement_audit.py": "6623526fda15567d91843b9fcd20135a3459836b9a46a39526452e5a5ac1078f",
+    "v10_leaves_17e0363838a9/two5_outer/policy.py": "11894cd0a8ebaf4a556b08c82d9a84c4a14f1bcd32c9bcb176e7d3d5bbe54e4d",
+    "v10_leaves_17e0363838a9/two5_outer/rule_controller.py": "84f18e0c2bff8c50ae379167795469a6d3a8291848185f36d442079c6dd9f2ba",
+    "v10_leaves_17e0363838a9/two5_outer/source_geometry.py": "10a2aaa50643cddad4769ce24bbfcff0e18ed4c1a5dca79c67dfbb8f0ad3ab72",
+    "v10_leaves_17e0363838a9/two5_source1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v10_leaves_17e0363838a9/two5_source1/e_source_view.py": "db9191553908b4bc8e299d57f960773b7c54eac14497e069cd920629d952d71d",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/b2_supervisor.py": "64a3fcaf12f13722aede74da10d0ad76d8a03c8f5ecd73e1b0a8eda3f231cc0a",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/d_supervisor.py": "ae7d8d5795e06388af17dd7e351623f7e9a3eb50b6af7419513b08a144a16200",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py": "ff9b6083325c13e2d22546e58a8ce37d9da26df4022edd2eabd3ef25e4a66cd2",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/perception.py": "44bd9bc3997af34de57d6e8230c5d4e5687fa389e883964004a440aeb472059f",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/placement_audit.py": "2e89d3d73ed11589050fc2fd043ad808a900912073a824e03fea1ac7d9fe34c2",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/policy.py": "320de583a36157033e2cb0d12aa1f8bfe1ae82c80f726284c7ab75b1f9549f18",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/rule_controller.py": "ac033054bd239b10b836e207a81659e2fd7b16746a1608534d13342b3d804538",
+    "v10_leaves_17e0363838a9/two5_source1/path_feasibility.py": "decdcae476dbf67782d98074b6f033cfed17367c6ce3a2c1a0d6f4de7c2a5c2a",
+    "v10_leaves_17e0363838a9/two5_source1/policy.py": "749154edae5e50eee7b8fcf3a8badb38215d6502ac5bc3b2800b50f7e63f008b",
+    "v10_leaves_17e0363838a9/two5_source1/public_ik.py": "91ba9342906be3619cb763b0d85fb387ec8de41db92ff572b573452134152acd",
+    "v10_leaves_17e0363838a9/two5_source1/repair_costs.py": "ed911e7803a600adbe3ad013be2b80de61bb03e03309837cacd90697a822dc61",
+    "v10_leaves_17e0363838a9/two5_source1/slot_audit.py": "b8b10c1a9b0e199e939cca7f6b783a31833c9b8622e5030339bfddff63362445",
+    "v10_leaves_17e0363838a9/two5_source1/source_pretrial.py": "51f01593b3b4878a2e29eab9cb69c5da4a8c508c1c1a0fbe9d95a6efb55038b6",
+    "v10_leaves_17e0363838a9/two5_source1/target_local_projection.py": "3f06a790eeb5bc63b3a1806732d3b914efd2612648373b0fed010287c9fa8bf8",
+    "v10_leaves_17e0363838a9/two5_source1/target_vision.py": "42820be798ac4ee76052fe18ad8a150c106abbf51006d2893bf89d05a6e9036b",
+    "v10_leaves_17e0363838a9/two5_source1/terminal_controller.py": "be33b7e7b309afe84dcac00c86e722acf8659d7243bea9593e57fc6163a43a73"
+  },
+  "changed_runtime_files": [
+    "v10_leaves_17e0363838a9/two10_source1/path_feasibility.py",
+    "v10_leaves_17e0363838a9/two10_source1/perception.py",
+    "v10_leaves_17e0363838a9/two10_source1/placement_audit.py",
+    "v10_leaves_17e0363838a9/two10_source1/source_view.py",
+    "v10_leaves_17e0363838a9/two5_source1/e_source_view.py",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/perception.py",
+    "v10_leaves_17e0363838a9/two5_source1/legacy/placement_audit.py",
+    "v10_leaves_17e0363838a9/two5_source1/path_feasibility.py",
+    "v10_leaves_17e0363838a9/two5_source1/target_vision.py",
+    "v10_leaves_17e0363838a9/two5_source1/terminal_controller.py"
+  ],
+  "exploratory_probes": [
+    {
+      "candidate": "P2_1_search_context",
+      "task": "2x5",
+      "n": 316,
+      "mean_ms": 152.73511702531644,
+      "actions_equal": true,
+      "recorded_state_fields_equal": true,
+      "csv_sha256": "7dd3f774c677a09304df0067c491401f053ea643073193a07c6eeecb330aad1e",
+      "metadata_sha256": "084e07d5e96c010244c7f2a4b64fd8092431a17f88a9b5c9162235c22bd28cbf",
+      "repetitions": 1,
+      "speed_conclusion": "exploratory single pass; insufficient paired evidence for an incremental speed gain"
+    },
+    {
+      "candidate": "P2_1_search_context",
+      "task": "2x10",
+      "n": 671,
+      "mean_ms": 212.5253280104322,
+      "actions_equal": true,
+      "recorded_state_fields_equal": true,
+      "csv_sha256": "32cc75dfc2440fb8f76479ae396bf523a66e60f0a98949610a411bf489fe8505",
+      "metadata_sha256": "7a0530255259f855f8fb3c26dffc7d2202c354f925d59885762e9895dbf0146e",
+      "repetitions": 1,
+      "speed_conclusion": "exploratory single pass; insufficient paired evidence for an incremental speed gain"
+    },
+    {
+      "candidate": "P2_2_box_cache",
+      "task": "2x5",
+      "n": 316,
+      "mean_ms": 149.6919893607595,
+      "actions_equal": true,
+      "recorded_state_fields_equal": true,
+      "csv_sha256": "d3d95e144ee3da04a826f05f4ddbb7c3f070ed80005be94b42d644cbd98d9a87",
+      "metadata_sha256": "7586a5ba1cf1b229f6b8c6d96d63c1a52990f2e6030a747e8b3adb574be2a2ce",
+      "repetitions": 1,
+      "speed_conclusion": "exploratory single pass; insufficient paired evidence for an incremental speed gain"
+    },
+    {
+      "candidate": "P2_2_box_cache",
+      "task": "2x10",
+      "n": 671,
+      "mean_ms": 212.19246361698956,
+      "actions_equal": true,
+      "recorded_state_fields_equal": true,
+      "csv_sha256": "fec01c0c957a0e865b83363ece082dfb9fb5765bcca7d84e8b824eb338ea3914",
+      "metadata_sha256": "f0f6f4363cd5064b24851e2cab3121a26114756e0d0242a1e9b1e462722e3d4c",
+      "repetitions": 1,
+      "speed_conclusion": "exploratory single pass; insufficient paired evidence for an incremental speed gain"
+    }
+  ],
+  "speed_reference": "Use existing R2 paired study; no newly accepted speedup in R3",
+  "remaining_gates": [
+    "decision-relevant internal state comparison",
+    "240-episode per-case regression",
+    "unseen-seed paired validation"
+  ],
+  "source_scope": "source column 1; deliberately selected successes and failures",
+  "remote_provenance": "PRO native 24 result/protocol files and all 78 runtime files independently matched to Mac",
+  "new_policy_inference_runs": 0,
+  "new_simulation_steps": 0
+}
