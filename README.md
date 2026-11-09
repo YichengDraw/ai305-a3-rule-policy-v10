@@ -16,6 +16,14 @@ This is the **frozen V10** rule-based RGB + robot-state policy and a stand-alone
 
 **Protocol:** official non-strict mode; stable-success hold=5; 2×5 max=500 control steps; 2×10 max=3200. Keep the task's native release and placement conditions. The reported run used CPU MuJoCo rendering with OSMesa/llvmpipe; other hardware/software configurations may differ.
 
+## Paper and complete development history
+
+**[Read the Group 3 research report (PDF)](report/group3_rule_policy_v10.pdf)** · [LaTeX source](report/main.tex) · [Code history V1–V9](history/README.md)
+
+The paper explains the camera/force-based rule controller, the GPT-6 advisor ↔ separate coding-executor iteration loop, and the main decisions from V1 to V10 using plain language. The public history includes V1–V4 development snapshots, V5–V9 frozen policies, retained experimental variants, and 1,320 official episode results from the milestone comparisons.
+
+**Independent V10 replication:** an additional set of 20 randomly selected seeds (620xxx, 120 episodes) achieved **96.62% mean completion** and **94.17% official success** (113/120). This uses the same frozen code and benchmark grid, and all failures are included. [Full reproduction records and seed list](results/retest/README.md). The first test above remains a separate 120-episode holdout; the pooled mean across both tests is 97.52% completion and 95.00% success.
+
 ## Files
 
 - [`frozen_policy_v10/`](frozen_policy_v10/): complete original frozen routing policy and all **78 verified runtime dependencies**; `policy.py` exposes `make_policy_b()` and action mode `cartesian_delta`.

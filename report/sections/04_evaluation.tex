@@ -1,0 +1,60 @@
+\section{Evaluation and Results}
+\label{sec:evaluation}
+\subsection{What we measure}
+We use the benchmark's two final metrics. If episode $i$ asks for $m_i$ cookies and the official scorer counts $c_i$ valid target cookies, its completion is $c_i/m_i$. The reported mean completion and mean success are
+\begin{equation}
+\label{eq:metrics}
+C=(c_1/m_1+\ldots+c_N/m_N)/N,
+\qquad S=(s_1+\ldots+s_N)/N.
+\end{equation}
+Here $s_i$ is 1 for an officially successful episode and 0 otherwise. Both numbers are averaged \emph{per episode}. Each of the six task/settings has twenty episodes, so the overall result also equals the equal-weight mean of the six settings. We additionally publish raw cookie counts, which are helpful for checking the arithmetic.
+
+The evaluator uses the task's original stopping and scoring rules. The \pFive\ budget is 500 robot control steps; \pTen\ has 3,200. A complete success must satisfy the official conditions for five consecutive steps. Both tests use non-strict mode, which preserves each task's own release requirements. The policy sees three cameras, the public robot state, and the task instruction; the evaluator alone determines the official score.
+
+\subsection{Two independent test batches}
+The final code was frozen before the first test, and we used the \emph{same} code for the second test.
+
+\paragraph{Test A: initial holdout.}
+Twenty seed values, 24000--24019, were chosen in advance. We ran both tasks in all three variation levels, giving $20\times2\times3=120$ episodes. This is the same test used to compare V9 and V10 in Table~\ref{tab:paired}.
+
+\paragraph{Test B: additional random seeds.}
+A separate re-evaluation drew twenty distinct values from 620000--620999 using Python's random sampling, before running any of those episodes. The list is published in the repository. Again we ran the full six-setting grid, giving another 120 episodes. Both were run with the official simulator and CPU software rendering. The source column was 1 in both tests, while the scene's configured position, view, color, and lighting changes were sampled as usual.
+
+\begin{table*}[t]
+\centering\small
+\caption{Frozen V10 performance on two independent sets of 20 seeds. Each row contains 20 episodes in each test. Completion uses the final valid cookie count; success uses the original simulator flag. The second test is the new 620xxx-seed reproduction.}
+\label{tab:holdouts}
+\begin{tabular}{llrrrrrr}
+\toprule
+& & \multicolumn{3}{c}{Test A: seeds 24000--24019} & \multicolumn{3}{c}{Test B: 20 new random seeds}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Task & Variation & Cookies & Completion & Success & Cookies & Completion & Success\\
+\midrule
+\multirow{3}{*}{\pFive} & Basic    & 200/200 & 100.00\% & 20/20 & 195/200 & 97.50\% & 19/20\\
+ & Medium   & 200/200 & 100.00\% & 20/20 & 200/200 & 100.00\% & 20/20\\
+ & Advanced & 200/200 & 100.00\% & 20/20 & 190/200 & 95.00\% & 19/20\\
+\midrule
+\multirow{3}{*}{\pTen} & Basic    & 380/400 & 95.00\% & 18/20 & 400/400 & 100.00\% & 20/20\\
+ & Medium   & 400/400 & 100.00\% & 19/20 & 391/400 & 97.75\% & 19/20\\
+ & Advanced & 382/400 & 95.50\% & 18/20 & 358/400 & 89.50\% & 16/20\\
+\midrule
+\textbf{Mean} & \textbf{120 episodes each} & \textbf{1762/1800} & \textbf{98.42\%} & \textbf{115/120} &
+ \textbf{1734/1800} & \textbf{96.62\%} & \textbf{113/120}\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{What changed, and what repeated}
+Table~\ref{tab:holdouts} shows that V10 performs consistently well on two separate collections of randomized scenes. The first test gave \textbf{98.42\% mean completion} and \textbf{95.83\% success}; the second gave \textbf{96.62\% completion} and \textbf{94.17\% success}. Pooling both equal-sized test batches gives \textbf{97.52\% mean completion} and \textbf{95.00\% success} across 240 evaluated episodes.
+
+The \pFive\ task was particularly reliable: 60/60 successes in Test A and 58/60 in Test B. For \pTen, both tests happened to give exactly 55/60 successes. The second test was strongest in Basic \pTen\ (20/20) and weakest in Advanced \pTen\ (16/20). This is consistent with the difficulty of keeping all parts of a large transfer aligned when vision and object positions vary.
+
+The new seed sample also provides concrete failed cases rather than only a single average: for example, seed 620335 affected both Basic and Advanced \pFive, while seed 620780 affected Medium and Advanced \pTen. All seven failed episodes from Test B ended at the allowed control-step limit. These episodes remain in the published results; their purpose is to help reviewers see what is still difficult.
+
+\subsection{Why the gain is meaningful}
+The important improvement is not just the final percentage. Earlier versions often had a visible problem, a plausible rule change, and no reliable way to know whether the change helped the whole task. By V10, we routinely compared a candidate against its parent on \emph{the same seed and task setting}, while keeping the camera, object randomization, scoring rules, and run budget consistent within each comparison.
+
+For the final V9-to-V10 comparison, mean completion increased by 3.46 percentage points and success by 6.67 points on matched seeds. The separate 620xxx test then reproduced the same overall level of performance with an entirely new set of randomized scenes. Together, these results support the development decisions better than a collection of handpicked successful demonstrations.
+
+\paragraph{Evaluation scope.}
+The official six-setting grid fixes the requested source at column 1. The underlying simulator supports columns 2--4 as well. Our open repository includes the multi-column branches and development evidence; the numerical headline here reports the exact grid that was tested twice.

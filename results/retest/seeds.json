@@ -1,0 +1,39 @@
+{
+  "seeds": [
+    620000,
+    620015,
+    620083,
+    620111,
+    620228,
+    620305,
+    620335,
+    620382,
+    620394,
+    620434,
+    620435,
+    620461,
+    620561,
+    620567,
+    620686,
+    620716,
+    620780,
+    620874,
+    620916,
+    620971
+  ],
+  "pool": [
+    620000,
+    620999
+  ],
+  "method": "Python random.Random(20261108).sample(range(620000, 621000), 20), then sorted for presentation",
+  "rng_seed": 20261108,
+  "sampled_at": "2026-11-08T13:48:12.817881+00:00",
+  "constraints": [
+    "not 24000-24019",
+    "not 21000-21009 development",
+    "not 610000-610079 reserved extension",
+    "20 distinct seeds, used for all six task/profile cells",
+    "drawn before any episode of this replication was executed"
+  ],
+  "note": "Seed values 620000-620999 were not referenced by the frozen V10 protocol files or later v11-v13 case registries."
+}

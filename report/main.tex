@@ -1,0 +1,59 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[letterpaper,margin=0.72in,columnsep=0.24in]{geometry}
+\usepackage{graphicx,booktabs,amsmath,amssymb,multirow,array,enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{microtype,placeins}
+\urlstyle{same}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{7pt plus 2pt minus 2pt}
+\setlength{\intextsep}{7pt plus 2pt minus 2pt}
+\renewcommand{\arraystretch}{1.10}
+\setlist[itemize]{leftmargin=1.35em,itemsep=2pt,topsep=3pt}
+\newcommand{\pFive}{2×5}
+\newcommand{\pTen}{2×10}
+\newcommand{\srcone}{source column 1}
+\title{\vspace{-1em}\textbf{From Visual Rules to Reliable Robot Manipulation:}\\An AI Advisor--Executor Study of Versions V1--V10}
+\author{Yicheng Zhao \qquad Sihua Zhang \qquad Ruilin Gao\\[0.15em]
+\small Group 3 \quad | \quad AI305 Intelligent Agent Systems and Programming}
+\date{\small 9 November 2026}
+\begin{document}
+\maketitle
+\vspace{-1.0em}
+\begin{abstract}
+\noindent
+We built a rule-based controller for the A3 dual-arm cookie-packing simulator and improved it through ten software versions. The robot sees the source and target boxes through cameras, grasps a requested group of cookies, carries it across the workspace, and places it without disturbing the remaining cookies. Rather than learning actions from demonstrations, our controller combines visual measurements, known robot geometry, touch feedback, and a sequence of simple decisions.
+
+A central part of our development process was an \emph{AI advisor--executor loop}: a GPT-6 advisor analyzed failed runs and suggested focused changes; coding agents implemented those changes and ran controlled tests; the human team conveyed evidence and selected the next direction. We preserve successful and unsuccessful versions, matched comparisons, and runnable evaluation code.
+
+The first evaluated milestone (V5) achieved 46.83\% mean task completion and 14.17\% official success. The frozen V10 policy achieved 98.42\% completion and 95.83\% success in one 120-episode test, followed by 96.62\% and 94.17\% on another 120 episodes with newly sampled seeds. These measurements use the benchmark's standard source-column-1 grid.
+\end{abstract}
+\vspace{-0.4em}
+\input{sections/01_task_and_team.tex}
+\input{sections/02_controller.tex}
+\input{sections/03_development.tex}
+\input{sections/04_evaluation.tex}
+\input{sections/05_discussion.tex}
+\section*{Acknowledgments}
+We thank the AI305 teaching staff for the A3 simulator and benchmark. The three Group 3 members supervised the project, selected experiments, checked results, and prepared the final submission. We used AI assistants for analysis, coding, and iterative testing as described in Section~\ref{sec:workflow}.
+\begin{thebibliography}{9}\footnotesize\setlength{\itemsep}{1pt}
+\bibitem{a3}
+Eter0109, \emph{A3 Dual-Arm Simulation}, course repository, revision 0729068ee1e75a562cfbc4f2c83ab9539cf75081.
+\url{https://github.com/Eter0109/a3_dual_arm_sim}.
+\bibitem{brooks}
+R. A. Brooks, 'A robust layered control system for a mobile robot,'
+\emph{IEEE Journal of Robotics and Automation}, vol. 2, no. 1, pp. 14--23, 1986.
+\bibitem{servo}
+F. Chaumette and S. Hutchinson, 'Visual servo control, Part I: Basic approaches,'
+\emph{IEEE Robotics \& Automation Magazine}, vol. 13, no. 4, pp. 82--90, 2006.
+\bibitem{smolvla}
+M. Shukor et al., 'SmolVLA: A vision-language-action model for affordable and efficient robotics,' 2025.
+\url{https://arxiv.org/abs/2506.01844}.
+\bibitem{ourrepo}
+Group 3, \emph{AI305 A3 Rule Policy V10: Code, History and Evaluation Records}.
+\url{https://github.com/YichengDraw/ai305-a3-rule-policy-v10}.
+\end{thebibliography}
+\appendix
+\input{sections/06_appendix.tex}
+\end{document}

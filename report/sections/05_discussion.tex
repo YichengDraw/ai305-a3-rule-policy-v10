@@ -1,0 +1,28 @@
+\section{Discussion and Conclusion}
+\label{sec:discussion}
+Three lessons stood out from this project.
+
+\paragraph{First, knowing the geometry is powerful when the task is specific.}
+The simulator provides fixed robot geometry and familiar box-and-cookie shapes. This made it possible to plan a grasp and check collisions with direct calculations. A large learned policy was not needed to discover that fingers should enter a gap, that a carried object should clear the rim, or that the next group needs room. The harder part was making the geometric estimate reflect what the cameras actually saw.
+
+\paragraph{Second, observation and action must agree.}
+A surprisingly common failure was not a bad planned motion, but a mismatch between the observation and the situation: an old box estimate, a cookie thought to remain at the source, or a held group whose actual pose differed from the planned pose. More camera calls were not always useful. We gained the most when the controller requested \emph{the specific information needed for the next action} and updated its decisions accordingly.
+
+\paragraph{Third, the best code change is not always the most complicated one.}
+The AI advisor--executor workflow generated many plausible fixes. Some worked on small examples but hurt earlier successes, and a strict visual rule could stop the robot completely when a camera view was incomplete. Matched testing encouraged us to preserve a simple, functioning movement whenever possible and add a correction only where its evidence justified it.
+
+The role of the AI collaboration was practical. The advisor organized hypotheses, prioritized failures, and reviewed trade-offs; the executors could implement and test variants much faster than a purely manual cycle. The human team supplied the task goals, relayed information across sessions, and decided what to submit. The frozen policy is a conventional, inspectable Python controller: the AI models used during development are not running inside it at test time.
+
+\paragraph{Next step.}
+We aim to carry these improvements across all four source columns and the most difficult first-group sizes. The largest remaining opportunities are detecting whether extra cookies are pulled from the source, recognizing a cookie that is in the target but still tilted or held, and finding a safe next motion after an obstructed placement. These are natural extensions of the same observation--decision--action feedback loop.
+
+\paragraph{Conclusion.}
+Across V1--V10, the policy developed from a basic visual pick-and-place sequence into a controller that checks held objects, makes room for future placements, and recovers from changing scene geometry. The combined development process was as important as any individual rule: investigate a failure, test a focused change, keep the result only when it helps the full task, and record the evidence. On the published source-column-1 grid, the frozen V10 reached approximately \textbf{97.5\% mean completion and 95\% official success across two independent 120-episode tests}. The full code history and episode records are available for course review~\cite{ourrepo}.
+
+\section{Reproducibility}
+\label{sec:reproducibility}
+The public repository provides the final policy, the scripts that run the official evaluator, and the records used to prepare the tables. The original A3 simulator is kept as an upstream dependency, pinned to the tested revision~\cite{a3}. A small verification script checks that the 78 original V10 runtime files have not changed and recomputes the scores from the saved episodes.
+
+For tracing the process, the repository also includes V1--V4 development snapshots, V5--V9 frozen implementations, intermediate experimental code, and the official per-episode history. In particular, the history contains 1,320 recorded evaluation rows from the version comparisons summarized here. The two final V10 tests are stored separately, along with their seed lists and task settings.
+
+A reviewer can therefore do three things independently: \emph{read the paper}, \emph{inspect any historical implementation and its decision evidence}, or \emph{run the exact frozen V10 policy using the official simulator}. The command and directory layout are explained in the repository README.

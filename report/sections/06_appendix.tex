@@ -1,0 +1,73 @@
+\section{Representative Decisions}
+The history is easier to understand through concrete examples than through version numbers alone. The following cases illustrate how we used feedback.
+
+\paragraph{A successful diagnosis: misplaced cookies in V6.}
+One early run correctly closed the gripper around five cookies, yet the transferred group arrived at the edge of the target. Inspecting the wrist view showed that the group was offset from the assumed held position. We added visual refinement near the target and used the observed group position during the approach. The lesson was to check the \emph{object being carried}, not just the wrist target.
+
+\paragraph{An unsuccessful idea: wait for certainty.}
+A development variant insisted that every placement be fully confirmed before it could advance. When cookies or the target wall were partly hidden, it repeatedly waited or observed instead of proceeding. On a 45-case test, its official success was 3/45 compared with 19/45 for the more flexible candidate. We retained the checking information but did not use it as a universal stop command.
+
+\paragraph{A regression worth keeping in the record: V7.}
+After adding more target-correction logic, some difficult scenes succeeded where the old version failed, but several old successes were lost. Across the matched 120 runs, completion improved by 2.25 percentage points while success dropped by 3.33. This result pushed later versions toward more selective corrections.
+
+\paragraph{A long-sequence failure: V8 and V9.}
+For \pTen, the controller could keep looking at a source location already emptied by a previous grasp. The old sequence of motions remained internally consistent, but it no longer matched the scene. Reobserving the actual remaining group and tracking the completed transfers were more helpful than just allowing additional steps.
+
+\paragraph{A rejected V10 candidate: unnecessary sideways correction.}
+A proposed sideways adjustment improved an initial small test. In a 127-case expansion, the number of successful episodes increased from 107 to 108, but fourteen previously successful episodes failed and the total valid cookie count fell from 2,425 to 2,420. We rejected this global change and preferred simpler, targeted behavior. This case is included because the \emph{cost of breaking an old success} was part of every later decision.
+
+\section{Evaluation Detail}
+\label{app:evaluation}
+\input{sections/07_generated_history_table.tex}
+
+The final two tests together contain 240 episodes with 40 distinct seed values, each used for all six task/variation combinations. Their joint official success is 228/240. The final valid target total is 3,496 out of 3,600 cookie opportunities. Since the \pFive\ and \pTen\ tasks have different cookie counts, the equal-episode mean completion of 97.52\% is the course metric; the cookie-weighted 3,496/3,600 value answers a different counting question.
+
+\begin{table}[t]
+\centering\small
+\caption{The seven unsuccessful episodes in the second V10 test. All reached the normal step budget; failed runs were included in the reported averages.}
+\label{tab:secondfail}
+\begin{tabular}{llrr}
+\toprule
+Task & Variation & Seed & Final target \\
+\midrule
+\pFive & Basic    & 620335 & 5/10\\
+\pFive & Advanced & 620335 & 0/10\\
+\pTen & Medium   & 620780 & 11/20\\
+\pTen & Advanced & 620382 & 10/20\\
+\pTen & Advanced & 620461 & 15/20\\
+\pTen & Advanced & 620780 & 10/20\\
+\pTen & Advanced & 620971 & 3/20\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{What Is in the Release}
+\label{app:files}
+The submitted code is organized for a teacher or teaching assistant to inspect it without reconstructing the entire development conversation.
+
+\begin{table}[t]
+\centering\small
+\caption{Materials supplied for review. Repository folder names are detailed in the README.}
+\label{tab:paths}
+\begin{tabular}{p{1.78cm}p{5.9cm}}
+\toprule
+Material & What a reviewer can check\\
+\midrule
+Paper & PDF, editable LaTeX and original illustrations.\\
+Final V10 & Complete frozen controller and file hashes.\\
+V1--V9 & Historical program versions, organized by milestone.\\
+Experiments & Additional tested ideas, including rejected changes.\\
+Old results & Earlier comparisons and native run records.\\
+Two V10 tests & Per-episode scores and exact random seed lists.\\
+Evaluator & Reproduction commands and score-checking scripts.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Minimal review procedure.}
+Clone the official A3 simulator at its pinned revision, install its documented runtime, and clone our public repository. Run \emph{python3 scripts/verify\_release.py} to check the policy files and Test A scores. Then run the second-test verifier for Test B. For a new physical simulation evaluation, use the included launcher to load \emph{policy:make\_policy\_b} from \emph{frozen\_policy\_v10}. The repository README gives the full commands and environment notes.
+
+The earlier versions are intended to explain the path to the final result. V1--V4 are original development snapshots; V5--V9 are the frozen releases from successive rounds. For a fair numerical comparison, use the paired episode records rather than expecting different historical versions to have been evaluated on one identical seed window.
+
+\paragraph{A practical closing note.}
+The controller is a deterministic-looking rule program in the sense that its actions follow explicit geometric and feedback tests, but the robot is responding to a randomized world. Its success depended on preserving the connection between the camera evidence, the actual grasp, and the next action. The advisor--executor process helped us investigate that connection one failure at a time.

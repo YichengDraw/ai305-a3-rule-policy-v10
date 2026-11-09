@@ -1,0 +1,15 @@
+{
+  "official_sim_commit": "0729068ee1e75a562cfbc4f2c83ab9539cf75081",
+  "policy_root_sha256": "50101a31aaf34b29600bb5293a42edb93c01b6fd10047d6949dcc776bdfa7647",
+  "seed_spec_sha256": "8312aa4526510d260b5009232d805e98a3fef79d734e32a04248efb4c096e43f",
+  "original_native_jsonl_sha256": "b64ee390a711093bd8773bfcc9cfc11b6a79912023336439fbd82173de1445bb",
+  "native_episode_lines": 120,
+  "source_column": 1,
+  "profile_count": 3,
+  "task_count": 2,
+  "non_strict": true,
+  "hold_steps": 5,
+  "steps_2x5": 500,
+  "steps_2x10": 3200,
+  "evaluation_backend": "CPU OSMesa/llvmpipe"
+}
