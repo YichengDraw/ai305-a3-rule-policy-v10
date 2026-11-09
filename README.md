@@ -24,6 +24,17 @@ The paper explains the camera/force-based rule controller, the GPT-6 advisor ↔
 
 **Independent V10 replication:** an additional set of 20 randomly selected seeds (620xxx, 120 episodes) achieved **96.62% mean completion** and **94.17% official success** (113/120). This uses the same frozen code and benchmark grid, and all failures are included. [Full reproduction records and seed list](results/retest/README.md). The first test above remains a separate 120-episode holdout; the pooled mean across both tests is 97.52% completion and 95.00% success.
 
+## Policy computation timing
+
+A separate synchronized replay benchmark measures the full native policy call on one Basic 2×5 trajectory (316 observations) and one Advanced 2×10 trajectory (671 observations), repeated three times on an Intel i5-10500 + RTX 3090 host. V10 runs on CPU; the teacher SmolVLA checkpoint uses CUDA and executes 8 actions per generated block. The intervals exclude rendering, physics, file reading and model loading.
+
+| Recorded workload | V10 CPU mean | SmolVLA CUDA mean | SmolVLA new block | SmolVLA queue call |
+|---|---:|---:|---:|---:|
+| 2×5 Basic | 165.0 ms | 70.5 ms | 532.2 ms | 3.57 ms |
+| 2×10 Advanced | 236.7 ms | 68.7 ms | 523.5 ms | 3.61 ms |
+
+These are computation costs on recorded observations, not new closed-loop success trials. The 2×10 replay has six stage differences per 671-step repetition; the detailed record includes all action differences and a sensitivity check. **The measured rule implementation is not faster on average than the GPU model**; model generation remains much slower than its inexpensive queued calls. [Full timing methods, raw CSVs and review](results/latency/README.md) · Verify with `python3 scripts/verify_latency.py`.
+
 ## Files
 
 - [`frozen_policy_v10/`](frozen_policy_v10/): complete original frozen routing policy and all **78 verified runtime dependencies**; `policy.py` exposes `make_policy_b()` and action mode `cartesian_delta`.

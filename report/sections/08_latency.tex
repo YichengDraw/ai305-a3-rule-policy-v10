@@ -1,0 +1,46 @@
+\section{How Much Computation Does the Policy Need?}
+\label{sec:latency}
+High task success and fast computation are different goals. We therefore compared V10 with the teacher's released SmolVLA checkpoint using a separate timing experiment. The question was simple: once camera images and robot measurements are available, how long does each policy take to return its next action?
+
+\subsection{A comparison on the same recorded inputs}
+We recorded every control step of two V10 runs: a Basic \pFive\ episode with 316 steps and an Advanced \pTen\ episode with 671 steps. Both used source column 1 and development seed 19000; the latter requested groups of 2, 8, 2, and 8 cookies. Both recorded runs completed successfully. The images and measurements were then replayed in order, from a fresh policy reset, without stepping or rendering the simulator during timing.
+
+The two policies were measured on the same machine: an Intel Core i5-10500 CPU and an NVIDIA RTX 3090 GPU. V10 ran on the CPU; SmolVLA used the GPU. Both processes were pinned to the same four CPU cores, with PyTorch and OpenCV configured for four threads. We used three repetitions per trajectory and alternated which policy ran first. These are repeated timing measurements of two trajectories, rather than new scene samples.
+
+We timed the complete native policy call, including image processing, geometric calculations or network inference, and action preparation. Data loading, image decoding, simulation, rendering, and model loading were outside the interval. GPU calls were synchronized before and after timing, after warm-up, following standard accelerator-timing practice~\cite{torchbench}. V10's output is a Cartesian displacement while SmolVLA returns joint positions; the simulator's external conversion of Cartesian commands is outside this comparison.
+
+The teacher checkpoint was unchanged. Its course adapter used a batch size of one, 25 sampling steps, and eight executed actions per generated block. The measurement retained each policy's normal caches, preprocessing, and image resolution. In particular, we did not remove V10's visual estimation and time only its final movement rules.
+
+\begin{table*}[t]
+\centering\small
+\caption{Synchronous native policy-call latency on two complete recorded observation sequences, repeated three times on the same machine. Times are in milliseconds. The main averages include every measured call, including slow calls and partial final action blocks.}
+\label{tab:latency}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llrrrrrr}
+\toprule
+& & \multicolumn{2}{c}{V10, CPU} & \multicolumn{2}{c}{SmolVLA, RTX 3090} & \multicolumn{2}{c}{SmolVLA call type}\\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+Task & Recorded workload & Mean & P95 & Mean & P95 & New block mean & Queue mean\\
+\midrule
+\pFive & Basic, 316 steps & 165.0 & 499.6 & 70.5 & 534.7 & 532.2 & 3.57\\
+\pTen & Advanced, 671 steps & 236.7 & 596.6 & 68.7 & 523.0 & 523.5 & 3.61\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\paragraph{Checking that the replay does useful work.}
+Unlike our initial sparse-image timing attempt, these inputs include every step and actually take V10 through grasping, carrying, and placing. On \pFive, all 316 pre-action stage labels agree with the captured run. On \pTen, 665 of 671 agree in each repetition: six differences per replay, or eighteen across three repetitions. The replay also has action differences, so we treat the experiment as a computation benchmark on recorded inputs, not a new closed-loop success test. The per-step comparisons are published with the timing data.
+
+We checked whether these differences drive the numerical comparison. For \pTen, marking all before/after-stage differences and calls with a native action-component difference above 0.01 identifies 32 frames. As a sensitivity check, leaving those frames out of \emph{both} policies changes the respective means from 236.69/68.69\,ms to 236.76/68.71\,ms. The main table retains all frames; this check does not replace the full result.
+
+\subsection{What the timings mean}
+SmolVLA's mean call cost is lower in this experiment. V10 takes approximately \textbf{2.34 times} as long per call on the \pFive\ input and \textbf{3.45 times} as long on the \pTen\ input. The three repetitions are stable: V10's means range from 164.1 to 165.9\,ms and from 235.0 to 238.5\,ms, respectively.
+
+The model's action blocks explain why its mean and its new-decision delay are so different. Generating a block takes about 0.53 seconds. The following seven calls return queued actions, costing about 3.6\,ms each. Averaged over complete eight-action cycles, the costs are 69.63\,ms for \pFive\ and 68.58\,ms for \pTen. A short queue call should therefore not be described as a fresh neural decision in 3.6\,ms.
+
+The rule controller also caches visual and geometric information, but its work varies greatly by stage. Some simple movement calls are fast, while observations and path checks can be expensive. The slowest target-retreat calls averaged about 5.2 seconds for \pFive\ and 6.1 seconds for \pTen. These calls were kept in the results. The measurements show that an explicit rule policy is not automatically a lightweight program once vision and geometric planning are included.
+
+For a 20\,Hz controller, one action period is 50\,ms. V10 finished 57.1\% and 30.1\% of the measured calls within that period; SmolVLA finished 87.3\% and 87.5\%, largely because of its queued actions. Both measured synchronous implementations contain substantial delays. This is a finding about the tested implementation and call schedule, rather than a claim that all rule-based or learned controllers must have these speeds.
+
+\paragraph{Implication for our project.}
+V10's demonstrated achievement is its high completion and success rates with an inspectable controller. This additional test does not establish a speed advantage over the GPU model. A practical next improvement is to reduce expensive repeated visual and geometric work while preserving the successful behavior, or separate slower planning from a faster motion-control loop. The raw timing data, measurement scripts, and independent recomputation are included in the release.

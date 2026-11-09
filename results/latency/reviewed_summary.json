@@ -1,0 +1,386 @@
+{
+  "scope": "Synchronous native policy.act latency on two recorded full-observation workloads",
+  "tasks": {
+    "2x5": {
+      "profile": "basic",
+      "seed": 19000,
+      "source_column": 1,
+      "frames_per_repeat": 316,
+      "actual_v10_phase_counts": {
+        "SELECT": 6,
+        "APPROACH": 96,
+        "ALIGN_APPROACH": 72,
+        "LOCAL_ALIGN": 15,
+        "DESCEND": 90,
+        "CLOSE": 102,
+        "PRETRIAL_SEPARATE": 18,
+        "TRIAL_LIFT": 54,
+        "LIFT": 60,
+        "TRANSPORT": 177,
+        "TARGET_RETREAT": 6,
+        "PREPLACE_OBSERVE": 108,
+        "PLACE": 75,
+        "OPEN": 21,
+        "RETRACT": 30,
+        "VERIFY": 18
+      },
+      "reference_batch_counts": {
+        "0": 189,
+        "1": 127
+      },
+      "repeated_state_action_sequence_identical": true,
+      "v10": {
+        "n": 948,
+        "mean_ms": 165.0158816592827,
+        "median_ms": 35.9486165,
+        "p95_ms": 499.6003343999999,
+        "max_ms": 5428.321677999999,
+        "fraction_under_50ms": 0.570675105485232
+      },
+      "smolvla_all_calls": {
+        "n": 948,
+        "mean_ms": 70.48334616877636,
+        "median_ms": 3.4650655,
+        "p95_ms": 534.7380215,
+        "max_ms": 556.6273590000001,
+        "fraction_under_50ms": 0.8734177215189873
+      },
+      "smolvla_refresh": {
+        "n": 120,
+        "mean_ms": 532.1521526666667,
+        "median_ms": 531.793474,
+        "p95_ms": 546.61734775,
+        "max_ms": 556.6273590000001,
+        "fraction_under_50ms": 0.0
+      },
+      "smolvla_queue": {
+        "n": 828,
+        "mean_ms": 3.574823487922705,
+        "median_ms": 3.444581,
+        "p95_ms": 4.03177025,
+        "max_ms": 26.472252,
+        "fraction_under_50ms": 1.0
+      },
+      "full_eight_action_cycles": 117,
+      "full_cycle_amortized_ms_per_action": 69.63305202670941,
+      "v10_to_smolvla_mean_latency_ratio": 2.3412038535194233,
+      "rounds": [
+        {
+          "repeat": 1,
+          "steps": 316,
+          "v10_mean_ms": 165.04193960443038,
+          "smolvla_mean_ms": 70.19382241772152,
+          "phase_before_mismatch_frames": [],
+          "phase_after_mismatch_frames": [],
+          "phase_before_match_fraction": 1.0,
+          "max_absolute_native_action_difference": 0.00834295456653437,
+          "action_difference_over_0_01_count": 0,
+          "batch_index_recorded_by_timing": false,
+          "sensitivity_flagged_frames": []
+        },
+        {
+          "repeat": 2,
+          "steps": 316,
+          "v10_mean_ms": 164.10591671518986,
+          "smolvla_mean_ms": 70.2689742278481,
+          "phase_before_mismatch_frames": [],
+          "phase_after_mismatch_frames": [],
+          "phase_before_match_fraction": 1.0,
+          "max_absolute_native_action_difference": 0.00834295456653437,
+          "action_difference_over_0_01_count": 0,
+          "batch_index_recorded_by_timing": false,
+          "sensitivity_flagged_frames": []
+        },
+        {
+          "repeat": 3,
+          "steps": 316,
+          "v10_mean_ms": 165.89978865822786,
+          "smolvla_mean_ms": 70.9872418607595,
+          "phase_before_mismatch_frames": [],
+          "phase_after_mismatch_frames": [],
+          "phase_before_match_fraction": 1.0,
+          "max_absolute_native_action_difference": 0.00834295456653437,
+          "action_difference_over_0_01_count": 0,
+          "batch_index_recorded_by_timing": false,
+          "sensitivity_flagged_frames": []
+        }
+      ],
+      "sensitivity": {
+        "purpose": "Omit direct phase/action-difference frames from BOTH timings only as a sensitivity check; main table keeps all frames.",
+        "native_action_cutoff_for_flagging": 0.01,
+        "flagged_frames_per_repeat": 0,
+        "retained_means": {
+          "v10": 165.0158816592827,
+          "smolvla": 70.48334616877636
+        },
+        "v10_to_smolvla_ratio": 2.3412038535194233
+      }
+    },
+    "2x10": {
+      "profile": "advanced",
+      "seed": 19000,
+      "source_column": 1,
+      "frames_per_repeat": 671,
+      "actual_v10_phase_counts": {
+        "SELECT": 21,
+        "APPROACH": 120,
+        "ALIGN_APPROACH": 96,
+        "LOCAL_ALIGN": 66,
+        "DESCEND": 189,
+        "CLOSE": 183,
+        "TRIAL_LIFT": 60,
+        "LIFT": 96,
+        "TRANSPORT": 387,
+        "TARGET_RETREAT": 6,
+        "PREPLACE_OBSERVE": 45,
+        "PLACE": 165,
+        "OPEN": 93,
+        "RETRACT": 117,
+        "SOURCE_OBSERVE": 285,
+        "ALIGN_OBSERVE": 33,
+        "ALIGN_RETURN": 21,
+        "SLIP_RECHECK": 30
+      },
+      "reference_batch_counts": {
+        "0": 137,
+        "1": 181,
+        "2": 187,
+        "3": 166
+      },
+      "repeated_state_action_sequence_identical": true,
+      "v10": {
+        "n": 2013,
+        "mean_ms": 236.6920712399404,
+        "median_ms": 135.524945,
+        "p95_ms": 596.5542141999997,
+        "max_ms": 6229.828033999999,
+        "fraction_under_50ms": 0.3005464480874317
+      },
+      "smolvla_all_calls": {
+        "n": 2013,
+        "mean_ms": 68.69108664530552,
+        "median_ms": 3.521266,
+        "p95_ms": 522.95064,
+        "max_ms": 554.2163089999999,
+        "fraction_under_50ms": 0.8748137108792846
+      },
+      "smolvla_refresh": {
+        "n": 252,
+        "mean_ms": 523.4935739007936,
+        "median_ms": 520.3885885,
+        "p95_ms": 538.5420176499999,
+        "max_ms": 554.2163089999999,
+        "fraction_under_50ms": 0.0
+      },
+      "smolvla_queue": {
+        "n": 1761,
+        "mean_ms": 3.6086182816581487,
+        "median_ms": 3.500616,
+        "p95_ms": 4.071107,
+        "max_ms": 10.578890000000001,
+        "fraction_under_50ms": 1.0
+      },
+      "full_eight_action_cycles": 249,
+      "full_cycle_amortized_ms_per_action": 68.5810009317269,
+      "v10_to_smolvla_mean_latency_ratio": 3.4457464978262413,
+      "rounds": [
+        {
+          "repeat": 1,
+          "steps": 671,
+          "v10_mean_ms": 238.54210373025336,
+          "smolvla_mean_ms": 68.681207219076,
+          "phase_before_mismatch_frames": [
+            201,
+            206,
+            214,
+            485,
+            486,
+            487
+          ],
+          "phase_after_mismatch_frames": [
+            200,
+            205,
+            213,
+            484,
+            485,
+            486
+          ],
+          "phase_before_match_fraction": 0.9910581222056631,
+          "max_absolute_native_action_difference": 0.5989290982076056,
+          "action_difference_over_0_01_count": 27,
+          "batch_index_recorded_by_timing": false,
+          "sensitivity_flagged_frames": [
+            200,
+            201,
+            205,
+            206,
+            213,
+            214,
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            360,
+            361,
+            410,
+            454,
+            484,
+            485,
+            486,
+            487,
+            488,
+            489,
+            490
+          ]
+        },
+        {
+          "repeat": 2,
+          "steps": 671,
+          "v10_mean_ms": 236.52764221758568,
+          "smolvla_mean_ms": 68.73289211773472,
+          "phase_before_mismatch_frames": [
+            201,
+            206,
+            214,
+            485,
+            486,
+            487
+          ],
+          "phase_after_mismatch_frames": [
+            200,
+            205,
+            213,
+            484,
+            485,
+            486
+          ],
+          "phase_before_match_fraction": 0.9910581222056631,
+          "max_absolute_native_action_difference": 0.5989290982076056,
+          "action_difference_over_0_01_count": 27,
+          "batch_index_recorded_by_timing": false,
+          "sensitivity_flagged_frames": [
+            200,
+            201,
+            205,
+            206,
+            213,
+            214,
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            360,
+            361,
+            410,
+            454,
+            484,
+            485,
+            486,
+            487,
+            488,
+            489,
+            490
+          ]
+        },
+        {
+          "repeat": 3,
+          "steps": 671,
+          "v10_mean_ms": 235.00646777198213,
+          "smolvla_mean_ms": 68.65916059910582,
+          "phase_before_mismatch_frames": [
+            201,
+            206,
+            214,
+            485,
+            486,
+            487
+          ],
+          "phase_after_mismatch_frames": [
+            200,
+            205,
+            213,
+            484,
+            485,
+            486
+          ],
+          "phase_before_match_fraction": 0.9910581222056631,
+          "max_absolute_native_action_difference": 0.5989290982076056,
+          "action_difference_over_0_01_count": 27,
+          "batch_index_recorded_by_timing": false,
+          "sensitivity_flagged_frames": [
+            200,
+            201,
+            205,
+            206,
+            213,
+            214,
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            360,
+            361,
+            410,
+            454,
+            484,
+            485,
+            486,
+            487,
+            488,
+            489,
+            490
+          ]
+        }
+      ],
+      "sensitivity": {
+        "purpose": "Omit direct phase/action-difference frames from BOTH timings only as a sensitivity check; main table keeps all frames.",
+        "native_action_cutoff_for_flagging": 0.01,
+        "flagged_frames_per_repeat": 32,
+        "retained_means": {
+          "v10": 236.76443546322378,
+          "smolvla": 68.70724472613459
+        },
+        "v10_to_smolvla_ratio": 3.4459893772041226
+      }
+    }
+  },
+  "review_decision": "Report as synchronous recorded-workload computation, not exact closed-loop execution",
+  "warnings": [
+    "2x10 has six phase differences per replay, not 18 out of 671.",
+    "Actions were compared on every captured step; phase equality is not action equality.",
+    "Mean, P95 and deadline counts describe these two workloads, not all scenes."
+  ]
+}
