@@ -35,6 +35,10 @@ A separate synchronized replay benchmark measures the full native policy call on
 
 These are computation costs on recorded observations, not new closed-loop success trials. The 2×10 replay has six stage differences per 671-step repetition; the detailed record includes all action differences and a sensitivity check. **The measured rule implementation is not faster on average than the GPU model**; model generation remains much slower than its inexpensive queued calls. [Full timing methods, raw CSVs and review](results/latency/README.md) · Verify with `python3 scripts/verify_latency.py`.
 
+## Implementation-efficiency experiment (not merged)
+
+A separate V10-to-V10 paired replay reduced average CPU call time from **166.44 to 150.98 ms (2×5)** and **238.10 to 213.19 ms (2×10)**, with identical recorded actions and phases across three repetitions. Review also reproduced a conditional error in an unexercised lazy-initialization branch. **The candidate is experimental: full quality validation is pending and the submitted frozen V10 is unchanged.** [Measurements, code changes, known issue and independent verifier](results/efficiency_round1/README.md).
+
 ## Files
 
 - [`frozen_policy_v10/`](frozen_policy_v10/): complete original frozen routing policy and all **78 verified runtime dependencies**; `policy.py` exposes `make_policy_b()` and action mode `cartesian_delta`.

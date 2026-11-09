@@ -1,0 +1,136 @@
+{
+  "scope": "synthetic branch inputs; target association stub; original AST functions; no policy rollout",
+  "initial_state": {
+    "source_disturbed": true,
+    "v6_source_anchor": "present",
+    "v6_target_anchor": null,
+    "target_component": "present"
+  },
+  "fit_probes": {
+    "two10_source1/perception.py": {
+      "parent": {
+        "returned": true,
+        "source_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate": {
+        "returned": false,
+        "exception": "TypeError",
+        "message": "'NoneType' object is not subscriptable",
+        "function": "_fit_boxes",
+        "line": 1441
+      },
+      "memory_only_shape_fix": {
+        "returned": true,
+        "source_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "two5_source1/legacy/perception.py": {
+      "parent": {
+        "returned": true,
+        "source_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate": {
+        "returned": false,
+        "exception": "TypeError",
+        "message": "'NoneType' object is not subscriptable",
+        "function": "_fit_boxes",
+        "line": 1177
+      },
+      "memory_only_shape_fix": {
+        "returned": true,
+        "source_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "two5_source1/target_vision.py": {
+      "parent": {
+        "returned": true,
+        "source_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate": {
+        "returned": false,
+        "exception": "TypeError",
+        "message": "'NoneType' object is not subscriptable",
+        "function": "_fit_boxes",
+        "line": 1034
+      },
+      "memory_only_shape_fix": {
+        "returned": true,
+        "source_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "cache_alias_probes": {
+    "two10_source1/path_feasibility.py": {
+      "same_returned_object": true,
+      "array_writeable": true,
+      "mutation_propagated": true
+    },
+    "two5_source1/legacy/path_feasibility.py": {
+      "same_returned_object": true,
+      "array_writeable": true,
+      "mutation_propagated": true
+    },
+    "two5_source1/path_feasibility.py": {
+      "same_returned_object": true,
+      "array_writeable": true,
+      "mutation_propagated": true
+    }
+  },
+  "simulation_steps": 0,
+  "render_calls": 0,
+  "alias_scope_note": "Mutation was injected in isolated helper test; no claim of observed production mutation."
+}

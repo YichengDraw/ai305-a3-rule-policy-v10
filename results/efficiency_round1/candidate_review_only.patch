@@ -1,0 +1,483 @@
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two10_source1/path_feasibility.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two10_source1/path_feasibility.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two10_source1/path_feasibility.py	2026-11-05 21:02:14
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two10_source1/path_feasibility.py	2026-11-09 15:35:28
+@@ -41,11 +41,23 @@
+     edges: np.ndarray
+     pairs: np.ndarray
+ 
++_POLY_CACHE = {}
++
++
+ def _poly(vertices):
+-    v = np.unique(np.round(np.asarray(vertices, float), 10), axis=0)
++    source = np.asarray(vertices, float)
++    key = (source.shape, source.tobytes())
++    cached = _POLY_CACHE.get(key)
++    if cached is not None:
++        return cached
++    v = np.unique(np.round(source, 10), axis=0)
+     hull = ConvexHull(v)
+     pairs = np.unique(np.sort(np.concatenate([hull.simplices[:, [0, 1]], hull.simplices[:, [1, 2]], hull.simplices[:, [0, 2]]]), axis=1), axis=0)
+-    return Poly(v, _unique_axes(hull.equations[:, :3]), _unique_axes(v[pairs[:, 1]] - v[pairs[:, 0]]), pairs)
++    result = Poly(v, _unique_axes(hull.equations[:, :3]), _unique_axes(v[pairs[:, 1]] - v[pairs[:, 0]]), pairs)
++    if len(_POLY_CACHE) > 8192:
++        _POLY_CACHE.clear()
++    _POLY_CACHE[key] = result
++    return result
+ 
+ def _separation(a, b):
+     broad = np.maximum(b.vertices.min(0) - a.vertices.max(0), a.vertices.min(0) - b.vertices.max(0))
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two10_source1/perception.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two10_source1/perception.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two10_source1/perception.py	2026-11-05 21:02:14
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two10_source1/perception.py	2026-11-09 15:35:28
+@@ -441,7 +441,7 @@
+         _, mount_rotation = self._eef_rotation(observation)
+         return {'pos': nominal['pos'] + mount_rotation @ p[:3], 'rotation': nominal['rotation'] @ Rotation.from_rotvec(p[3:6]).as_matrix(), 'fovy': nominal['fovy'] + p[6]}
+ 
+-    def _v6_gripper_silhouette(self, camera, shape):
++    def _v6_gripper_silhouette(self, camera, shape, *, mask_only=False):
+         h, w = shape[:2]
+         polygons = []
+         candidate = []
+@@ -451,13 +451,20 @@
+             tri = uv[faces]
+             td = depth[faces].mean(1)
+             visible = np.all(depth[faces] > 0.01, axis=1) & (tri[:, :, 0].max(1) >= 0) & (tri[:, :, 0].min(1) < w) & (tri[:, :, 1].max(1) >= 0) & (tri[:, :, 1].min(1) < h)
+-            polygons.extend(((float(td[i]), np.rint(tri[i]).astype(np.int32), 255 if dark else 0) for i in np.flatnonzero(visible)))
+-            if dark:
++            selected = np.flatnonzero(visible)
++            if len(selected):
++                rounded = np.rint(tri[selected]).astype(np.int32)
++                color = 255 if dark else 0
++                for j, i in enumerate(selected):
++                    polygons.append((float(td[i]), rounded[j], color))
++            if dark and not mask_only:
+                 edge_points = np.concatenate([world, world[faces[:, 0]] * 0.5 + world[faces[:, 1]] * 0.5, world[faces[:, 1]] * 0.5 + world[faces[:, 2]] * 0.5])
+                 candidate.append(edge_points)
+         mask = np.zeros((h, w), np.uint8)
+         for _, triangle, color in sorted(polygons, key=lambda item: item[0], reverse=True):
+             cv2.fillConvexPoly(mask, triangle, color)
++        if mask_only:
++            return mask
+         if not candidate:
+             return (mask, np.empty((0, 3)))
+         points = np.concatenate(candidate)
+@@ -1029,7 +1036,7 @@
+         gray = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
+         occluded = np.zeros(gray.shape, np.uint8)
+         if hasattr(self, 'robot_model'):
+-            robot, _ = self._v6_gripper_silhouette(camera, image.shape)
++            robot = self._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+             occluded = cv2.dilate(robot, np.ones((5, 5), np.uint8))
+         source = getattr(self, 'v6_source_anchor', None)
+         if source is not None and float(source.get('confidence', 0.0)) >= 0.5:
+@@ -1243,7 +1250,7 @@
+             return result
+         camera = cameras['left_wrist']
+         image = np.asarray(observation['observation.images.left_wrist'])
+-        robot, _ = self._v6_gripper_silhouette(camera, image.shape)
++        robot = self._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+         occluded = cv2.dilate(robot, np.ones((5, 5), np.uint8))
+         position, rotation = self._eef_rotation(observation)
+         bounds = held.get('bounds_tool')
+@@ -1370,20 +1377,32 @@
+         return result
+ 
+     def _fit_boxes(self, observation, cameras):
+-        masks = {}
+-        distance = {}
+-        for name in ('front', 'left_wrist'):
+-            image = np.asarray(observation['observation.images.' + name])
+-            mx = image.max(2)
+-            mn = image.min(2)
+-            gray = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
+-            masks[name] = gray
+-            edge = np.zeros_like(gray)
+-            contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+-            cv2.drawContours(edge, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, 1)
+-            filled = np.zeros_like(gray)
+-            cv2.drawContours(filled, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, -1)
+-            distance[name] = cv2.distanceTransform(255 - filled, cv2.DIST_L2, 3) - cv2.distanceTransform(filled, cv2.DIST_L2, 3)
++        masks = None
++        distance = None
++
++        def _masks():
++            nonlocal masks
++            if masks is None:
++                masks = {}
++                for name in ('front', 'left_wrist'):
++                    image = np.asarray(observation['observation.images.' + name])
++                    mx = image.max(2)
++                    mn = image.min(2)
++                    masks[name] = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
++            return masks
++
++        def _distance():
++            nonlocal distance
++            if distance is None:
++                m = _masks()
++                distance = {}
++                for name in ('front', 'left_wrist'):
++                    gray = m[name]
++                    contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
++                    filled = np.zeros_like(gray)
++                    cv2.drawContours(filled, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, -1)
++                    distance[name] = cv2.distanceTransform(255 - filled, cv2.DIST_L2, 3) - cv2.distanceTransform(filled, cv2.DIST_L2, 3)
++            return distance
+         boxes = {}
+         for kind in ('source', 'target') if self.v6_target_anchor is None else ('source',):
+             if kind == 'source' and self.source_disturbed and (self.v6_source_anchor is not None):
+@@ -1407,8 +1426,9 @@
+             zt = zb + (self.scene.source_bin_wall_height_m if kind == 'source' else self.scene.target_bin_wall_height_m)
+             corners = np.array([[x, y, z] for z in (zb, zt) for x in (-half[0], half[0]) for y in (-half[1], half[1])])
+             instances = {}
+-            kind_distance = distance
++            kind_distance = _distance() if kind == 'source' else None
+             if kind == 'target':
++                masks = _masks()
+                 for name in ('front', 'left_wrist'):
+                     instance = self._v7_target_instance(masks[name], cameras[name], initial, center_z, corners)
+                     if instance is not None:
+@@ -1430,7 +1450,7 @@
+             if kind == 'source' and any((n == 'left_wrist' and len(p) > 25 for n, p in cameras_used)):
+                 cameras_used = [item for item in cameras_used if item[0] == 'left_wrist']
+             if kind == 'target' and any((n == 'left_wrist' for n, pts in cameras_used)):
+-                if self._v6_target_in_wrist(cameras['left_wrist'], distance['left_wrist'].shape, {'center': np.r_[initial[:2], center_z], 'yaw': initial[2]}):
++                if self._v6_target_in_wrist(cameras['left_wrist'], masks['left_wrist'].shape, {'center': np.r_[initial[:2], center_z], 'yaw': initial[2]}):
+                     cameras_used = [item for item in cameras_used if item[0] == 'left_wrist']
+             if not cameras_used:
+                 boxes[kind + '_box'] = {'center': np.r_[initial[:2], center_z], 'yaw': float(initial[2]), 'confidence': 0.0, 'position_error_m': 0.025, 'residual_px': None}
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two10_source1/source_view.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two10_source1/source_view.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two10_source1/source_view.py	2026-11-05 21:02:15
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two10_source1/source_view.py	2026-11-09 15:19:17
+@@ -146,7 +146,7 @@
+         camera = cameras['left_wrist']
+         position, rotation = v._eef_rotation(observation)
+         h, w = image.shape[:2]
+-        mask, _ = v._v6_gripper_silhouette(camera, image.shape)
++        mask = v._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+         mask = cv2.dilate(mask, np.ones((3, 3), np.uint8))
+         done = {x.get('view_id') for x in request.get('source_view_history', []) if x.get('context_key') == context and x.get('outcome') in ('informative_but_incomplete', 'uninformative', 'unreachable')}
+         failures = [x for x in request.get('source_view_history', []) if x.get('context_key') == context]
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/e_source_view.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/e_source_view.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/e_source_view.py	2026-11-05 21:02:10
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/e_source_view.py	2026-11-09 15:19:17
+@@ -145,7 +145,7 @@
+         camera = cameras['left_wrist']
+         position, rotation = v._eef_rotation(observation)
+         h, w = image.shape[:2]
+-        mask, _ = v._v6_gripper_silhouette(camera, image.shape)
++        mask = v._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+         mask = cv2.dilate(mask, np.ones((3, 3), np.uint8))
+         done = {x.get('view_id') for x in request.get('source_view_history', []) if x.get('context_key') == context and x.get('outcome') in ('informative_but_incomplete', 'uninformative', 'unreachable')}
+         failures = [x for x in request.get('source_view_history', []) if x.get('context_key') == context]
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py	2026-11-05 21:02:10
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py	2026-11-09 15:35:28
+@@ -39,11 +39,23 @@
+     edges: np.ndarray
+     pairs: np.ndarray
+ 
++_POLY_CACHE = {}
++
++
+ def _poly(vertices):
+-    v = np.unique(np.round(np.asarray(vertices, float), 10), axis=0)
++    source = np.asarray(vertices, float)
++    key = (source.shape, source.tobytes())
++    cached = _POLY_CACHE.get(key)
++    if cached is not None:
++        return cached
++    v = np.unique(np.round(source, 10), axis=0)
+     hull = ConvexHull(v)
+     pairs = np.unique(np.sort(np.concatenate([hull.simplices[:, [0, 1]], hull.simplices[:, [1, 2]], hull.simplices[:, [0, 2]]]), axis=1), axis=0)
+-    return Poly(v, _unique_axes(hull.equations[:, :3]), _unique_axes(v[pairs[:, 1]] - v[pairs[:, 0]]), pairs)
++    result = Poly(v, _unique_axes(hull.equations[:, :3]), _unique_axes(v[pairs[:, 1]] - v[pairs[:, 0]]), pairs)
++    if len(_POLY_CACHE) > 8192:
++        _POLY_CACHE.clear()
++    _POLY_CACHE[key] = result
++    return result
+ 
+ def _separation(a, b):
+     broad = np.maximum(b.vertices.min(0) - a.vertices.max(0), a.vertices.min(0) - b.vertices.max(0))
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/legacy/perception.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/legacy/perception.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/legacy/perception.py	2026-11-05 21:02:10
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/legacy/perception.py	2026-11-09 15:35:28
+@@ -242,7 +242,7 @@
+         _, mount_rotation = self._eef_rotation(observation)
+         return {'pos': nominal['pos'] + mount_rotation @ p[:3], 'rotation': nominal['rotation'] @ Rotation.from_rotvec(p[3:6]).as_matrix(), 'fovy': nominal['fovy'] + p[6]}
+ 
+-    def _v6_gripper_silhouette(self, camera, shape):
++    def _v6_gripper_silhouette(self, camera, shape, *, mask_only=False):
+         h, w = shape[:2]
+         polygons = []
+         candidate = []
+@@ -252,13 +252,20 @@
+             tri = uv[faces]
+             td = depth[faces].mean(1)
+             visible = np.all(depth[faces] > 0.01, axis=1) & (tri[:, :, 0].max(1) >= 0) & (tri[:, :, 0].min(1) < w) & (tri[:, :, 1].max(1) >= 0) & (tri[:, :, 1].min(1) < h)
+-            polygons.extend(((float(td[i]), np.rint(tri[i]).astype(np.int32), 255 if dark else 0) for i in np.flatnonzero(visible)))
+-            if dark:
++            selected = np.flatnonzero(visible)
++            if len(selected):
++                rounded = np.rint(tri[selected]).astype(np.int32)
++                color = 255 if dark else 0
++                for j, i in enumerate(selected):
++                    polygons.append((float(td[i]), rounded[j], color))
++            if dark and not mask_only:
+                 edge_points = np.concatenate([world, world[faces[:, 0]] * 0.5 + world[faces[:, 1]] * 0.5, world[faces[:, 1]] * 0.5 + world[faces[:, 2]] * 0.5])
+                 candidate.append(edge_points)
+         mask = np.zeros((h, w), np.uint8)
+         for _, triangle, color in sorted(polygons, key=lambda item: item[0], reverse=True):
+             cv2.fillConvexPoly(mask, triangle, color)
++        if mask_only:
++            return mask
+         if not candidate:
+             return (mask, np.empty((0, 3)))
+         points = np.concatenate(candidate)
+@@ -764,7 +771,7 @@
+         gray = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
+         occluded = np.zeros(gray.shape, np.uint8)
+         if hasattr(self, 'robot_model'):
+-            robot, _ = self._v6_gripper_silhouette(camera, image.shape)
++            robot = self._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+             occluded = cv2.dilate(robot, np.ones((5, 5), np.uint8))
+         source = getattr(self, 'v6_source_anchor', None)
+         if source is not None and float(source.get('confidence', 0.0)) >= 0.5:
+@@ -979,7 +986,7 @@
+             return result
+         camera = cameras['left_wrist']
+         image = np.asarray(observation['observation.images.left_wrist'])
+-        robot, _ = self._v6_gripper_silhouette(camera, image.shape)
++        robot = self._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+         occluded = cv2.dilate(robot, np.ones((5, 5), np.uint8))
+         position, rotation = self._eef_rotation(observation)
+         bounds = held.get('bounds_tool')
+@@ -1106,20 +1113,32 @@
+         return result
+ 
+     def _fit_boxes(self, observation, cameras):
+-        masks = {}
+-        distance = {}
+-        for name in ('front', 'left_wrist'):
+-            image = np.asarray(observation['observation.images.' + name])
+-            mx = image.max(2)
+-            mn = image.min(2)
+-            gray = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
+-            masks[name] = gray
+-            edge = np.zeros_like(gray)
+-            contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+-            cv2.drawContours(edge, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, 1)
+-            filled = np.zeros_like(gray)
+-            cv2.drawContours(filled, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, -1)
+-            distance[name] = cv2.distanceTransform(255 - filled, cv2.DIST_L2, 3) - cv2.distanceTransform(filled, cv2.DIST_L2, 3)
++        masks = None
++        distance = None
++
++        def _masks():
++            nonlocal masks
++            if masks is None:
++                masks = {}
++                for name in ('front', 'left_wrist'):
++                    image = np.asarray(observation['observation.images.' + name])
++                    mx = image.max(2)
++                    mn = image.min(2)
++                    masks[name] = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
++            return masks
++
++        def _distance():
++            nonlocal distance
++            if distance is None:
++                m = _masks()
++                distance = {}
++                for name in ('front', 'left_wrist'):
++                    gray = m[name]
++                    contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
++                    filled = np.zeros_like(gray)
++                    cv2.drawContours(filled, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, -1)
++                    distance[name] = cv2.distanceTransform(255 - filled, cv2.DIST_L2, 3) - cv2.distanceTransform(filled, cv2.DIST_L2, 3)
++            return distance
+         boxes = {}
+         for kind in ('source', 'target') if self.v6_target_anchor is None else ('source',):
+             if kind == 'source' and self.source_disturbed and (self.v6_source_anchor is not None):
+@@ -1143,8 +1162,9 @@
+             zt = zb + (self.scene.source_bin_wall_height_m if kind == 'source' else self.scene.target_bin_wall_height_m)
+             corners = np.array([[x, y, z] for z in (zb, zt) for x in (-half[0], half[0]) for y in (-half[1], half[1])])
+             instances = {}
+-            kind_distance = distance
++            kind_distance = _distance() if kind == 'source' else None
+             if kind == 'target':
++                masks = _masks()
+                 for name in ('front', 'left_wrist'):
+                     instance = self._v7_target_instance(masks[name], cameras[name], initial, center_z, corners)
+                     if instance is not None:
+@@ -1166,7 +1186,7 @@
+             if kind == 'source' and any((n == 'left_wrist' and len(p) > 25 for n, p in cameras_used)):
+                 cameras_used = [item for item in cameras_used if item[0] == 'left_wrist']
+             if kind == 'target' and any((n == 'left_wrist' for n, pts in cameras_used)):
+-                if self._v6_target_in_wrist(cameras['left_wrist'], distance['left_wrist'].shape, {'center': np.r_[initial[:2], center_z], 'yaw': initial[2]}):
++                if self._v6_target_in_wrist(cameras['left_wrist'], masks['left_wrist'].shape, {'center': np.r_[initial[:2], center_z], 'yaw': initial[2]}):
+                     cameras_used = [item for item in cameras_used if item[0] == 'left_wrist']
+             if not cameras_used:
+                 boxes[kind + '_box'] = {'center': np.r_[initial[:2], center_z], 'yaw': float(initial[2]), 'confidence': 0.0, 'position_error_m': 0.025, 'residual_px': None}
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/path_feasibility.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/path_feasibility.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/path_feasibility.py	2026-11-05 21:02:11
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/path_feasibility.py	2026-11-09 15:35:28
+@@ -39,11 +39,23 @@
+     edges: np.ndarray
+     pairs: np.ndarray
+ 
++_POLY_CACHE = {}
++
++
+ def _poly(vertices):
+-    v = np.unique(np.round(np.asarray(vertices, float), 10), axis=0)
++    source = np.asarray(vertices, float)
++    key = (source.shape, source.tobytes())
++    cached = _POLY_CACHE.get(key)
++    if cached is not None:
++        return cached
++    v = np.unique(np.round(source, 10), axis=0)
+     hull = ConvexHull(v)
+     pairs = np.unique(np.sort(np.concatenate([hull.simplices[:, [0, 1]], hull.simplices[:, [1, 2]], hull.simplices[:, [0, 2]]]), axis=1), axis=0)
+-    return Poly(v, _unique_axes(hull.equations[:, :3]), _unique_axes(v[pairs[:, 1]] - v[pairs[:, 0]]), pairs)
++    result = Poly(v, _unique_axes(hull.equations[:, :3]), _unique_axes(v[pairs[:, 1]] - v[pairs[:, 0]]), pairs)
++    if len(_POLY_CACHE) > 8192:
++        _POLY_CACHE.clear()
++    _POLY_CACHE[key] = result
++    return result
+ 
+ def _separation(a, b):
+     broad = np.maximum(b.vertices.min(0) - a.vertices.max(0), a.vertices.min(0) - b.vertices.max(0))
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/target_vision.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/target_vision.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/target_vision.py	2026-11-05 21:02:11
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/target_vision.py	2026-11-09 15:35:28
+@@ -178,7 +178,7 @@
+         _, mount_rotation = self._eef_rotation(observation)
+         return {'pos': nominal['pos'] + mount_rotation @ p[:3], 'rotation': nominal['rotation'] @ Rotation.from_rotvec(p[3:6]).as_matrix(), 'fovy': nominal['fovy'] + p[6]}
+ 
+-    def _v6_gripper_silhouette(self, camera, shape):
++    def _v6_gripper_silhouette(self, camera, shape, *, mask_only=False):
+         h, w = shape[:2]
+         polygons = []
+         candidate = []
+@@ -188,13 +188,20 @@
+             tri = uv[faces]
+             td = depth[faces].mean(1)
+             visible = np.all(depth[faces] > 0.01, axis=1) & (tri[:, :, 0].max(1) >= 0) & (tri[:, :, 0].min(1) < w) & (tri[:, :, 1].max(1) >= 0) & (tri[:, :, 1].min(1) < h)
+-            polygons.extend(((float(td[i]), np.rint(tri[i]).astype(np.int32), 255 if dark else 0) for i in np.flatnonzero(visible)))
+-            if dark:
++            selected = np.flatnonzero(visible)
++            if len(selected):
++                rounded = np.rint(tri[selected]).astype(np.int32)
++                color = 255 if dark else 0
++                for j, i in enumerate(selected):
++                    polygons.append((float(td[i]), rounded[j], color))
++            if dark and not mask_only:
+                 edge_points = np.concatenate([world, world[faces[:, 0]] * 0.5 + world[faces[:, 1]] * 0.5, world[faces[:, 1]] * 0.5 + world[faces[:, 2]] * 0.5])
+                 candidate.append(edge_points)
+         mask = np.zeros((h, w), np.uint8)
+         for _, triangle, color in sorted(polygons, key=lambda item: item[0], reverse=True):
+             cv2.fillConvexPoly(mask, triangle, color)
++        if mask_only:
++            return mask
+         if not candidate:
+             return (mask, np.empty((0, 3)))
+         points = np.concatenate(candidate)
+@@ -694,7 +701,7 @@
+         gray = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
+         occluded = np.zeros(gray.shape, np.uint8)
+         if hasattr(self, 'robot_model'):
+-            robot, _ = self._v6_gripper_silhouette(camera, image.shape)
++            robot = self._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+             occluded = cv2.dilate(robot, np.ones((5, 5), np.uint8))
+         source = getattr(self, 'v6_source_anchor', None)
+         if source is not None and float(source.get('confidence', 0.0)) >= 0.5:
+@@ -905,7 +912,7 @@
+             return result
+         camera = cameras['left_wrist']
+         image = np.asarray(observation['observation.images.left_wrist'])
+-        robot, _ = self._v6_gripper_silhouette(camera, image.shape)
++        robot = self._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+         occluded = cv2.dilate(robot, np.ones((5, 5), np.uint8))
+         position, rotation = self._eef_rotation(observation)
+         bounds = held.get('bounds_tool')
+@@ -963,20 +970,32 @@
+         return result
+ 
+     def _fit_boxes(self, observation, cameras):
+-        masks = {}
+-        distance = {}
+-        for name in ('front', 'left_wrist'):
+-            image = np.asarray(observation['observation.images.' + name])
+-            mx = image.max(2)
+-            mn = image.min(2)
+-            gray = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
+-            masks[name] = gray
+-            edge = np.zeros_like(gray)
+-            contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+-            cv2.drawContours(edge, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, 1)
+-            filled = np.zeros_like(gray)
+-            cv2.drawContours(filled, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, -1)
+-            distance[name] = cv2.distanceTransform(255 - filled, cv2.DIST_L2, 3) - cv2.distanceTransform(filled, cv2.DIST_L2, 3)
++        masks = None
++        distance = None
++
++        def _masks():
++            nonlocal masks
++            if masks is None:
++                masks = {}
++                for name in ('front', 'left_wrist'):
++                    image = np.asarray(observation['observation.images.' + name])
++                    mx = image.max(2)
++                    mn = image.min(2)
++                    masks[name] = ((mx.astype(int) - mn.astype(int) < 38) & (mx > 65) & (mx < 250) & (image[:, :, 2].astype(int) + 10 >= image[:, :, 0].astype(int))).astype(np.uint8) * 255
++            return masks
++
++        def _distance():
++            nonlocal distance
++            if distance is None:
++                m = _masks()
++                distance = {}
++                for name in ('front', 'left_wrist'):
++                    gray = m[name]
++                    contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
++                    filled = np.zeros_like(gray)
++                    cv2.drawContours(filled, [c for c in contours if cv2.contourArea(c) > 15], -1, 255, -1)
++                    distance[name] = cv2.distanceTransform(255 - filled, cv2.DIST_L2, 3) - cv2.distanceTransform(filled, cv2.DIST_L2, 3)
++            return distance
+         boxes = {}
+         for kind in ('source', 'target') if self.v6_target_anchor is None else ('source',):
+             if kind == 'source' and self.source_disturbed and (self.v6_source_anchor is not None):
+@@ -1000,8 +1019,9 @@
+             zt = zb + (self.scene.source_bin_wall_height_m if kind == 'source' else self.scene.target_bin_wall_height_m)
+             corners = np.array([[x, y, z] for z in (zb, zt) for x in (-half[0], half[0]) for y in (-half[1], half[1])])
+             instances = {}
+-            kind_distance = distance
++            kind_distance = _distance() if kind == 'source' else None
+             if kind == 'target':
++                masks = _masks()
+                 for name in ('front', 'left_wrist'):
+                     instance = self._v7_target_instance(masks[name], cameras[name], initial, center_z, corners)
+                     if instance is not None:
+@@ -1023,7 +1043,7 @@
+             if kind == 'source' and any((n == 'left_wrist' and len(p) > 25 for n, p in cameras_used)):
+                 cameras_used = [item for item in cameras_used if item[0] == 'left_wrist']
+             if kind == 'target' and any((n == 'left_wrist' for n, pts in cameras_used)):
+-                if self._v6_target_in_wrist(cameras['left_wrist'], distance['left_wrist'].shape, {'center': np.r_[initial[:2], center_z], 'yaw': initial[2]}):
++                if self._v6_target_in_wrist(cameras['left_wrist'], masks['left_wrist'].shape, {'center': np.r_[initial[:2], center_z], 'yaw': initial[2]}):
+                     cameras_used = [item for item in cameras_used if item[0] == 'left_wrist']
+             if not cameras_used:
+                 boxes[kind + '_box'] = {'center': np.r_[initial[:2], center_z], 'yaw': float(initial[2]), 'confidence': 0.0, 'position_error_m': 0.025, 'residual_px': None}
+diff -ruN --exclude=__pycache__ ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/terminal_controller.py v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/terminal_controller.py
+--- ai305-a3-rule-policy-v10/frozen_policy_v10/v10_leaves_17e0363838a9/two5_source1/terminal_controller.py	2026-11-05 21:02:11
++++ v10_efficiency_candidates_20261109/ABC_candidate/v10_leaves_17e0363838a9/two5_source1/terminal_controller.py	2026-11-09 15:19:17
+@@ -277,7 +277,7 @@
+             return None
+         camera = self.cameras['left_wrist']
+         image = obs['observation.images.left_wrist']
+-        mask, _ = self.target._v6_gripper_silhouette(camera, image.shape)
++        mask = self.target._v6_gripper_silhouette(camera, image.shape, mask_only=True)
+         points = self.target._box_points('target') @ _rot_z(self.box.get('yaw', 0.0)).T + np.asarray(self.box['center'])
+         deltas = [np.array([dx, dy, dz]) for dz in (0.02, 0.035, 0.05, 0.07) for dx, dy in ((0.0, 0.0), (-0.018, 0.0), (0.018, 0.0), (0.0, -0.018), (0.0, 0.018))]
+         h, w = image.shape[:2]

@@ -1,0 +1,103 @@
+{
+  "parent_repository_commit": "24568981d8c22a5276d584e9ca9ea800780782ef",
+  "parent_policy_root_sha256": "50101a31aaf34b29600bb5293a42edb93c01b6fd10047d6949dcc776bdfa7647",
+  "runtime_dependencies": 78,
+  "changed_runtime_files": {
+    "v10_leaves_17e0363838a9/two10_source1/path_feasibility.py": {
+      "parent": "6ba094a4965de464e504526191dd982fc4eb1c577d5c7b0212331e462dd5e5d2",
+      "candidate": "9fe324dabc81c285ce5f8dba1c67ab87504de7dcc2b975f3aed1c54e1d192c2b"
+    },
+    "v10_leaves_17e0363838a9/two10_source1/perception.py": {
+      "parent": "594bced5dc488f98834601c6457508d5ba61690bcfd69f65c214a6188e0fa6ba",
+      "candidate": "a9280459292d9ed03c7975c6d893966a0f6d0add150c9528ee81e9264a344a91"
+    },
+    "v10_leaves_17e0363838a9/two10_source1/source_view.py": {
+      "parent": "351de767718587e519e085c4edfa05a0eb082624b9d3ddc2383a2eb888f273e9",
+      "candidate": "3f3159b7a581009027b352db1cb7ef55da4efee609ce35a92602e30337fcb3af"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/e_source_view.py": {
+      "parent": "f8e743303d3e311a13a3fa8744f9d6c45df9a3a4a42bfdade2cf00e2c3f50eb5",
+      "candidate": "db9191553908b4bc8e299d57f960773b7c54eac14497e069cd920629d952d71d"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/legacy/path_feasibility.py": {
+      "parent": "ef2d89db5f4bd76830bdff4720a329afabb4afbfe89ade95ef8b8bfb7457fda8",
+      "candidate": "2fa82da3db5f7bdff5d9b488e18852eef218a0c7357da38e1705931b0b56a879"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/legacy/perception.py": {
+      "parent": "3b2c77f0749790898f18aacd4cdce5c78ccd5c5a95cd7851d8131935342db7f3",
+      "candidate": "b126cc73a9fe610a2622d639746eb116628ffc50f60555536b939575c928cf29"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/path_feasibility.py": {
+      "parent": "2ef835b94e7081bafcfab78d8f840adfcda6dedab4175729e7742515f04fae50",
+      "candidate": "eab40b6e7c9d32edcc38da8aade53ca803e31db22a3f1ec06063d5acc960d258"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/target_vision.py": {
+      "parent": "2fde437acc96805faf0355c8c0d05a72e28562f0a9ad7aa829613c6efedd9a26",
+      "candidate": "724bfbbf74b784ad9236c7080b8fd7a5cedd43cf4ef4ece20aca544dc0cfb875"
+    },
+    "v10_leaves_17e0363838a9/two5_source1/terminal_controller.py": {
+      "parent": "32127533ac1839a2cc1244a9046eabe1bab3af9af45fa8c9b0c6d353a2d528bc",
+      "candidate": "be33b7e7b309afe84dcac00c86e722acf8659d7243bea9593e57fc6163a43a73"
+    }
+  },
+  "distinct_observations_by_task": {
+    "2x5": 316,
+    "2x10": 671
+  },
+  "repetitions": 3,
+  "raw_files": {
+    "cand/2x10_v10_cpu_r1.csv": {
+      "uncompressed_sha256": "2cc55ab661905bc6d84c0267f9d82f579bcd3cc9881bcf0042b1d9a152284827",
+      "gzip_sha256": "633bce6e2662739356dcaf70ce585c408e14f9e865cf777e0c228b6032d0737c"
+    },
+    "cand/2x10_v10_cpu_r2.csv": {
+      "uncompressed_sha256": "89ecd46e5430b562ba45f448b577fa43626be5e0157f69164802ef2962afce3b",
+      "gzip_sha256": "77ddc5118ee62774fdaa8188f8caa9cfc5e8f9c69873c6079207b84ca31983a4"
+    },
+    "cand/2x10_v10_cpu_r3.csv": {
+      "uncompressed_sha256": "3234a1736af7882124d21b6d93cfcf879c085457e6eebc3b5aa17b3c5afd863f",
+      "gzip_sha256": "475cddf4d6e23e9644b5c9014b3f538437618c9d11144c1f191b23d1427be1b6"
+    },
+    "cand/2x5_v10_cpu_r1.csv": {
+      "uncompressed_sha256": "49acc03926127a72f16dc8f1b1b9959171a31e5f3b5c1c02fd28112a36cbd587",
+      "gzip_sha256": "6b743ea0f32d06ec3e9e452de16942aa0683701b59d4356ee2ef86af1d129ff2"
+    },
+    "cand/2x5_v10_cpu_r2.csv": {
+      "uncompressed_sha256": "1807596de08bb2345585d69c0cdf3786db0264fa769c333121702725362f3e79",
+      "gzip_sha256": "1129dbd65b6f9214c33658ee68106faf8ebeada0baf8bbee4417cb0220fb98ea"
+    },
+    "cand/2x5_v10_cpu_r3.csv": {
+      "uncompressed_sha256": "db306bed67e53de3ee5263c1db4c565986591375b42f3b81fd61949154a8e27c",
+      "gzip_sha256": "0f7153a5753ae5348bd83bbbd55b3e12902217d7287a6249dfd0fa1924facfb8"
+    },
+    "parent/2x10_v10_cpu_r1.csv": {
+      "uncompressed_sha256": "c855431035f88b7188b151c9968adb6e8ad1eea10a1632bd633c96db3675e656",
+      "gzip_sha256": "5cff453f444925c95952ffe7059d7673b1d620b8d882ecd13acf89794922d610"
+    },
+    "parent/2x10_v10_cpu_r2.csv": {
+      "uncompressed_sha256": "f3e57e809af814c1eddacf06ea25642fbef589962ff01e0d528481585ca13024",
+      "gzip_sha256": "dd39a56c4885865e5e227168da13f82ae7be5283fbbe69b3066f204fbb822820"
+    },
+    "parent/2x10_v10_cpu_r3.csv": {
+      "uncompressed_sha256": "9b0f6b9016897796eda8bcd5dcb3a526e893e75d42666a12d884ee4af642ee0c",
+      "gzip_sha256": "a8de0910b166d5954578dcf7652698a00e9b8e81aee600044079c8a53afcf3a2"
+    },
+    "parent/2x5_v10_cpu_r1.csv": {
+      "uncompressed_sha256": "d21f4a2ec7871a0536229f5f79f91ea1aa1d504c6ae3079c1504bf24d53ffec7",
+      "gzip_sha256": "68a09ebe7bbd0cd16f9a76abce01d23e8e69a31dccbfc63ee1fa03ef2cab509d"
+    },
+    "parent/2x5_v10_cpu_r2.csv": {
+      "uncompressed_sha256": "e7a37af265d9a1ac996effe107b450e0705975ce76a75fb9eac5b44901f08727",
+      "gzip_sha256": "833d17e1cdd3f0e813ea4c395a5650a6f2e8ccc3f26e0d7e1e910f7413263736"
+    },
+    "parent/2x5_v10_cpu_r3.csv": {
+      "uncompressed_sha256": "07a7c92760917c6ba792aa0b0bfc43d522a51dcd8ed611b1c85b8f1c6e6fa1cd",
+      "gzip_sha256": "930f67eb773165c14bf3f3ade772acdb23c9216cf8aaab634bf586be5ba9b8a3"
+    }
+  },
+  "quality_status": "EXPERIMENTAL_NOT_RELEASED: known conditional branch error; full state and closed-loop quality regression pending",
+  "policy_changed_by_this_review": false,
+  "full_policy_inference_runs_by_this_review": 0,
+  "simulation_steps_by_this_review": 0,
+  "synthetic_contract_probes_executed": true
+}
