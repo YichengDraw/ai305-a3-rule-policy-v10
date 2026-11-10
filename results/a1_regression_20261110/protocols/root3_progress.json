@@ -1,0 +1,146 @@
+{
+  "jobs": [
+    {
+      "label": "priority_2x10_basic_fixedn1_s1_native_scene21007",
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 21007,
+      "n": 1,
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root3/priority_2x10_basic_fixedn1_s1_native_scene21007",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      }
+    },
+    {
+      "label": "replication_dev_2x10_advanced_random_s1_scene620461",
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 620461,
+      "n": "random",
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root3/replication_dev_2x10_advanced_random_s1_scene620461",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      }
+    },
+    {
+      "label": "priority_2x10_advanced_fixedn1_s1_native_scene21006",
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 21006,
+      "n": 1,
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root3/priority_2x10_advanced_fixedn1_s1_native_scene21006",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      }
+    },
+    {
+      "label": "priority_2x10_basic_fixedn1_s1_native_scene21003",
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 21003,
+      "n": 1,
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root3/priority_2x10_basic_fixedn1_s1_native_scene21003",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      }
+    },
+    {
+      "label": "priority_2x10_medium_fixedn1_s1_native_scene21004",
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 21004,
+      "n": 1,
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root3/priority_2x10_medium_fixedn1_s1_native_scene21004",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": 1,
+          "replay": 1
+        }
+      }
+    },
+    {
+      "label": "replication_dev_2x10_medium_random_s1_scene620780",
+      "task": "2x10",
+      "profile": "medium",
+      "seed": 620780,
+      "n": "random",
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root3/replication_dev_2x10_medium_random_s1_scene620780",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      }
+    },
+    {
+      "label": "replication_dev_2x10_advanced_random_s1_scene620971",
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 620971,
+      "n": "random",
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root3/replication_dev_2x10_advanced_random_s1_scene620971",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      }
+    }
+  ],
+  "finished": 7,
+  "total": 7
+}

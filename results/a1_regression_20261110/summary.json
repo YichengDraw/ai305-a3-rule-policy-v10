@@ -1,0 +1,443 @@
+{
+  "scope": "Previously seen, source-column-1 development regression grids; not independent A1 holdouts",
+  "publication_date": "2026-11-10",
+  "audit_utc": "2026-11-10T14:45:14.115193+00:00",
+  "runtime_fingerprint_sha256": "a1f7f3e2d2a52b061b81dd72c2a566d2b25993bf60eeeb729f236a1a98f82e57",
+  "cells": [
+    {
+      "grid": "grid24000",
+      "task": "2x5",
+      "profile": "basic",
+      "n": 20,
+      "cookies": 200,
+      "capacity": 200,
+      "completion_rate": 1.0,
+      "successes": 20
+    },
+    {
+      "grid": "grid24000",
+      "task": "2x5",
+      "profile": "medium",
+      "n": 20,
+      "cookies": 200,
+      "capacity": 200,
+      "completion_rate": 1.0,
+      "successes": 20
+    },
+    {
+      "grid": "grid24000",
+      "task": "2x5",
+      "profile": "advanced",
+      "n": 20,
+      "cookies": 200,
+      "capacity": 200,
+      "completion_rate": 1.0,
+      "successes": 20
+    },
+    {
+      "grid": "grid24000",
+      "task": "2x10",
+      "profile": "basic",
+      "n": 20,
+      "cookies": 390,
+      "capacity": 400,
+      "completion_rate": 0.975,
+      "successes": 18
+    },
+    {
+      "grid": "grid24000",
+      "task": "2x10",
+      "profile": "medium",
+      "n": 20,
+      "cookies": 400,
+      "capacity": 400,
+      "completion_rate": 1.0,
+      "successes": 19
+    },
+    {
+      "grid": "grid24000",
+      "task": "2x10",
+      "profile": "advanced",
+      "n": 20,
+      "cookies": 382,
+      "capacity": 400,
+      "completion_rate": 0.9550000000000001,
+      "successes": 18
+    },
+    {
+      "grid": "grid620xxx",
+      "task": "2x5",
+      "profile": "basic",
+      "n": 20,
+      "cookies": 195,
+      "capacity": 200,
+      "completion_rate": 0.975,
+      "successes": 19
+    },
+    {
+      "grid": "grid620xxx",
+      "task": "2x5",
+      "profile": "medium",
+      "n": 20,
+      "cookies": 200,
+      "capacity": 200,
+      "completion_rate": 1.0,
+      "successes": 20
+    },
+    {
+      "grid": "grid620xxx",
+      "task": "2x5",
+      "profile": "advanced",
+      "n": 20,
+      "cookies": 190,
+      "capacity": 200,
+      "completion_rate": 0.95,
+      "successes": 19
+    },
+    {
+      "grid": "grid620xxx",
+      "task": "2x10",
+      "profile": "basic",
+      "n": 20,
+      "cookies": 400,
+      "capacity": 400,
+      "completion_rate": 1.0,
+      "successes": 20
+    },
+    {
+      "grid": "grid620xxx",
+      "task": "2x10",
+      "profile": "medium",
+      "n": 20,
+      "cookies": 391,
+      "capacity": 400,
+      "completion_rate": 0.9775,
+      "successes": 19
+    },
+    {
+      "grid": "grid620xxx",
+      "task": "2x10",
+      "profile": "advanced",
+      "n": 20,
+      "cookies": 383,
+      "capacity": 400,
+      "completion_rate": 0.9574999999999999,
+      "successes": 19
+    }
+  ],
+  "grids": {
+    "grid24000": {
+      "n": 120,
+      "completion_rate": 0.9883333333333333,
+      "successes": 115,
+      "seeds": [
+        24000,
+        24001,
+        24002,
+        24003,
+        24004,
+        24005,
+        24006,
+        24007,
+        24008,
+        24009,
+        24010,
+        24011,
+        24012,
+        24013,
+        24014,
+        24015,
+        24016,
+        24017,
+        24018,
+        24019
+      ]
+    },
+    "grid620xxx": {
+      "n": 120,
+      "completion_rate": 0.9766666666666667,
+      "successes": 116,
+      "seeds": [
+        620000,
+        620015,
+        620083,
+        620111,
+        620228,
+        620305,
+        620335,
+        620382,
+        620394,
+        620434,
+        620435,
+        620461,
+        620561,
+        620567,
+        620686,
+        620716,
+        620780,
+        620874,
+        620916,
+        620971
+      ]
+    }
+  },
+  "W1b": {
+    "grid24000": {
+      "n": 120,
+      "successes": 115,
+      "C": 0.9841666666666666,
+      "S": 0.9583333333333334,
+      "cookies": 1762,
+      "expected": 120,
+      "complete": true,
+      "per_cell": {
+        "2x5_basic": {
+          "n": 20,
+          "successes": 20,
+          "C": 1.0,
+          "S": 1.0,
+          "cookies": 200
+        },
+        "2x5_medium": {
+          "n": 20,
+          "successes": 20,
+          "C": 1.0,
+          "S": 1.0,
+          "cookies": 200
+        },
+        "2x5_advanced": {
+          "n": 20,
+          "successes": 20,
+          "C": 1.0,
+          "S": 1.0,
+          "cookies": 200
+        },
+        "2x10_basic": {
+          "n": 20,
+          "successes": 18,
+          "C": 0.95,
+          "S": 0.9,
+          "cookies": 380
+        },
+        "2x10_medium": {
+          "n": 20,
+          "successes": 19,
+          "C": 1.0,
+          "S": 0.95,
+          "cookies": 400
+        },
+        "2x10_advanced": {
+          "n": 20,
+          "successes": 18,
+          "C": 0.9550000000000001,
+          "S": 0.9,
+          "cookies": 382
+        }
+      }
+    },
+    "grid620xxx": {
+      "n": 120,
+      "successes": 114,
+      "C": 0.9704166666666667,
+      "S": 0.95,
+      "cookies": 1744,
+      "expected": 120,
+      "complete": true,
+      "per_cell": {
+        "2x5_basic": {
+          "n": 20,
+          "successes": 19,
+          "C": 0.975,
+          "S": 0.95,
+          "cookies": 195
+        },
+        "2x5_medium": {
+          "n": 20,
+          "successes": 20,
+          "C": 1.0,
+          "S": 1.0,
+          "cookies": 200
+        },
+        "2x5_advanced": {
+          "n": 20,
+          "successes": 19,
+          "C": 0.95,
+          "S": 0.95,
+          "cookies": 190
+        },
+        "2x10_basic": {
+          "n": 20,
+          "successes": 20,
+          "C": 1.0,
+          "S": 1.0,
+          "cookies": 400
+        },
+        "2x10_medium": {
+          "n": 20,
+          "successes": 19,
+          "C": 0.9775,
+          "S": 0.95,
+          "cookies": 391
+        },
+        "2x10_advanced": {
+          "n": 20,
+          "successes": 17,
+          "C": 0.9199999999999999,
+          "S": 0.85,
+          "cookies": 368
+        }
+      }
+    }
+  },
+  "pooled": {
+    "n": 240,
+    "completion_rate": 0.9825,
+    "successes": 231
+  },
+  "paired_comparisons": [
+    {
+      "grid": "grid24000",
+      "baseline": "V10",
+      "candidate": "W1b",
+      "n": 120,
+      "gained_success": [],
+      "lost_success": [],
+      "count_regressions": [],
+      "count_improvements": [],
+      "delta_C_pp": 0.0
+    },
+    {
+      "grid": "grid24000",
+      "baseline": "V10",
+      "candidate": "A1",
+      "n": 120,
+      "gained_success": [],
+      "lost_success": [],
+      "count_regressions": [],
+      "count_improvements": [
+        [
+          "2x10",
+          "basic",
+          24001
+        ]
+      ],
+      "delta_C_pp": 0.4166666666666572
+    },
+    {
+      "grid": "grid24000",
+      "baseline": "W1b",
+      "candidate": "A1",
+      "n": 120,
+      "gained_success": [],
+      "lost_success": [],
+      "count_regressions": [],
+      "count_improvements": [
+        [
+          "2x10",
+          "basic",
+          24001
+        ]
+      ],
+      "delta_C_pp": 0.4166666666666572
+    },
+    {
+      "grid": "grid620xxx",
+      "baseline": "V10",
+      "candidate": "W1b",
+      "n": 120,
+      "gained_success": [
+        [
+          "2x10",
+          "advanced",
+          620382
+        ]
+      ],
+      "lost_success": [],
+      "count_regressions": [],
+      "count_improvements": [
+        [
+          "2x10",
+          "advanced",
+          620382
+        ]
+      ],
+      "delta_C_pp": 0.4166666666666714
+    },
+    {
+      "grid": "grid620xxx",
+      "baseline": "V10",
+      "candidate": "A1",
+      "n": 120,
+      "gained_success": [
+        [
+          "2x10",
+          "advanced",
+          620780
+        ],
+        [
+          "2x10",
+          "advanced",
+          620382
+        ],
+        [
+          "2x10",
+          "advanced",
+          620461
+        ]
+      ],
+      "lost_success": [],
+      "count_regressions": [],
+      "count_improvements": [
+        [
+          "2x10",
+          "advanced",
+          620780
+        ],
+        [
+          "2x10",
+          "advanced",
+          620382
+        ],
+        [
+          "2x10",
+          "advanced",
+          620461
+        ]
+      ],
+      "delta_C_pp": 1.0416666666666714
+    },
+    {
+      "grid": "grid620xxx",
+      "baseline": "W1b",
+      "candidate": "A1",
+      "n": 120,
+      "gained_success": [
+        [
+          "2x10",
+          "advanced",
+          620780
+        ],
+        [
+          "2x10",
+          "advanced",
+          620461
+        ]
+      ],
+      "lost_success": [],
+      "count_regressions": [],
+      "count_improvements": [
+        [
+          "2x10",
+          "advanced",
+          620780
+        ],
+        [
+          "2x10",
+          "advanced",
+          620461
+        ]
+      ],
+      "delta_C_pp": 0.625
+    }
+  ]
+}

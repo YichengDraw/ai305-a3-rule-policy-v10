@@ -20,3 +20,7 @@
 ## 新增：策略计算耗时
 
 论文已加入两条完整观察序列的三轮测速。相同i5-10500＋RTX3090主机上，V10使用CPU、教师SmolVLA使用GPU：V10平均165.0/236.7ms，SmolVLA平均70.5/68.7ms。模型每次生成动作块约0.53秒，随后取缓存约3.6ms。结果用于说明计算开销与动作缓存，不改两组任务成功率。2×10少量回放差异及复算依据见[测速记录](../results/latency/README.md)。
+
+## A1 development update / A1 开发回归更新
+
+The updated PDF adds a separate A1 section, the 240 previously seen paired episodes, method-equivalence and retry disclosure, and the completed W1b auxiliary comparison. A1 pooled completion is 98.25%, official success is 231/240 (96.25%). These are not independent A1 holdouts; frozen V10 remains the formal submission. [Full evidence](../results/a1_regression_20261110/README.md). Verify with `python3 scripts/verify_a1.py`. The report now uses the standard Latin Modern font package (`lmodern`).

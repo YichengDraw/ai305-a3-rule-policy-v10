@@ -1,7 +1,11 @@
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\pdfsuppressptexinfo=15
 \documentclass[10pt,twocolumn]{article}
 \usepackage[letterpaper,margin=0.72in,columnsep=0.24in]{geometry}
 \usepackage{graphicx,booktabs,amsmath,amssymb,multirow,array,enumitem}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{lmodern}
 \usepackage{microtype,placeins}
 \urlstyle{same}
 \setlength{\parindent}{1em}
@@ -14,10 +18,10 @@
 \newcommand{\pFive}{2×5}
 \newcommand{\pTen}{2×10}
 \newcommand{\srcone}{source column 1}
-\title{\vspace{-1em}\textbf{From Visual Rules to Reliable Robot Manipulation:}\\An AI Advisor--Executor Study of Versions V1--V10}
+\title{\vspace{-1em}\textbf{From Visual Rules to Reliable Robot Manipulation:}\\An AI Advisor--Executor Study of V1--V10 and the A1 Candidate}
 \author{Yicheng Zhao \qquad Sihua Zhang \qquad Ruilin Gao\\[0.15em]
 \small Group 3 \quad | \quad AI305 Intelligent Agent Systems and Programming}
-\date{\small 9 November 2026}
+\date{\small 10 November 2026}
 \begin{document}
 \maketitle
 \vspace{-1.0em}
@@ -27,13 +31,14 @@ We built a rule-based controller for the A3 dual-arm cookie-packing simulator an
 
 A central part of our development process was an \emph{AI advisor--executor loop}: a GPT-6 advisor analyzed failed runs and suggested focused changes; coding agents implemented those changes and ran controlled tests; the human team conveyed evidence and selected the next direction. We preserve successful and unsuccessful versions, matched comparisons, and runnable evaluation code.
 
-The first evaluated milestone (V5) achieved 46.83\% mean task completion and 14.17\% official success. The frozen V10 policy achieved 98.42\% completion and 95.83\% success in one 120-episode test, followed by 96.62\% and 94.17\% on another 120 episodes with newly sampled seeds. These measurements use the benchmark's standard source-column-1 grid.
+The first evaluated milestone (V5) achieved 46.83\% mean task completion and 14.17\% official success. The frozen V10 policy achieved 98.42\% completion and 95.83\% success in one 120-episode test, followed by 96.62\% and 94.17\% on another 120 episodes with newly sampled seeds. These measurements use the benchmark's standard source-column-1 grid. A separately published post-V10 candidate, A1, reaches 98.25\% completion and 96.25\% success on the same 240 previously seen episodes. We report this as a development regression, not new holdout evidence, and retain V10 as the formal submission.
 \end{abstract}
 \vspace{-0.4em}
 \input{sections/01_task_and_team.tex}
 \input{sections/02_controller.tex}
 \input{sections/03_development.tex}
 \input{sections/04_evaluation.tex}
+\input{sections/09_a1.tex}
 \input{sections/08_latency.tex}
 \input{sections/05_discussion.tex}
 \section*{Acknowledgments}

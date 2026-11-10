@@ -1,0 +1,46 @@
+{
+  "jobs": [
+    {
+      "label": "replication_dev_2x10_basic_random_s1_scene620780",
+      "task": "2x10",
+      "profile": "basic",
+      "seed": 620780,
+      "n": "random",
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root2/replication_dev_2x10_basic_random_s1_scene620780",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      }
+    },
+    {
+      "label": "replication_dev_2x10_advanced_random_s1_scene620780",
+      "task": "2x10",
+      "profile": "advanced",
+      "seed": 620780,
+      "n": "random",
+      "source_column": 1,
+      "returncode": 0,
+      "output": "source_runs/root2/replication_dev_2x10_advanced_random_s1_scene620780",
+      "reference_initialization": {
+        "initialization_equal": true,
+        "task_instruction_equal": true,
+        "actual_n_equal": true,
+        "differing_initial_fields": [],
+        "first_grasp_mode": {
+          "reference": "random",
+          "replay": "random"
+        }
+      }
+    }
+  ],
+  "finished": 2,
+  "total": 2
+}

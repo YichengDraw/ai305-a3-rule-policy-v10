@@ -1,0 +1,43 @@
+\section{Post-V10 Candidate: A1}
+\label{sec:a1}
+A1 is a later development candidate. We publish it as a separate snapshot so that the original frozen V10 remains reproducible and remains the formal submission. The A1 evaluation below does not replace either V10 table or the V10 timing measurements.
+
+\subsection{Scope and comparison}
+Both seed collections from Section~\ref{sec:evaluation} had already been seen during subsequent development. We therefore use them here as \emph{paired development regressions}, not independent held-out evidence for A1. Each A1 collection is paired with its corresponding V10 collection on 120 task/profile/seed combinations, with source column 1, official non-strict scoring, five-step stable success, and the original 500/3,200-step budgets. Failures are included in every mean. The aggregate cookie totals are supplementary counts, not the denominator used for mean completion: each episode has equal weight despite the two task sizes.
+
+The 79-file A1 snapshot changes source-frontier selection and target occupancy fusion in the source-column-1 \pTen\ branch. It preserves a precise parent frontier when one is available, and uses the alternative after its observation-prefix gate when the parent is unresolved. Occupied/free conflicts between cameras no longer let camera order determine the stored target entry. These are the tested rules, not a guarantee that every recorded observation history is valid.
+
+A1 was evaluated with CPU physics and OSMesa software rendering. The 24000--24019 records reuse fixed-first-grasp-count replays whose counts match the original random draws. The audit checks the initialization and task text for each episode; the relevant implementation changes only the mode metadata. Newly executed episodes retain the native random mode. The public verifier checks the complete recorded initialization and task text against a V10 extract, allowing only this metadata field to differ. The upstream mode-handling source is included and matches the recorded simulator hash. An initial configuration-order error and pre-simulation launch failures were excluded as invalid comparisons and retried; their receipts are retained. All valid policy failures remain included.
+
+\begin{table*}[t]
+\centering\small
+\caption{A1 on two previously seen development grids. Each task/profile cell has 20 episodes. These are paired regressions, not new A1 holdout tests.}
+\label{tab:a1}
+\begin{tabular}{llrrrrrr}
+\toprule
+& & \multicolumn{3}{c}{Seeds 24000--24019} & \multicolumn{3}{c}{The same 20 seeds in 620xxx}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Task & Variation & Cookies & Completion & Success & Cookies & Completion & Success\\
+\midrule
+\multirow{3}{*}{\pFive} & Basic & 200/200 & 100.00\% & 20/20 & 195/200 & 97.50\% & 19/20\\
+ & Medium & 200/200 & 100.00\% & 20/20 & 200/200 & 100.00\% & 20/20\\
+ & Advanced & 200/200 & 100.00\% & 20/20 & 190/200 & 95.00\% & 19/20\\
+\midrule
+\multirow{3}{*}{\pTen} & Basic & 390/400 & 97.50\% & 18/20 & 400/400 & 100.00\% & 20/20\\
+ & Medium & 400/400 & 100.00\% & 19/20 & 391/400 & 97.75\% & 19/20\\
+ & Advanced & 382/400 & 95.50\% & 18/20 & 383/400 & 95.75\% & 19/20\\
+\midrule
+\textbf{Mean} & \textbf{120 episodes each} & \textbf{1772/1800} & \textbf{98.83\%} & \textbf{115/120} & \textbf{1759/1800} & \textbf{97.67\%} & \textbf{116/120}\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{What improved and what remains}
+On seeds 24000--24019, mean completion rises from 98.4167\% to 98.8333\%, while official success stays at 115/120. The change is a ten-cookie improvement in Basic \pTen\ seed 24001, which still does not satisfy official success. On the 620xxx grid, completion rises from 96.6250\% to 97.6667\% and success from 113/120 to 116/120. The three newly successful episodes are Advanced \pTen\ seeds 620382, 620461, and 620780. Across all 240 matched episodes, no V10 success is lost and no final cookie count decreases.
+
+Pooling the two equally sized development grids gives A1 98.25\% mean completion and 96.25\% official success (231/240), versus V10's 97.5208\% and 95.00\% on those same rows. This is a 0.7292-point completion gain and a 1.25-point success gain. Nine A1 episodes still fail officially, so the goal of 100\% on both metrics is not reached. These measurements do not establish performance on unseen seeds, other source columns, or other machines.
+
+The intermediate W1b comparison completed before publication and passed the final 14:45 UTC audit. It has 98.4167\% completion and 115/120 successes on the first grid, and 97.0417\% and 114/120 on the second. A1 adds two successes over W1b (Advanced 620461 and 620780), without a count or success regression. W1b is an auxiliary comparison; this update releases A1 code and native logs, not the full W1b package. Future promotion requires a frozen candidate and a genuinely unseen evaluation after development.
+
+\paragraph{Reproduction evidence.}
+The repository includes all 79 A1 runtime files, their SHA256 manifest, all 240 native terminal records, the per-episode source hashes, sanitized copies of the actual run protocols, and an offline verifier that recomputes the tables and the same-seed V10 comparison. Absolute source paths and machine identifiers are removed from published provenance metadata; original and public hashes are distinguished. Runtime code and native terminal records remain byte-preserved. The original frozen V10 directory and scorer are unchanged.

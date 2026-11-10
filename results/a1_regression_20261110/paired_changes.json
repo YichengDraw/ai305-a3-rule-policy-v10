@@ -1,0 +1,146 @@
+[
+  {
+    "grid": "grid24000",
+    "baseline": "V10",
+    "candidate": "W1b",
+    "n": 120,
+    "gained_success": [],
+    "lost_success": [],
+    "count_regressions": [],
+    "count_improvements": [],
+    "delta_C_pp": 0.0
+  },
+  {
+    "grid": "grid24000",
+    "baseline": "V10",
+    "candidate": "A1",
+    "n": 120,
+    "gained_success": [],
+    "lost_success": [],
+    "count_regressions": [],
+    "count_improvements": [
+      [
+        "2x10",
+        "basic",
+        24001
+      ]
+    ],
+    "delta_C_pp": 0.4166666666666572
+  },
+  {
+    "grid": "grid24000",
+    "baseline": "W1b",
+    "candidate": "A1",
+    "n": 120,
+    "gained_success": [],
+    "lost_success": [],
+    "count_regressions": [],
+    "count_improvements": [
+      [
+        "2x10",
+        "basic",
+        24001
+      ]
+    ],
+    "delta_C_pp": 0.4166666666666572
+  },
+  {
+    "grid": "grid620xxx",
+    "baseline": "V10",
+    "candidate": "W1b",
+    "n": 120,
+    "gained_success": [
+      [
+        "2x10",
+        "advanced",
+        620382
+      ]
+    ],
+    "lost_success": [],
+    "count_regressions": [],
+    "count_improvements": [
+      [
+        "2x10",
+        "advanced",
+        620382
+      ]
+    ],
+    "delta_C_pp": 0.4166666666666714
+  },
+  {
+    "grid": "grid620xxx",
+    "baseline": "V10",
+    "candidate": "A1",
+    "n": 120,
+    "gained_success": [
+      [
+        "2x10",
+        "advanced",
+        620780
+      ],
+      [
+        "2x10",
+        "advanced",
+        620382
+      ],
+      [
+        "2x10",
+        "advanced",
+        620461
+      ]
+    ],
+    "lost_success": [],
+    "count_regressions": [],
+    "count_improvements": [
+      [
+        "2x10",
+        "advanced",
+        620780
+      ],
+      [
+        "2x10",
+        "advanced",
+        620382
+      ],
+      [
+        "2x10",
+        "advanced",
+        620461
+      ]
+    ],
+    "delta_C_pp": 1.0416666666666714
+  },
+  {
+    "grid": "grid620xxx",
+    "baseline": "W1b",
+    "candidate": "A1",
+    "n": 120,
+    "gained_success": [
+      [
+        "2x10",
+        "advanced",
+        620780
+      ],
+      [
+        "2x10",
+        "advanced",
+        620461
+      ]
+    ],
+    "lost_success": [],
+    "count_regressions": [],
+    "count_improvements": [
+      [
+        "2x10",
+        "advanced",
+        620780
+      ],
+      [
+        "2x10",
+        "advanced",
+        620461
+      ]
+    ],
+    "delta_C_pp": 0.625
+  }
+]

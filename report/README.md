@@ -24,3 +24,7 @@ For result integrity, use `python3 scripts/verify_release.py` and `python3 scrip
 ## Computation timing update
 
 The added timing section compares full native calls on two continuous recorded workloads (CPU V10 vs CUDA teacher SmolVLA), explains new-block vs queue costs, and discloses replay differences. See [timing evidence](../results/latency/README.md). Run `python3 scripts/verify_latency.py` from the repository root to independently recompute the added table.
+
+## A1 development update / A1 开发回归更新
+
+The updated PDF adds a separate A1 section, the 240 previously seen paired episodes, method-equivalence and retry disclosure, and the completed W1b auxiliary comparison. A1 pooled completion is 98.25%, official success is 231/240 (96.25%). These are not independent A1 holdouts; frozen V10 remains the formal submission. [Full evidence](../results/a1_regression_20261110/README.md). Verify with `python3 scripts/verify_a1.py`. The report now uses the standard Latin Modern font package (`lmodern`).

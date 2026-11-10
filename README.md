@@ -2,7 +2,7 @@
 
 **Reproducible policy submission for the AI305 A3 dual-arm MuJoCo cookie-transfer benchmark.**
 
-This is the **frozen V10** rule-based RGB + robot-state policy and a stand-alone evaluator that uses the original A3 task and official terminal score/success conditions. It does **not** contain later W1b/DSH development changes, pretrained weights, or privileged ground-truth policy inputs.
+This is the **frozen V10** rule-based RGB + robot-state policy and a stand-alone evaluator that uses the original A3 task and official terminal score/success conditions. The `frozen_policy_v10/` submission is unchanged. A later **A1 development candidate** is now published separately under [`candidates/a1/`](candidates/a1/), with its own evidence and report section; it does not replace V10. No pretrained weights are included.
 
 ## Verified holdout evaluation (source column 1)
 
@@ -23,6 +23,14 @@ This is the **frozen V10** rule-based RGB + robot-state policy and a stand-alone
 The paper explains the camera/force-based rule controller, the GPT-6 advisor ↔ separate coding-executor iteration loop, and the main decisions from V1 to V10 using plain language. The public history includes V1–V4 development snapshots, V5–V9 frozen policies, retained experimental variants, and 1,320 official episode results from the milestone comparisons.
 
 **Independent V10 replication:** an additional set of 20 randomly selected seeds (620xxx, 120 episodes) achieved **96.62% mean completion** and **94.17% official success** (113/120). This uses the same frozen code and benchmark grid, and all failures are included. [Full reproduction records and seed list](results/retest/README.md). The first test above remains a separate 120-episode holdout; the pooled mean across both tests is 97.52% completion and 95.00% success.
+
+## A1 development update (10 November 2026)
+
+[Exact A1 snapshot](candidates/a1/) · [240 native results, protocol and verifier](results/a1_regression_20261110/README.md) · [Updated report PDF](report/group3_rule_policy_v10.pdf)
+
+On the two **previously seen** source-column-1 grids, A1 achieves **98.8333% completion / 115 of 120 successes** and **97.6667% / 116 of 120**. Pooled: **98.25% / 96.25% (231/240)**. Relative to V10, three additional episodes succeed, no original success is lost, and no final count decreases. Nine official failures remain.
+
+These are development regressions, **not independent A1 holdouts**. The release includes 79 byte-verified runtime files, all 240 native terminal records, complete recorded-initialization comparisons, fixed-count replay equivalence, and invalid-attempt/retry disclosure. The completed W1b auxiliary comparison is documented separately in the same evidence. Frozen V10, its original headline tables and its timing results remain unchanged. Provenance metadata uses relative identifiers and omits local machine information; runtime code and all terminal records remain byte-preserved. Verify with `python3 scripts/verify_a1.py` and `python3 scripts/verify_a1_privacy.py`.
 
 ## Policy computation timing
 
@@ -86,7 +94,7 @@ The evaluator loads:
 --policy-code frozen_policy_v10
 ```
 
-The policy's public task instruction selects the source-column branch (1, inner 2–3, outer 4), while its actions are computed from permitted RGB/state inputs. All scoring is performed by the upstream simulator. The bundled `evaluation/` files are the exact local benchmark helpers used for V10; the original simulator files are not vendored here. This release preserves the frozen code rather than cleaning or rewriting it, to keep hashes and behavior reproducible.
+The policy's public task instruction selects the source-column branch (1, inner 2–3, outer 4), while its actions are computed from permitted RGB/state inputs. All scoring is performed by the upstream simulator. The bundled `evaluation/` files are the exact local benchmark helpers used for V10; the full simulator is not vendored here. Three pinned upstream source files are included only as A1 mode-equivalence audit evidence, under the upstream MIT license. This release preserves the frozen code rather than cleaning or rewriting it, to keep hashes and behavior reproducible.
 
 ## Interpretation and attribution
 

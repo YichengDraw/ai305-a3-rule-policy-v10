@@ -1,0 +1,9 @@
+{
+  "detected_utc": "2026-11-10T09:59:55.445618+00:00",
+  "cause": [
+    "First attempt configuration serialization sorted color dictionary, changing advanced palette sampling.",
+    "2x10 scene-only configuration omitted task first_grasp required by loader, so these rows failed before simulation."
+  ],
+  "treatment": "Keep all first-attempt records; let healthy work finish; exclude invalid initializations and nonzero exits; retry only missing/invalid rows with original configuration order and first_grasp=random. No evaluator or policy changed.",
+  "lesson": "Preserve configuration key order when code samples dictionary values; test task-specific loader before launch."
+}

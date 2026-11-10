@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "scope": "A1 incremental public export; pre-existing V10 artifacts are unchanged.",
+  "changes": [
+    "Absolute source locations replaced with relative provenance identifiers.",
+    "Machine hostname and machine-specific library search path removed.",
+    "Private executor name removed from mode-equivalence explanation.",
+    "Runtime code and all native terminal-result bytes unchanged."
+  ],
+  "path_semantics": {
+    "candidates/a1": "Repository-root-relative runtime code location.",
+    "native_results.tar.gz#member": "Member in the adjacent published archive.",
+    "source_runs/rootN": "Anonymous source-run provenance namespace; use result_manifest.json to locate included records. Not a directory to execute.",
+    "unbundled_sources": "Anonymous reference to source evidence not included in this export. No dependency on this path is required for the published verifier or runner.",
+    "../retest/native_episodes.jsonl.gz": "Existing published V10 replication; original_sha256 refers to the uncompressed original source bytes."
+  },
+  "files": {
+    "results/a1_regression_20261110/FINAL_VERIFICATION.json": {
+      "original_sha256": "55b61328a3337b91c03d3cec6b6802270161b01cbb39721d2086defdcf6e275a",
+      "public_sha256": "2d2b610729fd5f1a8a944e086bb98fe41fb154dc7ced0b5341a47d36fba33e63"
+    },
+    "results/a1_regression_20261110/environment_snapshot.json": {
+      "original_sha256": "d7b54df1f28785c99d5a9e65dabef80c2e2871589ccfb80c9cffb2ae91606190",
+      "public_sha256": "86f9f221177ca7ae5b3365e4e9fb9c413911845bd61811b150064fd2e8b0abd3"
+    },
+    "results/a1_regression_20261110/protocols/root0_complete.json": {
+      "original_sha256": "c67bfd30e269f95e08d406e6572f2be93fd2344e2c157dd4cc09a3b7fdd74168",
+      "public_sha256": "2fd6b48a0a4749a7dcbc23a9a87b286f36d431d11836f81b254e99764f034354"
+    },
+    "results/a1_regression_20261110/protocols/root0_progress.json": {
+      "original_sha256": "e93010767a95ed7c86bb299760a50663baf64e106ad07d955926684355df8e07",
+      "public_sha256": "e8de1a089d3070bc6fd6ea0dd7d9cec8c91573a3775683ba7567751b1f3eb244"
+    },
+    "results/a1_regression_20261110/protocols/root0_protocol.json": {
+      "original_sha256": "82292cdb7b07a221875add9230be7b6d72899e229f5871c6128c14c8db5fdfb1",
+      "public_sha256": "29ae7d7b7cf9dda3252d61c913aecdb6c56598ad85df13c45db1ffb9c3ed0f07"
+    },
+    "results/a1_regression_20261110/protocols/root1_complete.json": {
+      "original_sha256": "849ac4a05daecb73fa5d47be00f5aa8c0f6fc34383823dff00b57da1cffa37c1",
+      "public_sha256": "2b6953c8b70246a61d93eecac85a614fe96d2eab419ab588b8ab91a8801f1eac"
+    },
+    "results/a1_regression_20261110/protocols/root1_progress.json": {
+      "original_sha256": "acf2fa840c6aadf993e10f2bf02e19f7886629e80aaaf8f171d941c855cebecc",
+      "public_sha256": "d4def52dbf82003f09900fd54e75fa14518cc3696863ccb8aaae64e1dbf2c45e"
+    },
+    "results/a1_regression_20261110/protocols/root1_protocol.json": {
+      "original_sha256": "c595b1d3f7792c926d5b28413a33a0f31f7c0a5e9f72da3b587e1fd497a284b4",
+      "public_sha256": "b6d597a37916c61e6eaa1fa67365d868848bb0cca3132c6770feed52efd25867"
+    },
+    "results/a1_regression_20261110/protocols/root2_complete.json": {
+      "original_sha256": "72723541192f3142e99c2c88ada49309d832874cb6a07129e1f1495fae9ca165",
+      "public_sha256": "dff3b2d96de66f29a846e937bbe7f68466bd22b5b299ad0d66e75be163fc1547"
+    },
+    "results/a1_regression_20261110/protocols/root2_progress.json": {
+      "original_sha256": "9e2c05e18733fde26b7b88050cfa0fae049e81fc275e33c6dfbc9c98cfd34857",
+      "public_sha256": "ad59ed6fdf246c1cf9057531b01ed7fdd820e8109b21697a3feb6d4a9ed2c014"
+    },
+    "results/a1_regression_20261110/protocols/root2_protocol.json": {
+      "original_sha256": "f4310e98b5e42fa4478daa6b8e177cd7a0c40b7d8bc8ef5d9b1404b1218f863d",
+      "public_sha256": "9396ec62015b247cf37444254ca49adfc9ce2816b42385d975491802bd21bfc8"
+    },
+    "results/a1_regression_20261110/protocols/root3_complete.json": {
+      "original_sha256": "a81f6ee7e4ddd09710a3adb65cf83e5d54a43e68244162cb83b9455d6403c7b2",
+      "public_sha256": "455033a9c5ac359b61d91d33efd0235455aadc08d24f38eb8e0df8f8ac34d28d"
+    },
+    "results/a1_regression_20261110/protocols/root3_progress.json": {
+      "original_sha256": "c8a99a32925d7209204a9c18435f346804988fb849fe1758e74c48a0b46a6e13",
+      "public_sha256": "cf098542835586919849087242f7d7c288f3ceed1cd599cd85c6630c98426f54"
+    },
+    "results/a1_regression_20261110/protocols/root3_protocol.json": {
+      "original_sha256": "c28a354c6e84e0db2ef1fd90f590841f0cd0a1bf4727745fd37d6ff89a2cf108",
+      "public_sha256": "96f0ef3207442732baa190024419a9a1e338c2e18c8229e5810eed96d653670e"
+    },
+    "results/a1_regression_20261110/protocols/root4_complete.json": {
+      "original_sha256": "9d12deb6a11ebf3dad07f51b28d1decb3f1881d119bd333de2c083ead339c95f",
+      "public_sha256": "35443fb03a2f4d7469e064f391327823f4e6b1bc4817cbeb1c2f5fbc38e7b4bb"
+    },
+    "results/a1_regression_20261110/protocols/root4_progress.json": {
+      "original_sha256": "bf15396bd0ddc7f1fa1060dd84aa2c06f6710ec4fcf47eb1e1afd113ff4781a2",
+      "public_sha256": "c8feb9cc81df47a891cd2f93ea6f48108198f99dde884ba95c70a5bfd799008d"
+    },
+    "results/a1_regression_20261110/protocols/root4_protocol.json": {
+      "original_sha256": "8271ed670e44089e293b48ad04ec51006a956cc5e6d66ed607776353fe70cb6e",
+      "public_sha256": "867a8f2b2697b4c4e46505cd9f82eb87b6a40fff6d9a696762e8ff8d6eb99176"
+    },
+    "results/a1_regression_20261110/protocols/root5_complete.json": {
+      "original_sha256": "084b6d4a8b800239559183709059269b96d6203b93b5005a0d17c82f27b1bd8d",
+      "public_sha256": "1060a7c219428362a12f6ad2bf6fa8f4c9ae87afa3a2fb747729b435cbd16052"
+    },
+    "results/a1_regression_20261110/protocols/root5_progress.json": {
+      "original_sha256": "7187e322851098d4372d0e48f7354060311977b18a52005aff42e10b9299ab1b",
+      "public_sha256": "2ab418ab5c6a2073a936e9f162825c2976f72388f67e054fb47939482e294437"
+    },
+    "results/a1_regression_20261110/protocols/root5_protocol.json": {
+      "original_sha256": "0cf04a01f78ea86bb2a16f261422ceb9b979a1252552801f228bd33f861e8f1b",
+      "public_sha256": "c6dfa46ff775a4d6135fb24bdc679c689d20445e1e3e65ee55beef19115e637e"
+    },
+    "results/a1_regression_20261110/baseline_initializations.json.gz": {
+      "original_sha256": "d7688150d517fbfbef15d36ab425e7509eff4e3bb9f9f7c803a5cf0a632f97e1",
+      "public_sha256": "0ed7a69767d12b659599c7eec20141f8bbd73ed2bc72fcbc61f79a791618a023"
+    }
+  },
+  "runtime_fingerprint_sha256": "a1f7f3e2d2a52b061b81dd72c2a566d2b25993bf60eeeb729f236a1a98f82e57",
+  "native_archive_sha256": "3609b9abfc285c03ed3fb410f256ee1327518df6096fc421aee52b7888d18cda"
+}
